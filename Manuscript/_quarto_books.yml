@@ -7,7 +7,7 @@ book:
   author: 
     name: Simon Oiry
     url: https://oirysimon.com
-  date: "March 11, 2025"
+  date: "March 15, 2025"
   downloads: [pdf, docx]
   abstract: "To Be Written"
   chapters:
@@ -16,7 +16,7 @@ book:
     - Summary/summary.qmd
     - References/references.qmd
     
-repo-url: https://github.com/SigOiry/PhD
+repo-url: https://github.com/nmfs-opensci/quarto-thesis
 search: true
 
 thesis:
@@ -24,16 +24,9 @@ thesis:
     - name: Prof. Laurent Barillé
     - name: Dr. Pierre Gernez
   university: University of Nantes
-  department: "Institut Des Substances et Organismes de la Mer laboratory"
-  group: "Remote Sensing, Benthic Ecology and Ecotoxicology team"
-  degree-name: "Doctor of Philosophy in Marine Ecology"
+  department: "Institut Des Substances et Organismes de la Mer (ISOMer)"
+  group: "Remote Sensing, Benthic Ecology and Ecotoxicology (RSBE²)"
   faculty: Sciences & Techniques
-  logoED: images/Logos_vaame_PdL.png
-  logoED-height: "1.5cm"
-  logoUN: images/Logotype_Nantes-U_noir-300dpi.png
-  logoUN-height: "1cm"
-  
-  
 bibliography: References/references.bib
 
 format:

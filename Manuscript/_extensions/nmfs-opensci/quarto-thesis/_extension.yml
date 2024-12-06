@@ -29,3 +29,5 @@ contributes:
       linkcolor: blue
       urlcolor: red
       toclinkcolor: black
+    html:
+      documentclass: MastersDoctoralThesis_html
