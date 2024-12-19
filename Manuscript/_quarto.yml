@@ -41,7 +41,7 @@ format:
     urlcolor: red
     toclinkcolor: black
     toc-depth: 2
-  quarto-thesis-html:
+  html:
     theme: cosmo
   quarto-thesis-docx: default
 
