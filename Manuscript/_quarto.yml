@@ -13,8 +13,10 @@ book:
   chapters:
     - index.qmd
     - Intro/intro.qmd
+    - Chapter1/Chapter1.qmd
     - Summary/summary.qmd
     - References/references.qmd
+    
     
 repo-url: https://github.com/SigOiry/PhD
 search: true
@@ -34,7 +36,7 @@ thesis:
   logoUN-height: "1cm"
   
   
-bibliography: References/references.bib
+bibliography: [References/Chapiter1.bib, References/packages.bib] 
 
 format:
   quarto-thesis-pdf: 
@@ -43,7 +45,7 @@ format:
     toc-depth: 2
   html:
     theme: cosmo
-  quarto-thesis-docx: default
+  docx: default
 
 editor: source
 

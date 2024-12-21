@@ -1,4 +1,7 @@
 # References {.unnumbered}
 
+\begingroup
+\raggedright
 ::: {#refs}
 :::
+\endgroup
