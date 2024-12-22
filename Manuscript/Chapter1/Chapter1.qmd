@@ -1,4 +1,6 @@
-## Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing
+---
+title: "Chapter 2: Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing"
+---
 
 ```{r pack}
 #| include: false
@@ -13,7 +15,6 @@ library(tidyverse)
 
 options(scipen=9999999) 
 ```
-
 
 ## Introduction
 
@@ -40,6 +41,10 @@ Spectral reflectance data were collected from a range of macroalgal, microphytob
 #| error: false
 #| message: false
 #| warning: false
+#| out-width: "95%"
+
+
+library(tidyverse)
 
 Table<-tibble(
   Class=c("Magnoliopsida","Magnoliopsida","Ulvophyceae","Ulvophyceae","Ulvophyceae",
@@ -58,12 +63,9 @@ Table<-tibble(
                        33,
                        27,6,13,13,5,
                        10,21,2),	
- Site=c("Bourgneuf Bay, Marennes-Oléron Bay, Cadiz Bay, 
-        Tagus Estuary, Aveiro Lagoon and Traict of Merquel",
+ Site=c("Bourgneuf Bay, Marennes-Oléron Bay, Cadiz Bay, Tagus Estuary, Aveiro Lagoon and Traict of Merquel",
         "Bourgneuf Bay", 
-        "Bourgneuf Bay, Auray Estuary, MSM,
-        Tagus Estuary, Aveiro Lagoon 
-        and Traict of Merquel",
+        "Bourgneuf Bay, Auray Estuary, MSM, Tagus Estuary, Aveiro Lagoon and Traict of Merquel",
         "Bourgneuf Bay", 
         "Traict of Merquel",
         "Morbihan Gulf",
@@ -71,8 +73,7 @@ Table<-tibble(
         "Morbihan Gulf",
         "Morbihan Gulf",
         "Bourgneuf Bay",
-        "MSM, Bourgneuf Bay, Morbihan Gulf,
-        Tagus Estuary and Aveiro Lagoon",
+        "MSM, Bourgneuf Bay, Morbihan Gulf, Tagus Estuary and Aveiro Lagoon",
         "MSM",
         "Morbihan Gulf",
         "MSM, Auray Estuary, Morbihan Gulf",
@@ -112,18 +113,22 @@ SPECIESTABLE_Cap<-" Number of Spectra samples taken per habitat type."
 #   dplyr::rename(Habitat=Species_Group,
 #                 `No. of Spectra`=n) 
 
-Table %>% 
+flxtbl <- Table %>% 
   flextable::as_grouped_data(groups="Class")%>% 
   flextable::flextable()%>% # make basic table
   # flextable::set_caption(caption=" Number of spectra samples taken across species and classes with references of where and when the data were collected. Mont Saint-Michel Bay was abbreviated to MSM. The location of sampling sites are shown in Fig. 2.")  %>% 
-  flextable::fontsize(size=9,part="header") %>% 
-  flextable::fontsize(size=7) %>% 
+  flextable::fontsize(size=15,part="header") %>% 
+  flextable::fontsize(size=13) %>% 
   flextable::italic(j=2,italic=T) %>% 
+  flextable::align(align = "justify", part = "body") %>%  # Justify text in the body cells
+  flextable::align(align = "justify", part = "header") %>%  # Justify text in the header cells
   flextable::autofit() %>% 
   flextable::set_table_properties(layout="autofit") ## last two lines make table fit word doc width 
 
-# NSamples<-NSamples %>% 
-#   dplyr::rename(N=`No. of Spectra`)
+# Display the flextable
+# save_as_image(flxtbl, path = "Manuscript/Chapter1/Figs/SPECIESTABLE.png")
+
+knitr::include_graphics("Figs/SPECIESTABLE.png")
 ```
 
 ```{r Images}
@@ -218,6 +223,7 @@ The nMDS ordinations calculated with a cosine distance showed that all vegetatio
 #| fig-cap: " nMDS ordination showing similarities between vegetation classes at different spectral resolutions (ASD, Pleiades, Sentinel-2 10, Sentinel-2 10-20 m, Drone and PRISMA). Point distances are based on cosine distance, polygons show the minimum convex hull to surround all points. Stress values show the inaccuracy of the 2 dimensional representations."
 #| fig.width: 9.89
 #| fig.height: 10
+#| out-width: "95%"
 #| error: false
 #| warning: false
 #| echo: false
@@ -235,6 +241,7 @@ When assessed by Random Forest modelling, accuracy metrics of different spectral
 #| fig-cap: " Accuracy metrics (accuracy, Cohen's kappa accuracy, sensitivity and specificity) for different spectral resolutions."
 #| fig.width: 9.97
 #| fig.height: 10
+#| out-width: "95%"
 #| error: false
 #| warning: false
 #| echo: false
@@ -252,18 +259,19 @@ knitr::include_graphics("Figs/Figure6.jpg")
 #| error: false
 #| message: false
 #| warning: false
+#| out-width: "95%"
 
-# Load required library
+
 library(flextable)
 
 # Create the dataframe
 df <- data.frame(
   Sensor = c("Sentinel-2 10m (4 bands)", "Pleiades (4 bands)", "Sentinel-2 20m (8 bands)", 
              "Drone (10 bands)", "PRISMA (56 bands)", "ASD (335 bands)"),
-  Accuracy = c("0.835±0.00768", "0.861±0.00609", "0.952±0.00441", "0.948±0.00419", "0.951±0.0061", "0.952±0.0048"),
+  Accuracy = c("83.5±0.76", "86.1±0.61", "95.2±0.44", "94.8±0.42", "95.1±0.61", "95.2±0.48"),
   Cohens_Kappa = c("0.792±0.0096", "0.821±0.00773", "0.935±0.00577", "0.934±0.00535", "0.938±0.00778", "0.936±0.00624"),
-  Sensitivity = c("0.844±0.00807", "0.847±0.00759", "0.948±0.00568", "0.941±0.00619", "0.947±0.00594", "0.938±0.00751"),
-  Specificity = c("0.966±0.00162", "0.970±0.00126", "0.989±0.00104", "0.989±0.00094", "0.990±0.00129", "0.989±0.0011")
+  Sensitivity = c("84.4±0.81", "84.7±0.76", "94.8±0.57", "94.1±0.62", "94.7±0.6", "93.8±0.75"),
+  Specificity = c("96.6±0.16", "97±0.13", "98.9±0.1", "98.9±0.09", "99±0.13", "98.9±0.11")
 )
 
 # Create a flextable
@@ -284,11 +292,11 @@ ft <- align(ft, align = "center", part = "all") # Center align text
 ft <- bold(ft, part = "header") # Bold the header
 
 # Display the flextable
-ft
+# save_as_image(ft, path = "Manuscript/Chapter1/Figs/metricsTable.png")
 
+knitr::include_graphics("Figs/metricsTable.png")
 
 ```
-
 Standardised variable importance, the relative amount the inclusion of a variable in the model affected its' performance, showed the wavelengths the model considered most important (@fig-VIPFIG). Consistently across all spectral resolutions, wavelengths 517–556 nm were shown to be highly important. When present, wavelengths around 722–754 nm were the most important.
 
 ```{r Combo_Variable_Importance_Plot}
@@ -296,6 +304,7 @@ Standardised variable importance, the relative amount the inclusion of a variabl
 #| fig-cap: " The relative importance of different wavelengths for model prediction across spectral resolutions."
 #| fig.width: 10
 #| fig.height: 9.87
+#| out-width: "95%"
 #| error: false
 #| warning: false
 #| echo: false
@@ -311,6 +320,7 @@ When the variable importance of the ASD was overlaid on the response functions f
 #| fig-cap: " The relative importance of different wavelengths for ASD model prediction across the spectral bands of the Drone, Sentinel-2 and Pleiades sensors."
 #| fig.width: 10
 #| fig.height: 9.89
+#| out-width: "95%"
 #| error: false
 #| warning: false
 #| echo: false
@@ -330,6 +340,7 @@ Models accurately classed bare sediments consistently, regardless of spectral re
 #| tbl-cap: .
 #| fig.width: 10
 #| fig.height: 10
+#| out-width: "95%"
 #| error: false
 #| warning: false
 #| echo: false
@@ -357,7 +368,7 @@ Two wavelength regions, respectively in the green (~517–556 nm) and NIR (~722�
 #| error: false
 #| message: false
 #| warning: false
-
+#| out-width: "95%"
 
 
 PigTable<-tibble::tribble(
@@ -368,13 +379,37 @@ PigTable<-tibble::tribble(
 "Phaeophyceae",	"0",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"Douay et al., 2022",
 "Bacillariophyceae",	"0",	"1",	"1",	"0",	"1",	"1",	"0",	"0",	"Cartaxana et al., 2016",
 "Absorption wavelength (ASD)",	"650",	"636",	"550",	"489",	"496",	"496",	"-",	"500",	"Méléder et al., 2013",
-"Absorption wavelength (HPLC)", "458, 596, 646",	"442, 573, 630", "451, 465",	"452, 478",	"453, 481",	"420, 447, 477",	"414, 437, 466",	"421, 446, 474",	"Méléder et al., 2013")
+"Absorption wavelength (HPLC)", "458, 
+596, 
+646",
+"442,
+573,
+630",
+"451,
+465",
+"452,
+478",
+"453,
+481",
+"420,
+447,
+477",
+"414,
+437,
+466",
+"421,
+446,
+474",	"Méléder et al., 2013")
 
-PigTable %>% 
+flxtable <- PigTable %>% 
 flextable::flextable()%>% 
-  flextable::fontsize(size = 8,part = "body") %>% 
+  flextable::fontsize(size = 10,part = "body") %>% 
   flextable::autofit() %>% 
   flextable::set_table_properties(layout="autofit")
+
+# save_as_image(flxtable, path = "Manuscript/Chapter1/Figs/pigmentTable.png")
+
+knitr::include_graphics("Figs/pigmentTable.png")
 
 
 ```

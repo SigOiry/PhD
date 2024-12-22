@@ -1,0 +1,38 @@
+\newcommand{\chaptertransition}{
+    \clearpage
+    \thispagestyle{empty}
+    \null
+    \newpage
+}
+
+\usepackage{geometry}  % presumably already in your preamble
+% ... your usual margin setup, e.g.:
+% \geometry{margin=1in}
+
+\newcommand{\chaptertitlepage}[4]{%
+  \chaptertransition
+  \thispagestyle{empty}
+
+  % Temporarily remove margins:
+  \newgeometry{margin=0pt}
+
+  \begin{center}
+    % Top image, spanning full page width
+    \includegraphics[width=\paperwidth]{#1}
+
+    \vfill
+
+    % Chapter number and title:
+    {\Huge \textbf{Chapter #2: \\#3}}
+
+    \vfill
+
+    % Bottom image, also spanning full page width
+    \includegraphics[width=\paperwidth]{#4}
+  \end{center}
+
+  % Restore your normal geometry:
+  \restoregeometry
+  \newpage
+}
+

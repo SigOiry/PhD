@@ -10,6 +10,7 @@ book:
   date: "March 11, 2025"
   downloads: [pdf, docx]
   abstract: "To Be Written"
+  search: true
   chapters:
     - index.qmd
     - Intro/intro.qmd
@@ -43,6 +44,11 @@ format:
     urlcolor: red
     toclinkcolor: black
     toc-depth: 2
+    titlepage: true
+    latex-options: 
+      - margin=1in
+    include-in-header: chaptertitlepage.tex
+
   html:
     theme: cosmo
   docx: default
