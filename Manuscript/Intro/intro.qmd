@@ -1,7 +1,0 @@
-# Introduction
-
-
-
-```{=latex}
-\chaptertitlepage{Chapter1/img/ASD_psd.png}{2}{Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing}{Chapter1/img/Seagrass_quadrats_psd.png}
-```

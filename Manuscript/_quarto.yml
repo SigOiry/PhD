@@ -1,7 +1,6 @@
 project:
   type: book
   output-dir: ../docs
-
 book:
   title: "Characterization of Intertidal Vegetation on European Coasts Using Multi-Scale Remote Sensing in Response to Natural and Anthropogenic Pressures"
   author: 
@@ -13,15 +12,12 @@ book:
   search: true
   chapters:
     - index.qmd
-    - Intro/intro.qmd
-    - Chapter1/Chapter1.qmd
+    - Chapter1/intro.qmd
+    - Chapter2/Chapter2.qmd
     - Summary/summary.qmd
     - References/references.qmd
-    
-    
 repo-url: https://github.com/SigOiry/PhD
 search: true
-
 thesis:
   supervisors:
     - name: Prof. Laurent Barillé
@@ -37,7 +33,7 @@ thesis:
   logoUN-height: "1cm"
   
   
-bibliography: [References/Chapiter1.bib, References/packages.bib] 
+bibliography: [References/Introduction.bib, References/Chapiter2.bib, References/packages.bib] 
 
 format:
   quarto-thesis-pdf: 
@@ -48,10 +44,12 @@ format:
     latex-options: 
       - margin=1in
     include-in-header: chaptertitlepage.tex
-
+    output-file: "PhD_Simon"
   html:
     theme: cosmo
-  docx: default
+  docx: 
+    output-file: "PhD_Simon"
+    reference-doc: quarto_template.docx
 
 editor: source
 
