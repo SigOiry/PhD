@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -145,8 +145,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Chapter3/Chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Summary/summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -212,6 +218,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Building upon the proof of concept, Chapter 3 focuses on the development of a robust algorithm capable of automating the discrimination of green macrophytes in heterogeneous intertidal habitats. Utilizing high-resolution multispectral drone imagery and advanced machine learning techniques, this chapter addresses the spatial complexity of these environments. The algorithm’s validation across diverse geographic and ecological settings ensures its applicability beyond the initial study sites. This advancement underscores the critical role of cutting-edge remote sensing technologies in ecological monitoring.</p>
 <p>In Chapter 4, the methodology evolves to include red macroalgae, specifically targeting the invasive species Gracilaria vermiculophylla. By adapting the algorithm from Chapter 3, this study extends its application to a different taxonomic group, demonstrating the flexibility and scalability of the approach. Additionally, this chapter integrates LiDAR-based topographical data to examine the relationship between habitat characteristics and macroalgal distribution. The insights gained from mapping and modeling the spatial dynamics of G. vermiculophylla provide valuable implications for managing invasive species and conserving native biodiversity.</p>
 <p>Finally, Chapter 5 examines the physiological impacts of environmental stressors, specifically marine and atmospheric heatwaves, on seagrass reflectance. Through controlled laboratory experiments and field validations, this chapter highlights the spectral responses of Zostera noltei under heatwave conditions. Well-established spectral indices such as the NDVI and GLI are employed, and a new index, the Seagrass Heat Shock Index (SHSI), is developed to specifically identify heatwave-impacted seagrasses. These indices provide metrics to detect and quantify stress-induced changes. These findings emphasize the role of remote sensing in assessing the resilience and vulnerability of intertidal ecosystems under climate change.</p>
+<!-- \chaptertitlepage{Chapter2/img/ASD_psd.png}{2}{Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing}{Chapter2/img/Seagrass_quadrats_psd.png} -->
+<!-- ::: {.content-visible} -->
+<!-- \newpage -->
+<!-- ::: -->
 
 
 </section>
@@ -299,6 +309,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -409,6 +421,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

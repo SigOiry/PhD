@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery – Characterization of Intertidal Vegetation on European Coasts Using Multi-Scale Remote Sensing in Response to Natural and Anthropogenic Pressures</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Summary/summary.html" rel="next">
+<link href="../Chapter2/Chapter2.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Chapter3/Chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Characterization of Intertidal Vegetation on European Coasts Using Multi-Scale Remote Sensing in Response to Natural and Anthropogenic Pressures</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Characterization-of-Intertidal-Vegetation-on-European-Coasts-Using-Multi-Scale-Remote-Sensing-in-Response-to-Natural-and-Anthropogenic-Pressures.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Characterization-of-Intertidal-Vegetation-on-European-Coasts-Using-Multi-Scale-Remote-Sensing-in-Response-to-Natural-and-Anthropogenic-Pressures.docx">
+              <i class="bi bi-file-word pe-1"></i>
+            Download Docx
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Chapter1/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction &amp; Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Chapter2/Chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hyperspectral classification of intertidal vegetation for coastal biodiversity</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Chapter3/Chapter3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Summary/summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../References/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#material-methods" id="toc-material-methods" class="nav-link" data-scroll-target="#material-methods"><span class="header-section-number">3.2</span> Material &amp; Methods</a>
+  <ul class="collapse">
+  <li><a href="#study-sites" id="toc-study-sites" class="nav-link" data-scroll-target="#study-sites"><span class="header-section-number">3.2.1</span> Study sites</a></li>
+  <li><a href="#field-sampling" id="toc-field-sampling" class="nav-link" data-scroll-target="#field-sampling"><span class="header-section-number">3.2.2</span> Field sampling</a></li>
+  <li><a href="#drone-processing" id="toc-drone-processing" class="nav-link" data-scroll-target="#drone-processing"><span class="header-section-number">3.2.3</span> Drone Processing</a></li>
+  <li><a href="#general-workflow" id="toc-general-workflow" class="nav-link" data-scroll-target="#general-workflow"><span class="header-section-number">3.2.4</span> General Workflow</a></li>
+  <li><a href="#variable-importance" id="toc-variable-importance" class="nav-link" data-scroll-target="#variable-importance"><span class="header-section-number">3.2.5</span> Variable Importance</a></li>
+  <li><a href="#influence-of-the-spatial-resolution-on-classification" id="toc-influence-of-the-spatial-resolution-on-classification" class="nav-link" data-scroll-target="#influence-of-the-spatial-resolution-on-classification"><span class="header-section-number">3.2.6</span> Influence of the spatial resolution on classification</a></li>
+  <li><a href="#impact-of-mixed-vegetation-cover-on-the-prediction" id="toc-impact-of-mixed-vegetation-cover-on-the-prediction" class="nav-link" data-scroll-target="#impact-of-mixed-vegetation-cover-on-the-prediction"><span class="header-section-number">3.2.7</span> Impact of mixed vegetation cover on the prediction</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#reflectance-comparison-between-the-two-different-altitudes" id="toc-reflectance-comparison-between-the-two-different-altitudes" class="nav-link" data-scroll-target="#reflectance-comparison-between-the-two-different-altitudes"><span class="header-section-number">3.3.1</span> Reflectance comparison between the two different altitudes</a></li>
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification"><span class="header-section-number">3.3.2</span> Classification</a></li>
+  <li><a href="#validation-of-the-model" id="toc-validation-of-the-model" class="nav-link" data-scroll-target="#validation-of-the-model"><span class="header-section-number">3.3.3</span> Validation of the model</a></li>
+  <li><a href="#variable-importance-1" id="toc-variable-importance-1" class="nav-link" data-scroll-target="#variable-importance-1"><span class="header-section-number">3.3.4</span> Variable importance</a></li>
+  <li><a href="#effect-of-spatial-resolution-on-the-classification" id="toc-effect-of-spatial-resolution-on-the-classification" class="nav-link" data-scroll-target="#effect-of-spatial-resolution-on-the-classification"><span class="header-section-number">3.3.5</span> Effect of spatial resolution on the classification</a></li>
+  <li><a href="#effect-of-the-percent-cover-on-the-prediction" id="toc-effect-of-the-percent-cover-on-the-prediction" class="nav-link" data-scroll-target="#effect-of-the-percent-cover-on-the-prediction"><span class="header-section-number">3.3.6</span> Effect of the percent cover on the prediction</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.4</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#vegetation-discrimination" id="toc-vegetation-discrimination" class="nav-link" data-scroll-target="#vegetation-discrimination"><span class="header-section-number">3.4.1</span> Vegetation Discrimination</a></li>
+  <li><a href="#altitude-and-temporal-effects-on-vegetation-prediction-accuracy" id="toc-altitude-and-temporal-effects-on-vegetation-prediction-accuracy" class="nav-link" data-scroll-target="#altitude-and-temporal-effects-on-vegetation-prediction-accuracy"><span class="header-section-number">3.4.2</span> Altitude and Temporal Effects on Vegetation Prediction Accuracy</a></li>
+  <li><a href="#impact-of-pixel-resolution-on-the-prediction-and-implications-for-satellite-remote-sensing" id="toc-impact-of-pixel-resolution-on-the-prediction-and-implications-for-satellite-remote-sensing" class="nav-link" data-scroll-target="#impact-of-pixel-resolution-on-the-prediction-and-implications-for-satellite-remote-sensing"><span class="header-section-number">3.4.3</span> Impact of Pixel Resolution on the prediction and Implications for Satellite Remote Sensing</a></li>
+  <li><a href="#towards-climate-and-biodiversity-applications" id="toc-towards-climate-and-biodiversity-applications" class="nav-link" data-scroll-target="#towards-climate-and-biodiversity-applications"><span class="header-section-number">3.4.4</span> Towards climate and biodiversity applications</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.5</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>Coastal areas are vital hotspots for marine biodiversity, with intertidal seagrass meadows playing a crucial role at the interface between land and ocean <span class="citation" data-cites="unsworth2022">(<a href="../References/references.html#ref-unsworth2022" role="doc-biblioref">Unsworth et al., 2022</a>)</span>. Seagrass meadows provide a myriad of ecosystem services, including carbon sequestration, oxygen production, protection against sea-level rise and coastline erosion, and mitigation of eutrophication <span class="citation" data-cites="unsworth2022 sousa2019blue">(<a href="../References/references.html#ref-sousa2019blue" role="doc-biblioref">Sousa et al., 2019</a>; <a href="../References/references.html#ref-unsworth2022" role="doc-biblioref">Unsworth et al., 2022</a>)</span>. They serve as vital habitats for a diverse array of marine and terrestrial species, providing living, breeding, and feeding grounds <span class="citation" data-cites="gardner2018 Zoffoli2022 jankowska2019">(<a href="../References/references.html#ref-gardner2018" role="doc-biblioref">Gardner and Finlayson, 2018</a>; <a href="../References/references.html#ref-jankowska2019" role="doc-biblioref">Jankowska et al., 2019</a>; <a href="../References/references.html#ref-Zoffoli2022" role="doc-biblioref">Zoffoli et al., 2022</a>)</span>. Due to the concentration of human activities in coastal zones, seagrass meadows are directly exposed to and impacted by anthropogenic pressures. Global regression and fragmentation of seagrass meadows are currently observed due to climate change, diseases, urbanization, land reclamation, dredging, competition with alien species, and reduction in water quality <span class="citation" data-cites="nguyen2021 soissons2018 orth2006 lin2018 duffy2019 rasheed2011long chefaoui2018dramatic sousa2019blue">(<a href="../References/references.html#ref-chefaoui2018dramatic" role="doc-biblioref">Chefaoui et al., 2018</a>; <a href="../References/references.html#ref-duffy2019" role="doc-biblioref">Duffy et al., 2019</a>; <a href="../References/references.html#ref-lin2018" role="doc-biblioref">Lin et al., 2018</a>; <a href="../References/references.html#ref-nguyen2021" role="doc-biblioref">Nguyen et al., 2021</a>; <a href="../References/references.html#ref-orth2006" role="doc-biblioref">Orth et al., 2006</a>; <a href="../References/references.html#ref-rasheed2011long" role="doc-biblioref">Rasheed and Unsworth, 2011</a>; <a href="../References/references.html#ref-soissons2018" role="doc-biblioref">Soissons et al., 2018</a>; <a href="../References/references.html#ref-sousa2019blue" role="doc-biblioref">Sousa et al., 2019</a>)</span>. Both habitat fragmentation and reduction, in turn, can severely compromise the effectiveness of ecosystem services provided by seagrass meadows. While improvements in water quality and hydrodynamics have been recently reported in Europe, allowing an overall recovery of seagrass ecosystems at local and European scales, many coastal waters worldwide are still subjected to strong eutrophication processes <span class="citation" data-cites="deSantos2019 Zoffoli2021 sousa2019blue">(<a href="../References/references.html#ref-deSantos2019" role="doc-biblioref">Los Santos et al., 2019</a>; <a href="../References/references.html#ref-sousa2019blue" role="doc-biblioref">Sousa et al., 2019</a>; <a href="../References/references.html#ref-Zoffoli2021" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>. Coastal eutrophication has been associated to excessive accumulation of green macroalgae, so-called green tides <span class="citation" data-cites="devlin2023nutrients">(<a href="../References/references.html#ref-devlin2023nutrients" role="doc-biblioref">Devlin and Brodie, 2023</a>)</span>. Green tides produce shade and suffocation over seagrass individuals, thus threatening the health of seagrass ecosystems <span class="citation" data-cites="wang2022">(<a href="../References/references.html#ref-wang2022" role="doc-biblioref">Wang et al., 2022</a>)</span>.</p>
+<p>The importance of seagrass meadows and the variety of ecosystem services they provide have led to the enhancement of both global and regional programs to monitor Essential Oceanic Variable (EOVs) such as seagrass composition <span class="citation" data-cites="Miloslavich2018">(<a href="../References/references.html#ref-Miloslavich2018" role="doc-biblioref">Miloslavich et al., 2018</a>)</span>, as well as Essential Biodiversity Variable (EBVs) such as seagrass taxonomic diversity, species distribution, population abundance, and phenology <span class="citation" data-cites="Pereira2013">(<a href="../References/references.html#ref-Pereira2013" role="doc-biblioref">Pereira et al., 2013</a>)</span>. Traditionally, indicators of seagrass status have been quantified using <em>in situ</em> measurements. However, the acquisition of field measurements in intertidal zones is notoriously challenging. Intertidal seagrass meadows are only exposed during low tide and can be situated in difficult-to-reach mudflats, potentially leading to inaccurate and limited estimations with conventional sampling techniques <span class="citation" data-cites="nijland2019">(<a href="../References/references.html#ref-nijland2019" role="doc-biblioref">Nijland et al., 2019</a>)</span>. Satellite observations have been proven effective in complementing <em>in situ</em> sampling, allowing for near real-time and consistent retrieval of seagrass EOVs and EBVs over extensive meadows <span class="citation" data-cites="Zoffoli2021 xu2021 Traganos2018 coffer2023 davies2024intertidal davies2024sentinel">(<a href="../References/references.html#ref-coffer2023" role="doc-biblioref">Coffer et al., 2023</a>; <a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">Davies et al., 2024a</a>, <a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024b</a>; <a href="../References/references.html#ref-Traganos2018" role="doc-biblioref">Traganos and Reinartz, 2018</a>; <a href="../References/references.html#ref-xu2021" role="doc-biblioref">Xu et al., 2021</a>; <a href="../References/references.html#ref-Zoffoli2021" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>.</p>
+<p>While satellite remote sensing (RS) provides temporally consistent observations over large spatial scales, its utilization over intertidal areas is limited by several constraints. Satellite missions with a high temporal resolution (e.g.&nbsp;daily MODIS observation) are limited by too coarse spatial resolution (&gt;100 m) to accurately map patchy seagrass meadows. Missions with a high spatial resolution such as Sentinel-2 (10 m) or Landsat8/9 (30 m) can be limited by low spectral resolution. The limited number of spectral bands challenges accurate discrimination of seagrass from other co-existing macrophytes. In particular, Chlorophyceae (green algae) and marine Magnoliopsida (seagrass) share the same pigment composition <span class="citation" data-cites="ralph2002 Douay2022">(<a href="../References/references.html#ref-Douay2022" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-ralph2002" role="doc-biblioref">Ralph et al., 2002</a>)</span>, resulting in a similar spectral signature in terms of reflectance, especially in the visible range <span class="citation" data-cites="Davies2023 bannari2022">(<a href="../References/references.html#ref-bannari2022" role="doc-biblioref">Bannari et al., 2022</a>; <a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023a</a>)</span>. Recently, using advanced machine-learning algorithms trained with a large hyperspectral library of more than 300 field reflectance spectra, <span class="citation" data-cites="Davies2023">Davies et al. (<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">2023a</a>)</span> demonstrated that it was possible to discriminate Magnoliopsida from Chlorophyceae using reflectance spectra at Sentinel-2 ’s spectral resolution. However the application of this approach to satellite RS remains to be validated. Moreover patches of green algae can develop at small spatial scales that are not observable using Sentinel-2 and/or Landsat-8/9 images <span class="citation" data-cites="tuya2013">(<a href="../References/references.html#ref-tuya2013" role="doc-biblioref">Tuya et al., 2013</a>)</span>, especially during the initial stage of a green tide.</p>
+<p>Drones (Unmanned Aerial Vehicles – UAVs) can potentially fill the data gaps left by satellite RS and <em>in situ</em> measurements, due to their ability to provide spatially-explicit observations at very high spatial resolutions (pixel size from mm to cm) while capturing data at multi-spectral resolution <span class="citation" data-cites="fairley2022drone oh2017use">(<a href="../References/references.html#ref-fairley2022drone" role="doc-biblioref">Fairley et al., 2022</a>; <a href="../References/references.html#ref-oh2017use" role="doc-biblioref">Oh et al., 2017</a>)</span>. The versatility of drones allows for their application across a diverse thematic range , from coastal zone management <span class="citation" data-cites="adade2021 casella2020 angnuureng2022">(<a href="../References/references.html#ref-adade2021" role="doc-biblioref">Adade et al., 2021</a>; <a href="../References/references.html#ref-angnuureng2022" role="doc-biblioref">Angnuureng et al., 2022</a>; <a href="../References/references.html#ref-casella2020" role="doc-biblioref">Casella et al., 2020</a>)</span> to mapping species distribution <span class="citation" data-cites="joyce2023 tallam2023 Roca2022 Roman2021 Brunier2022Topographic sousa2019blue">(<a href="../References/references.html#ref-Brunier2022Topographic" role="doc-biblioref">Brunier et al., 2022</a>; <a href="../References/references.html#ref-joyce2023" role="doc-biblioref">Joyce et al., 2023</a>; <a href="../References/references.html#ref-Roca2022" role="doc-biblioref">Roca et al., 2022</a>; <a href="../References/references.html#ref-Roman2021" role="doc-biblioref">Román et al., 2021</a>; <a href="../References/references.html#ref-sousa2019blue" role="doc-biblioref">Sousa et al., 2019</a>; <a href="../References/references.html#ref-tallam2023" role="doc-biblioref">Tallam et al., 2023</a>)</span>. However, when applied to coastal habitat mapping, previous case studies were mostly limited to a low number of <strong>drone</strong> flights over a single study site, restricting the generalizability of their application over wider geographical scales <span class="citation" data-cites="Roman2021 collin2019improving rossiter2020uav Brunier2022Topographic">(<a href="../References/references.html#ref-Brunier2022Topographic" role="doc-biblioref">Brunier et al., 2022</a>; <a href="../References/references.html#ref-collin2019improving" role="doc-biblioref">Collin et al., 2019</a>; <a href="../References/references.html#ref-Roman2021" role="doc-biblioref">Román et al., 2021</a>; <a href="../References/references.html#ref-rossiter2020uav" role="doc-biblioref">Rossiter et al., 2020</a>)</span>. These studies have demonstrated the capability of drones to map intertidal habitats, including seagrasses; however a broader generalization of these findings is still lacking. The current paper uniquely expands the spatial and methodological scope of drone-based remote sensing for intertidal habitat mapping across a broad biogeographical range. It demonstrates the feasibility of accurately classifying diverse macrophyte types across various study sites, with a particular focus on distinguishing Magnoliopsida (seagrasses) and Chlorophyceae (green algae). Unlike previous studies, our approach integrates multiple spatial scales by simulating satellite resolutions and quantifying the impact of spatial resolution on classification accuracy. Nine drone flights were performed over soft-bottom intertidal areas along the Atlantic coastlines of two European countries (France and Portugal), covering a wide range of habitats, from monospecific seagrass meadows to meadows mixed with green, or red macroalgae. A deep learning algorithm was trained and validated for macrophyte discrimination, emphasizing applicability across diverse sites without losing prediction accuracy. The classification maps obtained at a very high spatial resolution with the drone were spatially degraded to satellite resolutions, making it possible to assess the effect of spatial resolution on classification accuracy, and provide insights for coastal habitat mapping using satellite remote sensing. This study is, therefore, among the first to quantify the effects of spatial resolution on the accuracy of drone-based macrophyte classification across a wide geographical scale, providing a framework to better understand satellite-based classification challenges.</p>
+</section>
+<section id="material-methods" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="material-methods"><span class="header-section-number">3.2</span> Material &amp; Methods</h2>
+<section id="study-sites" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="study-sites"><span class="header-section-number">3.2.1</span> Study sites</h3>
+<p>Seven study sites distributed between France and Portugal were selected for their extensive intertidal seagrass beds. Two sites were located in the Gulf of Morbihan, France (<a href="#fig-map" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> A : 47.5791°N, 2.8018°W). This gulf covers an area of 115 km² and is only connected to the sea through a 900 m wide channel. A total of 53 small islands are scattered across the gulf leading to 250 km of shorelines. Patchy seagrass meadows can be found on many of these islands. One of the sites within the gulf was on one its islands (Arz) and the other was located further south on a mainland beach area (Duer). The Gulf of Morbihan is a Natura 2000 site and a Regional Protected Area due to its rich biodiversity, including its seagrass meadows, and is also classified as a RAMSAR site, which highlights its significance as a wetland of international importance. Two other sites were located in Bourgneuf Bay, France (<a href="#fig-map" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> B : 46.9849°N, 2.1488°W) which is a 340 km² semi-enclosed macrotidal bay, protected from waves by Noirmoutier Island. Bourgneuf bay hosts a large intertidal seagrass meadow of about 6 km² <span class="citation" data-cites="ZOFFOLI2020112020">(<a href="../References/references.html#ref-ZOFFOLI2020112020" role="doc-biblioref">Zoffoli et al., 2020</a>)</span>. Within this meadow, the sites observed by drones (L’Epine and Barbatre) contained monospecific beds of <em>Zostera noltei</em> (dwarf eelgrass) with very little mixing with other macrophytes. Bourgneuf Bay is also part of the Natura 2000 network and serves as a RAMSAR site due to its critical habitat for migratory bird species and its extensive seagrass meadows <span class="citation" data-cites="Zoffoli2022">(<a href="../References/references.html#ref-Zoffoli2022" role="doc-biblioref">Zoffoli et al., 2022</a>)</span>. Three sites were surveyed in the Ria de Aveiro Coastal Lagoon in Portugal (<a href="#fig-map" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> C : 40.6887°N, 8.6810°W). The extent of this lagoon is ~83 km² (at low tide) with many narrow channels, large salt marshes and many mudflats that uncover at low tide <span class="citation" data-cites="sousa2017blue">(<a href="../References/references.html#ref-sousa2017blue" role="doc-biblioref">Sousa et al., 2017</a>)</span>. It is connected to the open sea through a single channel, with a tidal lag between the North and the South of the lagoon. The southernmost site (Gafanha) is a mudflat located in the Mira channel (one of the four main channels of the lagoon) whereas the two other sites (Mataducos and Marinha Lanzarote) were situated in the middle of the lagoon and only accessible by boat. These Portuguese sites are characterized by a more diverse intertidal vegetation, where patches of seagrass intermingle with red, brown, and green macroalgae. The Aveiro Lagoon, like the other study areas, is a Natura 2000 site and a RAMSAR wetland, recognized for its rich mosaic of habitats and importance for biodiversity, including migratory bird species and intertidal vegetation.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure1.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Location of drone flights in France and Portugal. A: Gulf of Morbihan (Two sites), B: Bourgneuf Bay (Two sites), C: Ria de Aveiro Coastal Lagoon (Three sites). Golden areas represents the intertidal zone.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="field-sampling" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="field-sampling"><span class="header-section-number">3.2.2</span> Field sampling</h3>
+<section id="drone-acquisition" class="level4" data-number="3.2.2.1">
+<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="drone-acquisition"><span class="header-section-number">3.2.2.1</span> Drone acquisition</h4>
+<p>At each location, a DJI Matrice 200 quadcopter drone equipped with a Micasense RedEdge Dual MX multispectral camera was flown to take 1.2 million pixel reflectance photographs with ten spectral bands ranging from the blue to the near-infrared (NIR): 444, 475, 531, 560, 650, 668, 705, 717, 740 and 840 nm. To ensure consistent lighting conditions across flight paths, the drone’s trajectory was aligned to maintain a solar azimuth angle of 90 degrees. An overlap of 70% and 80% (side and front respectively) between each image was set for each flight. A downwelling light sensor (DLS2) was used to acquire irradiance data concomitantly with the camera measurements. Raw data were calibrated in reflectance using a calibration panel reflective at ~50% provided by the manufacturer. Across all sites, flights were made at two different altitudes : 12 m or/and 120 m, with a spatial resolution of 8 mm and 80 mm, respectively (<a href="#tbl-flights" class="quarto-xref">Table&nbsp;<span>3.1</span></a>). Low-altitude flights, with a spatial resolution of 8 mm, were used to build the training dataset for the neural network, as this high resolution allowed for precise photo-interpretation of vegetation classes. In contrast, high-altitude flights were used for validation purposes.</p>
+<div class="cell">
+<div id="tbl-flights" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-flights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: List of drone flights, summarising the date, the altitude, and the purpose of each flight. 12 m and 120 m flights have a spatial resolution of 8 and 80 mm respectively.
+</figcaption>
+<div aria-describedby="tbl-flights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Figs/Table1.png" class="img-fluid figure-img" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="ground-control-points" class="level4" data-number="3.2.2.2">
+<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="ground-control-points"><span class="header-section-number">3.2.2.2</span> Ground Control Points</h4>
+<p>Before each flight, targets used as ground control points were distributed over the study site and georeferenced with a Trimble © Geo XH 6000 differential GPS (dGPS). Ground control points were used to correct georeferencing imprecision of orthomosaics with an horizontal and vertical accuracy of 10cm. A dGPS was also used to georeference quadrats of 0.25 m², which assessed the presence or absence of five key taxonomic classes of intertidal vegetation: Bacillariophyceae (benthic diatoms forming biofilms at the sediment surface during low tide with biofilm’s size ranging from small patches (m²) to entire mudflats (km²); henceforth: Benthic diatoms), Phaeophyceae (brown macroalgae generally attached to rocks or other substrates able to form dense beds in the intertidal zone; henceforth: Brown macroalgae), Magnoliopsida (seagrasses, rooted flowering marine plants able to form extensive meadows on soft sediments; henceforth: Seagrasses), Chlorophyceae (green macroalgae, typically found attached to rocks or washed ashore; henceforth: Green macroalgae), and Rhodophyceae (red macroalgae, attached to hard substrates but can also be found on soft-bottom substrate; henceforth: Red macroalgae). Only homogeneous vegetation patches extending over several meters were selected as ground control points. Pictures of each quadrat were uploaded online to the open-portal Global Biodiversity Information Facility (GBIF) platform <span class="citation" data-cites="BedeGbif">(<a href="../References/references.html#ref-BedeGbif" role="doc-biblioref">Davies et al., 2023b</a>)</span>. Each photograph was also processed to estimate the percent cover of each type of vegetation using an image processing software <span class="citation" data-cites="schneider2012nih">(ImageJ, <a href="../References/references.html#ref-schneider2012nih" role="doc-biblioref">Schneider et al., 2012</a>)</span>. Hyperspectral reflectance signatures of each vegetation class were recorded using an ASD FieldSpec HandHeld 2 spectroradiometer, which acquires reflectance between 325 and 1075 nm, with 1 nm of spectral resolution. Hyperspectral signatures served dual purposes: they validate the radiometric calibration of drone data and contribute to misclassification reduction in photo interpretations.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-vegetation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vegetation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure2.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vegetation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: The five taxonomic classes of vegetation used to train the Neural Network model and an example of their raw spectral signatures at the spectral resolution of the Micasense RedEdge Dual MX. A : Magnoliopsida (<em>Zostera noltei</em>) ; B : Phaeophyceae (<em>Fucus sp.</em>) ; C : Rhodophyceae (<em>Gracilaria vermiculophylla</em>) ; D : Chlorophyceae (<em>Ulva sp.</em>) ; E : Bacillariophyceae (Benthic diatoms). The taxonomy was verified following the World Register of Marine Species (WORMS).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="drone-processing" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="drone-processing"><span class="header-section-number">3.2.3</span> Drone Processing</h3>
+<p>A structure-from-motion photogrammetry software <span class="citation" data-cites="agisoft">(Agisoft Metashape, <a href="../References/references.html#ref-agisoft" role="doc-biblioref">Agisoft, 2019</a>)</span> was used to process images to obtain multispectral orthomosaics of each flight. The process for orthomosaicking was identical for every flight. First, key tying points were detected inside each image and between overlapping images in order to obtain a sparse point cloud. This cloud was cleaned using a reprojection accuracy metric to remove noisy points. A dense point cloud was then produced using a structure from motion algorithm. A surface interpolation of this dense point cloud was made to obtain a digital surface model (DSM), used to reconstruct the multispectral ortho-image <span class="citation" data-cites="nebel2020review">(<a href="../References/references.html#ref-nebel2020review" role="doc-biblioref">Nebel et al., 2020</a>)</span>. Low-altitude drone flights produced ortho-images with a very high spatial resolution (8 mm per pixel), making it efficient to visually distinguish between the various types of vegetation. High-altitude flights allowed to cover larger areas and produced images with a pixel size of 80 mm (<a href="#tbl-flights" class="quarto-xref">Table&nbsp;<span>3.1</span></a>).</p>
+</section>
+<section id="general-workflow" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="general-workflow"><span class="header-section-number">3.2.4</span> General Workflow</h3>
+<p>The spectral similarities of the reflectance signatures at the spectral resolution of the Micasense senor between intertidal green macrophytes (Magnoliopsida and Chlorophyceae) make their discrimination challenging using simple classification algorithms (<a href="#fig-vegetation" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> F). To overcome this challenge, a deep learning classification method was trained, validated, and applied to each drone flight (<a href="#fig-workflow" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure3.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Schematic representation of the workflow. Parallelograms represent input or output data, and rectangles represent Python processing algorithms. The overall workflow of this study is divided into two distinct parts based on the spatial resolution of the drone flights: high-resolution flights (pixel size: 8 mm) were used for training and prediction of the Neural Network model, whereas lower-resolution flights (pixel size: 80 mm) were solely employed for prediction purposes. Validation has been performed on both high and low-resolution flights.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="training-dataset-building" class="level4" data-number="3.2.4.1">
+<h4 data-number="3.2.4.1" class="anchored" data-anchor-id="training-dataset-building"><span class="header-section-number">3.2.4.1</span> Training dataset building</h4>
+<div class="cell">
+<div id="tbl-validationPX" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-validationPX-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Vegetation Classes of the model and the number of pixels used to train and validate each class
+</figcaption>
+<div aria-describedby="tbl-validationPX-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Figs/Table2.png" class="img-fluid figure-img" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>A dataset containing photo-interpreted drone reflectance pixels was built to train a Neural Network model. The training pixels were categorized into seven different classes, representing the various habitats encountered at the different study sites: sediment, water, green macroalgae, seagrasses, Benthic diatoms, brown macroalgae and red macroalgae. Only data from the low-altitude flights (<a href="#tbl-flights" class="quarto-xref">Table&nbsp;<span>3.1</span></a>) were used for training because their 8 mm spatial resolution allowed to avoid spectral sub-pixel mixing and to accurately identify vegetation classes. In the field, seagrasses displayed two types of color, most seagrass had green leaves, brownish leaves were also observed due to senescence or photo-degradaration. Careful attention was given to incorporating training pixels from both color types into the training dataset for the seagrass class. This approach was consistently applied to all classes within the model. More than 418,000 pixels at 8 mm resolution from the 3 training flights were used to train the model (<a href="#tbl-validationPX" class="quarto-xref">Table&nbsp;<span>3.2</span></a>). For model training, 21 variables were used as predictors: the ten raw spectral bands of the Micasense RedEdge Dual MX multispectral camera (ranging from 444 nm to 840 nm), the same ten spectral bands standardized using a min/max transformation (<a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> ; <span class="citation" data-cites="Cao2017">Cao et al. (<a href="../References/references.html#ref-Cao2017" role="doc-biblioref">2017</a>)</span>) and the Normalized difference vegetation index (NDVI, <a href="#eq-ndvi" class="quarto-xref">Equation&nbsp;<span>3.2</span></a>). Standardisation of spectral bands is commonly used to eliminate the scaling differences between spectra and to limit the effect of biomass on the spectra shape <span class="citation" data-cites="Douay2022 Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023a</a>; <a href="../References/references.html#ref-Douay2022" role="doc-biblioref">Douay et al., 2022</a>)</span>.</p>
+<p><span id="eq-std"><span class="math display">\[
+R_{i}^{*}(\lambda) = \frac{R_{i}(\lambda) - min(R_{i})}{max(R_{i})- min(R_{i})}
+\tag{3.1}\]</span></span></p>
+<p>where <span class="math inline">\(R_{i}(\lambda)\)</span> is the reflectance at the wavelength <span class="math inline">\((\lambda)\)</span> of each individual spectra <span class="math inline">\((i)\)</span>, <span class="math inline">\(min(R_{i})\)</span>, and <span class="math inline">\(max(R_{i})\)</span> are the minimum and maximum value of the spectra <span class="math inline">\((i)\)</span></p>
+<p><span id="eq-ndvi"><span class="math display">\[
+NDVI = \frac{R(840nm)-R(668nm)}{R(840nm)+R(668nm)}
+\tag{3.2}\]</span></span></p>
+<p>where <span class="math inline">\(R(840nm)\)</span> is the reflectance at 840 nm and <span class="math inline">\(R(668nm)\)</span> is the reflectance at 668 nm.</p>
+</section>
+<section id="model-building" class="level4" data-number="3.2.4.2">
+<h4 data-number="3.2.4.2" class="anchored" data-anchor-id="model-building"><span class="header-section-number">3.2.4.2</span> Model building</h4>
+<p>A neural network classification model was built using the fastai workflow <span class="citation" data-cites="howard2018fastai">(<a href="../References/references.html#ref-howard2018fastai" role="doc-biblioref">Howard et al., 2018</a>)</span>. This model was composed of 2 hidden layers and has a total of 26 054 trainable parameters. Parameters have been fine-tuned using 12 epoch to minimize the error rate. This model has been called DISCOV, standing for Drone Intertidal Substrat Classification Of Vegetation.</p>
+</section>
+<section id="validation" class="level4" data-number="3.2.4.3">
+<h4 data-number="3.2.4.3" class="anchored" data-anchor-id="validation"><span class="header-section-number">3.2.4.3</span> Validation</h4>
+<p>The workflow of this study revolves around two distinct flight heights (12 and 120 m, <a href="#fig-workflow" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>) where ensuring consistency between reflectances at both heights is crucial. This comparison was conducted at sites where low and high-altitude flights overlapped. To compare reflectances of both flights, the low-altitude flights were resampled to the same spatial resolution and grid as the high-altitude flights using a median resampling method. Reflectance values were then extracted, and a scatterplot was generated. The Root Mean Square Error (RMSE) was computed to compare the difference between the raw and standardised reflectance.</p>
+<p>The classification model was applied to all flights at both 12 and 120 m of altitude. <em>In situ</em> information on georeferenced class type and percent cover, acquired over homogeneous vegetation patches at the same time as drone flights was used to assess the model accuracy. These images were used to construct a validation dataset indicating the presence or absence of each class. Additionally to the quadrat-based validation dataset, polygons of each class were photo interpreted in order to increase the number of pixels of the validation dataset. A total of 536,000 pixels were used to validate the Neural Network classifier. The sites with the lowest and highest number of validation data were Gafanha Low (17,316 pixels) and Marinha Lanzarote (159,713 pixels) respectively. A confusion matrix, along with precision metrics such as global accuracy, sensitivity, specificity, F1 score, and Kappa coefficient, were generated for each site. These metrics were computed as follow :</p>
+<p><span class="math display">\[
+\text{Global accuracy} = \frac{\sum_{i=1}^{k} \text{TP}_i}{\sum_{i=1}^{k} \left(\text{TP}_i + \text{FP}_i + \text{FN}_i \right)}
+\]</span></p>
+<p><span class="math display">\[
+\text{Sensitivity}_i = \frac{\text{TP}_i}{\text{TP}_i + \text{FN}_i}
+\]</span></p>
+<p><span class="math display">\[
+\text{Specificity}_i = \frac{\text{TN}_i}{\text{TN}_i + \text{FP}_i}
+\]</span></p>
+<p><span class="math display">\[
+\text{F1}_i = \frac{2 \cdot \text{TP}_i}{2 \cdot \text{TP}_i + \text{FP}_i + \text{FN}_i}
+\]</span> Where <span class="math inline">\(\text{TP}_i\)</span>, <span class="math inline">\(\text{TN}_i\)</span>, <span class="math inline">\(\text{FN}_i\)</span> and <span class="math inline">\(\text{FP}_i\)</span> represent the true positives, true negatives, false negatives and false positives relative to the class i.</p>
+<p>All validation matrices were then aggregated to create an overall matrix</p>
+</section>
+</section>
+<section id="variable-importance" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="variable-importance"><span class="header-section-number">3.2.5</span> Variable Importance</h3>
+<p>Variable Importance Plots (VIP) serve as a method to identify which predictors are important for predicting a specific class. Out of the 21 predictors used in this study, Variable Importance was computed only for the raw and standardized values of the 10 spectral bands captured by the MicaSense camera. This is achieved by repeatedly predicting the same dataset while randomly shuffling one predictor at a time. The benchmark score obtained after each iteration is then compared to the benchmark score obtained without shuffling any variables. The greater the difference between these two benchmark values, the more important the variable is for the model <span class="citation" data-cites="WEI2015399">(<a href="../References/references.html#ref-WEI2015399" role="doc-biblioref">Wei et al., 2015</a>)</span>.</p>
+</section>
+<section id="influence-of-the-spatial-resolution-on-classification" class="level3" data-number="3.2.6">
+<h3 data-number="3.2.6" class="anchored" data-anchor-id="influence-of-the-spatial-resolution-on-classification"><span class="header-section-number">3.2.6</span> Influence of the spatial resolution on classification</h3>
+<p>To assess the impact of spatial resolution on the model’s output, we resampled the drone orthomosaics from their native resolution (8 cm for high-altitude flights) using the “average” method from the terra package in R. The rasters were resampled to 32 different resolutions, ranging from 10 cm to 30 m. DISCOV was then applied to these resampled rasters, and the results were compared to the original model predictions. For each resolution and vegetation class, we calculated the predicted area loss, where a score of 0 indicates no area loss during spatial resampling, and a score of 100 indicates complete loss of the vegetation class.</p>
+<p>We used a Generalized Linear Model (GLM) with a Beta distribution to examine the relationship between pixel resolution, vegetation class, and their interaction on the loss of vegetation. The loss of vegetation was modelled as function of the interaction between pixel resolution and vegetation class (Benthic diatoms, brown macroalgae, seagrass, green macroalgae and red macroalgae). Sample vs fitted residuals and quartile-quartile graphics were assessed visually, to ensure assumptions of the models used were met.</p>
+</section>
+<section id="impact-of-mixed-vegetation-cover-on-the-prediction" class="level3" data-number="3.2.7">
+<h3 data-number="3.2.7" class="anchored" data-anchor-id="impact-of-mixed-vegetation-cover-on-the-prediction"><span class="header-section-number">3.2.7</span> Impact of mixed vegetation cover on the prediction</h3>
+<p>The key aspect of the workflow adopted in the present study is the mapping at two different altitudes (12 and 120 m), resulting in two distinct resolutions for the same area (8 and 80 mm; respectively). The high-resolution flight was used to estimate the sub-pixel composition for each pixel of the lower-resolution flight. Consequently, within each pixel of the high-altitude flights, the contribution of each vegetation class (% cover) was obtained, and a kernel density plot was generated. This plot provided a visual representation of the model’s behavior in mixed vegetation scenarios. It helped to understand the minimum vegetation cover of a given class within a pixel necessary for the model to confidently predict that class.</p>
+</section>
+</section>
+<section id="results" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">3.3</span> Results</h2>
+<section id="reflectance-comparison-between-the-two-different-altitudes" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="reflectance-comparison-between-the-two-different-altitudes"><span class="header-section-number">3.3.1</span> Reflectance comparison between the two different altitudes</h3>
+<p>In this study, drone flights were conducted at two different altitudes (12 and 120 m) to construct the neural network model. At the sites where the flights at both altitudes overlapped, the reflectance was compared. Overall there was a good agreement between the two altitudes (RMSE : 0.027 ; <a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-CompareRef" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CompareRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure4.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CompareRef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Comparison of reflectance retrieved from both low-altitude and high-altitude flights over a common area. The black dashed line represents a 1 to 1 relationship. Left (A) plots raw data and right (B) plots standardized data (<a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a>).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>There was a slight underestimation of raw reflectance values in the high-altitude flight, particularly for higher reflectance values (<a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> A). Since both flights were conducted over vegetated areas, the highest reflectance values correspond to the infrared part of the spectrum. This difference was not present when the reflectance has been standardized (<a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> ; <a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> B).</p>
+</section>
+<section id="classification" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="classification"><span class="header-section-number">3.3.2</span> Classification</h3>
+<p>Each drone flight was used to produce a prediction map, as well as a probability map that indicates the model-derived probability of the selected class for every pixel. The low-altitude flight conducted in Gafanha, Portugal, represented the site with the highest complexity (<a href="#fig-GafLow" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>). Among the five vegetation classes on which the model was trained, four were present on this site, with green and red macroalgae mixed with a seagrass meadow. There were also benthic diatoms biofilms on sediment surface. Although the seagrass was solely composed of a single species, <em>Zostera noltei</em>, two colors of this species could be observed: dark green (corresponding to healthy leaves) and brown (when leaves are senescent or have an altered pigment composition). Regardless of the variation of color, the class Magnoliopsida (seagrass) was accurately predicted by the model (F1 score of 0.96 at that site).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-GafLow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-GafLow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure5.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-GafLow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: RGB orthomosaic (Left) and Prediction (Right) of the low altitude flight of Gafanha, Portugal. The total extent of this flight was 3000 m² with a resolution of 8 mm per pixel. The zoom covers an area equivalent to a 10-meter Sentinel-2 pixel size.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The high-altitude flight over Gafanha covered a total area of ~1 km² (<a href="#fig-GafHigh" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>). A channel contouring a small island was masked in the prediction map. Most of the vegetation area was classified as seagrass by the model, including patches with brown leaves. Only a few pixels were classified as green macroalgae (F1 score of 0.55). Patches of red macroalgae were correctly classified (F1 score of 0.85). In the northern part of the site and near the land edges, patches of the schorre angiosperm <em>Sporobolus maritimus</em> (syn. <em>Spartina maritima)</em> were misclassified, either as seagrass or as brown algae (F1 score of 0.77 and 0.71, respectively).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-GafHigh" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-GafHigh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure6.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-GafHigh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.6: RGB orthomosaic (Left) and Prediction (Right) of the high-altitude flight of Gafanha, Portugal. The total extent of this flight was about 1 km² with a resolution of 80 mm per pixel. The yellow outline shows the extent of the low-altitude flight of Gafanha presented in <a href="#fig-GafLow" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>. The zoom covers an area equivalent to a 10-meter Sentinel-2 pixel size.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Among the high altitude flights, the one acquired over the inner part of Ria de Aveiro coastal lagoon covered the largest area with approximately 1.5 km² (<a href="#fig-Boat" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>). The vegetation present at the site was dominated by seagrass and red macroalgae. The classification provided consistent results, with a patchy seagrass meadow mixed with red macroalgae on the eastern part of the site. As shown in the zoom (<a href="#fig-Boat" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>), the edges of the meadow were mixed with green macroalgae (<em>Ulva sp.</em>), which the model agreed with (F1 score of 0.89 for green algae, 0.97 for seagrass and 0.98 for red algae).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Boat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Boat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure7.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Boat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.7: RGB orthomosaic (Top) and Prediction (Bottom) of the flight made in the inner part of Ria de Aveiro Lagoon, Portugal. The total extent of this flight was about 1.5 km² with a resolution of 80 mm per pixel. The zoom inserts cover an area equivalent to the size of a 10-meter Sentinel-2 pixel.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The flight over L’Epine in Noirmoutier Island, France (<a href="#fig-Dike" class="quarto-xref">Figure&nbsp;<span>3.8</span></a>) was conducted near a dike, which crossed the northern part of the site from West to East. Alongside this dike, Fucale brown macroalgae (<em>Fucus spp.</em>, <em>Ascophyllum nodosum</em>) were attached to sparse rocks, and stranded green algae (<em>Ulva spp.</em>) could be observed, which was correctly reproduced by the prediction (<a href="#fig-Dike" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> Bottom). This site was characterized by a high mixture between green macroalgae and seagrass but these two classes were correctly discriminated by the classifier (F1 score of 0.97 and 0.98 respectively).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Dike" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Dike-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure8.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Dike-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.8: RGB orthomosaic (Top) and Prediction (Bottom) of L’Epine, France. The total extent of this flight was about 28 000 m² with a resolution of 80 mm per pixel. The zoom covers an area equivalent to a 10-meter Sentinel-2 pixel size.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="validation-of-the-model" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="validation-of-the-model"><span class="header-section-number">3.3.3</span> Validation of the model</h3>
+<p>With all drone flights combined, the model’s global accuracy was 94.26%, with a Kappa coefficient of 0.92 (<a href="#fig-Validation" class="quarto-xref">Figure&nbsp;<span>3.9</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Validation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Validation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure9.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Validation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.9: A global confusion matrix on the left is derived from validation data across each flight, while a mosaic of confusion matrices from individual flights is presented on the right. The labels inside the matrices indicate the balanced accuracy for each class. The labels at the bottom of the global matrix indicate the User’s accuracy for each class, and those on the right indicate the Producer’s Accuracy. The values adjacent to the names of each site represent the proportion of total pixels from that site contributing to the overall matrix. Grey lines within the mosaic indicate the absence of validation data for the class at that site. The table at the bottom summarizes the Sensitivity, Specificity, and Accuracy for each class and for the overall model.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The lowest-performing site was Gafanha High (global accuracy of 75.45%), whereas Mataduços was the site with the most accurate prediction (global accuracy of 98.05%). Overall, the classes Phaeophyceae, Magnoliopsida, Sediment, and Rhodophyceae were correctly classified with a balanced accuracy of 1, 0.96, 0.96, and 0.91, respectively. Bacillariophyceae was the least accurate class (accuracy of 0.72), mainly due to confusion with Magnoliopsida and Sediment.</p>
+</section>
+<section id="variable-importance-1" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="variable-importance-1"><span class="header-section-number">3.3.4</span> Variable importance</h3>
+<p>The computation of the variable importance made it possible to identify which bands were the most useful for class prediction (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-VIP" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-VIP-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure10.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-VIP-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.10: Variable Importance of the Neural Network Classifier for each taxonomic class. The longer the slice, the more important the variable for prediction of each class. The right plot shows the drone raw and standardised reflectance spectra of each class. Each slice represents the Variable Importance (VI) of both raw and standardised reflectance combined.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The spectral bands at 444, 717 and 842 nm of the Micasense camera did not provide important information to discriminate any of the vegetation classes. The band at 531 nm was the most important predictor by far for the classifier to accurately predict Chlorophyceae. In fact, at this wavelength, the Chlorophyceae spectra showed the highest reflectance among all vegetation classes (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>). The bands at 531 and 740 nm were the most important predictors for Phaeophyceae, corresponding to the lowest reflectance among all classes. Bands at 475 and 560 nm were the most important predictors for Bacillariophyceae and Rhodophyceae, respectively. Four predictors, ranging from the green (560 nm) to the RedEdge (705 nm) bands were important to accurately predict Magnoliopsida.</p>
+</section>
+<section id="effect-of-spatial-resolution-on-the-classification" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="effect-of-spatial-resolution-on-the-classification"><span class="header-section-number">3.3.5</span> Effect of spatial resolution on the classification</h3>
+<p>Clear differences were seen in vegetation loss across spatial resolutions and vegetation classes (<a href="#fig-pixelsize" class="quarto-xref">Figure&nbsp;<span>3.11</span></a>). At a fine resolution of 1m, changes in the retrieved area for each vegetation type are minimal. Green macroalgae show the highest loss, with 1.2% area lost compared to the native resolution (80 mm). As the resolution coarsens to 10m, vegetation loss becomes more pronounced, with green macroalgae again experiencing the greatest reduction (12% compared to 8cm) and seagrass showing the smallest loss (1.3%). All green macroalgae have been lost at a resolution of 30m (100% compared to 8cm), while seagrass experiences a relatively small reduction of 11%. Brown and red macroalgae show lower declines, with losses at 30m resolution reaching approximately 37% and 59%, respectively.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-pixelsize" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pixelsize-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure11.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pixelsize-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.11: Predicted area loss for different vegetation types (green algae, seagrass, brown algae, red algae) as a function of spatial resolution. Lines represent Generalized Linear Model (GLM) predictions, and shaded areas indicate standard errors. As resolution decreases, predicted area loss increases for all vegetation types, with green algae showing the highest loss and seagrass the smallest at coarser resolutions.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="effect-of-the-percent-cover-on-the-prediction" class="level3" data-number="3.3.6">
+<h3 data-number="3.3.6" class="anchored" data-anchor-id="effect-of-the-percent-cover-on-the-prediction"><span class="header-section-number">3.3.6</span> Effect of the percent cover on the prediction</h3>
+<p>Using the very high-resolution low-altitude flight (8 mm pixels), we determined the minimal percent cover required to correctly classify a given class within the corresponding high-altitude flight (8cm pixel resolution ; <a href="#fig-upscaling" class="quarto-xref">Figure&nbsp;<span>3.12</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-upscaling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-upscaling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure12.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-upscaling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.12: Kernel density plot showing the proportion of pixel well classified based on the percent cover of the class in high altitude flight pixels of Gafanha, Portugal. Each subplot shows all the pixels of the same classes on the high altitude flight. Percent cover of classes was retrieved using the result of the classification of the low altitude flight of Gafanha, Portugal.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A cover of at least 80% was sufficient to have all the 80 mm pixels correctly classified, except for Magnoliopsida, which required a higher cover (&gt;90%) to be accurately classified. Concerning the probability of each class, there is a linear relationship between the percent cover and the confidence of the model to predict the class. To predict green macroalgae with a model likelihood of 0.85, a cover of 93% was needed, 90% for seagrass, 92% for red macroalgae, and 97% for benthic diatoms. When the vegetation cover of a given class was 100%, coarser high-flight pixels were correctly classified for all the classes except for bare sediment, which was only correctly classified 80% of the time. This phenomenon may be attributed to the time gap between the two flights, allowing for microphytobenthos migration to the sediment surface during low tide, consequently altering the model’s classification from bare sediment to Bacillariophyceae.</p>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.4</span> Discussion</h2>
+<section id="vegetation-discrimination" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="vegetation-discrimination"><span class="header-section-number">3.4.1</span> Vegetation Discrimination</h3>
+<p>The primary objective of this study was to develop a method for the accurate classification of emerged macrophytes observed during low tide on tidal flats, specifically focusing on distinguishing between Chlorophyceae (green macroalgae) and marine Magnoliopsida (seagrasses) using a multispectral resolution. The discrimination between seagrasses and green macroalgae is challenging due to their optical similarity in the visible range <span class="citation" data-cites="oiry2021using bannari2022 veettil2020opportunities">(<a href="../References/references.html#ref-bannari2022" role="doc-biblioref">Bannari et al., 2022</a>; <a href="../References/references.html#ref-oiry2021using" role="doc-biblioref">Oiry and Barillé, 2021</a>; <a href="../References/references.html#ref-veettil2020opportunities" role="doc-biblioref">Veettil et al., 2020</a>)</span>. These two macrophytes share a similar pigment composition: chlorophyll-a (common to all vegetation types), chlorophyll-b (an additional photosynthetic pigment), and accessory carotenoids such as zeaxanthin, lutein and neoxanthin (<a href="#fig-Pigm" class="quarto-xref">Figure&nbsp;<span>3.13</span></a>). Their spectral responses could be close, particularly at a multispectral resolution. Seagrass and green macroalgae frequently co-occur in intertidal areas, and can intermingle within a remote sensing pixel if the spatial resolution is too low. Here, the issue of intra-pixel mixing was resolved thanks to the very high spatial resolution of the drone (from 8 to 80 mm). In this study the risk of spectral confusion was avoided with a machine-learning approach exploiting a neural networks classifier. Our drone flights and a recent study based on <em>in situ</em> radiometry, suggested that a sensor with at least eight spectral bands ranging from 500 to 850 nm, and including a green band at 530 nm and a RedEdge band at 730 nm, was crucial to accurately discriminate green macroalgae from seagrasses <span class="citation" data-cites="Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023a</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Pigm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Pigm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure13.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Pigm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.13: Photosynthetic and carotenoid pigments present (Green) or absent (Red) in each taxonomic class present in the Neural Network Classifier, along with their absorption wavelength measured with spectroradiometer, Chl-b: chlorophyll-b, Chl-c: chlorophyll-c, Fuco: fucoxanthin, Zea: zeaxanthin, Diad: diadinoxanthin, Lut: lutein, Neo: neoxanthin, PE: phycoerythrin, PC: phycocyanin; <span class="citation" data-cites="ralph2002 Douay2022 christensen1977seaweeds cartaxana2016regulation meleder2013vivo">(<a href="../References/references.html#ref-cartaxana2016regulation" role="doc-biblioref">Cartaxana et al., 2016</a>; <a href="../References/references.html#ref-christensen1977seaweeds" role="doc-biblioref">Christensen et al., 1977</a>; <a href="../References/references.html#ref-Douay2022" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-meleder2013vivo" role="doc-biblioref">Méléder et al., 2013</a>; <a href="../References/references.html#ref-ralph2002" role="doc-biblioref">Ralph et al., 2002</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ValidationGreen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ValidationGreen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figs/Figure14.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ValidationGreen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.14: Sample of <a href="#fig-Validation" class="quarto-xref">Figure&nbsp;<span>3.9</span></a> focusing on green macrophytes. The labels inside the matrix indicate the number of pixels.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column">
+<p>Meeting these two criteria, the Micasense RedEdge-MX DUAL camera used in this study, enabled the classifier to achieve 97% accuracy between these two classes (<a href="#fig-ValidationGreen" class="quarto-xref">Figure&nbsp;<span>3.14</span></a>). Even if their pigment composition is similar, differences in the spectral shape can be observed, with green algae having a higher reflectance peak at 560 nm as well as a higher NIR plateau than seagrass (<a href="#fig-vegetation" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>). Such differences were previously attributed to differences in pigments concentration and/or ratios <span class="citation" data-cites="bargain2013seasonal">(<a href="../References/references.html#ref-bargain2013seasonal" role="doc-biblioref">Bargain et al., 2013</a>)</span>, cellular structure as well as in the orientation of the plant at the sediment surface <span class="citation" data-cites="beach1997vivo kirk1994light hedley2018influence">(<a href="../References/references.html#ref-beach1997vivo" role="doc-biblioref">Beach et al., 1997</a>; <a href="../References/references.html#ref-hedley2018influence" role="doc-biblioref">Hedley et al., 2018</a>; <a href="../References/references.html#ref-kirk1994light" role="doc-biblioref">Kirk, 1994</a>)</span>.</p>
+</div>
+</div>
+<p>The variable importance analysis (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>) identified that the band at 531 nm was the most important for accurately identifying Chlorophyceae. In fact, at this wavelength, Chlorophyceae exhibited the highest reflectance among all other classes, highlighting the difference in carotenoid to chlorophyll-a ratios between seagrasses and green macroalgae <span class="citation" data-cites="repolho2017seagrass">(<a href="../References/references.html#ref-repolho2017seagrass" role="doc-biblioref">Repolho et al., 2017</a>)</span>. Concerning Phaeophyceae, the thick cell walls of these macroalgae <span class="citation" data-cites="charrier2021growth">(<a href="../References/references.html#ref-charrier2021growth" role="doc-biblioref">Charrier et al., 2021</a>)</span> make it more reflective in the infrared part of the spectra <span class="citation" data-cites="Slaton2001">(<a href="../References/references.html#ref-Slaton2001" role="doc-biblioref">Slaton et al., 2001</a>)</span>, while the presence of fucoxanthin and zeaxanthin result in a low reflectance in the visible region (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a> ; <a href="#fig-Pigm" class="quarto-xref">Figure&nbsp;<span>3.13</span></a>). These two key features have been identified by the Neural Network as the two principal predictors to accurately identify brown algae (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>). Similarly, the presence of phycoerythrin and phycocyanin in Rhodophyceae contributes to the lowest reflectance among all classes in the spectral range from 560 to 615 nm (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>). Indeed the band at 560 nm has been identified as important for identifying this class, likely due to phycoerythrin absorption at this wavelength. Regarding Bacillariophyceae, 475 nm was the most important predictor for this class (<a href="#fig-VIP" class="quarto-xref">Figure&nbsp;<span>3.10</span></a>). Indeed, the reflectance at 475 nm was higher for Bacillariophyceae than for any other vegetation class (<a href="#fig-vegetation" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>), very likely due to the low biomass (and associated concentration of blue-absorbing pigments) of these unicellular organisms compared to seagrass and macroalgae.</p>
+</section>
+<section id="altitude-and-temporal-effects-on-vegetation-prediction-accuracy" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="altitude-and-temporal-effects-on-vegetation-prediction-accuracy"><span class="header-section-number">3.4.2</span> Altitude and Temporal Effects on Vegetation Prediction Accuracy</h3>
+<p>The ability to differentiate between various types of vegetation plays a critical role in ecological monitoring and coastal management <span class="citation" data-cites="WFD2000">(<a href="../References/references.html#ref-WFD2000" role="doc-biblioref">European-Commission, 2000</a>)</span>. By distinguishing between seagrasses and macroalgae, our approach facilitates targeted conservation strategies, enabling more effective preservation and restoration efforts in coastal ecosystems. While comparing the reflectance at two different altitudes (12 m and 120 m with a spatial resolution of 8 and 80 mm, respectively), a nearly one-to-one relationship was observed, with a Root Mean Square Error (RMSE) of 0.02 (<a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). This result indicates that the reflectance measured by remote sensing (RS) sensors was not significantly influenced by pixel size for these two altitude. This finding is valuable for integrating drone-based data into larger-scale mapping projects (e.g., combining satellite and drone mapping in side-by-side analyses). The consistency of reflectance across altitudes suggests that drones can be effectively used for finer-scale mapping without compromising data accuracy when merging with other platforms. However, it was observed that there is an underestimation of the infrared part of the spectra in the high-altitude dataset (<a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). Such disparity in infrared reflectance may stem from temporal differences between the flights, possibly resulting in a slightly drier intertidal area and consequently higher infrared reflectance. This disparity poses an issue for the methodology followed in the present study, relying solely on one flight height for training. To address this issue, we employed min/max standardized reflectance spectra as predictors for the model <a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a>. This approach allowed us to eliminate the slight reflectance difference between the flights (<a href="#fig-CompareRef" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> B) and to focus on the shape of the spectra in the visible domain (400 to 700 nm). At these wavelength different pigments are associated with taxonomic diagnostic features. In contrast to subtidal seagrasses, which maintain relatively constant biomass throughout the year, intertidal seagrasses, like the one studied in this work, exhibit strong seasonal phenology <span class="citation" data-cites="davies2024sentinel">(<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">Davies et al., 2024b</a>)</span>. At some sites, they completely disappear during the winter and reach their peak above-ground biomass in the summer and early autumn. Along with these seasonal changes in biomass, the pigment composition and ratios also vary throughout the year, reflecting the plants’ adaptations to different environmental conditions <span class="citation" data-cites="bargain2013seasonal legare2022remote">(<a href="../References/references.html#ref-bargain2013seasonal" role="doc-biblioref">Bargain et al., 2013</a>; <a href="../References/references.html#ref-legare2022remote" role="doc-biblioref">Légaré et al., 2022</a>)</span>. Standardization of spectral signatures helps to mitigate the impact of changing biomass on the spectral profile, enabling the development of a model that can reliably predict vegetation across different geographical locations and seasons. This approach allows for consistent classification of vegetation despite variations in biomass and fluctuations in light conditions, providing a robust tool for monitoring and predicting vegetation dynamics <span class="citation" data-cites="fyfe2003spatial COSTA2021107018 piaser2023impact">(<a href="../References/references.html#ref-COSTA2021107018" role="doc-biblioref">Costa et al., 2021</a>; <a href="../References/references.html#ref-fyfe2003spatial" role="doc-biblioref">Fyfe, 2003</a>; <a href="../References/references.html#ref-piaser2023impact" role="doc-biblioref">Piaser et al., 2023</a>)</span>. However, due to the strong phenology of intertidal seagrass meadows in Europe, the period when a meadow is well-established can be temporally restricted, limiting the ideal window for accurate detection.</p>
+</section>
+<section id="impact-of-pixel-resolution-on-the-prediction-and-implications-for-satellite-remote-sensing" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="impact-of-pixel-resolution-on-the-prediction-and-implications-for-satellite-remote-sensing"><span class="header-section-number">3.4.3</span> Impact of Pixel Resolution on the prediction and Implications for Satellite Remote Sensing</h3>
+<p>Pixel resolution plays a critical role in accuratly retrieving vegetation areas from remote sensing data. As pixel size increases, we found a consistent decline in area retrieval across all vegetation types, with more pronounced effects for certain types, such as green algae (<a href="#fig-pixelsize" class="quarto-xref">Figure&nbsp;<span>3.11</span></a>). This highlights the sensitivity of spatial resolution in detecting smaller or more fragmented vegetation features. Green algae, being particularly patchy across all study sites, showed the steepest decline in areal agreement as pixel size increases, which aligns with expectations given the limitations of coarser resolution in capturing fine-scale details.</p>
+<p>This resolution-area relationship has important implications for satellite missions like Sentinel-2 and Landsat, which are commonly used in marine and coastal vegetation studies. Both satellites offer high-resolution imagery, with pixel sizes of 10m and 30m, respectively. While these resolutions are suitable for broad-scale environmental monitoring, they may be too coarse to capture finer-scale heterogeneity, as it was observed with green macroalgae in this study. Our findings suggest that, while the 30m resolution of Landsat may be adequate for homogeneous vegetation types, such as seagrass, a higher resolution is essential for accurately mapping patchy vegetation like green algae. These findings have direct implications for environmental management and conservation planning. Overlooking fine-scale vegetation features, such as those seen in green algae, could result in inadequate protection or restoration efforts, particularly in ecologically sensitive coastal zones, as the early stages of green tides could be challenging to detect at coarse resolutions.</p>
+<p>Very high-resolution imagery offers more accurate vegetation mapping but comes with trade-offs. As resolution increases, data costs rise, and processing becomes more resource-intensive due to the larger file sizes and computational demands. Consequently, high-resolution data requires more storage and can slow down real-time applications. For large-scale monitoring of homogeneous vegetation types, 10 m resolution of S2/MSI or even the 30 m of Landsat/OLI is often sufficient. However, when mapping vegetation like macroalgae with an heterogeneous distribution, the precision provided by higher-resolution imagery is crucial, despite the additional costs and processing challenges it imposes.</p>
+</section>
+<section id="towards-climate-and-biodiversity-applications" class="level3" data-number="3.4.4">
+<h3 data-number="3.4.4" class="anchored" data-anchor-id="towards-climate-and-biodiversity-applications"><span class="header-section-number">3.4.4</span> Towards climate and biodiversity applications</h3>
+<p>Climate change, global warming, eutrophication, alien and invasive species development, coastal erosion, and sea level rise are expected to continue impacting coastal ecosystems in the future <span class="citation" data-cites="SCHIBALSKI2022101414 holon2018predictive marquet2024global">(<a href="../References/references.html#ref-holon2018predictive" role="doc-biblioref">Holon et al., 2018</a>; <a href="../References/references.html#ref-marquet2024global" role="doc-biblioref">Marquet et al., 2024</a>; <a href="../References/references.html#ref-SCHIBALSKI2022101414" role="doc-biblioref">Schibalski et al., 2022</a>)</span> and the demand for meaningful and efficient monitoring of coastal habitats has never been higher<span class="citation" data-cites="muller2018satellite villalobos2023remote oiry2021using">(<a href="../References/references.html#ref-muller2018satellite" role="doc-biblioref">Muller-Karger et al., 2018</a>; <a href="../References/references.html#ref-oiry2021using" role="doc-biblioref">Oiry and Barillé, 2021</a>; <a href="../References/references.html#ref-villalobos2023remote" role="doc-biblioref">Villalobos Perna et al., 2023</a>)</span>. Our findings, particularly the improved discrimination of intertidal seagrass and green macroalgae from other intertidal vegetation classes, highlight the potential of drone-based remote sensing to support diverse applications, from the conservation of biodiversity to climate change adaptation strategies.</p>
+<p>Due to increasing coastal eutrophication, macroalgal blooms are becoming increasingly common in many regions around the world <span class="citation" data-cites="sutton2011european ye2011green">(<a href="../References/references.html#ref-sutton2011european" role="doc-biblioref">Sutton et al., 2011</a>; <a href="../References/references.html#ref-ye2011green" role="doc-biblioref">Ye et al., 2011</a>)</span>. These blooms can have negative impacts on human health and local economic activities, including human health, fishing and aquaculture, tourism, and recreational activities <span class="citation" data-cites="villares1999nitrogen ye2011green">(<a href="../References/references.html#ref-villares1999nitrogen" role="doc-biblioref">Villares et al., 1999</a>; <a href="../References/references.html#ref-ye2011green" role="doc-biblioref">Ye et al., 2011</a>)</span>. The first green tide events (<em>i.e.</em> bloom of green macroalgae of the genus <em>Ulva</em>) were reported in Brittany, France, in the 1970s and have since been a concern for local stakeholders and economic activities <span class="citation" data-cites="menesguen2018marees">(<a href="../References/references.html#ref-menesguen2018marees" role="doc-biblioref">Ménesguen, 2018</a>)</span>. Some regions of the world have witnessed an increase in brown macroalgae blooms, predominantly involving algae of the genus <em>Sargassum</em> washing along the Caribbean coastlines <span class="citation" data-cites="louime2017sargassum">(<a href="../References/references.html#ref-louime2017sargassum" role="doc-biblioref">Louime et al., 2017</a>)</span>, and more recently <em>Rugulopteryx okamurea</em> in southern Europe <span class="citation" data-cites="Roca2022">(<a href="../References/references.html#ref-Roca2022" role="doc-biblioref">Roca et al., 2022</a>)</span>. Satellite remote sensing has proven to be a valuable tool for mapping the spatial and temporal extent of macroalgal blooms worldwide. However, due to limitations in spatial resolution, it can only effectively map well-developed blooms <span class="citation" data-cites="rs13081408 klemas2012remote haro2023biointertidal">(<a href="../References/references.html#ref-haro2023biointertidal" role="doc-biblioref">Haro et al., 2023</a>; <a href="../References/references.html#ref-klemas2012remote" role="doc-biblioref">Klemas, 2012</a>; <a href="../References/references.html#ref-rs13081408" role="doc-biblioref">Schreyers et al., 2021</a>)</span>. High spatial resolution drone imagery, coupled with an accurate classification algorithm, could be used to map the early stages of macroalgal blooms in areas known to have regular blooms or in new sites. Indeed, this approach could provide early warning alerts to local managers and complimentary to traditional sampling methods to monitor coastal ecosystems. These methods are generally time and resource-intensive, and the findings are often difficult to scale up when applied alone. Earth Observation can bridge this gap and meet the need for systematic monitoring of coastal ecosystems over large areas <span class="citation" data-cites="papathanasopoulou2019satellite">(<a href="../References/references.html#ref-papathanasopoulou2019satellite" role="doc-biblioref">Papathanasopoulou et al., 2019</a>)</span>. The retrieval of Essential Biodiversity Variables and Essential Ocean Variables through satellite observations has been increasingly common, enabling comprehensive monitoring of entire ecosystems over extended time periods <span class="citation" data-cites="ratnarajah2023monitoring Zoffoli2021">(<a href="../References/references.html#ref-ratnarajah2023monitoring" role="doc-biblioref">Ratnarajah et al., 2023</a>; <a href="../References/references.html#ref-Zoffoli2021" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>. The Water Framework Directive <span class="citation" data-cites="WFD2000">(<a href="../References/references.html#ref-WFD2000" role="doc-biblioref">European-Commission, 2000</a>)</span> mandates the achievement and maintenance of “good ecological status” for all European waters, which necessitates a comprehensive understanding and monitoring of aquatic ecosystems, including coastal habitats like seagrass beds <span class="citation" data-cites="foden2007angiosperms nordlund2024one Zoffoli2021">(<a href="../References/references.html#ref-foden2007angiosperms" role="doc-biblioref">Foden and Brazier, 2007</a>; <a href="../References/references.html#ref-nordlund2024one" role="doc-biblioref">Nordlund et al., 2024</a>; <a href="../References/references.html#ref-Zoffoli2021" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>.</p>
+<p>Effective and efficient monitoring tools are essential for identifying the impacts of human activities and natural changes on coastal ecosystems. On-demand, multispectral drone observations at very high spatial resolution provide a novel and powerful tool to rapidly and accurately acquire ground truth data, which can be used to develop machine-learning algorithm for satellite sensors <span class="citation" data-cites="davies2024intertidal">(<a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">Davies et al., 2024a</a>)</span>. Spatially resolved data are indeed critical for calibrating and validating satellite remote sensing observations, thereby enhancing our capacity to monitor vast coastal areas. The integration of drone technology facilitates a scalable approach to environmental surveillance while taking into account the patchiness of vegetation, offering significant advancements in the spatial and temporal resolution of data collection. This, in turn, supports the EU WFD’s objectives by enabling more informed and timely management decisions for the conservation and restoration of aquatic ecosystems.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.5</span> Conclusion</h2>
+<p>The utilization of very high spatial resolution (from 8 to 80 mm) drone-based remote sensing coupled with machine learning techniques has proven to be an effective method for the discrimination of intertidal seagrasses from green macroalgae with a multispectral resolution sensor. Standardized reflectance was incorporated in the Neural Network model allowing for a better discrimination of spectral features related to pigment absorption in the visible region of the spectrum. There was a striking difference between the variable of importance to discriminate Magnoliopsida from Chlorophyceae. The latter was essentially identified with the 451 nm spectral band while more spectral bands were needed to identify the former, notably 650, 560, 668, and 705 nm. As the spectral bands of the Micasense RedEdge Dual sensor are very similar to those of Sentinel-2/MSI, we suggest that multispectral satellite data have the potential to perform this discrimination between these green macrophytes. The findings underscore the importance of adopting advanced remote sensing tools in ecological studies and environmental monitoring, providing a foundation for future research and policy implementation aimed at ecosystem conservation and restoration.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-adade2021" class="csl-entry" role="listitem">
+Adade, R., Aibinu, A.M., Ekumah, B., Asaana, J., 2021. Unmanned aerial vehicle (UAV) applications in coastal zone management—a review. Environmental Monitoring and Assessment 193, 1–12.
+</div>
+<div id="ref-agisoft" class="csl-entry" role="listitem">
+Agisoft, 2019. <a href="https://www.agisoft.com/">Agisoft metashape</a>.
+</div>
+<div id="ref-angnuureng2022" class="csl-entry" role="listitem">
+Angnuureng, D.B., Brempong, K., Jayson-Quashigah, P., Dada, O., Akuoko, S., Frimpomaa, J., Mattah, P., Almar, R., 2022. Satellite, drone and video camera multi-platform monitoring of coastal erosion at an engineered pocket beach: A showcase for coastal management at elmina bay, ghana (west africa). Regional Studies in Marine Science 53, 102437.
+</div>
+<div id="ref-bannari2022" class="csl-entry" role="listitem">
+Bannari, A., Ali, T.S., Abahussain, A., 2022. The capabilities of sentinel-MSI (2A/2B) and landsat-OLI (8/9) in seagrass and algae species differentiation using spectral reflectance. Ocean Science 18, 361–388.
+</div>
+<div id="ref-bargain2013seasonal" class="csl-entry" role="listitem">
+Bargain, A., Robin, M., Méléder, V., Rosa, P., Le Menn, E., Harin, N., Barillé, L., 2013. Seasonal spectral variation of zostera noltii and its influence on pigment-based vegetation indices. Journal of experimental marine biology and ecology 446, 86–94.
+</div>
+<div id="ref-beach1997vivo" class="csl-entry" role="listitem">
+Beach, K., Borgeas, H., Nishimura, N., Smith, C., 1997. In vivo absorbance spectra and the ecophysiology of reef macroalgae. Coral Reefs 16, 21–28.
+</div>
+<div id="ref-Brunier2022Topographic" class="csl-entry" role="listitem">
+Brunier, G., Oiry, S., Gruet, Y., Dubois, S.F., Barillé, L., 2022. Topographic analysis of intertidal polychaete reefs (sabellaria alveolata) at a very high spatial resolution. Remote Sensing 2022, Vol. 14, Page 307 14, 307. <a href="https://doi.org/10.3390/RS14020307">https://doi.org/10.3390/RS14020307</a>
+</div>
+<div id="ref-Cao2017" class="csl-entry" role="listitem">
+Cao, J., Thorson, J.T., Richards, R.A., Chen, Y., 2017. Spatiotemporal index standardization improves the stock assessment of northern shrimp in the gulf of maine. Canadian Journal of Fisheries and Aquatic Sciences 74, 1781–1793. <a href="https://doi.org/10.1139/cjfas-2016-0137">https://doi.org/10.1139/cjfas-2016-0137</a>
+</div>
+<div id="ref-cartaxana2016regulation" class="csl-entry" role="listitem">
+Cartaxana, P., Cruz, S., Gameiro, C., Kühl, M., 2016. Regulation of intertidal microphytobenthos photosynthesis over a diel emersion period is strongly affected by diatom migration patterns. Frontiers in microbiology 7, 872.
+</div>
+<div id="ref-casella2020" class="csl-entry" role="listitem">
+Casella, E., Drechsel, J., Winter, C., Benninghoff, M., Rovere, A., 2020. Accuracy of sand beach topography surveying by drones and photogrammetry. Geo-Marine Letters 40, 255–268.
+</div>
+<div id="ref-charrier2021growth" class="csl-entry" role="listitem">
+Charrier, B., Boscq, S., Nelson, B.J., Läubli, N.F., 2021. Growth and labelling of cell wall components of the brown alga ectocarpus in microfluidic chips. Frontiers in Marine Science 8, 745654.
+</div>
+<div id="ref-chefaoui2018dramatic" class="csl-entry" role="listitem">
+Chefaoui, R.M., Duarte, C.M., Serrão, E.A., 2018. Dramatic loss of seagrass habitat under projected climate change in the mediterranean sea. Global change biology 24, 4919–4928.
+</div>
+<div id="ref-christensen1977seaweeds" class="csl-entry" role="listitem">
+Christensen, T., Dixon, P.S., Irvine, L.M., 1977. Seaweeds of the british isles: Tribophyceae (xanthophyceae). British Museum (Natural History).
+</div>
+<div id="ref-coffer2023" class="csl-entry" role="listitem">
+Coffer, M.M., Graybill, D.D., Whitman, P.J., Schaeffer, B.A., Salls, W.B., Zimmerman, R.C., Hill, V., Lebrasse, M.C., Li, J., Keith, D.J., others, 2023. Providing a framework for seagrass mapping in united states coastal ecosystems using high spatial resolution satellite imagery. Journal of Environmental Management 337, 117669.
+</div>
+<div id="ref-collin2019improving" class="csl-entry" role="listitem">
+Collin, A., Dubois, S., James, D., Houet, T., 2019. Improving intertidal reef mapping using UAV surface, red edge, and near-infrared data. Drones 3, 67.
+</div>
+<div id="ref-COSTA2021107018" class="csl-entry" role="listitem">
+Costa, V., Serôdio, J., Lillebø, A.I., Sousa, A.I., 2021. Use of hyperspectral reflectance to non-destructively estimate seagrass zostera noltei biomass. Ecological Indicators 121, 107018. https://doi.org/<a href="https://doi.org/10.1016/j.ecolind.2020.107018">https://doi.org/10.1016/j.ecolind.2020.107018</a>
+</div>
+<div id="ref-Davies2023" class="csl-entry" role="listitem">
+Davies, B.F.R., Gernez, P., Geraud, A., Oiry, Simon, Rosa, P., Zoffoli, M.L., Barillé, L., 2023a. Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment 290, 113554. <a href="https://doi.org/10.1016/j.rse.2023.113554">https://doi.org/10.1016/j.rse.2023.113554</a>
+</div>
+<div id="ref-davies2024sentinel" class="csl-entry" role="listitem">
+Davies, B.F.R., Oiry, S., Rosa, P., Zoffoli, M.L., Sousa, A.I., Thomas, O.R., Smale, D.A., Austen, M.C., Biermann, L., Attrill, M.J., others, 2024b. A sentinel watching over inter-tidal seagrass phenology across western europe and north africa. Communications Earth &amp; Environment 5, 382.
+</div>
+<div id="ref-davies2024intertidal" class="csl-entry" role="listitem">
+Davies, B.F.R., Oiry, S., Rosa, P., Zoffoli, M.L., Sousa, A.I., Thomas, O.R., Smale, D.A., Austen, M.C., Biermann, L., Attrill, M.J., others, 2024a. Intertidal seagrass extent from sentinel-2 time-series show distinct trajectories in western europe. Remote Sensing of Environment 312, 114340.
+</div>
+<div id="ref-BedeGbif" class="csl-entry" role="listitem">
+Davies, B.F.R., Sousa, A.I., Figueira, R., Oiry, S., Gernez, P., Barillé, L., 2023b. Benthic intertidal vegetation from the tagus estuary and aveiro lagoon. <a href="https://doi.org/10.15468/n4ak6x">https://doi.org/10.15468/n4ak6x</a>
+</div>
+<div id="ref-devlin2023nutrients" class="csl-entry" role="listitem">
+Devlin, M., Brodie, J., 2023. Nutrients and eutrophication, in: Marine Pollution–Monitoring, Management and Mitigation. Springer, pp. 75–100.
+</div>
+<div id="ref-Douay2022" class="csl-entry" role="listitem">
+Douay, F., Verpoorter, C., Duong, G., Spilmont, N., Gevaert, F., 2022. New hyperspectral procedure to discriminate intertidal macroalgae. Remote Sensing 14. <a href="https://doi.org/10.3390/rs14020346">https://doi.org/10.3390/rs14020346</a>
+</div>
+<div id="ref-duffy2019" class="csl-entry" role="listitem">
+Duffy, J.E., Benedetti-Cecchi, L., Trinanes, J., Muller-Karger, F.E., Ambo-Rappe, R., Boström, C., Buschmann, A.H., Byrnes, J., Coles, R.G., Creed, J., others, 2019. Toward a coordinated global observing system for seagrasses and marine macroalgae. Frontiers in Marine Science 6, 317.
+</div>
+<div id="ref-WFD2000" class="csl-entry" role="listitem">
+European-Commission, 2000. <span class="nocase"><span>“DIRECTIVE 2000/60/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 October 2000 establishing a framework for Community action in the field of water policy”</span> or, in short, the EU Water Framework Directive</span>. Official Journal of the European Communities L 327, 1–72.
+</div>
+<div id="ref-fairley2022drone" class="csl-entry" role="listitem">
+Fairley, I., Williamson, B.J., McIlvenny, J., King, N., Masters, I., Lewis, M., Neill, S., Glasby, D., Coles, D., Powell, B., others, 2022. Drone-based large-scale particle image velocimetry applied to tidal stream energy resource assessment. Renewable Energy 196, 839–855.
+</div>
+<div id="ref-foden2007angiosperms" class="csl-entry" role="listitem">
+Foden, J., Brazier, D., 2007. Angiosperms (seagrass) within the EU water framework directive: A UK perspective. Marine Pollution Bulletin 55, 181–195.
+</div>
+<div id="ref-fyfe2003spatial" class="csl-entry" role="listitem">
+Fyfe, S., 2003. Spatial and temporal variation in spectral reflectance: Are seagrass species spectrally distinct? Limnology and Oceanography 48, 464–479.
+</div>
+<div id="ref-gardner2018" class="csl-entry" role="listitem">
+Gardner, R.C., Finlayson, C., 2018. Global wetland outlook: State of the world’s wetlands and their services to people. Stetson Law.
+</div>
+<div id="ref-haro2023biointertidal" class="csl-entry" role="listitem">
+Haro, S., Jimenez-Reina, J., Bermejo, R., Morrison, L., 2023. BioIntertidal mapper software: A satellite approach for NDVI-based intertidal habitat mapping. SoftwareX 24, 101520.
+</div>
+<div id="ref-hedley2018influence" class="csl-entry" role="listitem">
+Hedley, J.D., Mirhakak, M., Wentworth, A., Dierssen, H.M., 2018. Influence of three-dimensional coral structures on hyperspectral benthic reflectance and water-leaving reflectance. Applied Sciences 8, 2688.
+</div>
+<div id="ref-holon2018predictive" class="csl-entry" role="listitem">
+Holon, F., Marre, G., Parravicini, V., Mouquet, N., Bockel, T., Descamp, P., Tribot, A.-S., Boissery, P., Deter, J., 2018. A predictive model based on multiple coastal anthropogenic pressures explains the degradation status of a marine ecosystem: Implications for management and conservation. Biological Conservation 222, 125–135.
+</div>
+<div id="ref-howard2018fastai" class="csl-entry" role="listitem">
+Howard, J., others, 2018. Fastai.
+</div>
+<div id="ref-jankowska2019" class="csl-entry" role="listitem">
+Jankowska, E., Michel, L.N., Lepoint, G., Włodarska-Kowalczuk, M., 2019. Stabilizing effects of seagrass meadows on coastal water benthic food webs. Journal of Experimental Marine Biology and Ecology 510, 54–63.
+</div>
+<div id="ref-joyce2023" class="csl-entry" role="listitem">
+Joyce, K.E., Fickas, K.C., Kalamandeen, M., 2023. The unique value proposition for using drones to map coastal ecosystems. Cambridge Prisms: Coastal Futures 1, e6.
+</div>
+<div id="ref-kirk1994light" class="csl-entry" role="listitem">
+Kirk, J.T., 1994. Light and photosynthesis in aquatic ecosystems. Cambridge university press.
+</div>
+<div id="ref-klemas2012remote" class="csl-entry" role="listitem">
+Klemas, V., 2012. Remote sensing of algal blooms: An overview with case studies. Journal of coastal research 28, 34–43.
+</div>
+<div id="ref-legare2022remote" class="csl-entry" role="listitem">
+Légaré, B., Bélanger, S., Singh, R.K., Bernatchez, P., Cusson, M., 2022. Remote sensing of coastal vegetation phenology in a cold temperate intertidal system: Implications for classification of coastal habitats. Remote Sensing 14, 3000.
+</div>
+<div id="ref-lin2018" class="csl-entry" role="listitem">
+Lin, H., Sun, T., Zhou, Y., Gu, R., Zhang, X., Yang, W., 2018. Which genes in a typical intertidal seagrass (zostera japonica) indicate copper-, lead-, and cadmium pollution? Frontiers in Plant Science 9, 1545.
+</div>
+<div id="ref-deSantos2019" class="csl-entry" role="listitem">
+Los Santos, C.B. de, Krause-Jensen, D., Alcoverro, T., Marbà, N., Duarte, C.M., Van Katwijk, M.M., Pérez, M., Romero, J., Sánchez-Lizaso, J.L., Roca, G., others, 2019. Recent trend reversal for declining european seagrass meadows. Nature communications 10, 3356.
+</div>
+<div id="ref-louime2017sargassum" class="csl-entry" role="listitem">
+Louime, C., Fortune, J., Gervais, G., 2017. Sargassum invasion of coastal environments: A growing concern. American Journal of Environmental Sciences 13, 58–64.
+</div>
+<div id="ref-marquet2024global" class="csl-entry" role="listitem">
+Marquet, P.A., Buschmann, A.H., Corcoran, D., Dı́az, P.A., Fuentes-Castillo, T., Garreaud, R., Pliscoff, P., Salazar, A., 2024. Global change and acceleration of anthropic pressures on patagonian ecosystems, in: Conservation in Chilean Patagonia: Assessing the State of Knowledge, Opportunities, and Challenges. Springer International Publishing Cham, pp. 33–65.
+</div>
+<div id="ref-meleder2013vivo" class="csl-entry" role="listitem">
+Méléder, V., Laviale, M., Jesus, B., Mouget, J.L., Lavaud, J., Kazemipour, F., Launeau, P., Barillé, L., 2013. In vivo estimation of pigment composition and optical absorption cross-section by spectroradiometry in four aquatic photosynthetic micro-organisms. Journal of Photochemistry and Photobiology B: Biology 129, 115–124.
+</div>
+<div id="ref-menesguen2018marees" class="csl-entry" role="listitem">
+Ménesguen, A., 2018. Les mar<span>é</span>es vertes: 40 cl<span>é</span>s pour comprendre. Editions Quae.
+</div>
+<div id="ref-Miloslavich2018" class="csl-entry" role="listitem">
+Miloslavich, P., Bax, N.J., Simmons, S.E., Klein, E., Appeltans, W., Aburto-Oropeza, O., Garcia, M.A., Batten, S.D., Benedetti-Cecchi, L., Checkley, D.M., Chiba, S., Duffy, J.E., Dunn, D.C., Fischer, A., Gunn, J., Kudela, R., Marsac, F., Muller-Karger, F.E., Obura, D., Shin, Y.J., 2018. Essential ocean variables for global sustained observations of biodiversity and ecosystem changes. Global Change Biology 24, 2416–2433. <a href="https://doi.org/10.1111/GCB.14108">https://doi.org/10.1111/GCB.14108</a>
+</div>
+<div id="ref-muller2018satellite" class="csl-entry" role="listitem">
+Muller-Karger, F.E., Hestir, E., Ade, C., Turpie, K., Roberts, D.A., Siegel, D., Miller, R.J., Humm, D., Izenberg, N., Keller, M., others, 2018. Satellite sensor requirements for monitoring essential biodiversity variables of coastal ecosystems. Ecological applications 28, 749–760.
+</div>
+<div id="ref-nebel2020review" class="csl-entry" role="listitem">
+Nebel, S., Beege, M., Schneider, S., Rey, G.D., 2020. A review of photogrammetry and photorealistic 3D models in education from a psychological perspective, in: Frontiers in Education. Frontiers Media SA, p. 144.
+</div>
+<div id="ref-nguyen2021" class="csl-entry" role="listitem">
+Nguyen, H.M., Ralph, P.J., Marı́n-Guirao, L., Pernice, M., Procaccini, G., 2021. Seagrasses in an era of ocean warming: A review. Biological Reviews 96, 2009–2030.
+</div>
+<div id="ref-nijland2019" class="csl-entry" role="listitem">
+Nijland, W., Reshitnyk, L., Rubidge, E., 2019. Satellite remote sensing of canopy-forming kelp on a complex coastline: A novel procedure using the landsat image archive. Remote Sensing of Environment 220, 41–50.
+</div>
+<div id="ref-nordlund2024one" class="csl-entry" role="listitem">
+Nordlund, L.M., Unsworth, R.K., Wallner-Hahn, S., Ratnarajah, L., Beca-Carretero, P., Boikova, E., Bull, J.C., Chefaoui, R.M., Santos, C.B. de los, Gagnon, K., others, 2024. One hundred priority questions for advancing seagrass conservation in europe. Plants, People, Planet.
+</div>
+<div id="ref-oh2017use" class="csl-entry" role="listitem">
+Oh, J., Kim, D., Lee, H., 2017. Use of a drone for mapping and time series image acquisition of tidal zones. Journal of the Korean Institute of Intelligent Systems 27, 119–125.
+</div>
+<div id="ref-oiry2021using" class="csl-entry" role="listitem">
+Oiry, S., Barillé, L., 2021. Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators 121, 107184.
+</div>
+<div id="ref-orth2006" class="csl-entry" role="listitem">
+Orth, R.J., Carruthers, T.J., Dennison, W.C., Duarte, C.M., Fourqurean, J.W., Heck, K.L., Hughes, A.R., Kendrick, G.A., Kenworthy, W.J., Olyarnik, S., others, 2006. A global crisis for seagrass ecosystems. Bioscience 56, 987–996.
+</div>
+<div id="ref-papathanasopoulou2019satellite" class="csl-entry" role="listitem">
+Papathanasopoulou, E., Simis, S., Alikas, K., Ansper, A., Anttila, J., Barillé, A., Barillé, L., Brando, V., Bresciani, M., Bučas, M., others, 2019. Satellite-assisted monitoring of water quality to support the implementation of the water framework directive. EOMORES white paper.
+</div>
+<div id="ref-Pereira2013" class="csl-entry" role="listitem">
+Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H., Scholes, R.J., Bruford, M.W., Brummitt, N., Butchart, S.H., Cardoso, A., others, 2013. Essential biodiversity variables. Science 339, 277–278.
+</div>
+<div id="ref-piaser2023impact" class="csl-entry" role="listitem">
+Piaser, E., Berton, A., Bolpagni, R., Caccia, M., Castellani, M.B., Coppi, A., Dalla Vecchia, A., Gallivanone, F., Sona, G., Villa, P., 2023. Impact of radiometric variability on ultra-high resolution hyperspectral imagery over aquatic vegetation: Preliminary results. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing.
+</div>
+<div id="ref-ralph2002" class="csl-entry" role="listitem">
+Ralph, P., Polk, S., Moore, K., Orth, R., Smith Jr, W., 2002. Operation of the xanthophyll cycle in the seagrass zostera marina in response to variable irradiance. Journal of Experimental Marine Biology and Ecology 271, 189–207.
+</div>
+<div id="ref-rasheed2011long" class="csl-entry" role="listitem">
+Rasheed, M.A., Unsworth, R.K., 2011. Long-term climate-associated dynamics of a tropical seagrass meadow: Implications for the future. Marine Ecology Progress Series 422, 93–103.
+</div>
+<div id="ref-ratnarajah2023monitoring" class="csl-entry" role="listitem">
+Ratnarajah, L., Abu-Alhaija, R., Atkinson, A., Batten, S., Bax, N.J., Bernard, K.S., Canonico, G., Cornils, A., Everett, J.D., Grigoratou, M., others, 2023. Monitoring and modelling marine zooplankton in a changing climate. Nature Communications 14, 564.
+</div>
+<div id="ref-repolho2017seagrass" class="csl-entry" role="listitem">
+Repolho, T., Duarte, B., Dionı́sio, G., Paula, J.R., Lopes, A.R., Rosa, I.C., Grilo, T.F., Caçador, I., Calado, R., Rosa, R., 2017. Seagrass ecophysiological performance under ocean warming and acidification. Scientific Reports 7, 41443.
+</div>
+<div id="ref-Roca2022" class="csl-entry" role="listitem">
+Roca, M., Dunbar, M.B., Román, A., Caballero, I., Zoffoli, M.L., Gernez, P., Navarro, G., 2022. Monitoring the marine invasive alien species rugulopteryx okamurae using unmanned aerial vehicles and satellites. Frontiers in Marine Science 9. <a href="https://doi.org/10.3389/fmars.2022.1004012">https://doi.org/10.3389/fmars.2022.1004012</a>
+</div>
+<div id="ref-Roman2021" class="csl-entry" role="listitem">
+Román, A., Tovar-Sánchez, A., Olivé, I., Navarro, G., 2021. Using a UAV-mounted multispectral camera for the monitoring of marine macrophytes. Frontiers in Marine Science 1225.
+</div>
+<div id="ref-rossiter2020uav" class="csl-entry" role="listitem">
+Rossiter, T., Furey, T., McCarthy, T., Stengel, D.B., 2020. UAV-mounted hyperspectral mapping of intertidal macroalgae. Estuarine, Coastal and Shelf Science 242, 106789.
+</div>
+<div id="ref-SCHIBALSKI2022101414" class="csl-entry" role="listitem">
+Schibalski, A., Kleyer, M., Maier, M., Schröder, B., 2022. Spatiotemporally explicit prediction of future ecosystem service provisioning in response to climate change, sea level rise, and adaptation strategies. Ecosystem Services 54, 101414. https://doi.org/<a href="https://doi.org/10.1016/j.ecoser.2022.101414">https://doi.org/10.1016/j.ecoser.2022.101414</a>
+</div>
+<div id="ref-schneider2012nih" class="csl-entry" role="listitem">
+Schneider, C.A., Rasband, W.S., Eliceiri, K.W., 2012. NIH image to ImageJ: 25 years of image analysis. Nature methods 9, 671–675.
+</div>
+<div id="ref-rs13081408" class="csl-entry" role="listitem">
+Schreyers, L., Emmerik, T. van, Biermann, L., Le Lay, Y.-F., 2021. Spotting green tides over brittany from space: Three decades of monitoring with landsat imagery. Remote Sensing 13. <a href="https://doi.org/10.3390/rs13081408">https://doi.org/10.3390/rs13081408</a>
+</div>
+<div id="ref-Slaton2001" class="csl-entry" role="listitem">
+Slaton, M.R., Raymond Hunt Jr., E., Smith, W.K., 2001. Estimating near-infrared leaf reflectance from leaf structural characteristics. American Journal of Botany 88, 278–284. https://doi.org/<a href="https://doi.org/10.2307/2657019">https://doi.org/10.2307/2657019</a>
+</div>
+<div id="ref-soissons2018" class="csl-entry" role="listitem">
+Soissons, L.M., Haanstra, E.P., Van Katwijk, M.M., Asmus, R., Auby, I., Barillé, L., Brun, F.G., Cardoso, P.G., Desroy, N., Fournier, J., others, 2018. Latitudinal patterns in european seagrass carbon reserves: Influence of seasonal fluctuations versus short-term stress and disturbance events. Frontiers in Plant Science 9, 88.
+</div>
+<div id="ref-sousa2017blue" class="csl-entry" role="listitem">
+Sousa, A.I., Santos, D.B., Silva, E.F. da, Sousa, L.P., Cleary, D.F., Soares, A.M., Lillebø, A.I., 2017. ‘Blue carbon’and nutrient stocks of salt marshes at a temperate coastal lagoon (ria de aveiro, portugal). Scientific reports 7, 41225.
+</div>
+<div id="ref-sousa2019blue" class="csl-entry" role="listitem">
+Sousa, A.I., Silva, J.F. da, Azevedo, A., Lillebø, A.I., 2019. Blue carbon stock in zostera noltei meadows at ria de aveiro coastal lagoon (portugal) over a decade. Scientific reports 9, 14387.
+</div>
+<div id="ref-sutton2011european" class="csl-entry" role="listitem">
+Sutton, M.A., Van Grinsven, H., Billen, G., Bleeker, A., Bouwman, A., Oenema, O., 2011. European nitrogen assessement-summary for policy makers, in: The European Nitrogen Assessment. Sources, Effects and Policy Perspectives. pp. xxiv–xxxiv.
+</div>
+<div id="ref-tallam2023" class="csl-entry" role="listitem">
+Tallam, K., Nguyen, N., Ventura, J., Fricker, A., Calhoun, S., O’Leary, J., Fitzgibbons, M., Robbins, I., Walter, R.K., 2023. Application of deep learning for classification of intertidal eelgrass from drone-acquired imagery. Remote Sensing 15, 2321.
+</div>
+<div id="ref-Traganos2018" class="csl-entry" role="listitem">
+Traganos, D., Reinartz, P., 2018. Mapping mediterranean seagrasses with sentinel-2 imagery. Marine Pollution Bulletin 134, 197–209. <a href="https://doi.org/10.1016/j.marpolbul.2017.06.075">https://doi.org/10.1016/j.marpolbul.2017.06.075</a>
+</div>
+<div id="ref-tuya2013" class="csl-entry" role="listitem">
+Tuya, F., Hernandez-Zerpa, H., Espino, F., Haroun, R., 2013. Drastic decadal decline of the seagrass cymodocea nodosa at gran canaria (eastern atlantic): Interactions with the green algae caulerpa prolifera. Aquatic Botany 105, 1–6.
+</div>
+<div id="ref-unsworth2022" class="csl-entry" role="listitem">
+Unsworth, R.K., Cullen-Unsworth, L.C., Jones, B.L., Lilley, R.J., 2022. The planetary role of seagrass conservation. Science 377, 609–613.
+</div>
+<div id="ref-veettil2020opportunities" class="csl-entry" role="listitem">
+Veettil, B.K., Ward, R.D., Lima, M.D.A.C., Stankovic, M., Hoai, P.N., Quang, N.X., 2020. Opportunities for seagrass research derived from remote sensing: A review of current methods. Ecological Indicators 117, 106560.
+</div>
+<div id="ref-villalobos2023remote" class="csl-entry" role="listitem">
+Villalobos Perna, P., Di Febbraro, M., Carranza, M.L., Marzialetti, F., Innangi, M., 2023. Remote sensing and invasive plants in coastal ecosystems: What we know so far and future prospects. Land 12, 341.
+</div>
+<div id="ref-villares1999nitrogen" class="csl-entry" role="listitem">
+Villares, R., Puente, X., Carballeira, A., 1999. Nitrogen and phosphorus in ulva sp. In the galician rias bajas (northwest spain): Seasonal fluctuations and influence on growth. Boletin-Instituto Espa<span>ñ</span>ol de Oceanografia 15, 337–342.
+</div>
+<div id="ref-wang2022" class="csl-entry" role="listitem">
+Wang, Z., Fang, Z., Liang, J., Song, X., 2022. Assessment of global habitat suitability and risk of ocean green tides. Harmful Algae 119, 102324.
+</div>
+<div id="ref-WEI2015399" class="csl-entry" role="listitem">
+Wei, P., Lu, Z., Song, J., 2015. Variable importance analysis: A comprehensive review. Reliability Engineering and System Safety 142, 399–432. https://doi.org/<a href="https://doi.org/10.1016/j.ress.2015.05.018">https://doi.org/10.1016/j.ress.2015.05.018</a>
+</div>
+<div id="ref-xu2021" class="csl-entry" role="listitem">
+Xu, S., Xu, S., Zhou, Y., Yue, S., Zhang, X., Gu, R., Zhang, Y., Qiao, Y., Liu, M., 2021. Long-term changes in the unique and largest seagrass meadows in the bohai sea (china) using satellite (1974–2019) and sonar data: Implication for conservation and restoration. Remote Sensing 13, 856.
+</div>
+<div id="ref-ye2011green" class="csl-entry" role="listitem">
+Ye, N., Zhang, X., Mao, Y., Liang, C., Xu, D., Zou, J., Zhuang, Z., Wang, Q., 2011. <span>“Green tides”</span> are overwhelming the coastline of our blue planet: Taking the world’s largest example. Ecological Research 26, 477–485.
+</div>
+<div id="ref-Zoffoli2021" class="csl-entry" role="listitem">
+Zoffoli, M.L., Gernez, P., Godet, L., Peters, S., Oiry, S., Barillé, L., 2021. Decadal increase in the ecological status of a north-atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators 130, 108033. <a href="https://doi.org/10.1016/j.ecolind.2021.108033">https://doi.org/10.1016/j.ecolind.2021.108033</a>
+</div>
+<div id="ref-Zoffoli2022" class="csl-entry" role="listitem">
+Zoffoli, M.L., Gernez, P., Oiry, S., Godet, L., Dalloyau, S., Davies, B.F.R., Barillé, L., 2022. Remote sensing in seagrass ecology: Coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation. <a href="https://doi.org/10.1002/rse2.319">https://doi.org/10.1002/rse2.319</a>
+</div>
+<div id="ref-ZOFFOLI2020112020" class="csl-entry" role="listitem">
+Zoffoli, M.L., Gernez, P., Rosa, P., Le Bris, A., Brando, V.E., Barillé, A.-L., Harin, N., Peters, S., Poser, K., Spaias, L., Peralta, G., Barillé, L., 2020. Sentinel-2 remote sensing of zostera noltei-dominated intertidal seagrass meadows. Remote Sensing of Environment 251, 112020. https://doi.org/<a href="https://doi.org/10.1016/j.rse.2020.112020">https://doi.org/10.1016/j.rse.2020.112020</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Chapter2/Chapter2.html" class="pagination-link" aria-label="Hyperspectral classification of intertidal vegetation for coastal biodiversity">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hyperspectral classification of intertidal vegetation for coastal biodiversity</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Summary/summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

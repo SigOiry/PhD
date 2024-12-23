@@ -1,46 +1,65 @@
+---
+chaptertopimage: "{Chapter1/img/seagrasses.png}"
+chapterbottomimage: "{Chapter1/img/seagrasses.png}"
+---
+
 # Preface {.unnumbered}
 
-```{=latex}
-\begin{spacing}{1.5}
-```
 This PhD work was carried out at Nantes University between 2022 and 2024, within the "Remote Sensing, Benthic Ecology and Ecotoxicology" (RSBE²) team of the Institute of Marine Substances and Organisms (ISOMer). This thesis was funded by the Ministry of Research and Higher Education and supervised by the doctoral school "Plant, Animal, Food, Sea, Environment" (VAAME).
 
 ## Scientific papers
 
--   Brunier, G., **Oiry, S.**, Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. *Remote Sensing*, 14(2), 307. https://doi.org/10.3390/rs14020307
-
--   Brunier, G., **Oiry, S**., Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. *Remote Sensing*, *14*(22), 5857. https://doi.org/10.3390/rs14225857
-
--   Zoffoli, M.L., Gernez, P., **Oiry, S.**, Godet, L., Dalloyau, S., Davies, B.F.R. and Barillé, L. (2023), Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. *Remote Sens Ecol Conserv*, 9: 420-433. <https://doi.org/10.1002/rse2.319>
-
--   Davies, B. F. R., Gernez, P., Geraud, A., **Oiry, S.**, Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. *Remote Sensing of Environment*, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
-
--   Román, A., Prasyad, H., Oiry, S., Davies, B. F. R., Brunier, G., & Barillé, L. (2023). Mapping intertidal oyster farms using unmanned aerial vehicles (UAV) high-resolution multispectral data. *Estuarine, Coastal and Shelf Science*, 291, 108432. https://doi.org/10.1016/j.ecss.2023.108432
-
--   Nurdin, N., Alevizos, E., Syamsuddin, R., Asis, H., Zainuddin, E. N., Aris, A., **Oiry, S.**, Brunier, G., Komatsu, T., & Barillé, L. (2023). Precision Aquaculture Drone Mapping of the Spatial Distribution of *Kappaphycus alvarezii* Biomass and Carrageenan. *Remote Sensing*, *15*(14), 3674. https://doi.org/10.3390/rs15143674
-
--   Davies, B. F. R., **Oiry, S.**, Rosa, P., Zoffoli, M. L., Sousa, A. I., Thomas, O. R., Smale, D. A., Austen, M. C., Biermann, L., Attrill, M. J., & others. (2024). A sentinel watching over inter-tidal seagrass phenology across Western Europe and North Africa. *Communications Earth & Environment*, 5(1), 382. https://doi.org/10.1038/s43247-024-382
-
--   Davies, B. F. R., **Oiry, S.**, Rosa, P., Zoffoli, M. L., Sousa, A. I., Thomas, O. R., Smale, D. A., Austen, M. C., Biermann, L., Attrill, M. J., Roman, A., Navarro, G., Barillé, A.-L., Harin, N., Clewley, D., Martinez-Vicente, V., Gernez, P., & Barillé, L. (2024). Intertidal seagrass extent from Sentinel-2 time-series show distinct trajectories in Western Europe. *Remote Sensing of Environment*, 312, 114340. https://doi.org/10.1016/j.rse.2024.114340
-
--   Román, A., Oiry, S., Davies, B. F. R., Rosa, P., Gernez, P., Tovar-Sánchez, A., Navarro, G., Méléder, V., & Barillé, L. (2024). Mapping intertidal microphytobenthic biomass with very high-resolution remote sensing imagery in an estuarine system. *Science of The Total Environment*, 955, 177025. https://doi.org/10.1016/j.scitotenv.2024.177025
+-   Barillé, L., Paterson, I. L. R., **Oiry, S.**, Aris, A., Cook-Cottier, E. J., & Nurdin, N. (2025). Variability of *Kappaphycus alvarezii* cultivation in South-Sulawesi (Indonesia) related to the monsoon shift: Water quality, growth and colour quantification. *Aquaculture Reports*, 40, 102557. https://doi.org/10.1016/j.aqrep.2024.102557
 
 -   **Oiry, S.**, Davies, B. F. R., Sousa, A. I., Rosa, P., Zoffoli, M. L., Brunier, G., Gernez, P., & Barillé, L. (2024). Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery. *Remote Sensing*, *16*(23), 4383. https://doi.org/10.3390/rs16234383
 
--   Barillé, L., Paterson, I. L. R., **Oiry, S.**, Aris, A., Cook-Cottier, E. J., & Nurdin, N. (2025). Variability of *Kappaphycus alvarezii* cultivation in South-Sulawesi (Indonesia) related to the monsoon shift: Water quality, growth and colour quantification. *Aquaculture Reports*, 40, 102557. https://doi.org/10.1016/j.aqrep.2024.102557
+-   Román, A., Oiry, S., Davies, B. F. R., Rosa, P., Gernez, P., Tovar-Sánchez, A., Navarro, G., Méléder, V., & Barillé, L. (2024). Mapping intertidal microphytobenthic biomass with very high-resolution remote sensing imagery in an estuarine system. *Science of The Total Environment*, 955, 177025. https://doi.org/10.1016/j.scitotenv.2024.177025
 
-## Oral presentation
+-   Davies, B. F. R., **Oiry, S.**, Rosa, P., Zoffoli, M. L., Sousa, A. I., Thomas, O. R., Smale, D. A., Austen, M. C., Biermann, L., Attrill, M. J., Roman, A., Navarro, G., Barillé, A.-L., Harin, N., Clewley, D., Martinez-Vicente, V., Gernez, P., & Barillé, L. (2024). Intertidal seagrass extent from Sentinel-2 time-series show distinct trajectories in Western Europe. *Remote Sensing of Environment*, 312, 114340. https://doi.org/10.1016/j.rse.2024.114340
 
--   Precision aquaculture drone mapping of the spatial distribution of *Kappaphycus alvarezii* biomass and carrageenan (August 2023) ; 8th European Phycological Congress, Brest, France. 
+-   Davies, B. F. R., **Oiry, S.**, Rosa, P., Zoffoli, M. L., Sousa, A. I., Thomas, O. R., Smale, D. A., Austen, M. C., Biermann, L., Attrill, M. J., & others. (2024). A sentinel watching over inter-tidal seagrass phenology across Western Europe and North Africa. *Communications Earth & Environment*, 5(1), 382. https://doi.org/10.1038/s43247-024-382
 
--  Effect of Marine and Atmospheric Heatwaves on Reflectance and Pigment Composition of Intertidal *Zostera noltei* (February 2025) ; BioSpace25 - Biodiversity insight from Space, Frascati, Italy.
+-   Nurdin, N., Alevizos, E., Syamsuddin, R., Asis, H., Zainuddin, E. N., Aris, A., **Oiry, S.**, Brunier, G., Komatsu, T., & Barillé, L. (2023). Precision Aquaculture Drone Mapping of the Spatial Distribution of *Kappaphycus alvarezii* Biomass and Carrageenan. *Remote Sensing*, *15*(14), 3674. https://doi.org/10.3390/rs15143674
+
+-   Román, A., Prasyad, H., Oiry, S., Davies, B. F. R., Brunier, G., & Barillé, L. (2023). Mapping intertidal oyster farms using unmanned aerial vehicles (UAV) high-resolution multispectral data. *Estuarine, Coastal and Shelf Science*, 291, 108432. https://doi.org/10.1016/j.ecss.2023.108432
+
+-   Davies, B. F. R., Gernez, P., Geraud, A., **Oiry, S.**, Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. *Remote Sensing of Environment*, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
+
+-   Zoffoli, M.L., Gernez, P., **Oiry, S.**, Godet, L., Dalloyau, S., Davies, B.F.R. and Barillé, L. (2023), Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. *Remote Sens Ecol Conserv*, 9: 420-433. <https://doi.org/10.1002/rse2.319>
+
+-   Brunier, G., **Oiry, S**., Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. *Remote Sensing*, *14*(22), 5857. https://doi.org/10.3390/rs14225857
+
+-   Brunier, G., **Oiry, S.**, Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. *Remote Sensing*, 14(2), 307. https://doi.org/10.3390/rs14020307
 
 
-::: {.content-visible when-format="docx"}
-\newpage
-:::
+## Presentation to International Conferences
+
+-   Effect of Marine and Atmospheric Heatwaves on Reflectance and Pigment Composition of Intertidal *Zostera noltei* (February 2025); BioSpace25 - Biodiversity insight from Space, Frascati, Italy; Oral presentation
+
+- Discriminating Seagrasses From Green Macroalgae in European Intertidal Areas using High Resolution Multispectral Drone Imagery (17 - 21 June 2024); Word Seagrass Conference, Napoli, Italy; Poster
+
+-  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (22 - 24 November 2023); EC-ESA Joint Earth System Science Initiative, Frascati, Italy; Poster
+
+-   Precision aquaculture drone mapping of the spatial distribution of *Kappaphycus alvarezii* biomass and carrageenan (August 2023); 8th European Phycological Congress, Brest, France ; Oral presentation
+
+-  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (August 2023); 8th European Phycological Congress, Brest, France ; Poster
+
+-  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (23 - 27 may 2022); Living Planet Symposium, Bonn, Germany ; Poster
+
+<!-- ::: {.content-visible} -->
+<!-- \newpage -->
+<!-- ::: -->
+
+<!-- ```{=latex} -->
+<!-- \chaptertitlepage{Chapter1/img/seagrasses.png}{1}{Introduction and Overview}{Chapter1/img/fish_farm_psd.png} -->
+<!-- ``` -->
 
 ```{=latex}
-\end{spacing}
-\chaptertitlepage{Chapter1/img/seagrasses.png}{1}{Introduction and Overview}{Chapter1/img/fish_farm_psd.png}
+\renewcommand{\chaptertopimage}{Chapter1/img/seagrasses.png}
+\renewcommand{\chapterbottomimage}{Chapter1/img/fish_farm_psd.png}
 ```
+
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
+```
+

@@ -14,6 +14,7 @@ book:
     - index.qmd
     - Chapter1/intro.qmd
     - Chapter2/Chapter2.qmd
+    - Chapter3/Chapter3.qmd
     - Summary/summary.qmd
     - References/references.qmd
 repo-url: https://github.com/SigOiry/PhD
@@ -33,13 +34,14 @@ thesis:
   logoUN-height: "1cm"
   
   
-bibliography: [References/Introduction.bib, References/Chapiter2.bib, References/packages.bib] 
+bibliography: [References/Introduction.bib, References/Chapiter2.bib, References/Chapiter3.bib, References/packages.bib] 
+csl: RSE.csl
 
 format:
   quarto-thesis-pdf: 
-    urlcolor: red
+    urlcolor: black
     toclinkcolor: black
-    toc-depth: 2
+    toc-depth: 5
     titlepage: true
     latex-options: 
       - margin=1in

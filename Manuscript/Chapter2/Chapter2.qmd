@@ -1,5 +1,5 @@
 ---
-title: "Hyperspectral classification of intertidal vegetation for coastal biodiversity"
+title: Hyperspectral classification of intertidal vegetation for coastal biodiversity
 number-sections: true
 ---
 
@@ -9,8 +9,8 @@ number-sections: true
 #| warning: false
 #| error: false
 
-library(officedown) 
-library(officer) 
+# library(officedown) 
+# library(officer) 
 library(flextable)
 library(tidyverse)
 
@@ -167,7 +167,7 @@ knitr::include_graphics("Figs/Figure2.jpg")
 
 ### Data Analysis
 
-##### Spectral Degradation
+#### Spectral Degradation
 
 The efficacy, efficiency and ability of classifying intertidal soft-bottom vegetation were assessed for a variety of remote-sensing sensors, including two multispectral satellite sensors (the high-resolution imager (HiRI) onboard Pleiades and the multi-spectral instrument (MSI) onboard Sentinel-2), one hyperspectral satellite sensor (the hyperspectral camera (HYC) onboard PRISMA satellite) and one airborne multispectral sensor (MicaSense RedEdge MX-dual Sensor on board a DJI Matrice 200 drone). These sensors cover a gradient of spectral resolution from multispectral to hyperspectral (@fig-SpectraDegFIG). The spectral response functions of Pleiades and Sentinel-2 were used to degrade the hyperspectral library to the respective resolution of each sensors. The highest spatial resolution of Sentinel-2 (10 m) consists of 4 spectral bands while the 20 m sensor has 4 additional bands in the VNIR spectral range (total 8 bands). Sentinel-2 spectral bands, such as at 443 nm, were not used because its spatial resolution (60 m) is too coarse for intertidal seagrass mapping [@Zoffoli2020]. To degrade the ASD library to the PRISMA spectral resolution, only central wavelengths and bandwidths (from 400 to 900 nm) were obtained from the Agenzia Spaziale Italiana [@ASI2020]. Likewise, central wavelengths with bandwidths were available for the Micasense ("Drone" henceforth). Therefore, the mean of the reflectance values included in the bandwidth of each PRISMA and Drone function band were computed. Across all sensors, a moving average was applied to the ASD spectral library with a 5 nm smoothing window to reduce instrument-induced noise in the data.
 
@@ -185,7 +185,7 @@ knitr::include_graphics("Figs/Figure3.jpg")
 
 ```
 
-##### Standardisation 
+#### Standardisation 
 
 All spectra were standardised to reduce the effect of variable biomass, density or thickness of sample, with a Min-Max transformation [@Cao2017].  This calculation emphasised the spectral shapes in the visible range associated with the pigment composition [@Douay2022]:  
 
@@ -438,7 +438,14 @@ Here, the ability to distinguish between five different vegetative intertidal ha
 ```{=latex}
 \end{spacing}
 ```
-::: {.content-visible when-format="docx"}
-\newpage
-:::
+
+```{=latex}
+\renewcommand{\chaptertopimage}{Chapter3/img/top.png}
+\renewcommand{\chapterbottomimage}{Chapter3/img/bottom.png}
+```
+
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
+```
+
 

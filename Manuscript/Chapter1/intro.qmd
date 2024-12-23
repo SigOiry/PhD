@@ -1,12 +1,10 @@
 ---
-title: "Introduction & Overview"
-number-sections: true
+title: Introduction & Overview
 ---
 
 ```{=latex}
 \begin{spacing}{1.5}
 ```
-
 ## General Introduction 
 ### Coastal Environment 
 ### Remote sensing applied to Coastal environments 
@@ -22,13 +20,24 @@ In Chapter 4, the methodology evolves to include red macroalgae, specifically ta
 
 Finally, Chapter 5 examines the physiological impacts of environmental stressors, specifically marine and atmospheric heatwaves, on seagrass reflectance. Through controlled laboratory experiments and field validations, this chapter highlights the spectral responses of Zostera noltei under heatwave conditions. Well-established spectral indices such as the NDVI and GLI are employed, and a new index, the Seagrass Heat Shock Index (SHSI), is developed to specifically identify heatwave-impacted seagrasses. These indices provide metrics to detect and quantify stress-induced changes. These findings emphasize the role of remote sensing in assessing the resilience and vulnerability of intertidal ecosystems under climate change.
 
-::: {.content-visible when-format="docx"}
-\newpage
-:::
+<!-- \chaptertitlepage{Chapter2/img/ASD_psd.png}{2}{Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing}{Chapter2/img/Seagrass_quadrats_psd.png} -->
+
+<!-- ::: {.content-visible} -->
+<!-- \newpage -->
+<!-- ::: -->
 
 
 ```{=latex}
 \end{spacing}
-\chaptertitlepage{Chapter2/img/ASD_psd.png}{2}{Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing}{Chapter2/img/Seagrass_quadrats_psd.png}
+```
+
+```{=latex}
+\renewcommand{\chaptertopimage}{Chapter2/img/ASD_psd.png}
+\renewcommand{\chapterbottomimage}{Chapter2/img/Seagrass_quadrats_psd.png}
+```
+
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
+
 ```
 

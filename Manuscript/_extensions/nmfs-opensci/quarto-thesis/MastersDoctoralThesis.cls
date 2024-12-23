@@ -64,26 +64,54 @@
 \ProvideDocumentCommand{\chapteralign}{}{\raggedright}
 \ProvideDocumentCommand{\chapterfont}{}{\Huge\bfseries}
 \ProvideDocumentCommand{\chapterprefixfont}{}{\LARGE\bfseries}
+\usepackage{graphicx} % Make sure you have this in your preamble.
+
 \DeclareDocumentCommand{\@makechapterhead}{ m }{%
-	\abovechapterskip
-	{\parindent \z@ \chapteralign \normalfont
-		\ifnum \c@secnumdepth >\m@ne
-		\if@mainmatter
-		\ifbool{chapteroneline}{%
-			\chapterfont \mdtChapapp\thechapter\autodot\enspace
-		}{%
-			\chapterprefixfont \@chapapp\space \thechapter
-			\par\nobreak
-			\chapterinbetweenskip
-		}%
-		\fi
-		\fi
-		\interlinepenalty\@M%
-		\chapterfont #1\par\nobreak
-		\chapterbelowskip
-	}
-	\thispagestyle{\chapter@p@gestyle}
+  % Force a new page for the chapter title.
+  \clearpage
+  
+  % Use the style specified for the chapter page.
+  \thispagestyle{\chapter@p@gestyle}%
+  % (Optional) If you want to keep the normal spacing above/below:
+  % \abovechapterskip
+  % \chapterbelowskip
+
+  % 1) Top image
+  \newgeometry{margin=0pt}
+  \begin{center}
+    \includegraphics[width=\paperwidth]{\chaptertopimage}% 
+  \end{center}
+
+  % Fill up the vertical space until we place the chapter info in the middle
+  \vfill
+
+  % 2) Middle: Chapter Number and Chapter Title
+  \begin{center}
+    % If you want "Chapter X":
+    {\huge \chapterfont \mdtChapapp\thechapter\autodot\par}%
+    \vspace{1em}%
+    % Actual chapter name (the #1 argument passed in).
+    {\Huge \chapterfont #1\par}%
+  \end{center}
+
+  \vfill
+
+  % 3) Bottom image
+  \begin{center}
+    \includegraphics[width=\paperwidth]{\chapterbottomimage}% 
+  \end{center}
+  \restoregeometry
+
+  % Force a fresh page immediately after the title page
+  \clearpage
+
+  % --- Added lines: insert a completely blank page ---
+  \thispagestyle{empty}%  ensure no headers/footers
+  \null               %  produce an empty page
+  \clearpage          %  finish the blank page
 }
+
+
 \def\@makeschapterhead#1{%
 	\abovechapterskip
 	{\parindent \z@ \chapteralign
