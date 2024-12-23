@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.33">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,10 +57,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -209,6 +229,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="remote-sensing-applied-to-coastal-environments" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="remote-sensing-applied-to-coastal-environments"><span class="header-section-number">1.1.2</span> Remote sensing applied to Coastal environments</h3>
+<p>Remote sensing (RS) defines the ability to retrieve information in a non-invasive way, without direct contact with the target. It relies on the propagation of signals, typically optical, acoustic, or microwave, between the target and the sensor. This technology is applied in a wide variety of fields, ranging from medical imaging to detect stem cells, to the analysis of the structure of the primordial universe <span class="citation" data-cites="zhu2021deep aghanim2020resultats">(<a href="../References/references.html#ref-aghanim2020resultats" role="doc-biblioref">Aghanim and Dole, 2020</a>; <a href="../References/references.html#ref-zhu2021deep" role="doc-biblioref">Zhu et al., 2021</a>)</span>. Remote sensing is integral to Earth observation (EO), where its methodologies facilitate large-scale and long-term data collection. Instruments on satellites, aircraft, and drones provide high-resolution imagery and measurements critical for monitoring environmental changes, mapping natural resources, and assessing land use patterns. These technologies enable systematic data collection over large areas and extended periods, supporting analyses such as deforestation, glacial melting, variations in ocean temperature, and land use mapping.</p>
+<p>Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. Remote sensing technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. High-resolution satellite imagery and drone-based platforms facilitate the detection of fine-scale changes in intertidal zones, mangroves, coral reefs, and other critical coastal habitats. These observations enable the quantification of spatial and temporal variations, informing evidence-based strategies for conservation and sustainable management.</p>
+<p>The following sections examine two complementary approaches within the field of remote sensing for Earth observation: active and passive remote sensing. Through examples focused on coastal monitoring, these sections will introduce the remote sensing methodologies employed in this work while outlining their respective advantages and challenges.</p>
+<section id="active-remote-sensing-exemple-of-the-lidar" class="level4" data-number="1.1.2.1">
+<h4 data-number="1.1.2.1" class="anchored" data-anchor-id="active-remote-sensing-exemple-of-the-lidar"><span class="header-section-number">1.1.2.1</span> Active Remote Sensing, Exemple of the LiDAR</h4>
+<p>Active remote sensing is a technique in which a sensor emits its own energy—typically in the form of electromagnetic radiation—toward a target and measures the energy reflected or backscattered from that target. This method allows for the collection of data regardless of natural light conditions, enabling observations during both day and night and through various weather conditions.</p>
+<p>LiDAR, which stands for Light Detection and Ranging, uses laser light to measure distances to objects or surfaces. By emitting laser pulses and measuring the time it takes for them to reflect back from a target, LiDAR systems can create precise, three-dimensional representations of the environment.</p>
+<p>LiDAR works by emitting a beam of light and measuring the time it takes for the beam to return to the sensor. This process not only calculates distance but can also capture the intensity of the returned signal. In many instances, multiple returns from a single pulse are measured, which allows for mapping the different heights of objects within the same x and y coordinates. This capability is particularly useful for applications such as mapping the heights of trees in a forest or measuring crop heights in agricultural fields. When the height of the ground cannot be measured, LiDAR data can only generate a digital surface model (DSM), which represents the topmost layer of the environment. However, if multiple returns are recorded, it becomes possible to create both a DSM and a digital terrain model (DTM), which represents the ground surface, by differentiating between surface and underlying layers. The difference between DSM and DTM can be uses to assess living stock or biomass. Achieving accuracy in LiDAR measurements is essential due to the high speed of light, approximately 300,000 km/s. Each step of the process, including the precise timing of the beam’s return and the accurate positioning of the sensor (typically mounted on a drone, aircraft, or satellite), must be meticulously calibrated. The use of Real-Time Kinematic (RTK) positioning ensures that the sensor’s x, y, and z coordinates are known with high precision at all times. Without these measures, the resulting data may produce a distorted and noisy representation of the mapped surface, rendering it unreliable for analysis.</p>
+<p>In coastal environment monitoring, LiDAR systems are distinguished by their emitted wavelengths, which dictate their performance and application. These systems are categorized into “topographic LiDAR” and “bathymetric LiDAR,” each suited to specific tasks in coastal studies. Topographic LiDAR operates in the near-infrared spectrum (approximately 1000 nm), excelling at mapping terrestrial features such as beach contours, vegetation density, and man-made structures. Its ability to generate high-density point clouds stems from efficient operation at lower power, though its utility is restricted to emerged surfaces due to the absorption of infrared light in water. Conversely, bathymetric LiDAR, utilizing green wavelengths (~532 nm), penetrates water to reveal submerged landscapes, including coral reefs, seagrass meadows, and shallow seabeds. While this capability is indispensable for underwater mapping, its effectiveness on land is hindered by atmospheric scattering. Together, these technologies provide complementary tools for comprehensive coastal assessments, enabling precise data collection tailored to both terrestrial and aquatic environments.</p>
+<ul>
+<li>In the present study we used only IR lidar because intertidal flat are flat with few to none 3D structure. and we operate at low tide.</li>
+</ul>
+</section>
+<section id="passive-remote-sensing" class="level4" data-number="1.1.2.2">
+<h4 data-number="1.1.2.2" class="anchored" data-anchor-id="passive-remote-sensing"><span class="header-section-number">1.1.2.2</span> Passive Remote Sensing</h4>
+<ul>
+<li><p>Sun is used as a light source of energy most of the time but not evry time (SST measurement for example)</p></li>
+<li><p>reflectance, absorbance, transmitance</p></li>
+<li><p>Spectral signature, abosorption of pigments -&gt; derivative</p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="overview" class="level2" data-number="1.2">
@@ -224,6 +265,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- ::: -->
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-aghanim2020resultats" class="csl-entry" role="listitem">
+Aghanim, N., Dole, H., 2020. Les r<span>é</span>sultats cosmologiques de la mission planck. Reflets de la physique 4–7.
+</div>
+<div id="ref-zhu2021deep" class="csl-entry" role="listitem">
+Zhu, Y., Huang, R., Wu, Z., Song, S., Cheng, L., Zhu, R., 2021. Deep learning-based predictive identification of neural stem cell differentiation. Nature communications 12, 2614.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -309,8 +358,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -421,7 +468,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
