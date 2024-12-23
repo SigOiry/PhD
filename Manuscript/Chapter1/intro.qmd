@@ -26,6 +26,7 @@ Achieving accuracy in LiDAR measurements is essential due to the high speed of l
 
 In coastal environment monitoring, LiDAR systems are distinguished by their emitted wavelengths, which dictate their performance and application. These systems are categorized into "topographic LiDAR" and "bathymetric LiDAR," each suited to specific tasks in coastal studies. Topographic LiDAR operates in the near-infrared spectrum (approximately 1000 nm), excelling at mapping terrestrial features such as beach contours, vegetation density, and man-made structures. Its ability to generate high-density point clouds stems from efficient operation at lower power, though its utility is restricted to emerged surfaces due to the absorption of infrared light in water. Conversely, bathymetric LiDAR, utilizing green wavelengths (~532 nm), penetrates water to reveal submerged landscapes, including coral reefs, seagrass meadows, and shallow seabeds. While this capability is indispensable for underwater mapping, its effectiveness on land is hindered by atmospheric scattering. Together, these technologies provide complementary tools for comprehensive coastal assessments, enabling precise data collection tailored to both terrestrial and aquatic environments. 
 
+- Give the exemple of Litto3D
 - In the present study we used only IR lidar because intertidal flat are flat with few to none 3D structure. and we operate at low tide.
 
 #### Passive Remote Sensing
@@ -35,6 +36,8 @@ In coastal environment monitoring, LiDAR systems are distinguished by their emit
 - reflectance, absorbance, transmitance
 
 - Spectral signature, abosorption of pigments -> derivative
+
+- Spectral indices
 
 ## Overview 
 
