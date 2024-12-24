@@ -32,7 +32,7 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 -   Brunier, G., **Oiry, S.**, Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. *Remote Sensing*, 14(2), 307. https://doi.org/10.3390/rs14020307
 
 
-## Presentation to International Conferences
+## Presentations to International Conferences
 
 -   Effect of Marine and Atmospheric Heatwaves on Reflectance and Pigment Composition of Intertidal *Zostera noltei* (February 2025); BioSpace25 - Biodiversity insight from Space, Frascati, Italy; Oral presentation
 
