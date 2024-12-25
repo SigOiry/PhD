@@ -2,6 +2,49 @@
 title: Introduction & Overview
 ---
 
+
+```{r update gitignore}
+#| cache: true
+#| echo: false
+#| warning: false
+#| eval: false
+
+library(fs)
+
+# Define the size threshold in bytes (100 MB)
+size_threshold <- 100 * 1024 * 1024
+
+# Get a list of all files in the repository
+files <- dir_ls(recurse = TRUE, type = "file")
+
+# Filter files larger than the size threshold
+large_files <- files[file_info(files)$size > size_threshold]
+
+# Check if there are large files
+if (length(large_files) > 0) {
+  # Read the existing .gitignore file if it exists
+  gitignore_path <- ".gitignore"
+  gitignore_content <- if (file_exists(gitignore_path)) {
+    readLines(gitignore_path)
+  } else {
+    character(0)
+  }
+  
+  # Identify files not already in .gitignore
+  files_to_add <- large_files[!large_files %in% gitignore_content]
+  
+  # Append new large files to .gitignore
+  if (length(files_to_add) > 0) {
+    writeLines(c(gitignore_content, files_to_add), gitignore_path)
+    message(length(files_to_add), " file(s) added to .gitignore.")
+  } else {
+    message("No new files to add to .gitignore.")
+  }
+} else {
+  message("No files larger than 100 MB found.")
+}
+```
+
 ```{=latex}
 \begin{spacing}{1.5}
 ```
@@ -32,11 +75,36 @@ As one of the most dynamic and multifaceted regions on Earth, coastal environmen
 
 knitr::include_graphics("Figs/Picture_habitat/CoastalHabitats_Lowres.png")
 ```
+
 Coastal ecosystems provide a range of ecosystem services that are fundamental to environmental sustainability and human well-being. These ecosystems function as natural barriers against storm surges and coastal flooding, thereby mitigating the impacts of such hazards on inland regions and safeguarding human lives and infrastructure. They support significant biodiversity, serving as critical habitats and breeding grounds for numerous species, including commercially valuable fish, shellfish, and other marine organisms that sustain global fisheries. Coastal vegetation, including mangroves, salt marshes, and seagrasses, plays a crucial role in carbon sequestration by capturing and storing atmospheric carbon dioxide, thus contributing to climate change mitigation.
 
 Beyond their role in climate regulation, coastal ecosystems enhance water quality by filtering pollutants, sediments, and excess nutrients, thereby maintaining healthier marine and estuarine systems. These ecosystems are integral to nutrient cycling, ensuring the continued productivity of adjacent marine environments. Additionally, they provide substantial cultural, educational, and recreational opportunities, drawing global attention and fostering an intrinsic human connection to nature. This societal value contributes directly to local and regional economies through industries such as tourism, artisanal fishing, and related enterprises. Furthermore, coastal ecosystems supply essential natural resources, including seafood and plant-based materials, while supporting sustainable aquaculture practices that promote global food security and bolster local livelihoods. Collectively, these functions highlight the indispensable ecological and economic importance of coastal ecosystems. 
 
 Coastal areas are among the most significant regions for human habitation due to their strategic geographic position, resource availability, and economic opportunities. Currently, approximately 2 billion people reside within 50 kilometers of coastlines, with nearly 1 billion living within 10 kilometers. This represents nearly 15% of the global population occupying only 4% of the Earth’s inhabitable landmass. Projections indicate that coastal populations will continue to rise, potentially reaching 2.9 billion by 2100 under various socioeconomic scenarios. These areas offer critical resources such as seafood and freshwater, while their moderate climates often support agricultural activities and other forms of sustainable land use. Proximity to oceans and rivers enables robust trade, transportation, and industrial growth, positioning many coastal cities as pivotal economic hubs on a global scale. The ecological and cultural roles of coastal landscapes further contribute to their appeal, attracting populations for both settlement and economic activities.
+
+```{r map population}
+#| cache: true
+#| echo: false
+#| eval: false
+#| warning: false
+
+
+library(sf)
+library(tidyverse)
+library(Utilities.Package)
+
+shp <- "Manuscript/Chapter1/data/shp/Population300km.shp" %>% 
+  read_sf() %>% 
+  mutate(POPULATION = case_when(POPULATION > 200000 ~ 200000,
+                                T ~ POPULATION))
+
+ggplot(shp) +
+  geom_sf(aes(fill = POPULATION), color = NA) +
+  scale_fill_gradient(trans = "log", low = "white", high = "darkred", name = "Population", ) +
+  theme_Bede_Map()
+
+```
+
 
 Human utilization of coastal areas spans a range of economic and social activities that highlight both the benefits and challenges of these environments. [Coastal tourism](https://blue-economy-observatory.ec.europa.eu/eu-blue-economy-sectors/coastal-tourism_en) is a significant driver of economic growth, particularly in regions like the European Union (EU). In 2021, the EU's coastal tourism sector generated approximately €49.9 billion in Gross Value Added (GVA) and employed around 1.9 million people. [Coastal fishing](https://www.reuters.com/business/environment/aquafarming-becomes-main-global-source-fish-un-food-agency-says-2024-06-07) and aquaculture are vital components of the global economy, providing employment to millions and contributing significantly to food security. In 2022, the combined global production of fisheries and aquaculture reached a record 223.2 million tonnes, with aquaculture alone producing an unprecedented 130.9 million tonnes. Notably, for the first time, aquaculture surpassed wild capture in aquatic animal production, accounting for 51% of the total. Additionally, [maritime shipping](https://maritime-union.org/how-much-trade-is-maritime/?utm_source=chatgpt.com) is the backbone of international trade, with approximately 80% of global trade by volume and over 70% by value transported via sea routes. This extensive reliance on maritime transport underscores the critical importance of coastal infrastructure, including ports and harbors, in facilitating the movement of goods worldwide. 
 
@@ -45,6 +113,7 @@ However, the intensive exploitation of coastal environments for human activities
 For instance, marine shipping contributes about 3% of global greenhouse gas emissions, a figure projected to rise by up to 50% by mid-century if stringent measures are not implemented [@IMO2020GHG]. Additionally, shipping activities lead to marine pollution, including oil spills, ballast water discharge and underwater noise affecting marine life. Oil spills remain a critical environmental concern due to their devastating and long-lasting impacts on marine ecosystems. These spills contaminate water, harm marine biodiversity, and disrupt food chains, often leading to severe economic losses in fisheries and tourism. In 2023, 10 oil spills were recorded globally, releasing over 2,000 metric tons of oil into the environment, including one major spill exceeding 700 metric tons. While historical trends show a reduction in large spills, from over 20 per year in the 1970s to about 1.3 per year in recent decades, incidents such as the December 2024 Kerch Strait spill, where 3,700 tons of oil were released, underscore the persistent and significant risks. Such events highlight the necessity for stringent preventive measures and rapid response mechanisms to mitigate the ongoing threat posed by oil spills to marine environments. Ballast water discharge represents a significant vector for the introduction of invasive aquatic species into new environments. Approximately 40% of non-indigenous aquatic species in ecosystems have been linked to ballast water release. Underwater noise pollution from shipping activities poses a growing threat to marine life, particularly cetaceans such as whales and dolphins. Elevated noise levels can disrupt communication, navigation, and feeding behaviors, leading to increased stress and altered migration patterns. Chronic exposure to underwater noise can also result in physical harm and population-level impacts. 
 One significant impact of fishing and aquaculture on coastal habitats is the degradation of critical ecosystems such as seagrass beds, coral reefs, and mangroves. Destructive fishing practices, including bottom trawling and the use of dynamite or cyanide, physically damage the seafloor and associated habitats, resulting in biodiversity loss and the disruption of ecological functions. The expansion of aquaculture operations often necessitates the conversion of coastal wetlands, particularly mangroves, into fish or shrimp ponds. This land-use change reduces the availability of essential nursery habitats for marine species and diminishes the ecosystem services provided by mangroves, such as carbon sequestration, shoreline stabilization, and water filtration. Additionally, aquaculture activities contribute to nutrient enrichment and pollution in adjacent waters through the release of uneaten feed, feces, and chemical additives, exacerbating eutrophication and altering benthic community structures. Another significant concern is the introduction of alien invasive species into the environment through aquaculture, which can disrupt local ecosystems and biodiversity. This issue will be further explored in Chapter 4. 
 Coastal tourism exerts a profound influence on ecosystem integrity, often driving substantial environmental degradation through mechanisms such as habitat destruction, pollution, and resource overexploitation. The construction and expansion of tourist infrastructure frequently lead to the removal or fragmentation of critical habitats, including mangroves, seagrass meadows, and coral reefs, all of which play pivotal roles in maintaining biodiversity and safeguarding coastal resilience. Furthermore, the rapid influx of visitors generates significant volumes of waste and untreated sewage, contributing to water quality deterioration and eutrophication, which disrupt aquatic ecosystems and alter trophic dynamics. The elevated demand for limited resources, notably freshwater and seafood, exacerbates ecological stress, leading to overharvesting and resource depletion. 
+
 
 ### Concepts of Remote sensing
 
