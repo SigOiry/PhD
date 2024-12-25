@@ -47,7 +47,7 @@ format:
       - margin=1in
     include-in-header: chaptertitlepage.tex
     output-file: "PhD_Simon"
-  html:
+  quarto-thesis-html:
     theme: cosmo
   docx: 
     output-file: "PhD_Simon"

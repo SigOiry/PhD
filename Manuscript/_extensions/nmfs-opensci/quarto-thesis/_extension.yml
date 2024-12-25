@@ -17,6 +17,8 @@ contributes:
         - partials/definitions.tex
       include-in-header: 
         - partials/in-header.tex
+      header-includes:
+        - \usepackage{adjustbox}
       geometry: 
         - paper=a4paper
         - inner=2.5cm
