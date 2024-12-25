@@ -88,20 +88,47 @@ Coastal areas are among the most significant regions for human habitation due to
 #| eval: false
 #| warning: false
 
-
+# Load required libraries
+library(terra)
 library(sf)
-library(tidyverse)
-library(Utilities.Package)
+library(ggplot2)
+library(dplyr)
 
-shp <- "Manuscript/Chapter1/data/shp/Population300km.shp" %>% 
-  read_sf() %>% 
-  mutate(POPULATION = case_when(POPULATION > 200000 ~ 200000,
-                                T ~ POPULATION))
+# Load the population density raster
+pop_density <- rast("Manuscript/Chapter1/data/img/gpw_v4_population_density_rev11_2020_30_sec.tif")
 
-ggplot(shp) +
-  geom_sf(aes(fill = POPULATION), color = NA) +
-  scale_fill_gradient(trans = "log", low = "white", high = "darkred", name = "Population", ) +
-  theme_Bede_Map()
+# Load coastline shapefile (or use global coastline data)
+coastline <- st_read("Manuscript/Chapter1/data/shp/ne_10m_ocean.shp")
+
+# Ensure CRS matches
+coastline <- st_transform(coastline, crs(pop_density))
+
+# Calculate distance to coastline for each pixel
+distance_to_coast <- distance(pop_density, coastline)
+
+# Stack the population density raster with distance raster
+pop_density_stack <- c(pop_density, distance_to_coast)
+names(pop_density_stack) <- c("pop_density", "distance_to_coast")
+
+# Convert to data frame for analysis
+pop_df <- as.data.frame(pop_density_stack, xy = TRUE, na.rm = TRUE)
+
+# Summarize population density by distance bins
+pop_summary <- pop_df %>%
+  mutate(distance_bin = cut(distance_to_coast, breaks = seq(0, max(distance_to_coast, na.rm = TRUE), by = 1000))) %>%
+  group_by(distance_bin) %>%
+  summarize(avg_pop_density = mean(pop_density, na.rm = TRUE), .groups = "drop")
+
+# Plot the average population density by distance to coastline
+ggplot(pop_summary, aes(x = as.numeric(distance_bin), y = avg_pop_density)) +
+  geom_line() +
+  labs(
+    title = "Population Density vs. Distance to Coastline",
+    x = "Distance to Coastline (km)",
+    y = "Average Population Density"
+  ) +
+  theme_minimal()
+
 
 ```
 
