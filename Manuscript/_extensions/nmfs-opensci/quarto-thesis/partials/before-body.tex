@@ -152,11 +152,27 @@ $endif$
 %----------------------------------------------------------------------------------------
 % LIST OF CONTENTS/FIGURES/TABLES
 %----------------------------------------------------------------------------------------
+\setlength{\cftsecindent}{0.5em}        % Less indentation for sections
+\setlength{\cftsubsecindent}{1em}       % Less indentation for subsections
+\setlength{\cftsubsubsecindent}{1.5em}  % Less indentation for subsubsections
+\renewcommand{\cftfigpresnum}{Figure~}
+\renewcommand{\cfttabpresnum}{Table~}
+\renewcommand{\cftfigaftersnum}{:~}  % Add ": " after the figure number
+\renewcommand{\cfttabaftersnum}{:~}  % Add ": " after the table number  % Prefix for tables
+\setlength{\cftbeforefigskip}{0.5em}  % Space between figure entries
+\setlength{\cftbeforetabskip}{0.5em} % Space between table entries
+\setlength{\cftfignumwidth}{5em} % Adjust width for figure numbers
+\setlength{\cfttabnumwidth}{5em} % Adjust width for table numbers
+\setlength{\cftfigindent}{0em}    % Indentation for figure captions
+\setlength{\cfttabindent}{0em}    % Indentation for table captions
+
 \begingroup
 \hypersetup{linkcolor=$if(toclinkcolor)$$toclinkcolor$$else$black$endif$}
 
-\tableofcontents   % Main table of contents
-\listoffigures      % List of figures
+\tableofcontents  
+\clearpage  % Start a new page after List of Figures% Main table of contents
+\listoffigures 
+\clearpage  % Start a new page after List of Figures% List of figures
 \listoftables       % List of tables
 
 \endgroup
