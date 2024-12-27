@@ -333,7 +333,13 @@ Some studies propose a simple classification of NDVI based on thresholds to diff
 
 $R_{BOA}$ can be used to identify key absorption features of chemical compounds of the traget, by applying derivative analysis to the spectral signature. The second derivative of the $R$ is utilized to enhance the detection of subtle pigment or mineral absorption features. By analyzing the second derivative, these small features are amplified, allowing for more precise identification of pigment presence and estimation of their concentrations. This approach is particularly effective for identifying accessory pigments that have weaker absorption features compared to chlorophyll-a.
 
-#### Spectral resolutions
+```{=latex}
+\begin{tcolorbox}
+Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
+\end{tcolorbox}
+```
+#### Remote Sensing resolutions
+##### Spectral and Radiometric resolution
 
 The detection of pigments absorption feature necessitate to measure light reflectance at almost each wavelength. However this capacity measure the spectral signature in details depends on the spectra resolution of the sensor used to make the measure. 
 
@@ -416,9 +422,22 @@ knitr::include_graphics("Figs/Spectra_resolutions/Fig_SpectralResolution.png")
 
 Remote sensing sensors are generally classified into two categories based on their spectral resolution: multispectral sensors and hyperspectral sensors.
 Multispectral sensors are characterized by a limited number of broad spectral bands. These bands cover wide portions of the spectrum, with a bandwidth generally exceeding 20 nm. The spectral sampling interval is relatively large, resulting in a coarser spectral resolution that provides a broad overview of the spectral characteristics of a scene. In contrast, hyperspectral sensors are equipped with hundreds of narrow, contiguous spectral bands. These bands are separated by small spectral sampling intervals, often just a few nanometers, which results in a much finer spectral resolution. This fine resolution allows for the detailed measurement of spectral signatures, capturing subtle variations in absorption features and spectral shapes. The difference in spectral resolution between these two categories significantly impacts the ability of the sensor to analyze complex spectral data. Hyperspectral sensors, with their narrow bands and fine sampling intervals, provide a continuous spectral profile that enables precise discrimination of unique spectral properties, such as pigment absorption. Multispectral sensors, while less detailed, are efficient for general spectral analyses where fine discrimination is not required.
-ropriate Sensor.
 Another specification of sensor regarding their ability to measure spectral signature is the radiometric resolution. It refers to the sensor's ability to measure and differentiate variations in the intensity of electromagnetic radiation. It is defined by the number of discrete levels, or bits, used to represent the energy recorded for each pixel in an image. Higher radiometric resolution enables finer distinctions in brightness levels, which is particularly important for detecting subtle differences in reflectance and ensuring accurate analysis of surface features. For example, an 8-bit sensor can record 256 levels of intensity, while a 12-bit sensor can capture 4,096 levels, providing greater detail and dynamic range in the captured imagery.
 
+##### Temporal Resolutions
+
+Another key characteristic of remote sensing sensors is their temporal resolution, defined as the time interval between successive image acquisitions over the same study site. Temporal resolution is critical for monitoring dynamic environments, such as coastal ecosystems, where conditions can change rapidly due to tides, weather events, or human activity.
+
+Temporal resolution varies significantly depending on the sensor's design and mission. For example, the Sentinel-2 constellation, composed of two satellites, offers a temporal resolution of 5 days at the equator. This revisit time improves to approximately 3 days at higher latitudes, such as in France, due to the overlap in satellite paths. Such frequent revisits make Sentinel-2 an excellent choice for applications requiring consistent monitoring, such as vegetation health assessments, sediment transport studies, or vegetation phenology estimations.
+Certain missions, like Sentinel-3, achieve even shorter revisit times. Equipped with sensors designed for ocean and land monitoring, Sentinel-3 provides near-daily coverage, making it particularly suited for applications that require high temporal frequency, such as tracking phytoplankton blooms, which can appear and disappear within a few days, or surface temperature variations. This capability is crucial for capturing fast-evolving phenomena and ensuring timely data delivery for decision-making.
+
+The temporal resolution of a satellite sensor may vary from hours to days, depending on whether the platform orbit is geostationary or sun-synchronous. Geostationary satellites provide continuous coverage over a fixed location, while sun-synchronous orbits follow sun illumination, allowing image acquisition at the same time of the day for a location. This consistency is particularly important for visible-infrared sensors, as it ensures usable images and maximizes the temporal resolution of the sensor by avoiding night-time acquisitions. On the other hand, airborne platforms exhibit more variable temporal resolutions, ranging from days to years, depending on mission planning.
+
+Usually, temporal resolution is highly dependent on the spatial resolution of the sensor. Higher spatial resolution often corresponds to lower temporal resolution, although geostationary platforms and pointable sensors can be exceptions to this trend.
+
+In contrast, some sensors are operated on-demand, with data acquisition triggered directly by the user. This is particularly characteristic of unmanned aerial vehicles (UAVs) and specialized satellite missions like Pleiades or PRISMA. While these systems may lack consistent temporal archives for a given study site, they provide unmatched flexibility for high-resolution data collection. Such sensors are invaluable for addressing specific research objectives, including acquiring detailed imagery immediately after extreme weather events or capturing localized features with high spatial precision, complementing routine satellite-based monitoring programs.
+
+##### Spatial resolution 
 #### Next section
 
 Overall, there is a trade-off between area coverage, spatial, spectral, and temporal resolutions due to the processing and storage capabilities of sensors. Increasing the area covered by a single image generally results in larger pixel sizes and lower temporal resolution 

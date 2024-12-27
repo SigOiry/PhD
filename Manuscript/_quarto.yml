@@ -41,7 +41,7 @@ format:
   quarto-thesis-pdf: 
     urlcolor: black
     toclinkcolor: black
-    toc-depth: 5
+    toc-depth: 4
     titlepage: true
     latex-options: 
       - margin=1in
