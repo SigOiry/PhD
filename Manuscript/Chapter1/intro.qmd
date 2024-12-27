@@ -80,9 +80,9 @@ Coastal ecosystems provide a range of ecosystem services that are fundamental to
 
 Beyond their role in climate regulation, coastal ecosystems enhance water quality by filtering pollutants, sediments, and excess nutrients, thereby maintaining healthier marine and estuarine systems. These ecosystems are integral to nutrient cycling, ensuring the continued productivity of adjacent marine environments. Additionally, they provide substantial cultural, educational, and recreational opportunities, drawing global attention and fostering an intrinsic human connection to nature. This societal value contributes directly to local and regional economies through industries such as tourism, artisanal fishing, and related enterprises. Furthermore, coastal ecosystems supply essential natural resources, including seafood and plant-based materials, while supporting sustainable aquaculture practices that promote global food security and bolster local livelihoods. Collectively, these functions highlight the indispensable ecological and economic importance of coastal ecosystems.
 
-Coastal areas are among the most significant regions for human habitation due to their strategic geographic position, resource availability, and economic opportunities. Currently, approximately 2 billion people reside within 50 kilometers of coastlines, with nearly 1 billion living within 10 kilometers. This represents nearly 15% of the global population occupying only 4% of the Earth's inhabitable landmass. Projections indicate that coastal populations will continue to rise, potentially reaching 2.9 billion by 2100 under various socioeconomic scenarios. These areas offer critical resources such as seafood and freshwater, while their moderate climates often support agricultural activities and other forms of sustainable land use. Proximity to oceans and rivers enables robust trade, transportation, and industrial growth, positioning many coastal cities as pivotal economic hubs on a global scale. The ecological and cultural roles of coastal landscapes further contribute to their appeal, attracting populations for both settlement and economic activities.
-
 ### Human Activities in Coastal Areas and their Environmental Impacts 
+
+Coastal areas are among the most significant regions for human habitation due to their strategic geographic position, resource availability, and economic opportunities. Currently, approximately 2 billion people reside within 50 kilometers of coastlines, with nearly 1 billion living within 10 kilometers. This represents nearly 15% of the global population occupying only 4% of the Earth's inhabitable landmass. Projections indicate that coastal populations will continue to rise, potentially reaching 2.9 billion by 2100 under various socioeconomic scenarios. These areas offer critical resources such as seafood and freshwater, while their moderate climates often support agricultural activities and other forms of sustainable land use. Proximity to oceans and rivers enables robust trade, transportation, and industrial growth, positioning many coastal cities as pivotal economic hubs on a global scale. The ecological and cultural roles of coastal landscapes further contribute to their appeal, attracting populations for both settlement and economic activities.
 
 Human utilization of coastal areas spans a range of economic and social activities that highlight both the benefits and challenges of these environments. [Coastal tourism](https://blue-economy-observatory.ec.europa.eu/eu-blue-economy-sectors/coastal-tourism_en) is a significant driver of economic growth, particularly in regions like the European Union (EU). In 2021, the EU's coastal tourism sector generated approximately €49.9 billion in Gross Value Added (GVA) and employed around 1.9 million people. [Coastal fishing](https://www.reuters.com/business/environment/aquafarming-becomes-main-global-source-fish-un-food-agency-says-2024-06-07) and aquaculture are vital components of the global economy, providing employment to millions and contributing significantly to food security. In 2022, the combined global production of fisheries and aquaculture reached a record 223.2 million tonnes, with aquaculture alone producing an unprecedented 130.9 million tonnes. Notably, for the first time, aquaculture surpassed wild capture in aquatic animal production, accounting for 51% of the total. Additionally, [maritime shipping](https://maritime-union.org/how-much-trade-is-maritime/?utm_source=chatgpt.com) is the backbone of international trade, with approximately 80% of global trade by volume and over 70% by value transported via sea routes. This extensive reliance on maritime transport underscores the critical importance of coastal infrastructure, including ports and harbors, in facilitating the movement of goods worldwide.
 However, the intensive exploitation of coastal environments for human activities has led to significant ecological challenges.
@@ -90,7 +90,11 @@ However, the intensive exploitation of coastal environments for human activities
 For instance, marine shipping contributes about 3% of global greenhouse gas emissions, a figure projected to rise by up to 50% by mid-century if stringent measures are not implemented [@IMO2020GHG]. Additionally, shipping activities lead to marine pollution, including oil spills, ballast water discharge and underwater noise and light affecting marine life. Oil spills remain a critical environmental concern due to their devastating and long-lasting impacts on marine ecosystems. These spills contaminate water, harm marine biodiversity, and disrupt food chains, often leading to severe economic losses in fisheries and tourism. In 2023, ten oil spills were recorded globally, releasing over 2,000 tons of oil into the environment, including one major spill exceeding 700 tons in Asia [@itopf_statistics]. While historical trends show a reduction in large spills, from over 20 per year in the 1970s to about 1.3 per year in recent decades, incidents such as the spill occured in December 2024 in the Kerch Strait, where 3,700 tons of oil were released, underscore the persistent and significant risks. Such events highlight the necessity for stringent preventive measures and rapid response mechanisms to mitigate the ongoing threat posed by oil spills to marine environments. 
 Ballast water discharge represents a significant vector for the introduction of invasive aquatic species into new environments. Approximately 40% of introductions of non-indigenous aquatic species have been linked to ballast water release. Underwater noise pollution from shipping activities poses a growing threat to marine life, particularly cetaceans such as whales and dolphins. Elevated noise levels can disrupt communication, navigation, and feeding behaviors, leading to increased stress and altered migration patterns. Chronic exposure to underwater noise can also result in physical harm and population-level impacts. One significant impact of fishing and aquaculture on coastal habitats is the degradation of critical ecosystems such as seagrass beds, coral reefs, and mangroves. Destructive fishing practices, including bottom trawling and the use of dynamite or cyanide, physically damage the seafloor and associated habitats, resulting in biodiversity loss and the disruption of ecological functions. The expansion of aquaculture operations often necessitates the conversion of coastal wetlands, particularly mangroves, into fish or shrimp ponds. This land-use change reduces the availability of essential nursery habitats for marine species and diminishes the ecosystem services provided by mangroves, such as carbon sequestration, shoreline stabilization, and water filtration. Additionally, aquaculture activities contribute to nutrient enrichment and pollution in adjacent waters through the release of uneaten feed, feces, and chemical additives, exacerbating eutrophication and altering benthic community structures. Another significant concern is the introduction of alien invasive species into the environment through aquaculture, which can disrupt local ecosystems and biodiversity. This issue was explored in Chapter 4. Coastal tourism exerts a profound influence on ecosystem integrity, often driving substantial environmental degradation through mechanisms such as habitat destruction, pollution, and resource overexploitation. The construction and expansion of tourist infrastructure frequently lead to the removal or fragmentation of critical habitats, including mangroves, seagrass meadows, and coral reefs, all of which play pivotal roles in maintaining biodiversity and safeguarding coastal resilience. Furthermore, the rapid influx of visitors generates significant volumes of waste and untreated sewage, contributing to water quality deterioration and eutrophication, which disrupt aquatic ecosystems and alter trophic dynamics. The elevated demand for limited resources, notably freshwater and seafood, exacerbates ecological stress, leading to overharvesting and resource depletion.
 
+```{=latex}
+\begin{tcolorbox}
 The dynamic interactions between terrestrial and marine systems are particularly evident in intertidal habitats, which exemplify the transitional nature of coastal zones. The next section will focus on these habitats, exploring their ecological significance, the processes shaping them, and the challenges they face under increasing environmental and anthropogenic pressures.
+\end{tcolorbox}
+```
 
 ### Tidal flats
 
@@ -110,16 +114,74 @@ Globally, tidal flats are experiencing significant declines in extent due to bot
 knitr::include_graphics("Figs/Murray_Tidalflats.png")
 ```
 
-Regions such as East Asia, the Middle East, and North America have shown the greatest losses. These declines mirror trends observed in other coastal ecosystems, such as mangroves and seagrasses. Despite these losses, some areas have exhibited resilience or even expansion, highlighting the dynamic interplay between sedimentary processes, sea-level rise, and human interventions.
+Regions such as East Asia, the Middle East, and North America have shown the greatest losses. These declines mirror trends observed in other coastal ecosystems, such as mangroves and seagrasses. Despite these losses, some areas have exhibited resilience or even expansion, highlighting the dynamic interplay between sedimentary processes, sea-level rise, and human interventions [@murray2019global].
 
 A potential solution to limit the disappearance of tidal flats is to protect the ecosystems they host. These ecosystems contribute significantly to nutrient cycling and sediment stabilization, enhancing the overall resilience of tidal flats. By maintaining these biotic communities, the ecological functions of tidal flats can be preserved, buffering them against threats such as erosion and rising sea levels.
 
-Microalgal biofilms, also referred to as intertidal microphytobenthos (MPB), are communities of unicellular microalgae and cyanobacteria that inhabit the surface sediments of tidal flats. Dominated by diatoms, these communities stabilize sediments through the production of extracellular polymeric substances (EPS), which enhance cohesion and structural stability. Additionally, they are critical for nutrient cycling, facilitating the retention and recycling of essential elements. Through photosynthesis, biofilms contribute substantially to primary productivity, forming a foundational component of intertidal food webs.
+```{=latex}
+\begin{tcolorbox}
+The main vegetation classes found on tidal flats will be introduced in the following sections, as Chapters 2 and 3 rely specifically on distinguishing between these classes. Here, "classes" is considered in its taxonomic sense, referring to a toaxonomic rank that groups related orders of organisms sharing a common ancestor.
+\end{tcolorbox}
+```
 
-#### Seagrasses
+#### Bacillariophyceae, Euglenida and Cyanophyceae 
 
-Intertidal seagrass meadows consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. 
-Furthermore, they regulate nutrient cycles and improve water quality 
+Within estuarine biological communities, the microphytobenthos (MPB) can contribute up to 50% of total primary production [@n1999primary]. This assemblage comprises unicellular algae—particularly epipsammic diatoms (associated with sand grains) and epipelic diatoms (free and motile within muddy sediments, @fig-MPBpictures B)—as well as cyanobacteria and euglenids [@macintyre1996microphytobenthos]. These organisms proliferate on sediment surfaces during low tide [@kelly2001attenuation], colonizing intertidal superficial sediments and forming biofilms (@fig-MPBpictures A) that can extend over several square kilometers [@benyoucef2014microphytobenthos].
+
+```{r Figs MPBpictures}
+#| echo: false
+#| warning: false
+#| fig-cap: "Picture of the sampling of microphytobenthos biofilm in the Guadalquivir river, on the 22nd of March 2023 (A) and a single diatoms cell (B), likely *Navicula spp.* took using a scanning transmission electron microscope by Alexandre Barnett."
+#| label: fig-MPBpictures
+#| out-width: "100%"
+
+knitr::include_graphics("Figs/MPB/MPB_pictures.png")
+```
+
+The MPB fulfills both structural and trophic functions within intertidal mudflats. Structurally, microphytobenthic biofilms decelerate sediment resuspension and enhance mudflat stability by mitigating erosive processes [@decho2000microbial]. Trophically, they serve as a food resource for deposit-feeding and suspension-feeding invertebrates [@miller1996microphytobenthos]. The MPB forms the foundation of various food chains, being consumed at low tide by organisms ranging from gastropods [@savelli2018biotic] to shorebirds [@drouet2015utilisation]. Additionally, at high tide, tidal currents and waves can resuspend the MPB, making it available in the water column for suspension feeders and facilitating the export of a portion of its biomass to adjacent ecosystems [@de1995wind ; @decottignies2007exploitation].
+
+The MPB's role in sediment stabilization is further supported by its production of extracellular polymeric substances (EPS), which enhance sediment cohesion and reduce erosion. Moreover, the MPB contributes to nutrient cycling within coastal ecosystems, influencing the availability of nutrients such as nitrogen and phosphorus, which are essential for primary production. The dynamic nature of MPB communities allows them to adapt to varying environmental conditions, making them integral to the resilience and functioning of coastal habitats.
+
+#### Chlorophyceae 
+
+Green macroalgae, belonging to the Class of Chlorophyceae, are a diverse group of multicellular photosynthetic organisms predominantly inhabiting marine environments, though some species are found in freshwater and terrestrial habitats (@fig-vegetation D). They are characterized by their green pigmentation, resulting from the dominance of chlorophylls a and b, which play a crucial role in their photosynthetic processes [@cikovs2022recent]. 
+
+Ecologically, green macroalgae are significant primary producers, contributing substantially to the productivity of coastal ecosystems. Species such as those in the genus *Ulva* are known for their rapid growth rates and are often indicators of nutrient-rich conditions [@liu2020role]. 
+
+In addition to their ecological roles, green macroalgae have been utilized in various human applications. They are cultivated for food used in aquaculture and their potential in biofuel production and as bioindicators for monitoring environmental health is being actively researched [@moreira2022underexplored]. 
+
+However, under conditions of eutrophication—excessive nutrient enrichment—green macroalgae can proliferate excessively, leading to algal blooms. These blooms can have detrimental effects on marine ecosystems, including hypoxia (low oxygen levels) and the displacement of other important species [@schreyers2021spotting ; @sun2022prevention].
+
+#### Phaeophyceae
+
+Brown macroalgae, classified under the class Phaeophyceae, are a diverse group of multicellular marine algae predominantly found in temperate and polar coastal regions (@fig-vegetation B). Their characteristic brown coloration arises from the presence of the pigment fucoxanthin, which masks the green of chlorophylls a and c. This pigmentation is integral to their photosynthetic efficiency, particularly in low-light underwater environments [@cikovs2022recent]. 
+
+Ecologically, brown macroalgae play a pivotal role in marine ecosystems. They form extensive underwater forests, commonly known as kelp forests, which provide habitat, food, and shelter for a multitude of marine organisms, thereby enhancing local biodiversity. These structures influence coastal oceanography by affecting water flow and light penetration. In intertidal areas, they often colonize rocky substrat, creating suitable habitat for various species like sea anemone, limpet and fishes [@eger2023value]. 
+
+In terms of human utilization, brown macroalgae have been harvested for centuries for various purposes. They are a source of alginates—polysaccharides extracted from their cell walls—widely used as gelling, thickening, and stabilizing agents in the food, pharmaceutical, and cosmetic industries, but as also the potential to be uses in Lithium-ion batteries production [@kovalenko2011major]. Additionally, certain species are consumed directly as food, particularly in East Asian cuisines, and are recognized for their nutritional value and health benefits. 
+
+Brown macroalgae also contribute to environmental management practices. Their ability to absorb and accumulate heavy metals makes them effective in bioremediation efforts to remove pollutants from marine environments [@davis2003review]. Furthermore, their potential in carbon sequestration positions them as valuable components in strategies aimed at mitigating climate change impacts. 
+
+However, brown macroalgae are susceptible to environmental changes. Factors such as ocean warming, pollution, and overfishing can lead to declines in their populations, which in turn affects the broader marine ecosystems they support [@manca2024projected]. Conservation and sustainable management of these algae are therefore crucial to maintaining the health and productivity of coastal marine environments.
+
+#### Rhodophyceae
+
+Red macroalgae, or Rhodophyta, constitute a diverse group of predominantly marine, multicellular algae characterized by their reddish pigmentation, which results from the presence of phycoerythrin and phycocyanin pigments (@fig-vegetation C). These pigments enable red algae to efficiently absorb blue and green wavelengths of light, facilitating photosynthesis at greater ocean depths compared to other algal groups [@cikovs2022recent]. 
+
+Ecologically, red macroalgae play a vital role in marine environments. They contribute significantly to primary production and serve as foundational species in various marine habitats. Notably, coralline red algae, which secrete calcium carbonate, are instrumental in building and stabilizing coral reef structures, providing habitat complexity that supports diverse marine life [@cornwall2023crustose]. 
+
+In terms of human utilization, red macroalgae have been harvested for centuries for their nutritional and industrial value. Species such as *Porphyra* (known as nori in Japan and gim in Korea) and *Palmaria palmata* (dulse) are consumed as food, valued for their high protein content, essential vitamins, and minerals [@wei2023influence ; @stevant2023concise]. Additionally, red algae are a primary source of phycocolloids like agar and carrageenan, which are extensively used as gelling and stabilizing agents in the food, pharmaceutical, and cosmetic industries [@nurdin2023precision ; @valderrama2013social]. 
+
+Red macroalgae also possess bioactive compounds with potential therapeutic applications. Research has identified various secondary metabolites in red algae that exhibit antimicrobial, anti-inflammatory, and anticancer properties, highlighting their potential in drug development and functional food ingredients [@ismail2020therapeutic]. 
+
+However, red macroalgae face challenges due to environmental changes. Factors such as climate change, pollution, and habitat destruction can adversely affect their populations and the ecosystems they support. Conservation efforts and sustainable harvesting practices are essential to preserve these ecologically and economically important organisms [@hanley2024victim].
+
+#### Magnoliopsida
+
+Intertidal seagrass meadows, classified under the class Magnoliopsida, consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. 
+Furthermore, they regulate nutrient cycles and improve water quality by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits. 
+
+Seagrass meadows, much like tidal flats, are undergoing significant declines on a global scale due to a variety of anthropogenic and natural stressors. Despite their critical ecological roles, seagrass ecosystems remain comparatively underrepresented in scientific research within the broader scope of coastal ecosystems. As illustrated in @fig-SeagrassHabitat (e), the proportion of publications focusing on seagrasses in the context of coastal ecosystem studies is considerably lower than those dedicated to other key habitats such as coral reefs, mangroves, and salt marshes. This disparity highlights a critical research gap, underscoring the need for increased scientific attention to better understand and mitigate the factors contributing to the degradation of these vital ecosystems.
 
 ```{=latex}
 
@@ -152,7 +214,6 @@ Furthermore, they regulate nutrient cycles and improve water quality
 \end{tikzpicture}
 ```
 
-
 ```{r Figs SeagrassHabitat}
 #| echo: false
 #| warning: false
@@ -166,20 +227,21 @@ knitr::include_graphics("Figs/Publication_habitat/Seagrass_habitats.png")
 \newpage
 ```
 
-by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits. 
-
-Following global trends in tidal flats, seagrass meadows are also experiencing a decline worldwide. However, they remain one of the least studied ecosystems within coastal environments (@fig-SeagrassHabitat e). 
-
-<!-- ```{=latex} -->
-<!-- \newpage\null\thispagestyle{empty}\newpage -->
-<!-- ``` -->
+```{=latex}
+\begin{tcolorbox}
+Traditional field-based sampling methods have proven to be highly effective for studying coastal environments at localized or small spatial scales, providing detailed insights into species composition, habitat structure, and ecological interactions. However, these approaches face significant limitations when applied to broader spatial extents or temporal scales due to their labor-intensive nature and logistical constraints. This methodological gap poses challenges for evaluating large-scale patterns and long-term changes in coastal ecosystems, such as seagrass meadows, mangroves, and tidal flats. Remote sensing technologies, with their ability to capture high-resolution data across extensive geographic areas and over multiple time periods, offer a powerful complementary tool to address these limitations. By integrating traditional methods with remote sensing approaches, it allows a more comprehensive understanding of coastal ecosystem dynamics, facilitating the assessment of both localized impacts and global trends. The following section explores how advancements in remote sensing technologies are transforming the study of coastal environments, enabling more efficient and scalable assessments.
+\end{tcolorbox}
+```
 
 ## Concepts of Remote sensing
 
 Remote sensing (RS) defines the ability to retrieve information in a non-invasive way, without direct contact with the target. It relies on the propagation of signals, typically optical, acoustic, or microwave, between the target and the sensor. This technology has been applied in a wide variety of fields, ranging from medical imaging to detect stem cells, to the analysis of the structure of the primordial universe [@zhu2021deep ; @aghanim2020resultats]. Remote sensing provides the basis to Earth observation (EO), where its methodologies facilitate large-scale and long-term data collection. Instruments on satellites, aircraft, and drones provide high-resolution imagery and measurements critical for monitoring environmental changes, mapping natural resources, and assessing land use patterns. These technologies enable systematic data collection over large areas and extended periods, supporting analyses such as deforestation, glacial melting, variations in ocean temperature, and changes in land use.
 
+```{=latex}
+\begin{tcolorbox}
 The following sections examine two complementary approaches used in this study within the field of remote sensing for Earth observation: active and passive remote sensing. Through direct applications on coastal monitoring, these sections will introduce remote sensing methodologies while outlining their respective advantages and challenges.
-
+\end{tcolorbox}
+```
 ### Active Remote Sensing, Exemple of the LiDAR
 
 Active remote sensing is a technique in which a sensor emits its own energy---typically in the form of electromagnetic radiation---toward a target and measures the energy reflected or backscattered from it. This method allows for the collection of data regardless of natural light conditions, enabling observations during both day and night and through various weather conditions.
@@ -230,6 +292,16 @@ $${#eq-reflectance}
 
 $R$ is defined for each wavelength as a value between 0 and 1. A value of 0 indicates that all light has been absorbed or transmitted by the target, while a value of 1 indicates that all light has been reflected.
 
+```{r Fig FigLightPath}
+#| echo: false
+#| warning: false
+#| fig-cap: "Light pathways involved in remote sensing: illustrating the interaction of solar radiation with the atmosphere, vegetation, and water surfaces, highlighting processes such as scattering, absorption, and reflectance contributing to the top-of-atmosphere (TOA) radiance observed by a satellite sensor."
+#| label: fig-FigLightPath
+#| out-width: "90%"
+
+knitr::include_graphics("Figs/FigLightPath.png")
+```
+
 $R$ at the Top of Atmosphere (TOA), i.e., the magnitude directly measured by spaceborne or airborne sensors contains signals originating from both the atmosphere and the Earth's surface. Therefore, to study targets located on the Earth's surface, $R_{TOA}$ must undergo atmospheric correction processing to transform it into Bottom of Atmosphere (BOA) $R$, which represents the intrinsic reflectance properties of the surface target. Precise $R_{BOA}$ is crucial for accurately analyzing surface characteristics and for applications like vegetation monitoring, water quality assessment, and land cover classification.
 
 One of the most basic atmospheric correction methods is the "black pixel" method, which assumes that all the signal retrieved over optically deep waters originates entirely from the atmosphere. This information is then used to correct the reflectance across the entire scene. However, this method requires the presence of optically deep water tragets within the scene and assumes uniform aerosol concentrations across the scene. Such assumption may be inaccurate, particularly for satellites with a wide field of view, such as MODIS, where a single image can cover a swath of 2,330 km. Limitations to this technique arise also when the target of study is a water body itself. These limitations highlight the need for more advanced correction techniques that account for spatial variability in atmospheric properties.
@@ -261,11 +333,97 @@ Some studies propose a simple classification of NDVI based on thresholds to diff
 
 $R_{BOA}$ can be used to identify key absorption features of chemical compounds of the traget, by applying derivative analysis to the spectral signature. The second derivative of the $R$ is utilized to enhance the detection of subtle pigment or mineral absorption features. By analyzing the second derivative, these small features are amplified, allowing for more precise identification of pigment presence and estimation of their concentrations. This approach is particularly effective for identifying accessory pigments that have weaker absorption features compared to chlorophyll-a.
 
--   **Speak about *in situ* spectroradiometry**
+#### Spectral resolutions
+
+The detection of pigments absorption feature necessitate to measure light reflectance at almost each wavelength. However this capacity measure the spectral signature in details depends on the spectra resolution of the sensor used to make the measure. 
+
+Spectral resolution is a critical parameter of remote sensing sensors, defined by three main components: the number of spectral bands, the bandwidth (Full Width at Half Maximum, FWHM), and the spectral sampling interval. A sensor with higher spectral resolution can differentiate between closely spaced wavelengths within the electromagnetic spectrum, enabling precise characterization of spectral features.
+
+```{r Spectral resolution}
+#| cache: true
+#| echo: false
+#| warning: false
+#| eval: false
+
+library(tidyverse)
+
+df_hyper <- read.csv("Manuscript/Chapter1/data/VIGO_STD.csv") %>% 
+  as_tibble() %>% 
+  dplyr::filter(Letter == "Field") %>% 
+  group_by(Wavelength) %>% 
+  reframe(value = mean(mean_RAW))
+
+SRF <- readxl::read_xlsx("Manuscript/Chapter1/data/SRF_S2.xlsx", sheet = "Spectral Responses (S2A)") %>% 
+  rename(Wavelength = "SR_WL")
+
+df_all <- df_hyper %>% 
+  left_join(SRF, by ="Wavelength") %>% 
+  pivot_longer(-c(Wavelength, value), names_to = "Band", values_to = "SRF") %>% 
+  mutate(Band = gsub(".*_","",Band))
+
+
+wavelength <- data.frame(Band = c(paste0("B", c(1:12)), "B8A"),
+                         Wavelength = c(442,492,559,664,704,740,782,832,945,1373,1613,2202,864))
+
+
+poly_order <- 3  # Polynomial order
+window_size <- 11  # Window size (should be an odd number)
+
+# Apply Savitzky-Golay smoothing
+df_hyper$value <- signal::sgolayfilt(df_hyper$value, p = poly_order, n = window_size)
+ df_hyper <- df_hyper %>% 
+  mutate(res = "Hyperspectral")
+
+df_multi <- df_all %>% 
+  group_by(Band) %>% 
+  reframe(value = sum(SRF*value)/sum(SRF)) %>% 
+  left_join(wavelength, by = "Band") %>% 
+  dplyr::filter(Wavelength < 900)
+
+df_final <- df_multi %>% 
+  dplyr::select(-Band) %>% 
+  mutate(res = "Multispectral") %>% 
+  bind_rows(df_hyper)
+
+
+coltab = c(Hyperspectral = "darkred", "Multispectral" = "darkgreen")
+
+plot <- ggplot(df_final)+
+  geom_line(mapping = aes(x = Wavelength, y = value, color = res), linewidth = 1)+
+  scale_color_manual(values = coltab, name = "Resolutions:")+
+  ylab("Reflectance")+
+  Utilities.Package::theme_Bede()+
+  scale_y_continuous(position = "right")+
+  theme(legend.position = c(0.1,0.8), 
+        legend.text = element_text(size = 15), 
+        legend.title = element_text(size = 20),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        axis.text.x = element_text(size = 15),
+        axis.text.y = element_text(size = 15), plot.background = element_rect(fill="white",color = NA))
+
+ggsave("Manuscript/Chapter1/Figs/Spectra_resolutions/Signatures.png", width = 10, height = 9.18, dpi = 400)
+```
+```{r Fig Spectral_resolutions}
+#| echo: false
+#| warning: false
+#| fig-cap: "Comparison of spectral resolution between multispectral (A) and hyperspectral (B) sensors in the solar radiance spectrum. Panel C illustrates the impact of spectral resolution on the same spectral signature of Gracilaria vermiculophylla. With hyperspectral resolution (red), absorption features of pigments such as phycocyanin and phycoerythrin are distinguishable, whereas these features are absent in the multispectral resolution provided by Sentinel-2 (green)."
+#| label: fig-Spectral_resolutions
+#| out-width: "100%"
+
+knitr::include_graphics("Figs/Spectra_resolutions/Fig_SpectralResolution.png")
+```
+
+Remote sensing sensors are generally classified into two categories based on their spectral resolution: multispectral sensors and hyperspectral sensors.
+Multispectral sensors are characterized by a limited number of broad spectral bands. These bands cover wide portions of the spectrum, with a bandwidth generally exceeding 20 nm. The spectral sampling interval is relatively large, resulting in a coarser spectral resolution that provides a broad overview of the spectral characteristics of a scene. In contrast, hyperspectral sensors are equipped with hundreds of narrow, contiguous spectral bands. These bands are separated by small spectral sampling intervals, often just a few nanometers, which results in a much finer spectral resolution. This fine resolution allows for the detailed measurement of spectral signatures, capturing subtle variations in absorption features and spectral shapes. The difference in spectral resolution between these two categories significantly impacts the ability of the sensor to analyze complex spectral data. Hyperspectral sensors, with their narrow bands and fine sampling intervals, provide a continuous spectral profile that enables precise discrimination of unique spectral properties, such as pigment absorption. Multispectral sensors, while less detailed, are efficient for general spectral analyses where fine discrimination is not required.
+ropriate Sensor.
+Another specification of sensor regarding their ability to measure spectral signature is the radiometric resolution. It refers to the sensor's ability to measure and differentiate variations in the intensity of electromagnetic radiation. It is defined by the number of discrete levels, or bits, used to represent the energy recorded for each pixel in an image. Higher radiometric resolution enables finer distinctions in brightness levels, which is particularly important for detecting subtle differences in reflectance and ensuring accurate analysis of surface features. For example, an 8-bit sensor can record 256 levels of intensity, while a 12-bit sensor can capture 4,096 levels, providing greater detail and dynamic range in the captured imagery.
+
+#### Next section
 
 Overall, there is a trade-off between area coverage, spatial, spectral, and temporal resolutions due to the processing and storage capabilities of sensors. Increasing the area covered by a single image generally results in larger pixel sizes and lower temporal resolution 
 
-```{r Fig Spectral_signature}
+```{r Fig Satellite_resolution}
 #| echo: false
 #| warning: false
 #| fig-cap: "Intersection of spectral resolutions (x-axis), temporal resolutions (y-axis), and spatial resolutions (circle size) of the main satellite sensors used to observe coastal areas."
@@ -274,6 +432,9 @@ Overall, there is a trade-off between area coverage, spatial, spectral, and temp
 
 knitr::include_graphics("Figs/Satellite_resolution.png")
 ```
+
+
+
 
 <!-- Finally, a distinction can be made between high-altitude remote sensing and low-altitude remote sensing. Low-altitude remote sensing refers to the acquisition of spectral signatures at a distance of no more than 120 meters from the target, in compliance with European regulations on the maximum flight height for Unmanned Aerial Vehicles (UAVs). This contrasts with high-altitude remote sensing, which involves plane-borne and space-borne sensors. The distinction is important due to significant differences in calibration methods for reflectance measurements, as well as variations in temporal, and above all, spatial resolution. -->
 

@@ -31,3 +31,20 @@
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 }
 
+\usepackage{tcolorbox}
+\tcbset{
+  colback=gray!10, % Background color (10% grey)
+  colframe=gray!50, % Border color (50% grey)
+  boxrule=0.5mm, % Border thickness
+  arc=4mm, % Border radius
+  left=1mm, % Left padding
+  right=1mm, % Right padding
+  top=1mm, % Top padding
+  bottom=1mm, % Bottom padding
+}
+
+\renewcommand{\floatpagefraction}{0.8} % Allow floats to occupy up to 80% of a page
+\renewcommand{\textfraction}{0.1}     % Allow text to occupy as little as 10% of a page
+\renewcommand{\topfraction}{0.9}      % Allow up to 90% of the top of a page for floats
+\renewcommand{\bottomfraction}{0.9}   % Allow up to 90% of the bottom of a page for floats
+
