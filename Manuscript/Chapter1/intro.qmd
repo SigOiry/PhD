@@ -414,11 +414,11 @@ ggsave("Manuscript/Chapter1/Figs/Spectra_resolutions/Signatures.png", width = 10
 ```{r Fig Spectral_resolutions}
 #| echo: false
 #| warning: false
-#| fig-cap: "Comparison of spectral resolution between multispectral (A) and hyperspectral (B) sensors in the solar radiance spectrum. Panel C illustrates the impact of spectral resolution on the same spectral signature of Gracilaria vermiculophylla. With hyperspectral resolution (red), absorption features of pigments such as phycocyanin and phycoerythrin are distinguishable, whereas these features are absent in the multispectral resolution provided by Sentinel-2 (green)."
+#| fig-cap: "Comparison of spectral resolution between multispectral (A) and hyperspectral (B) sensors in the solar radiance spectrum. Panel C illustrates the impact of spectral resolution on the same spectral signature of Gracilaria vermiculophylla. With hyperspectral resolution (red), absorption features of pigments such as phycocyanin and phycoerythrin are distinguishable, whereas these features are absent in the multispectral resolution provided by Sentinel-2 (green). D is showing exemple of different radiometric resolutions for the same band of a Sentinel-2 tile. One is coded in 12 bits (left) and the other is coded in 6 bits (right). "
 #| label: fig-Spectral_resolutions
 #| out-width: "100%"
 
-knitr::include_graphics("Figs/Spectra_resolutions/Fig_SpectralResolution.png")
+knitr::include_graphics("Figs/Spectra_resolutions/Fig_SpectralResolution_chouchou.png")
 ```
 
 Remote sensing sensors are generally classified into two categories based on their spectral resolution: multispectral sensors and hyperspectral sensors.
