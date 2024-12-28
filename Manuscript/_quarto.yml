@@ -15,7 +15,9 @@ book:
     - Chapter1/intro.qmd
     - Chapter2/Chapter2.qmd
     - Chapter3/Chapter3.qmd
-    - Summary/summary.qmd
+    - Chapter4/Chapter4.qmd
+    - Chapter5/Chapter5.qmd
+    - Chapter6/Chapter6.qmd
     - References/references.qmd
 repo-url: https://github.com/SigOiry/PhD
 search: true
@@ -32,9 +34,12 @@ thesis:
   logoED-height: "1.5cm"
   logoUN: images/Logotype_Nantes-U_noir-300dpi.png
   logoUN-height: "1cm"
+  abbreviations : "Frontmatter/abbreviations.tex"
+  symbols: "Frontmatter/symbols.tex"
+  acknowledgements: "Frontmatter/acknowledgements.tex"
   
   
-bibliography: [References/Introduction.bib, References/Chapiter2.bib, References/Chapiter3.bib, References/packages.bib] 
+bibliography: [References/Introduction.bib, References/Chapter2.bib, References/Chapter3.bib, References/packages.bib, References/Chapter6.bib] 
 csl: RSE.csl
 
 format:
@@ -47,7 +52,7 @@ format:
       - margin=1in
     include-in-header: chaptertitlepage.tex
     output-file: "PhD_Simon"
-  quarto-thesis-html:
+  html:
     theme: cosmo
   docx: 
     output-file: "PhD_Simon"

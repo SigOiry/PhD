@@ -1,0 +1,71 @@
+---
+title: General conclusions and future perspectives
+---
+
+```{r update gitignore}
+#| cache: true
+#| echo: false
+#| warning: false
+#| eval: false
+
+library(fs)
+
+# Define the size threshold in bytes (100 MB)
+size_threshold <- 100 * 1024 * 1024
+
+# Get a list of all files in the repository
+files <- dir_ls(recurse = TRUE, type = "file")
+
+# Filter files larger than the size threshold
+large_files <- files[file_info(files)$size > size_threshold]
+
+# Check if there are large files
+if (length(large_files) > 0) {
+  # Read the existing .gitignore file if it exists
+  gitignore_path <- ".gitignore"
+  gitignore_content <- if (file_exists(gitignore_path)) {
+    readLines(gitignore_path)
+  } else {
+    character(0)
+  }
+  
+  # Identify files not already in .gitignore
+  files_to_add <- large_files[!large_files %in% gitignore_content]
+  
+  # Append new large files to .gitignore
+  if (length(files_to_add) > 0) {
+    writeLines(c(gitignore_content, files_to_add), gitignore_path)
+    message(length(files_to_add), " file(s) added to .gitignore.")
+  } else {
+    message("No new files to add to .gitignore.")
+  }
+} else {
+  message("No files larger than 100 MB found.")
+}
+```
+
+```{=latex}
+\begin{spacing}{1.5}
+```
+
+This doctoral research successfully addressed its principal objectives, which were to: (1) demonstrate the effectiveness of remote sensing for mapping intertidal habitats, (2) develop advanced methodologies for accurate vegetation classification and ecosystem monitoring, and (3) to investigate the capacity of remote sensing to mmap ecosystem under biotic and abiotic pressures. This concluding section reviews the key scientific advancements made through the application of remote sensing to intertidal ecosystems, the challenges encountered, and future research directions.
+
+## Macrophytes discriminations and associated challenges.
+
+This work has demonstrated the capability of multispectral remote sensing to differentiate between various types of intertidal vegetation, even among plants with similar pigment compositions. This capability was initially validated theoretically using a hyperspectral library degraded to the spectral resolution of several sensors. It was subsequently confirmed *in situ* using a multispectral camera mounted on a drone. The distinction was particularly challenging between green macrophytes, such as seagrass and green macroalgae, which share similar pigment compositions and, consequently, spectral signatures. However, the slight variations in the spectral signatures of intertidal green macrophytes enabling this discrimination arise from differences in the ratios of pigment concentrations within the leaves and thallus of these plants, rather than shared pigment compositions.
+
+Pigment concentrations are not static over time and may not be uniform within a species, which raises questions about the reliability of the method developed here. Despite this limitation, a key strength of the method lies in its open-source and use-case-driven design. The Drone Intertidal Sediment Classification of Vegetation (DISCOV) algorithm was developed to be dynamic and adaptable over time. The algorithm has been detailed in a scientific journal, with its complete code and training/validation dataset shared openly on GitHub [@oiry2024discriminating]. This flexibility proved invaluable when applying the algorithm to a different use case: mapping the invasive *Gracilaria vermiculophylla*. 
+Interestingly, DISCOV v1.0 exhibited poor performance in identifying this algae species, despite its distinct and unique spectral signature attributed to the presence of phycocyanin and phycoerythrin. The algorithm's underperformance was traced to the lack of red algae training data in the original dataset, causing uncertainty when encountering this specific spectral signature during prediction. This issue was promptly addressed by updating the model’s training dataset to include more red algae samples. The updated model outperformed the original version on the new dataset while maintaining nearly the same accuracy on the original dataset. The inclusion of a more diverse training dataset improved DISCOV’s performance across broader ecological contexts. Expanding the geographic and temporal range of data collection has been shown to enhance algorithm robustness and adaptability. By incorporating spectral data from multiple seasons and regions, the algorithm could better account for temporal variations in pigment concentrations and environmental factors, ensuring more reliable predictions across diverse conditions.
+
+This
+
+```{=latex}
+\end{spacing}
+```
+```{=latex}
+\renewcommand{\chaptertopimage}{Chapter2/img/ASD_psd.png}
+\renewcommand{\chapterbottomimage}{Chapter2/img/Seagrass_quadrats_psd.png}
+```
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
+```

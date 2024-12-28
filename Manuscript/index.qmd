@@ -21,7 +21,7 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 
 -   Nurdin, N., Alevizos, E., Syamsuddin, R., Asis, H., Zainuddin, E. N., Aris, A., **Oiry, S.**, Brunier, G., Komatsu, T., & Barillé, L. (2023). Precision Aquaculture Drone Mapping of the Spatial Distribution of *Kappaphycus alvarezii* Biomass and Carrageenan. *Remote Sensing*, *15*(14), 3674. https://doi.org/10.3390/rs15143674
 
--   Román, A., Prasyad, H., Oiry, S., Davies, B. F. R., Brunier, G., & Barillé, L. (2023). Mapping intertidal oyster farms using unmanned aerial vehicles (UAV) high-resolution multispectral data. *Estuarine, Coastal and Shelf Science*, 291, 108432. https://doi.org/10.1016/j.ecss.2023.108432
+-   Román, A., Prasyad, H.,**Oiry, S.**, Davies, B. F. R., Brunier, G., & Barillé, L. (2023). Mapping intertidal oyster farms using unmanned aerial vehicles (UAV) high-resolution multispectral data. *Estuarine, Coastal and Shelf Science*, 291, 108432. https://doi.org/10.1016/j.ecss.2023.108432
 
 -   Davies, B. F. R., Gernez, P., Geraud, A., **Oiry, S.**, Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. *Remote Sensing of Environment*, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
 
@@ -45,6 +45,23 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 -  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (August 2023); 8th European Phycological Congress, Brest, France ; Poster
 
 -  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (23 - 27 may 2022); Living Planet Symposium, Bonn, Germany ; Poster
+
+## Project related to the thesis.
+### BiCOME
+![](images/BiCOME Logo.png){width=40%  fig-align="center"}
+This thesis has been closely related to the european ESA funded project [BiCOME](https://bicome.info). This project, led by the Plymouth Marine Laboratory ([PML](https://pml.ac.uk)) in collaboration with the University of Nantes, the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, [DLR](https://www.dlr.de/en)) and [HYGEOS](https://hygeos.com/en/) has started in october 2021 and has ended before the end of this thesis, in october 2023. It aimed to demonstrate that Essential Biodiversity Variables (EBVs), relevant for scientific and monitoring applications, can be obtained from state-of-the-art remotely sensed reflectance close to the shoreline, and that they can be scalable globally.
+
+![](images/logos_BICOME.png){width=100%  fig-align="center"}
+
+### Rewrite 
+![](images/rewrite-logo.png){width=40%  fig-align="center"}
+Part of the thesis is related to the REWRITE project, led by Nantes University and funded by the European Union. This project involves 24 partners across 14 countries and focuses on 10 demonstration sites. Its aim is to promote the adaptation of the innovative conservation approach known as 'rewilding' as a nature-based solution for restoring Europe's intertidal areas. 
+
+### InvaSea
+
+Part of the thesis is related to the InvaSea project, founded by the French National Centre for Space Studies (CNES). It aims to proves the capacity of remote sensing to map the presence of the alien invasive species *Gracilaria vermiculophylla* in french and spanish estuaries. 
+
+
 
 <!-- ::: {.content-visible} -->
 <!-- \newpage -->

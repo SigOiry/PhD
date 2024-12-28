@@ -1,0 +1,60 @@
+---
+title: "Impact of Marine and Atmospheric Heatwaves on Intertidal Seagrass: Experimental Spectroradiometry and Satellite-Based Insights"
+---
+
+```{r update gitignore}
+#| cache: true
+#| echo: false
+#| warning: false
+#| eval: false
+
+library(fs)
+
+# Define the size threshold in bytes (100 MB)
+size_threshold <- 100 * 1024 * 1024
+
+# Get a list of all files in the repository
+files <- dir_ls(recurse = TRUE, type = "file")
+
+# Filter files larger than the size threshold
+large_files <- files[file_info(files)$size > size_threshold]
+
+# Check if there are large files
+if (length(large_files) > 0) {
+  # Read the existing .gitignore file if it exists
+  gitignore_path <- ".gitignore"
+  gitignore_content <- if (file_exists(gitignore_path)) {
+    readLines(gitignore_path)
+  } else {
+    character(0)
+  }
+  
+  # Identify files not already in .gitignore
+  files_to_add <- large_files[!large_files %in% gitignore_content]
+  
+  # Append new large files to .gitignore
+  if (length(files_to_add) > 0) {
+    writeLines(c(gitignore_content, files_to_add), gitignore_path)
+    message(length(files_to_add), " file(s) added to .gitignore.")
+  } else {
+    message("No new files to add to .gitignore.")
+  }
+} else {
+  message("No files larger than 100 MB found.")
+}
+```
+
+```{=latex}
+\begin{spacing}{1.5}
+```
+
+```{=latex}
+\end{spacing}
+```
+```{=latex}
+\renewcommand{\chaptertopimage}{Chapter2/img/ASD_psd.png}
+\renewcommand{\chapterbottomimage}{Chapter2/img/Seagrass_quadrats_psd.png}
+```
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
+```

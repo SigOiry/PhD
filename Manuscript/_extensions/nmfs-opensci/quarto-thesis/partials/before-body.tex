@@ -181,6 +181,7 @@ $endif$
 % ABBREVIATIONS (IF ANY)
 %----------------------------------------------------------------------------------------
 $if(thesis.abbreviations)$
+  \addchaptertocentry{\abbreviationsname}
   \input{"$thesis.abbreviations$"}
 $endif$
 
@@ -195,6 +196,7 @@ $endif$
 % SYMBOLS (IF ANY)
 %----------------------------------------------------------------------------------------
 $if(thesis.symbols)$
+  \addchaptertocentry{\symbolsname}
   \input{"$thesis.symbols$"}
 $endif$
 
