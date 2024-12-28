@@ -13,7 +13,7 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 
 -   **Oiry, S.**, Davies, B. F. R., Sousa, A. I., Rosa, P., Zoffoli, M. L., Brunier, G., Gernez, P., & Barillé, L. (2024). Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery. *Remote Sensing*, *16*(23), 4383. https://doi.org/10.3390/rs16234383
 
--   Román, A., Oiry, S., Davies, B. F. R., Rosa, P., Gernez, P., Tovar-Sánchez, A., Navarro, G., Méléder, V., & Barillé, L. (2024). Mapping intertidal microphytobenthic biomass with very high-resolution remote sensing imagery in an estuarine system. *Science of The Total Environment*, 955, 177025. https://doi.org/10.1016/j.scitotenv.2024.177025
+-   Román, A., **Oiry, S.**, Davies, B. F. R., Rosa, P., Gernez, P., Tovar-Sánchez, A., Navarro, G., Méléder, V., & Barillé, L. (2024). Mapping intertidal microphytobenthic biomass with very high-resolution remote sensing imagery in an estuarine system. *Science of The Total Environment*, 955, 177025. https://doi.org/10.1016/j.scitotenv.2024.177025
 
 -   Davies, B. F. R., **Oiry, S.**, Rosa, P., Zoffoli, M. L., Sousa, A. I., Thomas, O. R., Smale, D. A., Austen, M. C., Biermann, L., Attrill, M. J., Roman, A., Navarro, G., Barillé, A.-L., Harin, N., Clewley, D., Martinez-Vicente, V., Gernez, P., & Barillé, L. (2024). Intertidal seagrass extent from Sentinel-2 time-series show distinct trajectories in Western Europe. *Remote Sensing of Environment*, 312, 114340. https://doi.org/10.1016/j.rse.2024.114340
 
