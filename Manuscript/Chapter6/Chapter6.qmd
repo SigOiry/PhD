@@ -56,8 +56,7 @@ This work has demonstrated the capability of multispectral remote sensing to dif
 
 Pigment concentrations are not static over time and may not be uniform within a species, which raises questions about the reliability of the method developed here. Despite this limitation, a key strength of the method lies in its open-source and use-case-driven design. The Drone Intertidal Sediment Classification of Vegetation (DISCOV) algorithm was developed to be dynamic and adaptable over time. The algorithm has been detailed in a scientific journal, with its complete code and training/validation dataset shared openly on GitHub [@oiry2024discriminating]. This flexibility proved invaluable when applying the algorithm to a different use case: mapping the invasive *Gracilaria vermiculophylla*. 
 Interestingly, DISCOV v1.0 exhibited poor performance in identifying this algae species, despite its distinct and unique spectral signature attributed to the presence of phycocyanin and phycoerythrin. The algorithm's underperformance was traced to the lack of red algae training data in the original dataset, causing uncertainty when encountering this specific spectral signature during prediction. This issue was promptly addressed by updating the model’s training dataset to include more red algae samples. The updated model outperformed the original version on the new dataset while maintaining nearly the same accuracy on the original dataset. The inclusion of a more diverse training dataset improved DISCOV’s performance across broader ecological contexts. Expanding the geographic and temporal range of data collection has been shown to enhance algorithm robustness and adaptability. By incorporating spectral data from multiple seasons and regions, the algorithm could better account for temporal variations in pigment concentrations and environmental factors, ensuring more reliable predictions across diverse conditions.
-
-This
+S
 
 ```{=latex}
 \end{spacing}

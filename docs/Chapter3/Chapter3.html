@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,10 +57,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -396,7 +396,7 @@ Table&nbsp;3.2: Vegetation Classes of the model and the number of pixels used to
 </figure>
 </div>
 </div>
-<p>A dataset containing photo-interpreted drone reflectance pixels was built to train a Neural Network model. The training pixels were categorized into seven different classes, representing the various habitats encountered at the different study sites: sediment, water, green macroalgae, seagrasses, Benthic diatoms, brown macroalgae and red macroalgae. Only data from the low-altitude flights (<a href="#tbl-flights" class="quarto-xref">Table&nbsp;<span>3.1</span></a>) were used for training because their 8 mm spatial resolution allowed to avoid spectral sub-pixel mixing and to accurately identify vegetation classes. In the field, seagrasses displayed two types of color, most seagrass had green leaves, brownish leaves were also observed due to senescence or photo-degradaration. Careful attention was given to incorporating training pixels from both color types into the training dataset for the seagrass class. This approach was consistently applied to all classes within the model. More than 418,000 pixels at 8 mm resolution from the 3 training flights were used to train the model (<a href="#tbl-validationPX" class="quarto-xref">Table&nbsp;<span>3.2</span></a>). For model training, 21 variables were used as predictors: the ten raw spectral bands of the Micasense RedEdge Dual MX multispectral camera (ranging from 444 nm to 840 nm), the same ten spectral bands standardized using a min/max transformation (<a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> ; <span class="citation" data-cites="Cao2017">Cao et al. (<a href="../References/references.html#ref-Cao2017" role="doc-biblioref">2017</a>)</span>) and the Normalized difference vegetation index (NDVI, <a href="#eq-ndvi" class="quarto-xref">Equation&nbsp;<span>3.2</span></a>). Standardisation of spectral bands is commonly used to eliminate the scaling differences between spectra and to limit the effect of biomass on the spectra shape <span class="citation" data-cites="Douay2022 Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023a</a>; <a href="../References/references.html#ref-Douay2022" role="doc-biblioref">Douay et al., 2022</a>)</span>.</p>
+<p>A dataset containing photo-interpreted drone reflectance pixels was built to train a Neural Network model. The training pixels were categorized into seven different classes, representing the various habitats encountered at the different study sites: sediment, water, green macroalgae, seagrasses, Benthic diatoms, brown macroalgae and red macroalgae. Only data from the low-altitude flights (<a href="#tbl-flights" class="quarto-xref">Table&nbsp;<span>3.1</span></a>) were used for training because their 8 mm spatial resolution allowed to avoid spectral sub-pixel mixing and to accurately identify vegetation classes. In the field, seagrasses displayed two types of color, most seagrass had green leaves, brownish leaves were also observed due to senescence or photo-degradaration. Careful attention was given to incorporating training pixels from both color types into the training dataset for the seagrass class. This approach was consistently applied to all classes within the model. More than 418,000 pixels at 8 mm resolution from the 3 training flights were used to train the model (<a href="#tbl-validationPX" class="quarto-xref">Table&nbsp;<span>3.2</span></a>). For model training, 21 variables were used as predictors: the ten raw spectral bands of the Micasense RedEdge Dual MX multispectral camera (ranging from 444 nm to 840 nm), the same ten spectral bands standardized using a min/max transformation (<a href="#eq-std" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> ; <span class="citation" data-cites="Cao2017">Cao et al. (<a href="../References/references.html#ref-Cao2017" role="doc-biblioref">2017</a>)</span>) and the Normalized difference vegetation index (NDVI, <a href="../Chapter5/Chapter5.html#eq-ndvi" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>). Standardisation of spectral bands is commonly used to eliminate the scaling differences between spectra and to limit the effect of biomass on the spectra shape <span class="citation" data-cites="Douay2022 Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023a</a>; <a href="../References/references.html#ref-Douay2022" role="doc-biblioref">Douay et al., 2022</a>)</span>.</p>
 <p><span id="eq-std"><span class="math display">\[
 R_{i}^{*}(\lambda) = \frac{R_{i}(\lambda) - min(R_{i})}{max(R_{i})- min(R_{i})}
 \tag{3.1}\]</span></span></p>
@@ -1005,6 +1005,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1115,6 +1117,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

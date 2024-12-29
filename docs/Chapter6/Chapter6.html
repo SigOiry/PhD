@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,10 +57,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -233,8 +233,7 @@ div.csl-indent {
 <section id="macrophytes-discriminations-and-associated-challenges." class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="macrophytes-discriminations-and-associated-challenges."><span class="header-section-number">6.1</span> Macrophytes discriminations and associated challenges.</h2>
 <p>This work has demonstrated the capability of multispectral remote sensing to differentiate between various types of intertidal vegetation, even among plants with similar pigment compositions. This capability was initially validated theoretically using a hyperspectral library degraded to the spectral resolution of several sensors. It was subsequently confirmed <em>in situ</em> using a multispectral camera mounted on a drone. The distinction was particularly challenging between green macrophytes, such as seagrass and green macroalgae, which share similar pigment compositions and, consequently, spectral signatures. However, the slight variations in the spectral signatures of intertidal green macrophytes enabling this discrimination arise from differences in the ratios of pigment concentrations within the leaves and thallus of these plants, rather than shared pigment compositions.</p>
-<p>Pigment concentrations are not static over time and may not be uniform within a species, which raises questions about the reliability of the method developed here. Despite this limitation, a key strength of the method lies in its open-source and use-case-driven design. The Drone Intertidal Sediment Classification of Vegetation (DISCOV) algorithm was developed to be dynamic and adaptable over time. The algorithm has been detailed in a scientific journal, with its complete code and training/validation dataset shared openly on GitHub <span class="citation" data-cites="oiry2024discriminating">(<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>)</span>. This flexibility proved invaluable when applying the algorithm to a different use case: mapping the invasive <em>Gracilaria vermiculophylla</em>. Interestingly, DISCOV v1.0 exhibited poor performance in identifying this algae species, despite its distinct and unique spectral signature attributed to the presence of phycocyanin and phycoerythrin. The algorithm’s underperformance was traced to the lack of red algae training data in the original dataset, causing uncertainty when encountering this specific spectral signature during prediction. This issue was promptly addressed by updating the model’s training dataset to include more red algae samples. The updated model outperformed the original version on the new dataset while maintaining nearly the same accuracy on the original dataset. The inclusion of a more diverse training dataset improved DISCOV’s performance across broader ecological contexts. Expanding the geographic and temporal range of data collection has been shown to enhance algorithm robustness and adaptability. By incorporating spectral data from multiple seasons and regions, the algorithm could better account for temporal variations in pigment concentrations and environmental factors, ensuring more reliable predictions across diverse conditions.</p>
-<p>This</p>
+<p>Pigment concentrations are not static over time and may not be uniform within a species, which raises questions about the reliability of the method developed here. Despite this limitation, a key strength of the method lies in its open-source and use-case-driven design. The Drone Intertidal Sediment Classification of Vegetation (DISCOV) algorithm was developed to be dynamic and adaptable over time. The algorithm has been detailed in a scientific journal, with its complete code and training/validation dataset shared openly on GitHub <span class="citation" data-cites="oiry2024discriminating">(<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>)</span>. This flexibility proved invaluable when applying the algorithm to a different use case: mapping the invasive <em>Gracilaria vermiculophylla</em>. Interestingly, DISCOV v1.0 exhibited poor performance in identifying this algae species, despite its distinct and unique spectral signature attributed to the presence of phycocyanin and phycoerythrin. The algorithm’s underperformance was traced to the lack of red algae training data in the original dataset, causing uncertainty when encountering this specific spectral signature during prediction. This issue was promptly addressed by updating the model’s training dataset to include more red algae samples. The updated model outperformed the original version on the new dataset while maintaining nearly the same accuracy on the original dataset. The inclusion of a more diverse training dataset improved DISCOV’s performance across broader ecological contexts. Expanding the geographic and temporal range of data collection has been shown to enhance algorithm robustness and adaptability. By incorporating spectral data from multiple seasons and regions, the algorithm could better account for temporal variations in pigment concentrations and environmental factors, ensuring more reliable predictions across diverse conditions. S</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -327,6 +326,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -437,6 +438,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
