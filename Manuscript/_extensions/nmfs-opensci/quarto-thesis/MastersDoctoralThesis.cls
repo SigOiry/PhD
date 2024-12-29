@@ -292,6 +292,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[markcase=used]{scrlayer-scrpage}
+\renewcommand{\chaptermark}[1]{\markboth{\truncate{50}{#1}}{}}
 \providepairofpagestyles{thesisSimple}{%
 	\clearpairofpagestyles%
 	\automark[chapter]{chapter}
