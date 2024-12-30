@@ -396,6 +396,11 @@ The utilization of very high spatial resolution (from 8 to 80 mm) drone-based re
 ```
 
 ```{=latex}
+\renewcommand{\chaptertopimage}{Chapter4/img/Red_and_sky.png}
+\renewcommand{\chapterbottomimage}{Chapter4/img/Red_and_tree.png}
+```
+
+```{=latex}
 \newpage\null\thispagestyle{empty}\newpage
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Hyperspectral classification of intertidal vegetation for coastal biodiversity
+title: Multispectral and hyperspectral classification of intertidal vegetation using a spectral library for coastal biodiversity remote sensing
 number-sections: true
 ---
 

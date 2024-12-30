@@ -1,5 +1,5 @@
 ---
-title: "Impact of Marine and Atmospheric Heatwaves on Intertidal Seagrass: Experimental Spectroradiometry and Satellite-Based Insights"
+title: "The impact of Heatwave on Seagrasses using hyperspectral and multispectral remote sensing"
 ---
 
 ```{r update gitignore}
@@ -419,8 +419,8 @@ On average, *in situ* temperatures were 3 ± 3.2°C higher than those recorded b
 \end{spacing}
 ```
 ```{=latex}
-\renewcommand{\chaptertopimage}{Chapter2/img/ASD_psd.png}
-\renewcommand{\chapterbottomimage}{Chapter2/img/Seagrass_quadrats_psd.png}
+\renewcommand{\chaptertopimage}{Chapter6/img/top.png}
+\renewcommand{\chapterbottomimage}{Chapter6/img/bottom.png}
 ```
 ```{=latex}
 \newpage\null\thispagestyle{empty}\newpage

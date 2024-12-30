@@ -87,6 +87,10 @@ Human utilization of coastal areas spans a range of economic and social activiti
 For instance, marine shipping contributes about 3% of global greenhouse gas emissions, a figure projected to rise by up to 50% by mid-century if stringent measures are not implemented [@IMO2020GHG]. Additionally, shipping activities lead to marine pollution, including oil spills, ballast water discharge and underwater noise and light affecting marine life. Oil spills remain a critical environmental concern due to their devastating and long-lasting impacts on marine ecosystems. These spills contaminate water, harm marine biodiversity, and disrupt food chains, often leading to severe economic losses in fisheries and tourism. In 2023, ten oil spills were recorded globally, releasing over 2,000 tons of oil into the environment, including one major spill exceeding 700 tons in Asia [@itopf_statistics]. While historical trends show a reduction in large spills, from over 20 per year in the 1970s to about 1.3 per year in recent decades, incidents such as the spill occurred in December 2024 in the Kerch Strait, where 3,700 tons of oil were released, underscore the persistent and significant risks. Such events highlight the necessity for stringent preventive measures and rapid response mechanisms to mitigate the ongoing threat posed by oil spills to marine environments. Ballast water discharge represents a significant vector for the introduction of invasive aquatic species into new environments. Approximately 40% of introductions of non-indigenous aquatic species have been linked to ballast water release. Underwater noise pollution from shipping activities poses a growing threat to marine life, particularly cetaceans such as whales and dolphins. Elevated noise levels can disrupt communication, navigation, and feeding behaviors, leading to increased stress and altered migration patterns. Chronic exposure to underwater noise can also result in physical harm and population-level impacts. One significant impact of fishing and aquaculture on coastal habitats is the degradation of critical ecosystems such as seagrass beds, coral reefs, and mangroves. Destructive fishing practices, including bottom trawling and the use of dynamite or cyanide, physically damage the seafloor and associated habitats, resulting in biodiversity loss and the disruption of ecological functions. 
 The expansion of aquaculture operations often involves converting coastal wetlands, into fish or shrimp ponds, or constructing structures over mudflats. These activities usually conflict with ecosystem conservation, as both uses compete for limited space. Change of land-use into aquaculture facilities reduces the availability of essential nursery habitats for marine species and diminishes the ecosystem services provided by these natural habitats, such as carbon sequestration, shoreline stabilization, and water filtration. Additionally, aquaculture activities contribute to nutrient enrichment and pollution in adjacent waters through the release of uneaten feed, feces, and chemical additives, exacerbating eutrophication and altering benthic community structures. Another significant concern is the introduction of alien invasive species into the environment through aquaculture, which can disrupt local ecosystems and biodiversity. This issue was explored in Chapter 4. Coastal tourism exerts a profound influence on ecosystem integrity, often driving substantial environmental degradation through mechanisms such as habitat destruction, pollution, and resource overexploitation. The construction and expansion of tourist infrastructure frequently lead to the removal or fragmentation of critical habitats, including mangroves, seagrass meadows, and coral reefs, all of which play pivotal roles in maintaining biodiversity and safeguarding coastal resilience. Furthermore, the rapid influx of visitors generates significant volumes of waste and untreated sewage, contributing to water quality deterioration and eutrophication, which disrupt aquatic ecosystems and alter trophic dynamics. The elevated demand for limited resources, notably freshwater and seafood, exacerbates ecological stress, leading to overharvesting and resource depletion.
 
+::: {.content-visible when-format="html" when-format="docx"}
+The dynamic interactions between terrestrial and marine systems are particularly evident in intertidal habitats, which exemplify the transitional nature of coastal zones. The next section will focus on these habitats, exploring their ecological significance, the processes shaping them, and the challenges they face under increasing environmental and anthropogenic pressures.
+:::
+
 ```{=latex}
 \begin{tcolorbox}
 The dynamic interactions between terrestrial and marine systems are particularly evident in intertidal habitats, which exemplify the transitional nature of coastal zones. The next section will focus on these habitats, exploring their ecological significance, the processes shaping them, and the challenges they face under increasing environmental and anthropogenic pressures.
@@ -114,6 +118,9 @@ Regions such as East Asia, the Middle East, and North America have shown the gre
 
 A potential solution to limit the disappearance of tidal flats is to protect the ecosystems they host. These ecosystems contribute significantly to nutrient cycling and sediment stabilization, enhancing the overall resilience of tidal flats. By maintaining these biotic communities, the ecological functions of tidal flats can be preserved, buffering them against threats such as erosion and rising sea levels.
 
+::: {.content-visible when-format="html" when-format="docx"}
+The main vegetation classes found on tidal flats will be introduced in the following sections, as Chapters 2 and 3 rely specifically on distinguishing between these classes. Here, "classes" is considered in its taxonomic sense, referring to a toaxonomic rank that groups related orders of organisms sharing a common ancestor.
+:::
 ```{=latex}
 \begin{tcolorbox}
 The main vegetation classes found on tidal flats will be introduced in the following sections, as Chapters 2 and 3 rely specifically on distinguishing between these classes. Here, "classes" is considered in its taxonomic sense, referring to a toaxonomic rank that groups related orders of organisms sharing a common ancestor.
@@ -166,51 +173,47 @@ Red macroalgae, or Rhodophyta, constitute a diverse group of predominantly marin
 Ecologically, red macroalgae play a vital role in marine environments. They contribute significantly to primary production and serve as foundational species in various marine habitats. Notably, coralline red algae, which secrete calcium carbonate, are instrumental in building and stabilizing coral reef structures, providing habitat complexity that supports diverse marine life [@cornwall2023crustose].
 
 In terms of human utilization, red macroalgae have been harvested for centuries for their nutritional and industrial value. Species such as *Porphyra* (known as nori in Japan and gim in Korea) and *Palmaria palmata* (dulse) are consumed as food, valued for their high protein content, essential vitamins, and minerals [@wei2023influence ; @stevant2023concise]. Additionally, red algae are a primary source of phycocolloids like agar and carrageenan, which are extensively used as gelling and stabilizing agents in the food, pharmaceutical, and cosmetic industries [@nurdin2023precision ; @valderrama2013social].
-
 Red macroalgae also possess bioactive compounds with potential therapeutic applications. Research has identified various secondary metabolites in red algae that exhibit antimicrobial, anti-inflammatory, and anticancer properties, highlighting their potential in drug development and functional food ingredients [@ismail2020therapeutic].
 
 However, red macroalgae face challenges due to environmental changes. Factors such as climate change, pollution, and habitat destruction can adversely affect their populations and the ecosystems they support. Conservation efforts and sustainable harvesting practices are essential to preserve these ecologically and economically important organisms [@hanley2024victim].
 
 #### Magnoliopsida
+<!-- ```{=latex} -->
+<!-- \begin{tikzpicture}[remember picture,overlay] -->
+<!--   % 1) Coordinates for wavy line start/end (optional if you're drawing a wave) -->
+<!--   \coordinate (start) at ($(current page.south west) + (1cm,1.8cm)$); -->
+<!--   \coordinate (end)   at ($(current page.south east) + (-1cm,1.8cm)$); -->
 
-Intertidal seagrass meadows, classified under the class Magnoliopsida, consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. Furthermore, they regulate nutrient cycles and improve water quality by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits.
+<!--   % 2) Wavy line across the page (optional) -->
+<!--   \draw[thick, decorate, decoration={snake, amplitude=2pt, segment length=8pt}] -->
+<!--     (start) -- (end); -->
 
-Seagrass meadows, like tidal flats, are undergoing significant declines on a global scale due to a variety of anthropogenic and natural stressors [@davies2024intertidal]. Despite their critical ecological roles, seagrass ecosystems remain comparatively underrepresented in scientific research within the broader scope of coastal ecosystems. As illustrated in @fig-SeagrassHabitat (e), the proportion of publications focusing on seagrasses in the context of coastal ecosystem studies is considerably lower than those dedicated to other key habitats such as coral reefs, mangroves, and salt marshes. This disparity highlights a critical research gap, underscoring the need for increased scientific attention to better understand and mitigate the factors contributing to the degradation of these vital ecosystems.
+<!--   % 3) QR code at bottom-right corner -->
+<!--   \node[anchor=south east] (qr) at  -->
+<!--     ($(current page.south east)+(-1.2cm,2.1cm)$) -->
+<!--   { -->
+<!--     \includegraphics[width=2cm]{Chapter1/qrcode/seagrass_meadow.png} -->
+<!--   }; -->
 
-```{=latex}
+<!--   % 5) Caption anchored so that its right edge -->
+<!--   %    aligns with the QR code's bottom-right corner -->
+<!--   \node[ -->
+<!--     anchor=north east,           % The node's top-right corner is at the coordinate -->
+<!--     text width=10cm,              % Constrain text to 5 cm so it wraps inside the page -->
+<!--     align=right                  % Right-align each line -->
+<!--   ] at  -->
+<!--     ($(qr.south east) + (0, 0.3cm)$)  % 0.3cm below the QR code's bottom-right -->
+<!--   {\scriptsize seagrass meadows of Santander Bay, Spain, on the 24th of June 2024}; -->
+<!-- \end{tikzpicture} -->
+<!-- ``` -->
 
-\begin{tikzpicture}[remember picture,overlay]
-  % 1) Coordinates for wavy line start/end (optional if you're drawing a wave)
-  \coordinate (start) at ($(current page.south west) + (1cm,1.8cm)$);
-  \coordinate (end)   at ($(current page.south east) + (-1cm,1.8cm)$);
+Intertidal seagrass meadows, classified under the class Magnoliopsida, consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. Furthermore, they regulate nutrient cycles and improve water quality by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits. 
+Seagrass meadows, like tidal flats, are undergoing significant declines on a global scale due to a variety of anthropogenic and natural stressors [@davies2024intertidal]. Despite their critical ecological roles, seagrass ecosystems remain comparatively underrepresented in scientific research within the broader scope of coastal ecosystems. As illustrated in @fig-SeagrassHabitat (E), the proportion of publications focusing on seagrasses in the context of coastal ecosystem studies is considerably lower than those dedicated to other key habitats such as coral reefs, mangroves, and salt marshes. This disparity highlights a critical research gap, underscoring the need for increased scientific attention to better understand and mitigate the factors contributing to the degradation of these vital ecosystems.
 
-  % 2) Wavy line across the page (optional)
-  \draw[thick, decorate, decoration={snake, amplitude=2pt, segment length=8pt}]
-    (start) -- (end);
-
-  % 3) QR code at bottom-right corner
-  \node[anchor=south east] (qr) at 
-    ($(current page.south east)+(-1.2cm,2.1cm)$)
-  {
-    \includegraphics[width=2cm]{Chapter1/qrcode/seagrass_meadow.png}
-  };
-
-  % 5) Caption anchored so that its right edge
-  %    aligns with the QR code's bottom-right corner
-  \node[
-    anchor=north east,           % The node's top-right corner is at the coordinate
-    text width=10cm,              % Constrain text to 5 cm so it wraps inside the page
-    align=right                  % Right-align each line
-  ] at 
-    ($(qr.south east) + (0, 0.3cm)$)  % 0.3cm below the QR code's bottom-right
-  {\scriptsize seagrass meadows of Santander Bay, Spain, on the 24th of June 2024};
-
-\end{tikzpicture}
-```
 ```{r Figs SeagrassHabitat}
 #| echo: false
 #| warning: false
-#| fig-cap: "Seagrass meadows are beautiful habitats containing biodiverse faunal communities such as the following a the Spiny Seahorse (*Hippocampus guttulatus*) in the UK (source N Garrick-Maidment), b Dogfish (*Scyliorhinus canicula*) in the UK (source Frogfish Photography), c the Green Sea Turtle (*Chelonia mydas*) in the Dutch Antilles, d Flying Gurnard (*Dactylopterus volitans*) in Puerto Rico (source Luis R. Rodriguez) and e shows the proportion of publication each year dedicated to Coral reefs, Mangroves, Seagrasses and Salt marshes. Edited from @unsworth2019global."
+#| fig-cap: "Seagrass meadows are beautiful habitats containing biodiverse faunal communities such as the following a the Spiny Seahorse (*Hippocampus guttulatus*) in the UK (source N Garrick-Maidment), b Dogfish (*Scyliorhinus canicula*) in the UK (source Frogfish Photography), c the Green Sea Turtle (*Chelonia mydas*) in the Dutch Antilles, d Flying Gurnard (*Dactylopterus volitans*) in Puerto Rico (source Luis R. Rodriguez) and e shows the proportion of publication each year dedicated to Coral reefs, Mangroves, Seagrasses and Salt marshes. Modified from @unsworth2019global."
 #| label: fig-SeagrassHabitat
 #| out-width: "100%"
 knitr::include_graphics("Figs/Publication_habitat/Seagrass_habitats.png")
@@ -224,15 +227,22 @@ knitr::include_graphics("Figs/Publication_habitat/Seagrass_habitats.png")
 Traditional field-based sampling methods have proven to be highly effective for studying coastal environments at localized or small spatial scales, providing detailed insights into species composition, habitat structure, and ecological interactions. However, these approaches face significant limitations when applied to broader spatial extents or temporal scales due to their labor-intensive nature and logistical constraints. This methodological gap poses challenges for evaluating large-scale patterns and long-term changes in coastal ecosystems, such as seagrass meadows, mangroves, and tidal flats. Remote sensing technologies, with their ability to capture high-resolution data across extensive geographic areas and over multiple time periods, offer a powerful complementary tool to address these limitations. By integrating traditional methods with remote sensing approaches, it allows a more comprehensive understanding of coastal ecosystem dynamics, facilitating the assessment of both localized impacts and global trends. The following section explores how advancements in remote sensing technologies are transforming the study of coastal environments, enabling more efficient and scalable assessments.
 \end{tcolorbox}
 ```
+
+::: {.content-visible when-format="html" when-format="docx"}
+Traditional field-based sampling methods have proven to be highly effective for studying coastal environments at localized or small spatial scales, providing detailed insights into species composition, habitat structure, and ecological interactions. However, these approaches face significant limitations when applied to broader spatial extents or temporal scales due to their labor-intensive nature and logistical constraints. This methodological gap poses challenges for evaluating large-scale patterns and long-term changes in coastal ecosystems, such as seagrass meadows, mangroves, and tidal flats. Remote sensing technologies, with their ability to capture high-resolution data across extensive geographic areas and over multiple time periods, offer a powerful complementary tool to address these limitations. By integrating traditional methods with remote sensing approaches, it allows a more comprehensive understanding of coastal ecosystem dynamics, facilitating the assessment of both localized impacts and global trends. The following section explores how advancements in remote sensing technologies are transforming the study of coastal environments, enabling more efficient and scalable assessments.
+:::
 ## Concepts of Remote sensing
 
 Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. Remote sensing (RS) technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. This section reviews fundamental concepts and methodologies of RS applied to coastal environments.
 
 RS defines the ability to retrieve information in a non-invasive way, without direct contact with the target. It relies on the propagation of signals, typically optical, acoustic, or microwave, between the target and the sensor. RS provides the basis to Earth observation (EO), where its methodologies facilitate large-scale and long-term data collection. Instruments on satellites, aircraft, and drones provide high-resolution imagery and measurements critical for monitoring environmental changes, mapping natural resources, and assessing land use patterns. These technologies enable systematic data collection over large areas and extended periods, supporting analyses such as deforestation, glacial melting, variations in ocean temperature, and changes in land use.
 
+::: {.content-visible when-format="html" when-format="docx"}
+Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
+:::
 ```{=latex}
 \begin{tcolorbox}
-The following sections examine two complementary approaches used in this study within the field of remote sensing for Earth observation: active and passive remote sensing. Through direct applications on coastal monitoring, these sections will introduce remote sensing methodologies while outlining their respective advantages and challenges.
+Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
 \end{tcolorbox}
 ```
 ### Active Remote Sensing, Example of LiDAR
@@ -330,6 +340,10 @@ $R_{BOA}$ can be used to identify key absorption features of chemical compounds 
 Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
 \end{tcolorbox}
 ```
+::: {.content-visible when-format="html" when-format="docx"}
+Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
+:::
+
 #### Remote Sensing resolutions
 
 ##### Spectral and Radiometric resolution
@@ -440,7 +454,7 @@ Usually, temporal resolution is highly dependent on the spatial resolution of th
 
 In contrast, some sensors are operated on-demand, with data acquisition triggered directly by the user. This is particularly characteristic of drones and specialized satellite missions like Pleiades or PRISMA. While these systems may lack consistent temporal archives for a given study site, they provide unmatched flexibility for high-resolution data collection. Such sensors are invaluable for addressing specific research objectives, including acquiring detailed imagery immediately after extreme weather events or capturing localized features with high spatial precision, complementing routine satellite-based monitoring programs.
 
-#### A story of trade off
+##### A story of trade off
 
 Remote sensing involves inherent trade-offs between spatial resolution, temporal resolution, and coverage area, which influence the suitability of sensors for different applications (@fig-ResolutionSatellite). High spatial resolution sensors, capable of capturing fine-scale details, are essential for precise tasks like urban infrastructure mapping or site-specific ecological studies. In coastal environments, high-resolution sensors are invaluable for identifying small-scale features such as intertidal vegetation patterns, sediment deposition dynamics, or the mapping of coral reef health. However, these sensors typically have lower temporal resolution and smaller coverage areas, limiting their utility for monitoring dynamic or widespread phenomena, such as tracking algal bloom events across entire coastal regions.
 
@@ -460,25 +474,157 @@ Intermediate-resolution sensors provide a compromise, offering sufficient detail
 
 The selection of an appropriate sensor depends on the specific requirements of the study, balancing the need for detail, frequency, and geographic extent. Coastal zone management, for instance, often benefits from using a combination of sensors to capture both fine-scale spatial patterns and broader temporal trends, ensuring comprehensive monitoring of these dynamic environments.
 
-<!-- Finally, a distinction can be made between high-altitude remote sensing and low-altitude remote sensing. Low-altitude remote sensing refers to the acquisition of spectral signatures at a distance of no more than 120 meters from the target, in compliance with European regulations on the maximum flight height for Unmanned Aerial Vehicles (UAVs). This contrasts with high-altitude remote sensing, which involves plane-borne and space-borne sensors. The distinction is important due to significant differences in calibration methods for reflectance measurements, as well as variations in temporal, and above all, spatial resolution. -->
+While satellite acquisitions are essential for covering large areas, heterogeneous habitats often require finer spatial resolutions, positioning drones as the most suitable observation tool. Drone-based studies can also serve as proof-of-concept techniques to refine and develop methodologies that are later applicable to satellite data.
 
-<!-- Reflectance calibration methods differ significantly between satellite-based remote sensing and in situ measurements using a Spectralon panel. For satellite sensors, reflectance calibration relies on pre-launch laboratory calibration and post-launch vicarious calibration, which uses known surface targets or atmospheric correction algorithms to account for sensor degradation, atmospheric effects, and viewing geometry. In contrast, in situ calibration with a Spectralon panel involves direct measurement of reflected light from a calibrated reference target with known reflectance properties, typically conducted under controlled conditions near the target area. This method ensures precise ground-truth data, providing high accuracy for reflectance measurements by eliminating the influence of atmospheric scattering and absorption, which are significant factors in satellite-based calibration. -->
+```{=latex}
+\begin{tcolorbox}
+Although this work builds upon many of the concepts introduced in the previous sections, one critical remote sensing technique warrants further discussion in this introduction. This technique, characterized by its adaptability and technical precision, provides essential insights and complements the methods already outlined. The next section will introduce drones, focusing on their application as a remote sensing tool and detailing the associated techniques and data analysis methods.
+\end{tcolorbox}
+```
+::: {.content-visible when-format="html" when-format="docx"}
+Although this work builds upon many of the concepts introduced in the previous sections, one critical remote sensing technique warrants further discussion in this introduction. This technique, characterized by its adaptability and technical precision, provides essential insights and complements the methods already outlined. The next section will introduce drones, focusing on their application as a remote sensing tool and detailing the associated techniques and data analysis methods.
+:::
 
-<!-- Temporal resolution, defined as the time interval between successive image acquisitions over the same study site, varies significantly between low-altitude and high-altitude sensors. Satellites used for Earth observation are typically placed in low heliosynchronous orbits, allowing them to regularly revisit the same area of the Earth. For instance, the Sentinel-2 constellation offers a temporal resolution of 5 days at the equator, which decreases to as little as 3 days at higher latitudes, such as in France. Certain missions, like the Sentinel-3 constellation, achieve even shorter revisit times, often less than a day. In contrast, low-altitude sensors are generally operated on-demand, with data acquisition often initiated directly by the user. -->
+### About Drones
+#### History
 
-<!-- Spatial resolution, defined as the ground area represented by a single pixel, differs significantly between low-altitude and high-altitude sensors. Satellite remote sensing can cover vast areas, often spanning millions of square kilometers, and capture data at the scale of entire countries in a single image. The spatial resolution of a sensor is directly influenced by its field of view, and while some satellites achieve resolutions as fine as 30 cm per pixel (e.g., Pleiades-Neo), this can pose challenges for accurately mapping complex ecosystems. For example, in scenarios involving mixed vegetation types, the inability to capture fine-scale heterogeneity can limit the accuracy of analyses. -->
+At the beginning of the 20th century, Julius Neubronner, a German apothecary, faced a logistical challenge in his professional practice. Neubronner regularly relied on carrier pigeons to deliver and retrieve small, urgent medical packages, such as medications or prescriptions, between his pharmacy and a sanatorium located several kilometers away. This method, though efficient for short distances, often left Neubronner curious about the exact routes taken by the pigeons and the environmental conditions they encountered during their flights.
+Motivated by both practical concerns and a spirit of innovation, Neubronner sought a way to monitor and document the journeys of his pigeons. He developed a lightweight, auto-triggering camera that could be strapped to the pigeons' chests (@fig-pigeons Top). The camera was designed to automatically take photographs at regular intervals during the birds' flights. It had two lenses and a pneumatic system; it was activated by inflating the left chamber and as the air slowly escaped from the capillary at the bottom, the piston moved back triggering the exposure. Neubronner ensured that the camera was light enough not to impede the pigeons’ ability to fly [@simic2018drones].
 
-<!-- In such challenging scenarios, low-altitude remote sensing offers a complementary approach by acquiring millions of pixels over smaller areas, achieving spatial resolutions at the millimeter scale. This level of detail enables more precise mapping of complex and heterogeneous ecosystems. -->
+```{r Fig Satellite_resolution}
+#| echo: false
+#| warning: false
+#| fig-cap: "One of Neubronner’s pigeons (Top), arround 1910 equipped with a camera. Bottom shows a picture took during a pigeon's flight."
+#| label: fig-pigeons
+#| out-width: "90%"
 
-<!-- As a fundamental aspect of remote sensing, the principles introduced in this section will be applied in each subsequent chapter of this work. -->
+knitr::include_graphics("Figs/Neubronners/pigeons_compositions.png")
+```
+
+The resulting aerial photographs offered a novel perspective, capturing bird's-eye views of landscapes, towns, and natural features (@fig-pigeons Bottom). These images not only satisfied Neubronner's initial curiosity about the pigeons' routes but also demonstrated the broader potential of aerial photography for cartography, reconnaissance, and environmental observation. His innovative work garnered widespread attention, paving the way for further developments in remote sensing and aerial imaging. Neubronner's experiments illustrated the practical applications of aerial imaging at a time when such perspectives were almost entirely unavailable, highlighting his contributions to both science and art.
+
+Julius Neubronner’s early vision exemplifies how innovative thinking can overcome barriers in data collection. For many years, the practical limitations of remote sensing technologies, particularly with regard to spatial and temporal resolution or the high costs and delays in data acquisition, constrained their applicability in various fields. However, innovations like drones have significantly addressed these challenges. Much like Neubronner’s pigeons, modern drones are not only accessible and affordable but also offer users the freedom to determine when and where to deploy them, providing unparalleled control over spatial and temporal data collection. Neubronner’s ingenuity in developing lightweight aerial cameras for pigeons paved the way for these advancements, demonstrating the enduring impact of pioneering solutions in expanding the potential applications of remote sensing.
+
+Modern drone history has its roots in military applications, where the need for unmanned surveillance and targeted operations drove the initial technological advancements. Early drone systems, such as the use of radio-controlled aircraft in World War II, laid the foundation for what would become an essential tool in both civilian and military contexts. The transition to civilian applications gained momentum in the late 20th century, particularly with the advent of lightweight materials, improved battery technologies, and advances in GPS and remote sensing capabilities. Today, drones are integral to various industries, from precision agriculture and infrastructure inspection to environmental monitoring and emergency response. This evolution reflects the growing accessibility and versatility of drone technology, making it a transformative element in modern data acquisition and analysis.
+
+#### General presentation
+
+Drones, also known as Unmanned Aerial Vehicles (UAVs), are aircraft systems operated without a human pilot onboard. They can be remotely controlled or fly autonomously through software-controlled flight plans, which are often embedded with GPS. These devices have become indispensable tools in modern remote sensing, offering high accuracy, on-demand data acquisition, and the ability to access previously unreachable locations. The growing use of drones in various fields, from environmental monitoring to urban planning, underscores their versatility and importance.
+
+Drones, while not inherently functional on their own, become highly effective tools when integrated with various sensors. These include hyperspectral sensors [@suomalainen2021direct], multispectral sensors [@roman2023mapping; @nurdin2023precision], RGB cameras [@sweet2022opportunities], thermal cameras [@speth2022deep], LiDAR systems [@kruuvcek2020supervised; @lee2023application], as well as gas and chemical sensors.
+
+```{r Fig Drone_overlaps}
+#| echo: false
+#| warning: false
+#| fig-cap: "Schematic representation of image overlap of a drone"
+#| label: fig-overlaps
+#| out-width: "90%"
+
+knitr::include_graphics("Figs/Drone_overlaps.jpg")
+```
+
+#### Data acquisition
+
+A key parameter in drone-based image acquisition is the overlap between images. This is categorized as front overlap (FO), which refers to the overlap between consecutive images along the same flight path, and side overlap (SO), which pertains to the overlap between images from adjacent flight paths. Ensuring sufficient overlap is essential for accurate reconstruction of orthomosaics through photogrammetric processes. Typically, 80% front overlap and 70% side overlap are considered optimal to achieve reliable results. The mathematical definitions of FO and SO are as follows: 
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\[
+\text{FO} \;=\;
+\left(1 - \frac{v \times \Delta t}{
+  \frac{H \times h_{\text{sensor}}}{f}
+}\right) \times 100
+\]
+
+\[
+\text{SO} \;=\;
+\left(1 - \frac{d_{\text{flight\_line}}}{
+  \frac{H \times w_{\text{sensor}}}{f}
+}\right) \times 100
+\]
+
+\subsection*{Where: }
+\begin{itemize}
+  \item $\text{FO}$: Forward Overlap (in \%)
+  \item $\text{SO}$: Side Overlap (in \%)
+  \item $v$: Ground speed of the drone (m/s)
+  \item $\Delta t$: Time interval between consecutive photos (s)
+  \item $H$: Flight altitude above the ground (m)
+  \item $h_{\text{sensor}}$: Sensor height in the flight direction (mm)
+  \item $w_{\text{sensor}}$: Sensor width perpendicular to the flight direction (mm)
+  \item $f$: Camera focal length (mm)
+  \item $d_{\text{flight\_line}}$: Distance between adjacent flight lines (m)
+\end{itemize}
+```
+:::
+
+::: {.content-visible when-format="html" when-format="docx"}
+$$
+\text{FO} \;=\;
+\left(1 - \frac{v \times \Delta t}
+{\frac{H \times h_{\text{sensor}}}{f}}\right)\times 100
+$${#eq-FO}
+
+and 
+
+$$
+\text{SO} \;=\;
+\left(1 - \frac{d_{\text{flight_line}}}
+{\frac{H \times w_{\text{sensor}}}{f}}\right)\times 100
+$${#eq-FO}
+
+where: 
+
+$H$: Flight altitude above the ground (m)
+$f$: Camera focal length (mm)
+$h_{\text{sensor}}$: Sensor dimension (height) in the flight direction (mm)
+$w_{\text{sensor}}$: Sensor dimension (width) perpendicular to the flight direction (mm)
+$v$: Ground speed of the drone (m.s^-1^)
+$\Delta t$: Time interval between consecutive photos (s)
+$d_{\text{flightline}}$: Distance between two adjacent flight lines (meters)
+:::
+
+These equations show that for a given sensor (e.g., for known $f$, $h_{\text{sensor}}$, $w_{\text{sensor}}$, and $\Delta t$), the only parameters that can be adjusted to ensure sufficient overlap are the flight speed or the altitude of flights. If the user chooses to set $H$ (directly linked to the spatial resolution of the final product), then $v$ will be fixed by the system. The higher the flight altitude, the higher the flight speed, or conversely, if the user chooses to set $v$ (directly linked to the total time of the mission), then the altitude will be locked by the system, resulting in a higher $v$ corresponding to a higher flight height.
+
+The area that can be covered by a drone during a mission grows exponentially as the flight height increases. However, while the maximum flight height drones can technically reach is not inherently limited, it is strictly regulated by law. In Europe, for instance, the maximum permitted flight height is 120 m. This restriction can be a limiting factor for certain applications, particularly when the area to be covered exceeds several square kilometers. For instance, the largest intertidal meadow in France is located in the Bassin d'Arcachon and covers an area of nearly 40 km² [@cognat2018environmental]. Using a Micasense RedEdge-MX DUAL multispectral sensor mounted on a drone flying at 120 m altitude at 10 m.s⁻¹, this area would take approximately 44 hours of flight time to cover entirely, or conversely, without accounting for constraints such as tides, battery recharging, potential weather-related delays, and the necessity for the operator to reposition themselves frequently due to regulatory restrictions that limit the drone's distance to 1 km from the telepilot.
+
+#### Data processing
+
+Satellite products produced by space agencies are often provided to users after extensive preprocessing steps, including orthorectification, precise georeferencing, radiometric calibration, and atmospheric correction. Similarly, these preprocessing steps are crucial for utilizing drone-acquired data effectively. Nowadays, user-friendly software such as Agisoft Metashape and Pix4D enables users to perform these essential steps efficiently, making advanced data processing accessible even to non-expert users. Steps to obtain an orthoimage from a bunch of single image will now be more described. 
+
+##### image pre-processing
+
+The first step is to correct each image acquired by the drone from optical distortion that occurred during its acquisition. Photogrammetric software typically addresses lens distortion and vignetting through a combination of camera calibration and radiometric adjustments. During calibration, the software refines intrinsic parameters such as focal length, principal point offsets, and radial/tangential distortion coefficients (k1, k2, k3, p1, p2) by matching features across overlapping images in a bundle adjustment process. Some camera manufacturers provide sensor-specific metadata, including correction factors, which can further enhance calibration accuracy. Vignetting, which manifests as reduced brightness near the image edges, is often corrected via additional vignetting coefficients or automated radiometric calibration routines that normalize illumination across the dataset. These corrections are essential for ensuring both geometric precision in the 3D reconstruction and radiometric consistency in the final orthomosaic.
+
+##### Initial Image Alignment / Aerial Triangulation
+
+Once corrected, each image can be aligned. During the initial image alignment phase, the photogrammetry software relies on Structure from Motion (SfM) algorithms to identify unique tie points in overlapping images and triangulate their 3D positions. These tie points are then matched across the dataset, and a bundle adjustment is performed to optimize camera parameters (position, orientation, and intrinsic calibration). Often referred to as aerial triangulation, this step produces a sparse point cloud that underpins all subsequent stages. Its accuracy is critical, as it defines the precision of the final 2D and 3D outputs.
+
+##### Dense Point Cloud Generation {#sec-DPC}
+
+Building upon the camera geometry established by SfM, the software uses Multi-View Stereo (MVS) techniques to compute dense depth maps for each overlapping image pair. These depth maps are merged to create a dense point cloud containing millions—or even billions—of points, capturing high-resolution details of the scene’s geometry. Although computationally intensive, this phase lays the groundwork for generating accurate surface models and textured 3D representations later in the workflow.
+
+##### Digital Surface Model (DSM) / Digital Terrain Model (DTM)
+
+From the dense point cloud, a Digital Surface Model (DSM) is derived by capturing the highest elevation values within each pixel or grid cell, thereby representing above-ground features like buildings and vegetation. Alternatively, a Digital Terrain Model (DTM) can be produced by classifying and removing non-ground points to approximate the bare-earth surface. Both models are typically exported as raster files and used in various analytical applications, such as hydrological modeling, viewshed analysis, and volume calculations. Their accuracy depends on the quality of the dense cloud and effective point classification techniques.
+
+##### Orthorectification and Orthomosaic Creation
+
+During orthorectification, the software projects each image onto the DSM or DTM to correct for camera tilt and terrain distortions, ensuring consistent spatial alignment. Afterwards, overlapping images are seamlessly blended—often balancing color and brightness variations—to form a georeferenced orthomosaic. This final 2D product is dimensionally accurate and vital for cartographic and analytic tasks, offering a reliable visual representation of the surveyed area.
+
+##### Optional steps
+
+Following the creation of a dense point cloud (@sec-DPC), photogrammetric software can convert the millions of data points into a continuous 3D surface known as a mesh. This process involves triangulating the points to form a polygonal framework that captures the shape and features of the surveyed scene. Once the mesh is generated, the software projects the original imagery onto the surface to create a photorealistic texture. This textured 3D model provides an immersive visualization, enabling more detailed analysis of structures, terrain, and other elements than would be possible through a 2D map alone.
+
+Another optional step, depending on the dataset, is the radiometric calibration of the data. However, this step becomes mandatory for multispectral and hyperspectral datasets, as it ensures the accuracy and usability of the radiometric information by compensating for sensor-specific biases and environmental conditions during data acquisition.
 
 ### Remote Sensing applied to Coastal monitoring
 
 Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. Remote sensing technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. High-resolution satellite imagery and drone-based platforms facilitate the detection of fine-scale changes in intertidal zones, mangroves, coral reefs, and other critical coastal habitats. These observations enable the quantification of spatial and temporal variations, informing evidence-based strategies for conservation and sustainable management.
 
-Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions (Muller-Karger et al., 2018).
+Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions [@muller10satellite].
 
-These frameworks address the need for scalable and harmonized observations, aligning with international directives like the Water Framework Directive (WFD) and the Marine Strategy Framework Directive (MSFD), which use habitat diversity as an indicator of aquatic health [@borja2013good ; @zoffoli2021decadal ; @papathanasopoulou2019satellite]. Beyond enabling environmental monitoring, EBVs and EOVs provide a foundation for conservation strategies by addressing knowledge gaps and promoting coordinated action among stakeholders.
+These frameworks address the need for scalable and harmonized observations, aligning with international directives like the Water Framework Directive (WFD, 2000/60/EC) and the Marine Strategy Framework Directive (MSFD), which use habitat diversity as an indicator of aquatic health [@borja2013good ; @zoffoli2021decadal ; @papathanasopoulou2019satellite]. Beyond enabling environmental monitoring, EBVs and EOVs provide a foundation for conservation strategies by addressing knowledge gaps and promoting coordinated action among stakeholders. However, evaluating the ecological status of a large number of water bodies using exclusively field observations turned out to be extremely challenging, and the status of many sites has still not been assessed [@papathanasopoulou2019satellite] 
 
 ```{r Fig MullerKarger}
 #| echo: false
@@ -490,7 +636,7 @@ These frameworks address the need for scalable and harmonized observations, alig
 knitr::include_graphics("Figs/muller_EBVs.png")
 ```
 
-Developments in remote sensing have further improved the applicability of EBVs and EOVs[@pereira2013essential ; @skidmore2015environmental]. High-resolution satellite technologies enable large-scale, frequent observations of biodiversity and marine parameters, facilitating the detection of environmental changes. These technologies support tracking habitat extent, species distribution, and functional traits, incorporating these frameworks into conservation policies. The integration of EBVs and EOVs with remote sensing tools advances ecological monitoring and decision-making at global scales. However, past and current satellite missions lack optimal technical specifications (spatial, spectral, and temporal resolution) for full operational capability [@muller10satellite]. For some habitats, multispectral resolution may be adequate under certain conditions [@zoffoli2020sentinel], although risks of classification errors remain. For others, higher spectral resolution is necessary to distinguish taxonomically distinct groups of organisms [@fyfe2003spatial ; @launeau2018microphytobenthos ; @meleder2018microphytobenthos]. Identification relies partly on the presence of visible absorption bands associated with photosynthetic and accessory pigments, which can be detected and quantified using high-performance liquid chromatography [@meleder2005spatio ; @meleder2003spectrometric ; @bargain2013seasonal ; @jesus2014spectral].
+Developments in remote sensing have further improved the applicability of EBVs and EOVs [@pereira2013essential ; @skidmore2015environmental]. Drone and satellite technologies enable large-scale, frequent observations of biodiversity and marine parameters, facilitating the detection of environmental changes. These technologies support tracking habitat extent, species distribution, and functional traits, incorporating these frameworks into conservation policies. The integration of EBVs and EOVs with RS tools advances ecological monitoring and decision-making at local, regional and global scales. However, past and current satellite missions lack optimal technical specifications (spatial, spectral, and temporal resolution) for full operational capability [@muller10satellite]. For some habitats, multispectral resolution may be adequate under certain conditions [@zoffoli2020sentinel], although risks of classification errors remain. For others, higher spectral resolution is necessary to distinguish taxonomically distinct groups of organisms [@fyfe2003spatial ; @launeau2018microphytobenthos ; @meleder2018microphytobenthos]. Identification relies partly on the presence of visible absorption bands associated with photosynthetic and accessory pigments, which can be detected and quantified using high-performance liquid chromatography [@meleder2005spatio ; @meleder2003spectrometric ; @bargain2013seasonal ; @jesus2014spectral].
 
 ## Objectifs and Overview
 
