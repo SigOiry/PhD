@@ -150,7 +150,7 @@ We used a Generalized Linear Mixed Model (GLMM) within a Bayesian framework usin
 
 A clear shift from bare sediment to vegetated mudflats has been observed over the past 70 years, corresponding to the colonization of the Belon Estuary by *G. vermiculophylla* ($Figure~\ref{fig-HistoricalMap_g}$). In the 50s, the tidal flats showed no detectable presence of vegetation. During the 70s some darkening of the sediment became discernible, but the first clear and unambiguous presence of *G. vermiculophylla* was recorded in 1982. During the subsequent decades, the cover of algae increased and in 2024, the high-resolution drone mapping showed that the mudflat was exclusively colonised  by monospecific mats of *G. vermiculophylla*. 
 
-
+From the early recordings in the 1950s through the late 1970s, *Gracilaria vermiculophylla* coverage remained effectively at 0% ($Figure~\ref{fig-HistoricalMap_g}$). Shortly after the introduction of *Crassostrea gigas* in the estuary, in 1971-1972 (see vertical red dashed line in the figure), the first detectable presence of *G. vermiculophylla* emerged. By 1976, it covered 2.5% (0.7 ha) of the Pont du Guilly area, and by 1978 it had increased slightly to 3.0% (0.9 ha). From 1982 onward, coverage expanded more rapidly, increasing from 6.6% (2.0 ha) in 1982 to 14.7% (4.5 ha) in 1992 and nearly 30% (9.0 ha) by 1997. This upward trend continued into the 21st century, peaking at 41.2% (13.3 ha) in 2012. Although coverage fluctuated somewhat thereafter (40.6% in 2019 and 41.8% in 2024), it remained consistently high, indicating sustained and widespread colonization.
 
 ::: {.content-visible when-format="html" when-format="docx"}
 ```{r MapsHistorical}
@@ -183,8 +183,6 @@ knitr::include_graphics("Figs/Historical_maps.png")
 ```
 :::
 
-
-From the early recordings in the 1950s through the late 1970s, *Gracilaria vermiculophylla* coverage remained effectively at 0% ($Figure~\ref{fig-HistoricalMap_g}$). Shortly after the introduction of *Crassostrea gigas* in the estuary, in 1971-1972 (see vertical red dashed line in the figure), the first detectable presence of *G. vermiculophylla* emerged. By 1976, it covered 2.5% (0.7 ha) of the Pont du Guilly area, and by 1978 it had increased slightly to 3.0% (0.9 ha). From 1982 onward, coverage expanded more rapidly, increasing from 6.6% (2.0 ha) in 1982 to 14.7% (4.5 ha) in 1992 and nearly 30% (9.0 ha) by 1997. This upward trend continued into the 21st century, peaking at 41.2% (13.3 ha) in 2012. Although coverage fluctuated somewhat thereafter (40.6% in 2019 and 41.8% in 2024), it remained consistently high, indicating sustained and widespread colonization.
 
 ```{r HistoricalPlot}
 #| cache: false
@@ -300,17 +298,16 @@ These findings underscore the crucial role of remote sensing in ecological resea
 
 ### Annexes A - Updated training dataset {#sec-AnnexeA}
 
-```{r Training pixel}
-#| label: tbl-Update_training
-#| tbl-cap: Class of the Neural Network model, with the number of training pixels used to train that class and the differences with the training dataset of DISCOV v1.0  
-#| echo: false
-#| error: false
-#| message: false
-#| warning: false
-#| out-width: "50%"
+```{=latex}
+\centering
+\begin{table}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Chapter4/Figs/AnnexeA.png}
+  \caption{\label{tbl-Update_training}Annexe 4.1 - Class of the Neural Network model, with the number of training pixels used to train that class and the differences with the training dataset of DISCOV v1.0}
+\end{table}
 
-knitr::include_graphics("Figs/AnnexeA.png")
 ```
+
 
 ::: {.page-break}
 \newpage
@@ -319,16 +316,13 @@ knitr::include_graphics("Figs/AnnexeA.png")
 
 ### Annexes B - Validation dataset {#sec-AnnexeB}
 
-```{r Validation Table}
-#| label: tbl-ValidationDataset
-#| tbl-cap: Presence and absence of red macroalgae for each drone flight 
-#| echo: false
-#| error: false
-#| message: false
-#| warning: false
-#| out-width: "70%"
-
-knitr::include_graphics("Figs/AnnexeA.png")
+```{=latex}
+\centering
+\begin{table}
+  \centering
+  \includegraphics[width=0.6\textwidth]{Chapter4/Figs/AnnexeB.png}
+  \caption{\label{tbl-ValidationDataset}Annexe 4.2 - Presence and absence of red macroalgae for each drone flight}
+\end{table}
 ```
 
 ::: {.page-break}
@@ -340,7 +334,7 @@ knitr::include_graphics("Figs/AnnexeA.png")
 
 ```{r Historical Table}
 #| label: tbl-IGNimg
-#| tbl-cap: Images used to assess the historical presence of Gracilaria vermiculophylla in the Belon esturay. Images from the IGN data source have been retrieved from the "Remonter Le Temps" plateform [@RemonterLeTempsIGN]. Drone flight have been performed by the team using a Mavic 3 Entreprise. 
+#| tbl-cap: Annexe 4.3 - Images used to assess the historical presence of Gracilaria vermiculophylla in the Belon esturay. Images from the IGN data source have been retrieved from the "Remonter Le Temps" plateform [@RemonterLeTempsIGN]. Drone flight have been performed by the team using a Mavic 3 Entreprise.
 #| echo: false
 #| error: false
 #| message: false
@@ -411,7 +405,7 @@ data.frame(
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: DISCOV Prediction (A), RGB composition (B) and picture of the field campaign of the Saja esturay, Nothern Spain. The total extent of this flight was 20.4 hectars with a resolution of 8 mm per pixel. 
+#| fig-cap: "Annexe 4.4 - DISCOV Prediction (A), RGB composition (B) and picture of the field campaign of the Saja esturay, Nothern Spain. The total extent of this flight was 20.4 hectars with a resolution of 8 mm per pixel."
 #| label: fig-Saja_g
 #| out-width: "95%"
 
