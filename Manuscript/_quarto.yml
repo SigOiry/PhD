@@ -39,8 +39,10 @@ thesis:
   acknowledgements: "Frontmatter/acknowledgements.tex"
   
   
-bibliography: [References/Introduction.bib, References/Chapter2.bib, References/Chapter5.bib, References/Chapter3.bib, References/Chapter4.bib, References/packages.bib, References/Chapter6.bib] 
+# bibliography: [References/Introduction.bib, References/Chapter2.bib, References/Chapter5.bib, References/Chapter3.bib, References/Chapter4.bib, References/packages.bib, References/Chapter6.bib]
+bibliography: [References/UniqueReferences.bib]
 csl: RSE.csl
+
 
 format:
   quarto-thesis-pdf: 

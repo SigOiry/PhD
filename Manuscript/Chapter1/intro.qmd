@@ -49,11 +49,11 @@ if (length(large_files) > 0) {
 ```
 ## Coastal Environment
 
-Marine coastal zones are among the most densely populated regions globally, serving as critical hubs for economic activity, transportation, and tourism. These areas support diverse ecosystems and provide essential resources. Additionally, they play a pivotal role in global trade and commerce while also offering cultural and recreational value. However, their popularity and utility make them highly vulnerable to environmental pressures such as pollution, habitat destruction, and climate change impacts like sea-level rise and coastal erosion [@orth2006global, @walker1992seagrass, @valle2013comparing]. Effective management and sustainable practices are crucial to preserving their ecological integrity and ensuring long-term viability.
+Marine coastal zones are among the most densely populated regions globally, serving as critical hubs for economic activity, transportation, and tourism. These areas support diverse ecosystems and provide essential resources. Additionally, they play a pivotal role in global trade and commerce while also offering cultural and recreational value. However, their popularity and utility make them highly vulnerable to environmental pressures such as pollution, habitat destruction, and climate change impacts like sea-level rise and coastal erosion [@orth2006global ; @walker1992seagrass ; @valle2013comparing]. Effective management and sustainable practices are crucial to preserving their ecological integrity and ensuring long-term viability.
 
-Marine vegetative habitats in intertidal zones, such as seagrass meadows, microphytobenthos, and macroalgal habitats, face significant hazards from both anthropogenic activities and natural forces. Human-induced threats include coastal development, pollution, overfishing, and habitat modification, chich degrade these ecosystems. Seagrass meadows are threatened by various anthropogenic activities [@mckenzie2020global], microphytobenthos are affected by the global decline of intertidal mudflats [@murray2019global], and areas colonized by macroalgae may shrink due to the expansion of wild oyster reefs [@le2016hyperspectral]. Additionally, natural factors such as storms, sea-level rise, climatic extreme events and climate change exacerbate these pressures, altering the structure, function, and resilience of intertidal habitats.
+Marine vegetative habitats in intertidal zones, such as seagrass meadows, microphytobenthos, and macroalgal habitats, face significant hazards from both anthropogenic activities and natural forces. Human-induced threats include coastal development, pollution, overfishing, and habitat modification, chich degrade these ecosystems. Seagrass meadows are threatened by various anthropogenic activities [@mckenzie2020global], microphytobenthos are affected by the global decline of intertidal mudflats [@Murray2019], and areas colonized by macroalgae may shrink due to the expansion of wild oyster reefs [@le2016hyperspectral]. Additionally, natural factors such as storms, sea-level rise, climatic extreme events and climate change exacerbate these pressures, altering the structure, function, and resilience of intertidal habitats.
 
-These habitats provide vital ecological functions, including coastal erosion protection through root stabilization and sediment trapping [@bos2007ecosystem] , mitigation of eutrophication effects by absorbing excess nutrients and improving water quality (**refs**), atmospheric CO2 fixation, contributing to carbon sequestration and combating climate change [@mcroy1977production, @krause2018sequestration, @saderne2019role], serving as biodiversity hotspots that support unique flora and fauna, providing feeding, breeding, and nursery grounds for various species [@unsworth2019seagrass, @sanabria2024unveiling]. 
+These habitats provide vital ecological functions, including coastal erosion protection through root stabilization and sediment trapping [@bos2007ecosystem] , mitigation of eutrophication effects by absorbing excess nutrients and improving water quality (**refs**), atmospheric CO2 fixation, contributing to carbon sequestration and combating climate change [@mcroy1977production ; @krause2018sequestration ; @saderne2019role], serving as biodiversity hotspots that support unique flora and fauna, providing feeding, breeding, and nursery grounds for various species [@unsworth2019seagrass ; @sanabria2024unveiling]. 
 Despite their ecological significance and ecosystem services they provide, intertidal habitats, particularly mudflats, remain highly vulnerable yet often overlooked. Tidal flats are challenging to access, and traditional field sampling methods are too time- and labor-intensive for repeated observations over large areas. Moreover, large variations across different temporal scales in these habitats require frequent monitoring, which is impractical through field surveys alone. This underscores the need for advanced monitoring technologies, effective management practices and targeted conservation strategies to ensure their sustainability and resilience against diverse and evolving pressures.
 
 ### Ecological and Socio-Economic importance of Coastal Environments
@@ -102,19 +102,19 @@ The intertidal zone refers to the coastal area between the high and low tide mar
 
 Tidal flats, a specific type of intertidal habitat, are defined as expanses of sand, rock, or mud that experience regular tidal inundation. These ecosystems are shaped by sediment deposition driven by tidal currents, wave action, and terrestrial runoff. As transitional ecosystems between terrestrial and marine environments, tidal flats face pressures from both domains. Additionally, they encounter unique threats, including coastal development [@hassan2005ecosystems ; @arkema2013coastal], rising sea levels [@passeri2015dynamic ; @lovelock2017mangrove], coastal erosion [@Nicholls2007], decreased sediment input from rivers [@blum2009drowning], and the subsidence and compaction of coastal sediments [@minderhoud2020groundwater].
 
-Globally, tidal flats are experiencing significant declines in extent due to both natural and anthropogenic factors. @murray2019global using a satellite time series have shown that tidal flats have declined by approximately 16% from 1984 to 2016, representing a net loss of over 20,000 km² (@fig-TidalFlats).
+Globally, tidal flats are experiencing significant declines in extent due to both natural and anthropogenic factors. @Murray2019, using a satellite time series, have shown that tidal flats have declined by approximately 16% from 1984 to 2016, representing a net loss of over 20,000 km² (@fig-TidalFlats).
 
 ```{r Figs MurrayTidalFlats}
 #| echo: false
 #| warning: false
-#| fig-cap: "The global trajectory of tidal flats extent, showing areas in which the development of consistent time-series data over 1984–2016 (orange) and 1999–2016 (orange and blue) was possible. b, Change in extent of tidal flats in 17.1% of the mapped area, 1984–2016 (linear regression, P = 0.00437). c, Change in extent of tidal flats in 61.3% of the mapped area, 1999–2016 (linear regression, P = 0.1794). Shading in b and c indicates the standard error of the linear model. From @murray2019global"
+#| fig-cap: "The global trajectory of tidal flats extent, showing areas in which the development of consistent time-series data over 1984–2016 (orange) and 1999–2016 (orange and blue) was possible. b, Change in extent of tidal flats in 17.1% of the mapped area, 1984–2016 (linear regression, P = 0.00437). c, Change in extent of tidal flats in 61.3% of the mapped area, 1999–2016 (linear regression, P = 0.1794). Shading in b and c indicates the standard error of the linear model. From @Murray2019"
 #| label: fig-TidalFlats
 #| out-width: "80%"
 
 knitr::include_graphics("Figs/Murray_Tidalflats.png")
 ```
 
-Regions such as East Asia, the Middle East, and North America have shown the greatest losses. These declines mirror trends observed in other coastal ecosystems, such as mangroves and seagrasses. Despite these losses, some areas have exhibited resilience or even expansion, highlighting the dynamic interplay between sedimentary processes, sea-level rise, and human interventions [@murray2019global].
+Regions such as East Asia, the Middle East, and North America have shown the greatest losses. These declines mirror trends observed in other coastal ecosystems, such as mangroves and seagrasses. Despite these losses, some areas have exhibited resilience or even expansion, highlighting the dynamic interplay between sedimentary processes, sea-level rise, and human interventions [@Murray2019].
 
 A potential solution to limit the disappearance of tidal flats is to protect the ecosystems they host. These ecosystems contribute significantly to nutrient cycling and sediment stabilization, enhancing the overall resilience of tidal flats. By maintaining these biotic communities, the ecological functions of tidal flats can be preserved, buffering them against threats such as erosion and rising sea levels.
 
@@ -126,19 +126,20 @@ The main vegetation classes found on tidal flats will be introduced in the follo
 The main vegetation classes found on tidal flats will be introduced in the following sections, as Chapters 2 and 3 rely specifically on distinguishing between these classes. Here, "classes" is considered in its taxonomic sense, referring to a toaxonomic rank that groups related orders of organisms sharing a common ancestor.
 \end{tcolorbox}
 ```
-#### Bacillariophyceae, Euglenida and Cyanophyceae
 
-Within estuarine biological communities, microphytobenthos (MPB) can contribute up to 50% of total primary production [@n1999primary]. This assemblage comprises unicellular algae---particularly epipsammic diatoms (associated with sand grains) and epipelic diatoms (free and motile within muddy sediments, @fig-MPBpictures B)---as well as cyanobacteria and euglenids [@macintyre1996microphytobenthos]. These organisms proliferate on sediment surfaces during low tide [@kelly2001attenuation], colonizing intertidal superficial sediments and forming biofilms (@fig-MPBpictures A) that can extend over several square kilometers [@benyoucef2014microphytobenthos].
-
-```{r Figs MPBpictures}
+```{r Figs Vegetations_intro}
 #| echo: false
 #| warning: false
-#| fig-cap: "Picture of the sampling of microphytobenthos biofilm in the Guadalquivir river, on the 22nd of March 2023 (A) and a single diatoms cell (B), likely *Navicula spp.* took using a scanning transmission electron microscope by Alexandre Barnett."
-#| label: fig-MPBpictures
-#| out-width: "100%"
+#| fig-cap: "Main vegetation classes of this work. A: Seagrass meadows (Magnoliopsida) took in Cadiz, Spain, on the 21st of March 2023. B: Microphytobenthos (Bacillariophyceae) biofilm patches, Cadiz, Spain, on the 22nd of March 2023. C: Brown algae (Phaeophyceae) took in Etel, France on the 13th of March 2024. D: Red macroalgae (Rhodophyceae) took in the Belon estuary, France on the 10th of April 2024. E: Green macroalgae (Chlorophyceae) laying on the polycheate reef of Noirmoutier Island, France on the 29th of September 2023."
+#| label: fig-Vegetations_intro
+#| out-width: "80%"
 
-knitr::include_graphics("Figs/MPB/MPB_pictures.png")
+knitr::include_graphics("Figs/MPB/Figs_vegetations.png")
 ```
+
+#### Bacillariophyceae, Euglenida and Cyanophyceae
+
+Within estuarine biological communities, microphytobenthos (MPB) can contribute up to 50% of total primary production [@n1999primary]. This assemblage comprises unicellular algae---particularly epipsammic diatoms (associated with sand grains) and epipelic diatoms (free and motile within muddy sediments, @fig-Vegetations_intro B)---as well as cyanobacteria and euglenids [@macintyre1996microphytobenthos]. These organisms proliferate on sediment surfaces during low tide [@kelly2001attenuation], colonizing intertidal superficial sediments and forming biofilms that can extend over several square kilometers [@benyoucef2014microphytobenthos].
 
 The MPB fulfills both structural and trophic functions within intertidal mudflats. Structurally, microphytobenthic biofilms decelerate sediment resuspension and enhance mudflat stability by mitigating erosive processes [@decho2000microbial]. Trophically, they serve as a food resource for deposit-feeding and suspension-feeding invertebrates [@miller1996microphytobenthos]. MPB forms the foundation of various food chains, being consumed at low tide by organisms ranging from gastropods [@savelli2018biotic] to shorebirds [@drouet2015utilisation]. Additionally, at high tide, tidal currents and waves can resuspend the MPB, making it available in the water column for suspension feeders and facilitating the export of a portion of its biomass to adjacent ecosystems [@de1995wind ; @decottignies2007exploitation].
 
@@ -146,7 +147,7 @@ The MPB's role in sediment stabilization is further supported by its production 
 
 #### Chlorophyceae
 
-Green macroalgae, belonging to the Class of Chlorophyceae, are a diverse group of multicellular photosynthetic organisms predominantly inhabiting marine environments, though some species are found in freshwater and terrestrial habitats (@fig-vegetation D). They are characterized by green pigmentation, resulting from the dominance of chlorophylls a and b, which play a crucial role in their photosynthetic processes [@cikovs2022recent].
+Green macroalgae, belonging to the Class of Chlorophyceae, are a diverse group of multicellular photosynthetic organisms predominantly inhabiting marine environments, though some species are found in freshwater and terrestrial habitats (@fig-Vegetations_intro E). They are characterized by green pigmentation, resulting from the dominance of chlorophylls a and b, which play a crucial role in their photosynthetic processes [@cikovs2022recent].
 
 Ecologically, green macroalgae are significant primary producers of coaastal ecosystems, contributing substantially to the productivity of coastal ecosystems. Species such as those in the genus *Ulva* are known for their rapid growth rates and are often indicators of nutrient-rich conditions [@liu2020role].
 
@@ -156,7 +157,7 @@ However, under conditions of eutrophication---excessive nutrient enrichment---gr
 
 #### Phaeophyceae
 
-Brown macroalgae, classified under the class Phaeophyceae, are a diverse group of multicellular marine algae predominantly found in temperate and polar coastal regions (@fig-vegetation B). Their characteristic brown coloration arises from the presence of the pigment fucoxanthin, which masks the green color of chlorophylls a and c. This pigmentation is integral to their photosynthetic efficiency, particularly in low-light underwater environments [@cikovs2022recent].
+Brown macroalgae, classified under the class Phaeophyceae, are a diverse group of multicellular marine algae predominantly found in temperate and polar coastal regions (@fig-Vegetations_intro C). Their characteristic brown coloration arises from the presence of the pigment fucoxanthin, which masks the green color of chlorophylls a and c. This pigmentation is integral to their photosynthetic efficiency, particularly in low-light underwater environments [@cikovs2022recent].
 
 Ecologically, brown macroalgae play a pivotal role in marine ecosystems. They form extensive underwater forests, commonly known as kelp forests, which provide habitat, food, and shelter for a multitude of marine organisms, thereby enhancing local biodiversity. These structures influence coastal oceanography by affecting water flow and light penetration. In intertidal areas, they often colonize rocky substrates, creating suitable habitat for various species like sea anemone, limpet and fishes [@eger2023value].
 
@@ -168,7 +169,7 @@ However, brown macroalgae are susceptible to environmental changes. Factors such
 
 #### Rhodophyceae
 
-Red macroalgae, or Rhodophyta, constitute a diverse group of predominantly marine, multicellular algae characterized by their reddish pigmentation, which results from the presence of phycoerythrin and phycocyanin pigments (@fig-vegetation C). These pigments enable red algae to efficiently absorb blue and green wavelengths of light, facilitating photosynthesis at greater ocean depths compared to other algal groups [@cikovs2022recent].
+Red macroalgae, or Rhodophyta, constitute a diverse group of predominantly marine, multicellular algae characterized by their reddish pigmentation, which results from the presence of phycoerythrin and phycocyanin pigments (@fig-Vegetations_intro D). These pigments enable red algae to efficiently absorb blue and green wavelengths of light, facilitating photosynthesis at greater ocean depths compared to other algal groups [@cikovs2022recent].
 
 Ecologically, red macroalgae play a vital role in marine environments. They contribute significantly to primary production and serve as foundational species in various marine habitats. Notably, coralline red algae, which secrete calcium carbonate, are instrumental in building and stabilizing coral reef structures, providing habitat complexity that supports diverse marine life [@cornwall2023crustose].
 
@@ -207,7 +208,7 @@ However, red macroalgae face challenges due to environmental changes. Factors su
 <!-- \end{tikzpicture} -->
 <!-- ``` -->
 
-Intertidal seagrass meadows, classified under the class Magnoliopsida, consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. Furthermore, they regulate nutrient cycles and improve water quality by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits. 
+Intertidal seagrass meadows (@fig-Vegetations_intro A), classified under the class Magnoliopsida, consist of flowering plants adapted to the unique challenges of periodic exposure and submersion in the intertidal zone. These meadows stabilize sediments via their root systems, which anchor substrates and mitigate erosion, thereby reducing sediment loss and maintaining substrate integrity [@davies2024intertidal ; @zoffoli2023remote ; @sousa2019blue]. Additionally, seagrass meadows provide essential ecosystem services, including acting as habitat, nurseries or feeding location for numerous species (@fig-SeagrassHabitat), many of which are commercially important [@moussa2020importance]. Their structural complexity offers refuge from predators, supporting juvenile survival and biodiversity. These meadows play a significant role in global carbon sequestration, capturing and storing carbon at rates comparable to, or exceeding, terrestrial forests. Furthermore, they regulate nutrient cycles and improve water quality by trapping sediments and filtering pollutants, thus sustaining the health of adjacent marine environments [@de2019recent]. By cycling nutrients and contributing organic matter through detritus production, intertidal seagrass meadows enhance the ecological productivity and resilience of tidal flats, underscoring their critical role in supporting both ecological functions and socio-economic benefits. 
 Seagrass meadows, like tidal flats, are undergoing significant declines on a global scale due to a variety of anthropogenic and natural stressors [@davies2024intertidal]. Despite their critical ecological roles, seagrass ecosystems remain comparatively underrepresented in scientific research within the broader scope of coastal ecosystems. As illustrated in @fig-SeagrassHabitat (E), the proportion of publications focusing on seagrasses in the context of coastal ecosystem studies is considerably lower than those dedicated to other key habitats such as coral reefs, mangroves, and salt marshes. This disparity highlights a critical research gap, underscoring the need for increased scientific attention to better understand and mitigate the factors contributing to the degradation of these vital ecosystems.
 
 ```{r Figs SeagrassHabitat}
@@ -251,7 +252,7 @@ Active remote sensing is a technique in which a sensor emits its own energy---ty
 
 The Light Detection and Ranging (LiDAR) sensor emit laser beams in the ultraviolet (UV), visible or infrared (IR) regions of the electromagnetic spectrum. By analyzing the return signal, they can estimate distances to objects or surfaces, detect optically active constituents in water bodies, and assess aerosols in the atmosphere [@jamet2019going ; @dionisi2024exploring]
 
-LiDAR works by emitting a beam of light and measuring the time it takes for the beam to return to the sensor. This process not only calculates distances but also captures the intensity of the returned signal. In many instances, multiple returns from a single pulse are measured, enabling the mapping of varying objects height within the same x and y coordinates. This capability allows the creation of precise, three-dimensional representations of the environment such as mapping the heights of trees in forests or measuring crop heights in agricultural fields [@fig-LIDAR]. When ground height cannot be directly measured, LiDAR data can generate a digital surface model (DSM), which represents the uppermost layer of the environment. However, if multiple returns are recorded, it becomes possible to create both a DSM and a digital terrain model (DTM), which represents the ground surface, by differentiating between the surface and underlying layers. The difference between DSM and DTM can be used to assess living stock or biomass.
+LiDAR works by emitting a beam of light and measuring the time it takes for the beam to return to the sensor. This process not only calculates distances but also captures the intensity of the returned signal. In many instances, multiple returns from a single pulse are measured, enabling the mapping of varying objects height within the same x and y coordinates. This capability allows the creation of precise, three-dimensional representations of the environment such as mapping the heights of trees in forests or measuring crop heights in agricultural fields (@fig-LIDAR). When ground height cannot be directly measured, LiDAR data can generate a digital surface model (DSM), which represents the uppermost layer of the environment. However, if multiple returns are recorded, it becomes possible to create both a DSM and a digital terrain model (DTM), which represents the ground surface, by differentiating between the surface and underlying layers. The difference between DSM and DTM, called Digital Height Model (DHM),  can be used to assess living stock or biomass.
 
 ```{r Fig LIDAR}
 #| echo: false
@@ -340,6 +341,7 @@ $R_{BOA}$ can be used to identify key absorption features of chemical compounds 
 Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
 \end{tcolorbox}
 ```
+
 ::: {.content-visible when-format="html" when-format="docx"}
 Some technical characteristics of remote sensing sensors can directly impact their ability to map coastal ecosystems. The next section explores these characteristics, illustrating their importance with examples of specific use cases.
 :::
@@ -594,7 +596,17 @@ Satellite products produced by space agencies are often provided to users after 
 
 ##### image pre-processing
 
-The first step is to correct each individual image acquired by the drone from optical distortion that occurred during its acquisition. Photogrammetric software typically addresses lens distortion and vignetting through a combination of camera calibration and radiometric adjustments. During calibration, the software refines intrinsic parameters such as focal length, principal point offsets, and radial/tangential distortion coefficients (called k1, k2, k3, p1, p2) by matching features across overlapping images in a bundle adjustment process. Some camera manufacturers provide sensor-specific metadata, including correction factors, which can further enhance calibration accuracy. Vignetting, which manifests as reduced brightness near the image edges, is often corrected via additional vignetting coefficients or automated radiometric calibration routines that normalize illumination across photos. These corrections are essential for ensuring both geometric precision in the 3D reconstruction and radiometric consistency in the final orthomosaic.
+The first step is to correct each individual image acquired by the drone from optical distortion that occurred during its acquisition (@fig-img_preprocessing). Photogrammetric software typically addresses lens distortion and vignetting through a combination of camera calibration and radiometric adjustments. During calibration, the software refines intrinsic parameters such as focal length, principal point offsets, and radial/tangential distortion coefficients (called k1, k2, k3, p1, p2) by matching features across overlapping images in a bundle adjustment process. Some camera manufacturers provide sensor-specific metadata, including correction factors, which can further enhance calibration accuracy. Vignetting, which manifests as reduced brightness near the image edges, is often corrected via additional vignetting coefficients or automated radiometric calibration routines that normalize illumination across photos. These corrections are essential for ensuring both geometric precision in the 3D reconstruction and radiometric consistency in the final orthomosaic.
+
+```{r Fig img_preprocessing}
+#| echo: false
+#| warning: false
+#| fig-cap: "Schematic representation of images pre-processing for orthomosaic reconstruction, showing correction of the distortion (A & B) and correction of the vignetting (C & D)."
+#| label: fig-img_preprocessing
+#| out-width: "90%"
+
+knitr::include_graphics("Figs/distortion.png")
+```
 
 ##### Initial Image Alignment / Aerial Triangulation
 
@@ -606,7 +618,17 @@ Building upon the camera geometry established by SfM, the software uses Multi-Vi
 
 ##### Digital Surface Model (DSM) / Digital Terrain Model (DTM)
 
-From the dense point cloud, a Digital Surface Model (DSM) is derived by capturing the highest elevation values within each pixel or grid cell, thereby representing above-ground features like buildings and vegetation. Alternatively, a Digital Terrain Model (DTM) can be produced by classifying and removing non-ground points to approximate the bare-earth surface. Both models are typically exported as raster files and used in various analytical applications, such as hydrological modeling, viewshed analysis, and volume calculations. Their accuracy depends on the quality of the dense cloud and effective point classification techniques.
+From the dense point cloud, a Digital Surface Model (DSM) is derived by capturing the highest elevation values within each pixel or grid cell, thereby representing above-ground features like buildings and vegetation. Alternatively, a Digital Terrain Model (DTM) can be produced by classifying and removing non-ground points to approximate the bare-earth surface. Both models are typically exported as raster files and used in various analytical applications, such as hydrological modeling, viewshed analysis, and volume calculations. Their accuracy depends on the quality of the dense cloud and effective point classification techniques. The difference between the DSM and the DTM is called a Digital Height Model (DHM, @fig-DSMDTM).
+
+```{r Fig DSMDTM}
+#| echo: false
+#| warning: false
+#| fig-cap: "Representation of differences between the Digital Surface Model (DSM), the Digital Terrain model (DTM) and the Digital Height Model (DHM)."
+#| label: fig-DSMDTM
+#| out-width: "90%"
+
+knitr::include_graphics("Figs/DSM_DTM.png")
+```
 
 ##### Orthorectification and Orthomosaic Creation
 
@@ -622,21 +644,21 @@ Another optional step, depending on the dataset, is the radiometric calibration 
 
 Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. Remote sensing technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. High-resolution satellite imagery and drone-based platforms facilitate the detection of fine-scale changes in intertidal zones, mangroves, coral reefs, and other critical coastal habitats. These observations enable the quantification of spatial and temporal variations, informing evidence-based strategies for conservation and sustainable management.
 
-Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions [@muller10satellite].
+Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions [@Muller-Karger2018].
 
 These frameworks address the need for scalable and harmonized observations, aligning with international directives like the Water Framework Directive (WFD, 2000/60/EC) and the Marine Strategy Framework Directive (MSFD), which use habitat diversity as an indicator of aquatic health [@borja2013good ; @zoffoli2021decadal ; @papathanasopoulou2019satellite]. Beyond enabling environmental monitoring, EBVs and EOVs provide a foundation for conservation strategies by addressing knowledge gaps and promoting coordinated action among stakeholders. However, evaluating the ecological status of a large number of water bodies using exclusively field observations turned out to be extremely challenging, and the status of many sites has still not been assessed [@papathanasopoulou2019satellite] 
 
 ```{r Fig MullerKarger}
 #| echo: false
 #| warning: false
-#| fig-cap: "Current capabilities of remotely sensed data for measuring Essential Biodiversity Variables (EBVs; @pereira2013essential). Adapted from @muller10satellite."
+#| fig-cap: "Current capabilities of remotely sensed data for measuring Essential Biodiversity Variables (EBVs; @pereira2013essential). Adapted from @Muller-Karger2018."
 #| label: fig-MullerKarger
 #| out-width: "100%"
 
 knitr::include_graphics("Figs/muller_EBVs.png")
 ```
 
-Developments in remote sensing have further improved the applicability of EBVs and EOVs [@pereira2013essential ; @skidmore2015environmental]. Drone and satellite technologies enable large-scale, frequent observations of biodiversity and marine parameters, facilitating the detection of environmental changes. These technologies support tracking habitat extent, species distribution, and functional traits, incorporating these frameworks into conservation policies. The integration of EBVs and EOVs with RS tools advances ecological monitoring and decision-making at local, regional and global scales. However, past and current satellite missions lack optimal technical specifications (spatial, spectral, and temporal resolution) for full operational capability [@muller10satellite]. For some habitats, multispectral resolution may be adequate under certain conditions [@zoffoli2020sentinel], although risks of classification errors remain. For others, higher spectral resolution is necessary to distinguish taxonomically distinct groups of organisms [@fyfe2003spatial ; @launeau2018microphytobenthos ; @meleder2018microphytobenthos]. Identification relies partly on the presence of visible absorption bands associated with photosynthetic and accessory pigments, which can be detected and quantified using high-performance liquid chromatography [@meleder2005spatio ; @meleder2003spectrometric ; @bargain2013seasonal ; @jesus2014spectral].
+Developments in remote sensing have further improved the applicability of EBVs and EOVs [@pereira2013essential ; @skidmore2015environmental]. Drone and satellite technologies enable large-scale, frequent observations of biodiversity and marine parameters, facilitating the detection of environmental changes. These technologies support tracking habitat extent, species distribution, and functional traits, incorporating these frameworks into conservation policies. The integration of EBVs and EOVs with RS tools advances ecological monitoring and decision-making at local, regional and global scales. However, past and current satellite missions lack optimal technical specifications (spatial, spectral, and temporal resolution) for full operational capability [@Muller-Karger2018]. For some habitats, multispectral resolution may be adequate under certain conditions [@zoffoli2020sentinel], although risks of classification errors remain. For others, higher spectral resolution is necessary to distinguish taxonomically distinct groups of organisms [@fyfe2003spatial ; @launeau2018microphytobenthos ; @meleder2018microphytobenthos]. Identification relies partly on the presence of visible absorption bands associated with photosynthetic and accessory pigments, which can be detected and quantified using high-performance liquid chromatography [@meleder2005spatio ; @meleder2003spectrometric ; @Bargain2013 ; @jesus2014spectral].
 
 ## Objectifs and Overview
 
