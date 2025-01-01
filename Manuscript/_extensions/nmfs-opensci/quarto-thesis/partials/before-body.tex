@@ -129,6 +129,7 @@ $endif$
 % ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 $if(abstract)$
+  \clearpage
   \begin{abstract}
     \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
     $abstract$
@@ -170,10 +171,14 @@ $endif$
 \hypersetup{linkcolor=$if(toclinkcolor)$$toclinkcolor$$else$black$endif$}
 
 \tableofcontents  
-\clearpage  % Start a new page after List of Figures% Main table of contents
-\listoffigures 
+\clearpage
+\clearpage% Start a new page after List of Figures% Main table of contents
+\listoffigures
+\clearpage
+\clearpage
 \clearpage  % Start a new page after List of Figures% List of figures
 \listoftables       % List of tables
+\clearpage
 \clearpage
 \endgroup
 
