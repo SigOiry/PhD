@@ -603,6 +603,8 @@ Following the creation of a dense point cloud (@sec-DPC), photogrammetric softwa
 
 Another optional step, depending on the dataset, is the radiometric calibration of the data. However, this step becomes mandatory for multispectral and hyperspectral datasets, as it ensures the accuracy and usability of radiometric information by compensating for sensor-specific biases and environmental conditions during data acquisition.
 
+### Machine Learning
+
 ### Remote Sensing applied to Coastal monitoring
 
 Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. RS technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. High-resolution satellite imagery and drone-based platforms facilitate the detection of fine-scale changes in intertidal zones, mangroves, coral reefs, and other critical coastal habitats. These observations enable quantification of spatial and temporal variations, informing evidence-based conservation and sustainable management strategies.
