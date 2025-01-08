@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,10 +57,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -674,12 +674,12 @@ Figure&nbsp;1.14: Representation of differences between the Digital Surface Mode
 </section>
 <section id="machine-learning" class="level3" data-number="1.2.4">
 <h3 data-number="1.2.4" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">1.2.4</span> Machine Learning</h3>
-<p>Machine learning, a subfield of artificial intelligence (AI), involves the creation of computer systems capable of executing tasks that traditionally require human cognition, such as reasoning, problem-solving, and decision-making. It encompasses the simulation of human-like intelligence in machines, enabling them to identify patterns and make data-driven predictions. The field originated in the mid-20th century, rooted in pattern recognition and the formulation of adaptive algorithms that refine their operations through iterative learning. Early contributions by pioneers such as Alan Turing and Arthur Samuel established the conceptual and practical foundation of the discipline. Notably, Samuel’s development of a checkers-playing program in the 1950s demonstrated a machine’s ability to improve its performance autonomously through learning processes.</p>
+<p>Machine learning, a subfield of artificial intelligence (AI), involves the creation of computer systems capable of executing tasks that traditionally require human cognition, such as reasoning, problem-solving, and decision-making <span class="citation" data-cites="sarker2021machine">(<a href="../References/references.html#ref-sarker2021machine" role="doc-biblioref">Sarker, 2021</a>)</span>. It encompasses the simulation of human-like intelligence in machines, enabling them to identify patterns and make data-driven predictions. The field originated in the mid-20th century, rooted in pattern recognition and the formulation of adaptive algorithms that refine their operations through iterative learning. Early contributions by pioneers such as Alan Turing and Arthur Samuel established the conceptual and practical foundation of the discipline. Alan Turing’s development of the Turing Machine in 1936 represents one of the earliest instances of computational models capable of executing algorithmic processes. The Turing Machine was designed as a theoretical construct to simulate the logic of any computer algorithm, utilizing a tape for memory and a set of rules for operations. While initially intended as a tool for exploring the limits of computation, the principles behind the Turing Machine laid the groundwork for modern machine learning and deep learning <span class="citation" data-cites="malekmohamadi2020review">(<a href="../References/references.html#ref-malekmohamadi2020review" role="doc-biblioref">Malekmohamadi Faradonbe et al., 2020</a>)</span>. Turing’s emphasis on computation and learning inspired subsequent advancements in artificial intelligence, including the design of systems capable of adaptive and predictive behaviors. Notably, Samuel’s development of a checkers-playing program in the 1950s demonstrated a machine’s ability to improve its performance autonomously through learning processes.</p>
 <p>At its core, machine learning involves the development of models—mathematical representations of data relationships—that can identify structures and trends within datasets. These models are trained on data using various techniques. Supervised learning is a method wherein models are trained on labeled datasets, with each input paired to a specific output. This framework enables the algorithm to establish explicit mappings between inputs and their corresponding outcomes. Applications include classification tasks, such as categorizing images or text, and regression, where the objective is to predict continuous variables like temperature or stock prices. The accuracy of supervised models depends significantly on the quality and quantity of labeled data available for training.</p>
 <p>Unsupervised learning, on the other hand, functions without labeled data, enabling models to discern patterns or structures inherent in the dataset. It is often applied in clustering, where similar data points are grouped together, and in dimensionality reduction, which simplifies datasets by highlighting their most significant features. This approach is particularly valuable in domains where labeled data is scarce or costly to generate, offering a means to uncover underlying patterns and relationships within complex datasets.</p>
-<p>A notable example of supervised machine learning is the Random Forest algorithm, developed by Leo Breiman in 2001. This ensemble learning technique constructs multiple decision trees during training by drawing random subsets of the training data with replacement (a process known as bagging) and selecting a random subset of features at each split. Each tree independently outputs a class prediction (in classification tasks) or a mean prediction (in regression tasks), and the Random Forest aggregates these predictions by majority voting or averaging. This approach enhances the robustness of the model by reducing variance and mitigating overfitting. Additionally, Random Forest provides a measure of feature importance, which can be leveraged to identify the most influential variables in a dataset. Random Forest is widely recognized for its robustness, ability to handle high-dimensional data, and resistance to overfitting, making it particularly effective in domains such as remote sensing and bioinformatics. However, the algorithm has its limitations. Random Forest can be computationally intensive, especially with large datasets or a high number of trees, which may increase training time and resource requirements. Additionally, it can struggle with highly imbalanced datasets, as the algorithm tends to favor the majority class unless specific measures are taken to address class imbalance. Furthermore, while Random Forest provides feature importance measures, these can sometimes be biased toward variables with more levels or higher variability, potentially misleading the interpretation of results. Finally, the model’s ensemble nature makes it less interpretable compared to simpler models like individual decision trees.</p>
-<p>Neural networks, an essential component of deep learning, are inspired by the structure and function of biological neural networks in the human brain. These computational models consist of interconnected nodes, or neurons, organized into layers that process and transform data through weighted connections. Originating in the mid-20th century with early work by researchers such as Warren McCulloch and Walter Pitts, neural networks initially struggled with computational limitations and theoretical challenges. The development of backpropagation in the 1980s, a method for optimizing weights by minimizing error, marked a significant breakthrough.</p>
-<p>Neural networks are particularly novel due to their ability to model complex, non-linear relationships in data. They operate through an input layer that receives data, one or more hidden layers that extract features and learn representations, and an output layer that delivers predictions or classifications. Each connection between neurons is assigned a weight, and each neuron applies an activation function to introduce non-linearity, enabling the network to learn intricate patterns. The learning rate, a crucial hyperparameter, dictates how much the model adjusts its weights in response to the error during training. Choosing an appropriate learning rate is essential; a rate that is too high may cause the model to converge erratically or not at all, while a rate that is too low results in slow training and potential stagnation in local minima.</p>
+<p>A notable example of supervised machine learning is the Random Forest algorithm, developed by Leo Breiman in 2001 <span class="citation" data-cites="breiman2001random">(<a href="../References/references.html#ref-breiman2001random" role="doc-biblioref">Breiman, 2001</a>)</span>. This learning technique constructs multiple decision trees during training by drawing random subsets of the training data with replacement (a process known as bagging) and selecting a random subset of features at each split. Each tree independently outputs a class prediction (in classification tasks) or a mean prediction (in regression tasks), and the Random Forest aggregates these predictions by majority voting or averaging. This approach enhances the robustness of the model by reducing variance and mitigating overfitting (<a href="#fig-learningRates" class="quarto-xref">Figure&nbsp;<span>1.15</span></a> X). Additionally, Random Forest provides a measure of feature importance, which can be leveraged to identify the most influential variables in a dataset. Random Forest is widely recognized for its robustness, ability to handle high-dimensional data, and resistance to overfitting, making it particularly effective in domains such as remote sensing and bioinformatics. However, the algorithm has its limitations. Random Forest can be computationally intensive, especially with large datasets or a high number of trees, which may increase training time and resource requirements. Additionally, Random Forest can face challenges with highly imbalanced datasets, as it tends to favor the majority class unless specific measures, such as resampling techniques or adjusting class weights, are implemented to address the imbalance effectively. Ensuring a balanced dataset or applying these corrective strategies is crucial for improving the model’s performance in such scenarios <span class="citation" data-cites="zhu2020analysis">(<a href="../References/references.html#ref-zhu2020analysis" role="doc-biblioref">Zhu, 2020</a>)</span>. Furthermore, while Random Forest provides feature importance measures, these can sometimes be biased toward variables with more levels or higher variability, potentially misleading the interpretation of results. Finally, the model’s ensemble nature makes it less interpretable compared to simpler models like individual decision trees.</p>
+<p>Neural networks, an essential component of deep learning, are inspired by the structure and function of biological neural networks in the human brain <span class="citation" data-cites="abiodun2018state">(<a href="../References/references.html#ref-abiodun2018state" role="doc-biblioref">Abiodun et al., 2018</a>)</span>. These computational models consist of interconnected nodes, or neurons, organized into layers that process and transform data through weighted connections. Originating in the mid-20th century with early work by researchers such as Warren McCulloch <span class="citation" data-cites="mcculloch1943logical">(<a href="../References/references.html#ref-mcculloch1943logical" role="doc-biblioref">McCulloch and Pitts, 1943</a>)</span> and Walter Pitts <span class="citation" data-cites="pitts1943linear">(<a href="../References/references.html#ref-pitts1943linear" role="doc-biblioref">Pitts, 1943</a>)</span>, neural networks initially struggled with computational limitations and theoretical challenges. The development of backpropagation in the 1980s, a method for optimizing weights by minimizing error, marked a significant breakthrough <span class="citation" data-cites="werbos1974beyond">(<a href="../References/references.html#ref-werbos1974beyond" role="doc-biblioref">Werbos, 1974</a>)</span>.</p>
+<p>Neural networks are particularly novel due to their ability to model complex, non-linear relationships in data <span class="citation" data-cites="mienye2024recurrent">(<a href="../References/references.html#ref-mienye2024recurrent" role="doc-biblioref">Mienye et al., 2024</a>)</span>. They operate through an input layer that receives data, one or more hidden layers that extract features and learn representations, and an output layer that delivers predictions or classifications <span class="citation" data-cites="werbos1974beyond">(<a href="../References/references.html#ref-werbos1974beyond" role="doc-biblioref">Werbos, 1974</a>)</span>. Each connection between neurons forms the basis of neural computation, where neurons are the fundamental units inspired by biological nerve cells. In artificial neural networks, a neuron receives input signals, processes them using a mathematical function, and transmits the output to connected neurons. This process is governed by adjustable weights that determine the strength of connections, and an activation function introduces non-linearity, enabling the network to model complex relationships within data. The learning rate, a crucial hyperparameter, dictates how much the model adjusts its weights in response to the error during training. Choosing an appropriate learning rate is essential; a rate that is too high may cause the model to converge erratically or not at all, while a rate that is too low results in slow training and potential stagnation in local minima.</p>
 <p>The learning curve, which represents the model’s performance over time, provides critical insights into training dynamics. A steep decline in training loss paired with a significant gap between training and validation loss often signals overfitting, where the model memorizes training data but fails to generalize to unseen data. Conversely, a flat learning curve with high training and validation losses indicates underfitting, where the model is too simplistic to capture underlying patterns. Addressing overfitting often involves techniques such as regularization, dropout, and early stopping, whereas underfitting may require enhancing model complexity, increasing data volume, or improving data quality. By carefully monitoring and tuning these aspects, neural networks can achieve robust performance across diverse applications.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -695,7 +695,7 @@ Figure&nbsp;1.15: Redo this figure !!!!!!
 </div>
 </div>
 </div>
-<p>The primary advantage of neural networks lies in their versatility and performance across a wide range of tasks, from image recognition to natural language processing. They are capable of learning directly from raw data, reducing the need for extensive feature engineering. However, their application is not without limitations. Neural networks are computationally intensive, requiring significant processing power and large datasets for effective training. They are also prone to overfitting, especially with small datasets, and their decision-making processes can be opaque, often referred to as the “black box” problem. Despite these challenges, advancements in architectures, such as convolutional and recurrent neural networks, and optimization techniques continue to expand their applicability and effectiveness across domains.</p>
+<p>The primary advantage of neural networks lies in their versatility and performance across a wide range of tasks, from image recognition to natural language processing. They are capable of learning directly from raw data, reducing the need for extensive feature engineering. However, their application is not without limitations <span class="citation" data-cites="cheng1994neural kattenborn2021review yuan2021review">(<a href="../References/references.html#ref-cheng1994neural" role="doc-biblioref">Cheng and Titterington, 1994</a>; <a href="../References/references.html#ref-kattenborn2021review" role="doc-biblioref">Kattenborn et al., 2021</a>; <a href="../References/references.html#ref-yuan2021review" role="doc-biblioref">Yuan et al., 2021</a>)</span>. Neural networks are computationally intensive, requiring significant processing power and large datasets for effective training. They are also prone to overfitting, especially with small datasets, and their decision-making processes can be opaque, often referred to as the “black box” problem. Despite these challenges, advancements in architectures, such as convolutional and recurrent neural networks, and optimization techniques continue to expand their applicability and effectiveness across domains.</p>
 <p>Over the decades, the field has undergone remarkable transformations, driven by increases in computational power, the availability of large datasets, and theoretical advancements. Initially, traditional machine learning methods, such as decision trees and support vector machines, dominated the landscape. However, the past two decades have seen the rise of deep learning, a subset of machine learning characterized by its use of neural networks with multiple layers. This paradigm shift has enabled significant breakthroughs, particularly in areas such as image recognition, natural language processing, and autonomous systems.</p>
 <p>The utility of machine learning lies in its adaptability and scalability across disciplines. From enabling predictive analytics in healthcare to enhancing environmental monitoring through remote sensing, machine learning has become an indispensable tool for extracting actionable insights from complex datasets. This section provides a foundation for understanding how machine learning techniques are applied to convert data, such as those obtained through drone mapping, into informative and usable outputs.</p>
 </section>
@@ -743,6 +743,9 @@ Figure&nbsp;1.16: Current capabilities of remotely sensed data for measuring Ess
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-abiodun2018state" class="csl-entry" role="listitem">
+Abiodun, O.I., Jantan, A., Omolara, A.E., Dada, K.V., Mohamed, N.A., Arshad, H., 2018. State-of-the-art in artificial neural network applications: A survey. Heliyon 4.
+</div>
 <div id="ref-ahmed2016coastal" class="csl-entry" role="listitem">
 Ahmed, N., Glaser, M., 2016. Coastal aquaculture, mangrove deforestation and blue carbon emissions: Is REDD+ a solution? Marine Policy 66, 58–66.
 </div>
@@ -779,8 +782,14 @@ Borja, A., Elliott, M., Andersen, J.H., Cardoso, A.C., Carstensen, J., Ferreira,
 <div id="ref-bos2007ecosystem" class="csl-entry" role="listitem">
 Bos, A.R., Bouma, T.J., Kort, G.L. de, Katwijk, M.M. van, 2007. Ecosystem engineering by annual intertidal seagrass beds: Sediment accretion and modification. Estuarine, Coastal and Shelf Science 74, 344–348.
 </div>
+<div id="ref-breiman2001random" class="csl-entry" role="listitem">
+Breiman, L., 2001. Random forests. Machine learning 45, 5–32.
+</div>
 <div id="ref-cao2022explicit" class="csl-entry" role="listitem">
 Cao, H., Wang, M., Su, S., Kang, M., 2022. Explicit quantification of coastal cultural ecosystem services: A novel approach based on the content and sentimental analysis of social media. Ecological Indicators 137, 108756.
+</div>
+<div id="ref-cheng1994neural" class="csl-entry" role="listitem">
+Cheng, B., Titterington, D.M., 1994. Neural networks: A review from a statistical perspective. Statistical science 2–30.
 </div>
 <div id="ref-cikovs2022recent" class="csl-entry" role="listitem">
 Cikoš, A.-M., Šubarić, D., Roje, M., Babić, J., Jerković, I., Jokić, S., 2022. Recent advances on macroalgal pigments and their biological activities (2016–2021). Algal research 65, 102748.
@@ -881,6 +890,9 @@ Jesus, B., Rosa, P., Mouget, J.-L., Méléder, V., Launeau, P., Barillé, L., 20
 <div id="ref-karakassis2005contribution" class="csl-entry" role="listitem">
 Karakassis, I., Pitta, P., Krom, M.D., 2005. Contribution of fish farming to the nutrient loading of the mediterranean. Scientia Marina 69, 313–321.
 </div>
+<div id="ref-kattenborn2021review" class="csl-entry" role="listitem">
+Kattenborn, T., Leitloff, J., Schiefer, F., Hinz, S., 2021. Review on convolutional neural networks (CNN) in vegetation remote sensing. ISPRS journal of photogrammetry and remote sensing 173, 24–49.
+</div>
 <div id="ref-kelly2001attenuation" class="csl-entry" role="listitem">
 Kelly, D.J., Clare, J.J., Bothwell, M.L., 2001. Attenuation of solar ultraviolet radiation by dissolved organic matter alters benthic colonization patterns in streams. Journal of the North American Benthological Society 20, 96–108.
 </div>
@@ -923,11 +935,17 @@ Lovelock, C.E., Feller, I.C., Reef, R., Hickey, S., Ball, M.C., 2017. Mangrove d
 <div id="ref-macintyre1996microphytobenthos" class="csl-entry" role="listitem">
 MacIntyre, H.L., Geider, R.J., Miller, D.C., 1996. Microphytobenthos: The ecological role of the <span>“secret garden”</span> of unvegetated, shallow-water marine habitats. I. Distribution, abundance and primary production. Estuaries 19, 186–201.
 </div>
+<div id="ref-malekmohamadi2020review" class="csl-entry" role="listitem">
+Malekmohamadi Faradonbe, S., Safi-Esfahani, F., Karimian-Kelishadrokhi, M., 2020. A review on neural turing machine (NTM). SN Computer Science 1, 333.
+</div>
 <div id="ref-manca2024projected" class="csl-entry" role="listitem">
 Manca, F., Benedetti-Cecchi, L., Bradshaw, C.J., Cabeza, M., Gustafsson, C., Norkko, A.M., Roslin, T.V., Thomas, D.N., White, L., Strona, G., 2024. Projected loss of brown macroalgae and seagrasses with global environmental change. Nature Communications 15, 5344.
 </div>
 <div id="ref-martinez2007coasts" class="csl-entry" role="listitem">
 Martı́nez, M.L., Intralawan, A., Vázquez, G., Pérez-Maqueo, O., Sutton, P., Landgrave, R., 2007. The coasts of our world: Ecological, economic and social importance. Ecological economics 63, 254–272.
+</div>
+<div id="ref-mcculloch1943logical" class="csl-entry" role="listitem">
+McCulloch, W.S., Pitts, W., 1943. A logical calculus of the ideas immanent in nervous activity. The bulletin of mathematical biophysics 5, 115–133.
 </div>
 <div id="ref-mckenzie2020global" class="csl-entry" role="listitem">
 McKenzie, L.J., Nordlund, L.M., Jones, B.L., Cullen-Unsworth, L.C., Roelfsema, C., Unsworth, R.K., 2020. The global distribution of seagrass meadows. Environmental Research Letters 15, 074041.
@@ -946,6 +964,9 @@ Méléder, V., Jesus, B., Barnett, A., Barillé, L., Lavaud, J., 2018. Microphyt
 </div>
 <div id="ref-meleder2003cartographie" class="csl-entry" role="listitem">
 Méléder, V., Launeau, P., Barillé, L., Rincé, Y., 2003b. Cartographie des peuplements du microphytobenthos par t<span>é</span>l<span>é</span>d<span>é</span>tection spatiale visible-infrarouge dans un <span class="nocase">é</span>cosyst<span>è</span>me conchylicole. Comptes rendus. Biologies 326, 377–389.
+</div>
+<div id="ref-mienye2024recurrent" class="csl-entry" role="listitem">
+Mienye, I.D., Swart, T.G., Obaido, G., 2024. Recurrent neural networks: A comprehensive review of architectures, variants, and applications. Information 15, 517.
 </div>
 <div id="ref-miller1996microphytobenthos" class="csl-entry" role="listitem">
 Miller, D.C., Geider, R.J., MacIntyre, H.L., 1996. Microphytobenthos: The ecological role of the <span>“secret garden”</span> of unvegetated, shallow-water marine habitats. II. Role in sediment stability and shallow-water food webs. Estuaries 19, 202–212.
@@ -1004,6 +1025,9 @@ Passeri, D.L., Hagen, S.C., Medeiros, S.C., Bilskie, M.V., Alizad, K., Wang, D.,
 <div id="ref-pereira2013essential" class="csl-entry" role="listitem">
 Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H., Scholes, R.J., Bruford, M.W., Brummitt, N., Butchart, S.H., Cardoso, A., others, 2013. Essential biodiversity variables. Science 339, 277–278.
 </div>
+<div id="ref-pitts1943linear" class="csl-entry" role="listitem">
+Pitts, W., 1943. The linear theory of neuron networks: The dynamic problem. The bulletin of mathematical biophysics 5, 23–31.
+</div>
 <div id="ref-ranjan2023destructive" class="csl-entry" role="listitem">
 Ranjan, D., Verma, P., Kshatri, A.S., Patel, A., Gupta, V., Chaudhary, V., Yadav, B., 2023. Destructive fishing practices and their impacts on fisheries. Latest trends in Fisheries and Aquatic Animal Health 3.
 </div>
@@ -1027,6 +1051,9 @@ Saderne, V., Geraldi, N.R., Macreadie, P.I., Maher, D.T., Middelburg, J.J., Serr
 </div>
 <div id="ref-sanabria2024unveiling" class="csl-entry" role="listitem">
 Sanabria-Fernández, J.A., Génin, A., Dakos, V., 2024. Unveiling functional linkages between habitats and organisms: Macroalgal habitats as influential factors of fish functional traits. Marine Environmental Research 194, 106305.
+</div>
+<div id="ref-sarker2021machine" class="csl-entry" role="listitem">
+Sarker, I.H., 2021. Machine learning: Algorithms, real-world applications and research directions. SN computer science 2, 160.
 </div>
 <div id="ref-savelli2018biotic" class="csl-entry" role="listitem">
 Savelli, R., Dupuy, C., Barillé, L., Lerouxel, A., Guizien, K., Philippe, A., Bocher, P., Polsenaere, P., Le Fouest, V., 2018. On biotic and abiotic drivers of the microphytobenthos seasonal cycle in a temperate intertidal mudflat: A modelling study. Biogeosciences 15, 7243–7271.
@@ -1094,8 +1121,17 @@ Wang, Y., Fang, H., 2020. Estimation of LAI with the LiDAR technology: A review.
 <div id="ref-wei2023influence" class="csl-entry" role="listitem">
 Wei, Y.-J., Fang, R.-E., Liu, J.-S., Chen, Y.-C., Lin, H.-T.V., Pan, C.-L., Huang, C.-H., 2023. Influence of porphyra-derived polysaccharides and oligosaccharides on attenuating food allergy and modulating enteric microflora in mice. Food and Agricultural Immunology 34, 2248419.
 </div>
+<div id="ref-werbos1974beyond" class="csl-entry" role="listitem">
+Werbos, P., 1974. Beyond regression: New tools for prediction and analysis in the behavioral sciences. PhD thesis, Committee on Applied Mathematics, Harvard University, Cambridge, MA.
+</div>
 <div id="ref-wolff2002oyster" class="csl-entry" role="listitem">
 Wolff, W.J., Reise, K., 2002. Oyster imports as a vector for the introduction of alien species into northern and western european coastal waters, in: Invasive Aquatic Species of Europe. Distribution, Impacts and Management. Springer, pp. 193–205.
+</div>
+<div id="ref-yuan2021review" class="csl-entry" role="listitem">
+Yuan, X., Shi, J., Gu, L., 2021. A review of deep learning methods for semantic segmentation of remote sensing imagery. Expert Systems with Applications 169, 114417.
+</div>
+<div id="ref-zhu2020analysis" class="csl-entry" role="listitem">
+Zhu, T., 2020. Analysis on the applicability of the random forest, in: Journal of Physics: Conference Series. IOP Publishing, p. 012123.
 </div>
 <div id="ref-zoffoli2021decadal" class="csl-entry" role="listitem">
 Zoffoli, M.L., Gernez, P., Godet, L., Peters, S., Oiry, S., Barillé, L., 2021. Decadal increase in the ecological status of a north-atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators 130, 108033.
@@ -1192,6 +1228,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1302,6 +1340,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
