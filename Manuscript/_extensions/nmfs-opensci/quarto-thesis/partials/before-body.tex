@@ -10,92 +10,134 @@
 %----------------------------------------------------------------------------------------
 % TITLE PAGE
 %----------------------------------------------------------------------------------------
+\newgeometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
 \begin{titlepage}
 
-\noindent
-% Left logo container
-\begin{minipage}[t]{0.4\textwidth}
-  \begin{flushleft} \large
-    % Include the left logo if provided
-    $if(thesis.logoED)$
-      $if(thesis.logoED-height)$
-        \includegraphics[height=$thesis.logoED-height$]{$thesis.logoED$} % Left logo
-      $else$
-        \includegraphics{$thesis.logoED$}
-      $endif$
-    $endif$
-  \end{flushleft}
-\end{minipage}
-\hfill
-% Right logo container
-\begin{minipage}[t]{0.4\textwidth}
-  \begin{flushright} \large
-    % Include the right logo if provided
-    $if(thesis.logoUN)$
-      $if(thesis.logoUN-height)$
-        \includegraphics[height=$thesis.logoUN-height$]{$thesis.logoUN$} % Right logo
-      $else$
-        \includegraphics{$thesis.logoUN$}
-      $endif$
-    $endif$
-  \end{flushright}
-\end{minipage}
+% Use Helvetica (Arial substitute)
+\renewcommand{\familydefault}{\sfdefault}
 
-\begin{center}
 
-\vspace*{.06\textheight}
+\newcommand\BackgroundImage{%
+    \put(0,3.5cm){%
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \includegraphics[width=\paperwidth]{Backgound_First_Page.png} % Replace with your image
+            \vfill
+        }%
+    }%
+}
 
-% University name
-{\scshape\LARGE \univname\par}\vspace{1cm}
+% Use Arial font for the title page
+\setsansfont{Arial}
 
-% Thesis type
-\textsc{\Large Doctoral Thesis}\\[0.5cm]
+\begin{tabularx}{\textwidth}{X X} % Two equally spaced columns
+  \centering\includegraphics[height=2cm]{LogoED.png} & 
+  \centering\includegraphics[height=2cm]{LogoUN.jpg} \\
+\end{tabularx}
 
-% Thesis title with horizontal rules
-\HRule \\[0.4cm]
-{\huge \bfseries \ttitle\par}\vspace{0.4cm}
-\HRule \\[1.5cm]
+% Add the background image
+\AddToShipoutPictureBG*{%
+    \BackgroundImage
+}
 
-% Author and Supervisor details
-\begin{minipage}[t]{0.4\textwidth}
-  \begin{flushleft} \large
-    \emph{Author:}\\
-    $if(author.url)$
-      \href{$author.url$}{\authorname} % Linked author name if URL provided
-    $else$
-      \authorname
-    $endif$
-  \end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
-  \begin{flushright} \large
-    \emph{Supervisors:} \\
-    $if(thesis.supervisor.url)$%
-      \href{$thesis.supervisor.url$}{\supname} % Linked supervisor name if URL provided
-    $else$%
-      \supname
-    $endif$
-  \end{flushright}
-\end{minipage}\\[2cm]
+\vspace{1.2cm}
 
-% Degree requirement statement
-\large \textit{A thesis submitted in fulfillment of the requirements\\
-for the degree of \degreename}\\[0.3cm]
-\textit{as part of the}\\[0.4cm]
-\groupname\\
-\textit{of the}\\[0.4cm]
-\deptname\\[2cm]
+% Custom font sizes for "THESE DE DOCTORAT"
+{\LARGE {\Huge T}HESE DE DOCTORAT}
 
-\vfill
+\vspace{1.8cm}
+% Custom font sizes for "NANTES UNIVERSITE"
+{\fontsize{14}{18}\selectfont NANTES UNIVERSITE} \\
 
-% Date
-$if(book.date)$
-{\large $book.date$}\\[4cm]
-$endif$
+{\large E}COLE {\large D}OCTORALE N° 642
 
-\vfill
-\end{center}
+
+{\fontsize{12}{16}\selectfont \textit{Ecole doctorale Végétal, Animal, Aliment, Mer, Environnement}}
+
+{\fontsize{12}{16}\selectfont Spécialité : "voir la liste des spécialités"} \\\\\\
+
+{\fontsize{12}{16}\ Par}
+\vspace{0.2cm}
+
+\hspace{0.7cm}{\fontsize{20}{24}\selectfont \textbf{Simon OIRY}} \\
+
+\parbox{17cm}{
+{\fontsize{16}{20}\selectfont \textbf{Characterization of Intertidal Vegetation on European Coasts Using Multi-Scale Remote Sensing in Response to Natural and Anthropogenic Pressures} }
+}\\\\
+
+{\fontsize{11}{15}\selectfont \textbf{Thèse présentée et soutenue à Nantes, le 11 mars 2025}}
+
+{\fontsize{11}{15}\selectfont \textbf{Unité de Recherche: }}
+\\\\\\
+
+{\fontsize{12}{16}\selectfont \textbf{Rapporteurs avant soutenance :}}
+
+\begin{tabular}{@{}l l l@{}}
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Stanislas Dubois}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Chercheur}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{IFREMER, Plouzané}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Dimosthenis Traganos}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Chercheur}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{German Aerospace Center, Berlin}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Emanuele Organelli}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Research scientist}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{National Research Council, Institute of Marine Sciences, Rome}} \\
+\end{tabular}\\\\
+
+{\fontsize{12}{16}\selectfont \textbf{Composition du Jury : }}
+
+\begin{tabular}{@{}l l l l@{}}
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Présient:}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Antoine Collin}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Maitre de conférence}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{EPHE, Dinard}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Examinateurs :}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Rodney Foster}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Professeur}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{University of Hull}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Evangelos Spyrakos}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Professeur}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{University of Stirling}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Barbara Ondiviela}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Scenior scientist}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Parque Científico y Tecnológico de Cantabria}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Dir. de thèse :}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Laurent Barillé}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Professeur}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Nantes Université}} \\
+
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Co-dir. de thèse :}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Pierre Gernez}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Maitre de conférence}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Nantes Université}} \\
+\end{tabular} \\\\
+
+{\fontsize{11}{15}\selectfont \textbf{Invitée : }}
+
+
+\begin{tabular}{@{}l l l@{}}
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Federica Braga}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{Senior Researcher}} & 
+    {\fontsize{10}{14}\selectfont \textcolor{textgray}{CNR-ISMAR, Venise}} \\
+
+\end{tabular}
 \end{titlepage}
+
+% Restore the default margins for the rest of the document
+\restoregeometry
+
+% Reset to serif font for the rest of the document
+\renewcommand{\familydefault}{\rmdefault}
+
 
 %----------------------------------------------------------------------------------------
 % DECLARATION PAGE

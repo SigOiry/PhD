@@ -644,7 +644,7 @@ The learning curve, which represents the model's performance over time, provides
 ```{r Fig learningRates}
 #| echo: false
 #| warning: false
-#| fig-cap: "Redo this figure !!!!!! "
+#| fig-cap: "Representation of the impact of Under- Optimal- and Over-fitting on Regression and Classification machine learning models. The bottom row shows a representation of the learning curve of each scenario. "
 #| label: fig-learningRates
 #| out-width: "90%"
 

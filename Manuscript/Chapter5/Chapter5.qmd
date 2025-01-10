@@ -248,7 +248,7 @@ Similar patterns were found for the ($R''_{665 \, \text{nm}}$), NDVI and GLI, wh
 
 At the start of the experiment (day 1) $R''_{665 \, \text{nm}}$, NDVI and GLI in the Treatment group were on average 13% greater, 3% lower and 2% lower, respectively, than that of the Control. However, by day 2, the Treatment showed a rapid decrease of approximately 27%, 17% and 28%, eventually reaching a total decline of 68%, 31% and 54% by day 3.
 
-Unlike the other metrics, at the start of the experiment (day 1), the SHSI for the Treatment group was on average 55 % greater than that of the Control. By day 2, the SHSI for the Treatment exhibited a rapid decrease of approximately 241 %, eventually reaching a cumulative decline of 420 % by day 3 (@fig-Exp_Spectral_indices_h D).
+Unlike the other metrics, at the start of the experiment (day 1), the SHSI for the Treatment group was on average 55 % greater than that of the Control. By day 2, the SHSI for the Treatment exhibited a rapid increase of approximately 241 %, eventually reaching a cumulative increase of 420 % by day 3 (@fig-Exp_Spectral_indices_h D).
 
 With a maximum deviation of 420 %, SHSI emerges as the most sensitive index for detecting seagrass browning. Consequently, only this index was considered for the next steps of this study.
 
