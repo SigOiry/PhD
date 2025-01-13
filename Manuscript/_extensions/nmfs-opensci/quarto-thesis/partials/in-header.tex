@@ -22,13 +22,17 @@
 \usepackage{xcolor} % To define and use colors
 \usepackage{eso-pic} % For background images % For including images
 \definecolor{textgray}{HTML}{595959}
+\definecolor{greenTriangle}{HTML}{1f7549}
+\definecolor{greenText}{HTML}{2DA86A}
+\usepackage{tikz} % Load the TikZ package
 \usepackage{tabularx}
 \usepackage{fontspec} % To use system fonts like Arial
 \PassOptionsToPackage{scaled}{helvet}
 \usepackage{helvet}
+\usetikzlibrary{patterns,patterns.meta} % LaTeX and plain TeX when using TikZ
 \usepackage{titlesec}
 \titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-
+\usepackage{multicol}
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

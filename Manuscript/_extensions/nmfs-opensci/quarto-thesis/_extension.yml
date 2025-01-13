@@ -11,6 +11,7 @@ contributes:
       template-partials: 
         - "partials/title.tex"
         - "partials/before-body.tex"
+        - "partials/after-body.tex"
       toc: false
       toc-depth: 3
       include-before-body: 
