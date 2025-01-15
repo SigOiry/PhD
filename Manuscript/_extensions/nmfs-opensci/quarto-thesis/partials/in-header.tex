@@ -68,3 +68,43 @@
 \renewcommand{\topfraction}{0.9}      % Allow up to 90% of the top of a page for floats
 \renewcommand{\bottomfraction}{0.9}   % Allow up to 90% of the bottom of a page for floats
 
+\newcommand{\startonrightwithgap}{%
+  \clearpage
+  % Check whether the current page is odd
+  \ifodd\value{page}
+    % -- We are on odd page X, so skip two pages (X+1, X+2):
+    \thispagestyle{empty}\mbox{}\clearpage
+    \thispagestyle{empty}\mbox{}\clearpage
+  \else
+    % -- We are on even page Y, so skip one page (Y+1):
+    \thispagestyle{empty}\mbox{}\clearpage
+  \fi
+}
+
+\newcommand{\startonleftwithgap}{%
+  \clearpage
+  \ifodd\c@page
+    % If the current page is odd, skip 3 blank pages
+    \thispagestyle{empty}\mbox{}\clearpage
+    \thispagestyle{empty}\mbox{}\clearpage
+    \thispagestyle{empty}\mbox{}\clearpage
+  \else
+    % If the current page is even, skip 2 blank pages
+    \thispagestyle{empty}\mbox{}\clearpage
+    \thispagestyle{empty}\mbox{}\clearpage
+  \fi
+}
+% 
+% \newcommand{\startonrightwithgap}{%
+%   \clearpage % End the current section cleanly
+%   \ifodd\value{page} % Check if the current page is odd
+%     \null\newpage % Add a blank page if odd
+%     \thispagestyle{empty} % Ensure the blank page has no headers/footers
+%   \else
+%     \null\newpage % Add a blank page if even (this ensures X+1 is blank)
+%     \thispagestyle{empty} % Ensure the blank page has no headers/footers
+%     \null\newpage % Add another blank page for X+2
+%     \thispagestyle{empty} % Ensure this blank page has no headers/footers
+%   \fi
+%   \cleardoublepage % Ensure the next section starts on a right (odd) page
+% }

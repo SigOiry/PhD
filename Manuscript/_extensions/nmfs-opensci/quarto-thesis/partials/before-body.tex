@@ -55,7 +55,7 @@
 
 {\fontsize{12}{16}\selectfont \textit{Ecole doctorale Végétal, Animal, Aliment, Mer, Environnement}}
 
-{\fontsize{12}{16}\selectfont Spécialité : "voir la liste des spécialités"} \\\\\\
+{\fontsize{12}{16}\selectfont Spécialité : Biologie et écologie marine} \\\\\\
 
 {\fontsize{12}{16}\ Par}
 \vspace{0.2cm}
@@ -68,7 +68,7 @@
 
 {\fontsize{11}{15}\selectfont \textbf{Thèse présentée et soutenue à Nantes, le 11 mars 2025}}
 
-{\fontsize{11}{15}\selectfont \textbf{Unité de Recherche: }}
+{\fontsize{11}{15}\selectfont \textbf{Unité de Recherche: Institut Des Substances et Organismes de la Mer}}
 \\\\\\
 
 {\fontsize{12}{16}\selectfont \textbf{Rapporteurs avant soutenance :}}
@@ -151,7 +151,7 @@ $if(thesis.declaration)$
       \input{"$thesis.declaration$"}
     $endif$
   \end{declaration}
-  \cleardoublepage
+  \startonrightwithgap
 $endif$
 
 %----------------------------------------------------------------------------------------
@@ -182,6 +182,7 @@ $endif$
 % ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 $if(thesis.acknowledgements)$
+  \startonrightwithgap
   \begin{acknowledgements}
     \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
     $if(thesis.acknowledgements.text)$
@@ -208,20 +209,15 @@ $endif$
 \setlength{\cfttabnumwidth}{5em} % Adjust width for table numbers
 \setlength{\cftfigindent}{0em}    % Indentation for figure captions
 \setlength{\cfttabindent}{0em}    % Indentation for table captions
-
+\startonrightwithgap
 \begingroup
 \hypersetup{linkcolor=$if(toclinkcolor)$$toclinkcolor$$else$black$endif$}
-
+\startonrightwithgap
 \tableofcontents  
-\clearpage
-\clearpage% Start a new page after List of Figures% Main table of contents
+\startonrightwithgap
 \listoffigures
-\clearpage
-\clearpage
-\clearpage  % Start a new page after List of Figures% List of figures
-\listoftables       % List of tables
-\clearpage
-\clearpage
+\startonrightwithgap
+\listoftables 
 \endgroup
 
 %----------------------------------------------------------------------------------------
@@ -230,6 +226,7 @@ $endif$
 $if(thesis.abbreviations)$
   % \addchaptertocentry{\abbreviationsname}
   % \label{abbreviations}
+  \startonrightwithgap
   \input{"$thesis.abbreviations$"}
 $endif$
 
@@ -237,6 +234,7 @@ $endif$
 % PHYSICAL CONSTANTS/OTHER DEFINITIONS (IF ANY)
 %----------------------------------------------------------------------------------------
 $if(thesis.constants)$
+  \startonrightwithgap
   \input{"$thesis.constants$"}
 $endif$
 
@@ -245,7 +243,7 @@ $endif$
 %----------------------------------------------------------------------------------------
 $if(thesis.symbols)$
   % \addchaptertocentry{\symbolsname}
-  % \label{symbols}
+  \startonrightwithgap
   \input{"$thesis.symbols$"}
 $endif$
 
@@ -253,6 +251,7 @@ $endif$
 % DEDICATION (IF ANY)
 %----------------------------------------------------------------------------------------
 $if(thesis.dedication)$
+  \startonrightwithgap
   \dedicatory{\input{"$thesis.dedication$"}} 
 $endif$
 
@@ -260,6 +259,5 @@ $endif$
 % MAIN CONTENT
 %----------------------------------------------------------------------------------------
 \mainmatter % Begin numeric (1,2,3...) page numbering
-
 % Return the page headers back to the "thesis" style
 \pagestyle{thesis}
