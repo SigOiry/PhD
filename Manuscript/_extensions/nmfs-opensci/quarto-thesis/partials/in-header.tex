@@ -83,7 +83,7 @@
 
 \newcommand{\startonleftwithgap}{%
   \clearpage
-  \ifodd\c@page
+  \ifodd\value{page}
     % If the current page is odd, skip 3 blank pages
     \thispagestyle{empty}\mbox{}\clearpage
     \thispagestyle{empty}\mbox{}\clearpage

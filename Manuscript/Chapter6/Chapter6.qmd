@@ -92,6 +92,18 @@ Addressing the interaction between heatwave-stressed seagrasses habitats and IAS
 
 The possible interactions between seagrasses and IAS after extreme events might imply the complex interplay of environmental stressors, competition, and ecosystem resilience. Understanding these dynamics might be critical for preserving the ecological integrity of intertidal zones. By leveraging advanced monitoring techniques and implementing targeted management interventions, it is possible to mitigate the adverse effects of IAS and climate-induced stress, thereby supporting the long-term sustainability of these vital coastal ecosystems.
 
+## Assessing Coastal Ecosystem Threats Through Remote Sensing
+
+Remote sensing technologies have revolutionized the assessment of pressures on coastal ecosystems, providing a powerful means to monitor changes over spatial and temporal scales. This section highlights the role of remote sensing in evaluating the impacts of environmental stressors, human activities, and invasive species on intertidal zones.
+
+Coastal ecosystems, such as seagrass meadows and intertidal habitats, face a variety of pressures, including climate-induced stress, eutrophication, and habitat fragmentation. Traditional field surveys, while valuable, are often time-intensive and limited in coverage. RS offers a complementary approach, enabling consistent, high-resolution monitoring across extensive areas. Multispectral and hyperspectral imaging, in particular, allow for detailed analysis of vegetation health, species composition, and stress indicators (Muller-Karger et al. 2018; Murray et al. 2015).
+
+Monitoring coastal threats through remote sensing involves the use of satellite-based platforms such as Sentinel-2, Landsat, and MODIS, which provide data for evaluating changes in vegetation indices (e.g., NDVI) and other parameters linked to ecological health. These indices are critical for detecting early signs of ecosystem degradation, such as seagrass browning or invasive species proliferation (Murray et al. 2018). Additionally, airborne sensors and unmanned aerial vehicles (UAVs) enhance spatial resolution, making it possible to map finer-scale features such as algal blooms or sediment displacement caused by coastal erosion or states of species invasion (Davies et al. 2023; Muller-Karger et al. 2018).
+
+Remote sensing also contributes significantly to structured ecosystem risk assessments, as it enables the integration of spatial and temporal data into predictive models. For instance, the DAPSI(W)R(M) framework incorporates RS data to analyze drivers, pressures, and state changes, supporting holistic management of marine and coastal environments (El Mahrad et al. 2020; Murray et al. 2018). By employing long-term datasets, RS technologies help identify trends in habitat loss or recovery, offering a vital tool for both researchers and policymakers aiming to address environmental challenges and implement sustainable management strategies (Murray et al. 2018; Muller-Karger et al. 2018).
+
+Through its application in environmental monitoring and modeling, remote sensing facilitates a comprehensive understanding of coastal ecosystem dynamics. Its ability to provide both large-scale overviews and detailed local assessments makes it an indispensable resource for managing and mitigating the impacts of anthropogenic and natural stressors on fragile coastal zones.
+
 ```{=latex}
 \end{spacing}
 ```
