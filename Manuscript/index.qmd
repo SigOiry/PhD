@@ -51,11 +51,23 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 ![](images/BiCOME Logo.png){width=40%  fig-align="center"}
 This thesis has been closely related to the european, ESA funded, project [BiCOME](https://bicome.info). This project, led by the Plymouth Marine Laboratory ([PML](https://pml.ac.uk)) in collaboration with the University of Nantes, the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, [DLR](https://www.dlr.de/en)) and [HYGEOS](https://hygeos.com/en/) has started in october 2021 and has ended before the end of this thesis, in october 2023. It aimed to demonstrate that Essential Biodiversity Variables (EBVs), relevant for scientific and monitoring applications, can be obtained from state-of-the-art remotely sensed reflectance close to the shoreline, and that they can be scalable globally.
 
+![](images/ESA_Logo.png){width=40%  fig-align="center"}
+
 ![](images/logos_BICOME.png){width=100%  fig-align="center"}
 
+```{=latex}
+\newpage
+```
+
 ### Rewrite 
-![](images/rewrite-logo.png){width=40%  fig-align="center"}
+<!-- ![](images/rewrite-logo.png){width=40%  fig-align="center"} -->
+
+![](images/Rewrite_banner.png){width=100%  fig-align="center"}
+
 Part of the thesis is related to the REWRITE project, led by Nantes University and funded by the European Union. This project involves 24 partners across 14 countries and focuses on 10 demonstration sites. Its aim is to promote the adaptation of the innovative conservation approach known as 'rewilding' as a nature-based solution for restoring Europe's intertidal areas. 
+
+![](images/EU_Logo.png){width=40%  fig-align="center"}
+
 
 ### InvaSea
 

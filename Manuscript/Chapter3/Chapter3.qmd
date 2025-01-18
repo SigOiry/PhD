@@ -4,7 +4,32 @@ number-sections: true
 ---
 
 ```{=latex}
+\pagestyle{plain}
+\thispagestyle{empty}
+
+\begin{center} 
+\includegraphics[width=5cm]{LogoRS.jpg}
+\end{center}
+
+This Chapter has been published in Remote Sensing on the 23rd of November 2024.
+
+\vspace{0.5cm}
+
+\noindent
+\makebox[\textwidth][l]{Oiry, S., Davies, B. F. R., Sousa, A. I., Rosa, P., Zoffoli, M. L., Brunier, G., Gernez, P.,}
+\hspace*{2em}\begin{minipage}{0.9\textwidth}
+\& Barillé, L. (2024). Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery.
+\textit{Remote Sensing, 16(23),} 4383.
+\end{minipage}
+```
+
+## Abstract {.unnumbered}
+
+Coastal areas support seagrass meadows, which offer crucial ecosystem services, including erosion control and carbon sequestration. However, these areas are increasingly impacted by human activities, leading to habitat fragmentation and seagrass decline. In situ surveys, traditionally performed to monitor these ecosystems, face limitations on temporal and spatial coverage, particularly in intertidal zones, prompting the addition of satellite data within monitoring programs. Yet, satellite remote sensing can be limited by too coarse spatial and/or spectral resolutions, making it difficult to discriminate seagrass from other macrophytes in highly heterogeneous meadows. Drone (unmanned aerial vehicle—UAV) images at a very high spatial resolution offer a promising solution to address challenges related to spatial heterogeneity and the intrapixel mixture. This study focuses on using drone acquisitions with a ten spectral band sensor similar to that onboard Sentinel-2 for mapping intertidal macrophytes at low tide (i.e., during a period of emersion) and effectively discriminating between seagrass and green macroalgae. Nine drone flights were conducted at two different altitudes (12 m and 120 m) across heterogeneous intertidal European habitats in France and Portugal, providing multispectral reflectance observation at very high spatial resolution (8 mm and 80 mm, respectively). Taking advantage of their extremely high spatial resolution, the low altitude flights were used to train a Neural Network classifier to discriminate five taxonomic classes of intertidal vegetation: Magnoliopsida (Seagrass), Chlorophyceae (Green macroalgae), Phaeophyceae (Brown algae), Rhodophyceae (Red macroalgae), and benthic Bacillariophyceae (Benthic diatoms), and validated using concomitant field measurements. Classification of drone imagery resulted in an overall accuracy of 94% across all sites and images, covering a total area of 467,000 m2. The model exhibited an accuracy of 96.4% in identifying seagrass. In particular, seagrass and green algae can be discriminated. The very high spatial resolution of the drone data made it possible to assess the influence of spatial resolution on the classification outputs, showing a limited loss in seagrass detection up to about 10 m. Altogether, our findings suggest that the MultiSpectral Instrument (MSI) onboard Sentinel-2 offers a relevant trade-off between its spatial and spectral resolution, thus offering promising perspectives for satellite remote sensing of intertidal biodiversity over larger scales.
+ 
+```{=latex}
 \begin{spacing}{1.5}
+\startonrightwithgap
 ```
 
 ## Introduction
