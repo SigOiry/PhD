@@ -73,6 +73,8 @@ Part of the thesis is related to the REWRITE project, led by Nantes University a
 
 Part of the thesis is related to the InvaSea project, founded by the French National Centre for Space Studies (CNES). It aims to proves the capacity of remote sensing to map the presence of the alien invasive species *Gracilaria vermiculophylla* in french and spanish estuaries. 
 
+![](images/cnes_logo.png){width=40%  fig-align="center"}
+
 
 
 <!-- ::: {.content-visible} -->
