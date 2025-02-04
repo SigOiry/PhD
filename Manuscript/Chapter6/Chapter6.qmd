@@ -83,7 +83,7 @@ Integrating drone and satellite technologies enhances the ability to monitor, an
 ```{r Figs PhenologyBede}
 #| echo: false
 #| warning: false
-#| fig-cap: "Seasonal timings in maxima and minima of cumulative seagrass cover (a) and the population-level effect to seagrass extent (km2) from a 1 unit change in Air Temperature and Direct Normal Radiation (b) across 12 seagrass meadows spanning 23° of latitude. Points and error bars show median and 89% confidence intervals for the occurrence of the maxima or minima and b the modelled population-level effect. Temperatures ranged from 0 to 25 (°C), and Direct Normal Radiation ranged from 0.0001 to 0.0003 (KW/m2)."
+#| fig-cap: "Seasonal timings in maxima and minima of cumulative seagrass cover (a) and the population-level effect to seagrass extent (km2) from a 1 unit change in Air Temperature and Direct Normal Radiation (b) across 12 seagrass meadows spanning 23° of latitude. Points and error bars show median and 89% confidence intervals for the occurrence of the maxima or minima and b the modelled population-level effect. Temperatures ranged from 0 to 25 (°C), and Direct Normal Radiation ranged from 0.0001 to 0.0003 (KW/m2). From @davies2024sentinel."
 #| label: fig-PhenologyBede
 #| out-width: "90%"
 knitr::include_graphics("Figs/PhenologyBede.jpg")
@@ -94,7 +94,7 @@ For instance, the Intertidal Classification of Europe: Categorising Reflectance 
 ```{r Figs TrendsBede}
 #| echo: false
 #| warning: false
-#| fig-cap: "Rate of change in cumulative seagrass extent in km2 y −1 derived from a General Additive Model. Lines show the median first derivative, while shaded areas show the 89% confidence intervals across 2000 posterior predictive samples from a General Additive Model. Plot labels show the site and its latitude and longitude (in degrees) for a Strangford Lough, b Beltringharder Koog, c Bourgneuf Bay, d Santander Bay, e Ria de Aveiro Lagoon and f Cádiz Bay."
+#| fig-cap: "Rate of change in cumulative seagrass extent in km2 y −1 derived from a General Additive Model. Lines show the median first derivative, while shaded areas show the 89% confidence intervals across 2000 posterior predictive samples from a General Additive Model. Plot labels show the site and its latitude and longitude (in degrees) for a Strangford Lough, b Beltringharder Koog, c Bourgneuf Bay, d Santander Bay, e Ria de Aveiro Lagoon and f Cádiz Bay. From @davies2024intertidal."
 #| label: fig-TrendsBede
 #| out-width: "90%"
 knitr::include_graphics("Figs/TrendsBede.jpg")
