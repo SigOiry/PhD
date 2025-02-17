@@ -2,6 +2,24 @@
 title: "The impact of Heatwave on Seagrasses using hyperspectral and multispectral remote sensing"
 ---
 
+```{=latex}
+\pagestyle{plain}
+\thispagestyle{empty}
+
+This chapter will be submitted to a scientific journal for publication.
+
+\vspace{0.5cm}
+```
+
+## Abstract {.unnumbered}
+
+Seagrasses play a vital role in coastal ecosystems, providing habitat, stabilizing sediments, and contributing to carbon sequestration. However, climate change has increased the frequency and intensity of heatwaves, posing a significant threat to seagrass health. This study investigates the effects of marine and atmospheric heatwaves on the spectral reflectance of the intertidal seagrass Zostera noltei. Laboratory experiments were conducted under controlled heatwave conditions, where hyperspectral reflectance measurements were taken to assess the impacts over time. Heatwaves caused a substantial decline in seagrass reflectance, particularly in the green and near-infrared regions, corresponding to the browning of green leaves. Key vegetation indices, including the Normalized Difference Vegetation Index (NDVI) and Green Leaf Index (GLI), showed pronounced reductions under heatwave stress, with NDVI values decreasing by up to 34% and GLI by 57%. A novel metric, the Seagrass Heat Shock Index (SHSI), was developed to quantify the transition of seagrass leaves from green to brown, demonstrating a strong ability to capture the effects of heatwave exposure on seagrass coloration. Multispectral satellite observations corroborated the laboratory results, revealing widespread browning of seagrass leaves during marine and atmospheric heatwave events in South Brittany, France. Notably, darkened seagrass patches were observed in intertidal areas exposed to temperatures exceeding 32°C for over 13.5 hours per day. These findings highlight the potential of spectral reflectance as a tool for detecting early signs of heatwave-induced stress in seagrasses, offering a valuable method for remote sensing-based habitat assessment, and the need for continuous monitoring of seagrass meadows under the current and future climate regimes, underscoring the potential of remote sensing to capture rapid environmental changes in intertidal zones.
+
+```{=latex}
+\begin{spacing}{1.5}
+\startonrightwithgap
+```
+
 ```{r update gitignore}
 #| cache: true
 #| echo: false
@@ -43,11 +61,6 @@ if (length(large_files) > 0) {
   message("No files larger than 100 MB found.")
 }
 ```
-
-```{=latex}
-\begin{spacing}{1.5}
-```
-
 
 ## Introduction
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,7 +57,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -232,7 +232,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
   <li><a href="#materials-methods" id="toc-materials-methods" class="nav-link" data-scroll-target="#materials-methods"><span class="header-section-number">5.2</span> Materials &amp; Methods</a>
   <ul class="collapse">
   <li><a href="#laboratory-experiment" id="toc-laboratory-experiment" class="nav-link" data-scroll-target="#laboratory-experiment"><span class="header-section-number">5.2.1</span> Laboratory Experiment</a></li>
@@ -281,6 +282,10 @@ window.Quarto = {
 </header>
 
 
+<section id="abstract" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Seagrasses play a vital role in coastal ecosystems, providing habitat, stabilizing sediments, and contributing to carbon sequestration. However, climate change has increased the frequency and intensity of heatwaves, posing a significant threat to seagrass health. This study investigates the effects of marine and atmospheric heatwaves on the spectral reflectance of the intertidal seagrass Zostera noltei. Laboratory experiments were conducted under controlled heatwave conditions, where hyperspectral reflectance measurements were taken to assess the impacts over time. Heatwaves caused a substantial decline in seagrass reflectance, particularly in the green and near-infrared regions, corresponding to the browning of green leaves. Key vegetation indices, including the Normalized Difference Vegetation Index (NDVI) and Green Leaf Index (GLI), showed pronounced reductions under heatwave stress, with NDVI values decreasing by up to 34% and GLI by 57%. A novel metric, the Seagrass Heat Shock Index (SHSI), was developed to quantify the transition of seagrass leaves from green to brown, demonstrating a strong ability to capture the effects of heatwave exposure on seagrass coloration. Multispectral satellite observations corroborated the laboratory results, revealing widespread browning of seagrass leaves during marine and atmospheric heatwave events in South Brittany, France. Notably, darkened seagrass patches were observed in intertidal areas exposed to temperatures exceeding 32°C for over 13.5 hours per day. These findings highlight the potential of spectral reflectance as a tool for detecting early signs of heatwave-induced stress in seagrasses, offering a valuable method for remote sensing-based habitat assessment, and the need for continuous monitoring of seagrass meadows under the current and future climate regimes, underscoring the potential of remote sensing to capture rapid environmental changes in intertidal zones.</p>
+</section>
 <section id="introduction" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1</span> Introduction</h2>
 <p>Seagrasses play a crucial role in coastal ecosystems by providing habitats and feeding grounds for various marine species, supporting marine biodiversity, and contributing to primary production and carbon sequestration <span class="citation" data-cites="Unsworth2022 sousa2019blue">(<a href="../References/references.html#ref-sousa2019blue" role="doc-biblioref">Sousa et al., 2019</a>; <a href="../References/references.html#ref-Unsworth2022" role="doc-biblioref">Unsworth et al., 2022</a>)</span>. Seagrasses are essential for several ecological functions, such as sediment stabilization <span class="citation" data-cites="infantes2022seagrass">(<a href="../References/references.html#ref-infantes2022seagrass" role="doc-biblioref">Infantes et al., 2022</a>)</span> or eutrophication mitigation by consuming nutrients <span class="citation" data-cites="gladstone2018biomass">(<a href="../References/references.html#ref-gladstone2018biomass" role="doc-biblioref">Gladstone-Gallagher et al., 2018</a>)</span>. This justifies their use as indicators of environmental changes due to their sensitivity to water quality variations <span class="citation" data-cites="zoffoli2021decadal">(<a href="../References/references.html#ref-zoffoli2021decadal" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>. The interactions between seagrass meadows and their associated herbivores further enhance the delivery of ecosystem services, including coastal protection, fisheries support and provision of habitat and resources for birds <span class="citation" data-cites="jankowska2019 zoffoli2023remote gardner2018global unsworth2021seagrass">(<a href="../References/references.html#ref-gardner2018global" role="doc-biblioref">Gardner and Finlayson, 2018</a>; <a href="../References/references.html#ref-jankowska2019" role="doc-biblioref">Jankowska et al., 2019</a>; <a href="../References/references.html#ref-unsworth2021seagrass" role="doc-biblioref">Unsworth and Butterworth, 2021</a>; <a href="../References/references.html#ref-zoffoli2023remote" role="doc-biblioref">Zoffoli et al., 2023</a>)</span>. Understanding and preserving seagrass is vital for maintaining the biodiversity and productivity of coastal regions <span class="citation" data-cites="scott2018role ramesh2020seagrass">(<a href="../References/references.html#ref-ramesh2020seagrass" role="doc-biblioref">Ramesh and Mohanraju, 2020</a>; <a href="../References/references.html#ref-scott2018role" role="doc-biblioref">Scott et al., 2018</a>)</span>.</p>

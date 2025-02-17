@@ -25,7 +25,8 @@ options(scipen=9999999)
 \includegraphics[width=5cm]{LogoRSE.jpg}
 \end{center}
 
-This Chapter has been published in Remote Sensing of Environment on the 15th of May 2023. The first author of this work is Bede Davies, a postdoctoral researcher in the lab throughout my entire thesis. He was responsible for developing a neural network classifier for Sentinel-2 products, designed to distinguish seagrasses from green macrophytes. This chapter marks the beginning of that work—a proof of concept demonstrating the impact of sensor spectral resolution on vegetation discrimination. This work began in 2021 as part of the BiCOME project, in 2021, when I was an engineer in the lab. At that time, I supervised a Master’s student, Andréa Geraud, during his second-year internship, focusing on field data acquisition and processing.
+This chapter was published in Remote Sensing of Environment on May 15, 2023. The first author of this work is Bede Davies, a postdoctoral researcher in the lab throughout my entire thesis. He was responsible for developing a neural network classifier for Sentinel-2 products, designed to distinguish seagrasses from green macrophytes. This chapter marks the beginning of that work—a proof of concept demonstrating the impact of sensor spectral resolution on vegetation discrimination.
+The research began in 2021 as part of the BiCOME project, when I was working as an engineer in the lab. During that time, I supervised a Master's student, Andréa Geraud, during his second-year internship, focusing on the acquisition and processing of data used in this study. This work was later continued by Bede Davies.
 
 \vspace{0.5cm}
 

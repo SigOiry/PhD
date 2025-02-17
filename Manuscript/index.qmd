@@ -44,7 +44,7 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 
 -  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (20 - 26 August 2023); 8th European Phycological Congress, Brest, France ; Poster
 
--  Remote Sensing discrimination of seagrass and green macroalgae: hyperspectral library and drone-mounted multispectral camera (23 - 27 may 2022); Living Planet Symposium, Bonn, Germany ; Poster
+-  Topographic analysis of intertidal polychaete reefs (Sabellaria alveolata) using very high resolution UAV remote sensing (23 - 27 may 2022); Living Planet Symposium, Bonn, Germany ; Poster
 
 ## Project related to the thesis.
 ### BiCOME
