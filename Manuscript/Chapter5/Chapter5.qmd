@@ -6,7 +6,7 @@ title: "The impact of Heatwave on Seagrasses using hyperspectral and multispectr
 \pagestyle{plain}
 \thispagestyle{empty}
 
-This chapter will be submitted to a scientific journal for publication.
+This chapter has been submitted to a scientific journal for publication.
 
 \vspace{0.5cm}
 ```
