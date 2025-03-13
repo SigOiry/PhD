@@ -254,7 +254,7 @@ When accounting for slope, the flatter the slope, the higher the percent cover o
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: DISCOV Prediction (A), RGB composition (B) and Bathymetry (C) of the Bélon estuary site in Brittany, France. The total extent of this flight was 21 hectars with a resolution of 8 mm per pixel. Bathymetry is represented as the height above mean sea level.  
+#| fig-cap: "Relation between the elevation (in meters) and the percentage cover of Gracilaria vermiculophylla across three slope categories: Flat, Angled, and Steep. Solid lines represent fitted generalized linear model predictions, with dashed lines indicating 89% confidence intervals. The solid black line represents the mean predicted coverage across all slope categories."
 #| label: fig-Gam_Slope
 #| out-width: "95%"
 
