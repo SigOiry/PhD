@@ -63,6 +63,11 @@ The coastal zone encompasses areas where terrestrial and marine domains intersec
 
 As one of the most dynamic and multifaceted regions on Earth, coastal environments host highly diverse and productive habitats. These include both natural ecosystems and managed systems that underpin key economic sectors and urban centers [@hobohm2021coastal]. The functionality of many coastal ecosystems is intrinsically linked to land-sea interactions, as observed in deltas and estuaries [@elliott2011challenging]. These environments exhibit steep gradients in salinity---from freshwater to hypersaline---and energy levels, ranging from low-energy wetlands to high-energy, wave-dominated shorelines. On a broader scale, coastal regions encompass a spectrum of climatic zones, from tropical to polar, each characterized by unique biogeophysical processes and features [@Murray2019]. However, these areas are also exposed to a variety of land-based and marine hazards, including storms, tropical cyclones, storm surges, tsunamis, riverine flooding, shoreline erosion, sea-level rise and biohazards such as algal blooms and pollutants [@mukhopadhyay2012coastal].
 
+```{=latex}
+\begin{adjustwidth}{-1cm}{-1cm} 
+```
+
+
 ```{r Figs CoastalHabitat}
 #| echo: false
 #| warning: false
@@ -71,6 +76,10 @@ As one of the most dynamic and multifaceted regions on Earth, coastal environmen
 #| out-width: "99%"
 
 knitr::include_graphics("Figs/Picture_habitat/CoastalHabitats_Lowres.png")
+```
+
+```{=latex}
+\end{adjustwidth} 
 ```
 
 Coastal ecosystems provide a range of ecosystem services that are fundamental to environmental sustainability and human well-being [@barbier2011value]. These ecosystems function as natural barriers against storm surges and coastal flooding [@barbier2015valuing], thereby mitigating the impacts of such hazards on inland regions and safeguarding human lives and infrastructure [@cooley2023oceans]. They support significant biodiversity, serving as critical habitats and breeding grounds for numerous species, including commercially valuable fish, shellfish, and other marine organisms that sustain global fisheries [@rodrigues2023ecological]. Coastal vegetation, including mangroves [@alongi2012carbon], salt marshes [@connor2001carbon], and seagrasses [@fourqurean2012seagrass], plays a crucial role in carbon sequestration by capturing and storing atmospheric carbon dioxide, thus contributing to climate change mitigation.

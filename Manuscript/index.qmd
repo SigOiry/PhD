@@ -9,6 +9,10 @@ This PhD work was carried out at Nantes University between 2022 and 2024, within
 
 ## Scientific papers
 
+- **Oiry, S**., Davies, B. F. R., Rosa, P., Debly, A., Zoffoli, M. L., Barillé, A.-L., Harin, N., Román, M., Gernez, P., &  Barillé, L. (Submitted). Heatwave impacts on intertidal seagrass reflectance: From laboratory experiment to satellite mapping of Seagrass Heat Shock Index.
+
+- **Oiry, S.**, Davies, B. F. R., Stiger-Pouvreau, V., Gernez, P., & Barillé, L. (Submitted). Mapping the distribution of the alien invasive *Gracilaria vermiculophylla* at the site of its First European Observation.
+
 -   Barillé, L., Paterson, I. L. R., **Oiry, S.**, Aris, A., Cook-Cottier, E. J., & Nurdin, N. (2025). Variability of *Kappaphycus alvarezii* cultivation in South-Sulawesi (Indonesia) related to the monsoon shift: Water quality, growth and colour quantification. *Aquaculture Reports*, 40, 102557. https://doi.org/10.1016/j.aqrep.2024.102557
 
 -   **Oiry, S.**, Davies, B. F. R., Sousa, A. I., Rosa, P., Zoffoli, M. L., Brunier, G., Gernez, P., & Barillé, L. (2024). Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery. *Remote Sensing*, *16*(23), 4383. https://doi.org/10.3390/rs16234383
