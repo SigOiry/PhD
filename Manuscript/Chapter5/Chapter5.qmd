@@ -395,24 +395,23 @@ Given the combined effects of temperature extremes, eutrophication, and other an
 
 This research investigated the effects of both marine and atmospheric heatwaves on the intertidal seagrass *Zostera noltei*, a critical component of coastal ecosystems facing increased thermal stress due to climate change. Heat stress effects on seagrass reflectance were documented in the laboratory using a controlled experiment in order to understand how extreme heat events affect seagrass health and to assess the potential of remote sensing for HW impacts monitoring. Our findings revealed that heatwaves lead to substantial declines in seagrass reflectance, particularly in the green and near-infrared regions, likely driven by pigment degradation and structural damage. This change was reflected in significant reductions in key vegetation indices such as NDVI and GLI. The Seagrass Heat Shock Index (SHSI), developed in this study, successfully detected seagrass darkening, a visible symptom of heatwave stress, demonstrating the viability of spectral monitoring to capture early-stage impacts of heat events on intertidal ecosystems. We applied and validated the newly developed Seagrass Heat Shock Index to Sentinel-2 satellite images acquired during an heatwave event, and documented the broad spatial impact of heatwaves on seagrass meadows in Quiberon Bay, France. The correlation between heatwave exposure and darkening of seagrass suggests that remote sensing, combined with targeted field observations, can enhance our understanding of ecosystem responses to climate-driven thermal events. These results advocate for integrating regular spectral monitoring into conservation strategies, as it can help predict seagrass resilience and guide adaptive management practices. Future work should focus on refining remote sensing tools and examining the cumulative effects of repeated heatwave events to support the conservation of intertidal seagrass meadows in a warming world. 
 
+::: {.page-break}
+\newpage
+<div style="page-break-after: always;"></div>
+:::
+
 ## Annexes
 
 ### Annexes A - Temperatures of the experiment {#sec-AnnexeA_h}
 
-![Annexe 5.1 - Comparison of daily maximum temperatures in August measured using an in-situ sensor (blue) and retrieved from Meteo France (orange). The solid line in the middle of the boxplot represents the median, the two ends of the box represent the 25th and 75th percentiles, and the whiskers represent values that are no more than 1.5 times the interquartile range.](Figs/Temperature_compare.png){#fig-temperatureAnnexe width="60%"}
+![Annexe 5.1 - Comparison of daily maximum temperatures in August measured using an in-situ sensor (blue) and retrieved from Meteo France (orange). The solid line in the middle of the boxplot represents the median, the two ends of the box represent the 25th and 75th percentiles, and the whiskers represent values that are no more than 1.5 times the interquartile range.](Figs/Temperature_compare.png){#fig-temperatureAnnexe width="80%"}
 
 On average, *in situ* temperatures were 3 ± 3.2°C higher than those recorded by Meteo France. Additionally, temperatures recorded by Meteo France were more stable than those from the *in situ* sensors, likely due to the sheltered and shaded location of the Meteo France equipment. This difference was used to adjust HW temperatures measured by Meteo France to better reflect the conditions experienced by the seagrasses.
 
-```{=latex}
-\end{spacing}
-```
-```{=latex}
-\renewcommand{\chaptertopimage}{Chapter6/img/top.png}
-\renewcommand{\chapterbottomimage}{Chapter6/img/bottom.png}
-```
-```{=latex}
-\newpage\null\thispagestyle{empty}\newpage
-```
+::: {.page-break}
+\newpage
+<div style="page-break-after: always;"></div>
+:::
 
 ### Annexes B - Outputs of GLMM {#sec-AnnexeB_h}
 
@@ -425,10 +424,21 @@ On average, *in situ* temperatures were 3 ± 3.2°C higher than those recorded b
 #| warning: false
 
 library(flextable)
+library(tidyverse)
+
 
 flextable_table <- readRDS("AnnexB.rds")
-flextable_table
+flextable_table %>% 
+  flextable::fontsize(size = 10, part = "header") %>%
+  flextable::fontsize(size = 8) %>% 
+  flextable::width(j = c("Index"), width = 1) # Set narrower columns
+
 ```
+
+::: {.page-break}
+\newpage
+<div style="page-break-after: always;"></div>
+:::
 
 ### Annexes C - Outputs of GAM {#sec-AnnexeC_h}
 
@@ -441,7 +451,24 @@ flextable_table
 #| warning: false
 
 library(flextable)
+library(tidyverse)
 table_gam_SHSI <- readRDS("AnnexC.rds")
-table_gam_SHSI
+table_gam_SHSI %>% 
+  flextable::fontsize(size = 10, part = "header") %>%
+  flextable::fontsize(size = 8) %>% 
+   flextable::width(j = c("Term"), width = 1) # Set narrower columns
 
+```
+
+
+
+```{=latex}
+\end{spacing}
+```
+```{=latex}
+\renewcommand{\chaptertopimage}{Chapter6/img/top.png}
+\renewcommand{\chapterbottomimage}{Chapter6/img/bottom.png}
+```
+```{=latex}
+\newpage\null\thispagestyle{empty}\newpage
 ```

@@ -300,15 +300,13 @@ This study demonstrated the potential of high-resolution drone-based multispectr
 ### Annexes A - Updated training dataset {#sec-AnnexeA}
 
 ```{=latex}
-\centering
-\begin{table}
+\begin{table}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{Chapter4/Figs/AnnexeA.png}
-  \caption{\label{tbl-Update_training}Annexe 4.1 - Class of the Neural Network model, with the number of training pixels used to train that class and the differences with the training dataset of DISCOV v1.0}
+  \caption{Annexe 4.1 - Class of the Neural Network model, with the number of training pixels used to train that class and the differences with the training dataset of DISCOV v1.0.}
+  \label{tbl-update_training}
 \end{table}
-
 ```
-
 
 ::: {.page-break}
 \newpage
@@ -318,11 +316,11 @@ This study demonstrated the potential of high-resolution drone-based multispectr
 ### Annexes B - Validation dataset {#sec-AnnexeB}
 
 ```{=latex}
-\centering
-\begin{table}
+\begin{table}[htbp]
   \centering
   \includegraphics[width=0.6\textwidth]{Chapter4/Figs/AnnexeB.png}
-  \caption{\label{tbl-ValidationDataset}Annexe 4.2 - Presence and absence of red macroalgae for each drone flight}
+  \caption{Annexe 4.2 - Presence and absence of red macroalgae for each drone flight}
+  \label{tbl-ValidationDataset}
 \end{table}
 ```
 
@@ -408,7 +406,7 @@ data.frame(
 #| warning: false
 #| fig-cap: "Annexe 4.4 - DISCOV Prediction (A), RGB composition (B) and picture of the field campaign of the Saja estuary, Nothern Spain. The total extent of this flight was 20.4 ha with a resolution of 8 mm per pixel."
 #| label: fig-Saja_g
-#| out-width: "95%"
+#| out-width: "85%"
 
 knitr::include_graphics("Figs/Saja_maps.png")
 

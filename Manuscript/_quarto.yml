@@ -13,11 +13,11 @@ book:
   chapters:
     - index.qmd
     - Chapter1/intro.qmd
-    # - Chapter2/Chapter2.qmd
-    # - Chapter3/Chapter3.qmd
-    # - Chapter4/Chapter4.qmd
-    # - Chapter5/Chapter5.qmd
-    # - Chapter6/Chapter6.qmd
+    - Chapter2/Chapter2.qmd
+    - Chapter3/Chapter3.qmd
+    - Chapter4/Chapter4.qmd
+    - Chapter5/Chapter5.qmd
+    - Chapter6/Chapter6.qmd
     - References/references.qmd
 repo-url: https://github.com/SigOiry/PhD
 search: true
