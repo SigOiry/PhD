@@ -64,7 +64,7 @@ The coastal zone encompasses areas where terrestrial and marine domains intersec
 As one of the most dynamic and multifaceted regions on Earth, coastal environments host highly diverse and productive habitats. These include both natural ecosystems and managed systems that underpin key economic sectors and urban centers [@hobohm2021coastal]. The functionality of many coastal ecosystems is intrinsically linked to land-sea interactions, as observed in deltas and estuaries [@elliott2011challenging]. These environments exhibit steep gradients in salinity---from freshwater to hypersaline---and energy levels, ranging from low-energy wetlands to high-energy, wave-dominated shorelines. On a broader scale, coastal regions encompass a spectrum of climatic zones, from tropical to polar, each characterized by unique biogeophysical processes and features [@Murray2019]. However, these areas are also exposed to a variety of land-based and marine hazards, including storms, tropical cyclones, storm surges, tsunamis, riverine flooding, shoreline erosion, sea-level rise and biohazards such as algal blooms and pollutants [@mukhopadhyay2012coastal].
 
 ```{=latex}
-\begin{adjustwidth}{-1cm}{-1cm} 
+\begin{adjustwidth}{-10cm}{-10cm} 
 ```
 
 

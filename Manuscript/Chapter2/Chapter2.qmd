@@ -68,7 +68,7 @@ Spectral reflectance data were collected from a range of macroalgal, microphytob
 
 ```{r SpeciesTable}
 #| label: tbl-SPECIESTABLE
-#| tbl-cap: Presence and absence of red macroalgae for each drone flight 
+#| tbl-cap: Number of spectra samples taken across species and classes with references of where and when the data were collected. Mont Saint-Michel Bay was abbreviated to MSM. The location of sampling sites are shown in @fig-FIGMAP. 
 #| echo: false
 #| error: false
 #| message: false
@@ -94,7 +94,7 @@ Table<-tibble(
                        16,3,33,21,11,34,3,
                        33,
                        27,6,13,13,5,
-                       10,21,2),	
+                       10,21,2),
  Site=c("Bourgneuf Bay, Marennes-Oléron Bay, Cadiz Bay, Tagus Estuary, Aveiro Lagoon and Traict of Merquel",
         "Bourgneuf Bay", 
         "Bourgneuf Bay, Auray Estuary, MSM, Tagus Estuary, Aveiro Lagoon and Traict of Merquel",
@@ -146,20 +146,20 @@ SPECIESTABLE_Cap<-" Number of Spectra samples taken per habitat type."
 #                 `No. of Spectra`=n) 
 
 flxtbl <- Table %>% 
-  flextable::as_grouped_data(groups="Class")%>% 
-  flextable::flextable()%>% # make basic table
-  # flextable::set_caption(caption=" Number of spectra samples taken across species and classes with references of where and when the data were collected. Mont Saint-Michel Bay was abbreviated to MSM. The location of sampling sites are shown in Fig. 2.")  %>% 
-  flextable::fontsize(size=15,part="header") %>% 
-  flextable::fontsize(size=13) %>% 
-  flextable::italic(j=2,italic=T) %>% 
-  flextable::align(align = "justify", part = "body") %>%  # Justify text in the body cells
-  flextable::align(align = "justify", part = "header") %>%  # Justify text in the header cells
-  flextable::autofit() %>% 
-  flextable::set_table_properties(layout="autofit") ## last two lines make table fit word doc width 
+  flextable::as_grouped_data(groups = "Class") %>% 
+  flextable::flextable() %>% 
+  # flextable::fontsize(size = 18, part = "header") %>% 
+  # flextable::fontsize(size = 15) %>% 
+  flextable::italic(j = 2, italic = TRUE) %>% 
+  flextable::align(align = "center", part = "body") %>%    # Center text in body cells
+  flextable::align(align = "center", part = "header") %>%  # Center text in header cells
+  flextable::width(j = c("Site"), width = 3) # Set narrower columns
+  # flextable::autofit() %>% 
+  # flextable::set_table_properties(width = 1, layout = "autofit")
 
 # Display the flextable
-# save_as_image(flxtbl, path = "Manuscript/Chapter1/Figs/SPECIESTABLE.png")
-
+# flextable::save_as_image(flxtbl, path = "Manuscript/Chapter2/Figs/SPECIESTABLE.png")
+# flxtbl
 knitr::include_graphics("Figs/SPECIESTABLE.png")
 ```
 
@@ -188,7 +188,7 @@ Multiple field campaigns taking place from 2 hours prior to 2 hours post minimum
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure2.jpg")
+knitr::include_graphics("Figs/Figure2_Bede.jpg")
 
 ```
 
@@ -208,7 +208,7 @@ The efficacy, efficiency and ability of classifying intertidal soft-bottom veget
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure3.jpg")
+knitr::include_graphics("Figs/Figure3_Bede.jpg")
 
 ```
 
@@ -243,7 +243,7 @@ At hyperspectral resolution (ASD, PRISMA), the differences among vegetative habi
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure4.jpg")
+knitr::include_graphics("Figs/Figure4_Bede.jpg")
 ```
 
 ### Spectral Dissimilarity Between the Taxonomic Classes
@@ -260,7 +260,7 @@ The nMDS ordinations calculated with a cosine distance showed that all vegetatio
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure5.jpg")
+knitr::include_graphics("Figs/Figure5_Bede.jpg")
 
 ```
 
@@ -279,7 +279,7 @@ When assessed by Random Forest modelling, accuracy metrics of different spectral
 #| echo: false
 
 
-knitr::include_graphics("Figs/Figure6.jpg")
+knitr::include_graphics("Figs/Figure6_Bede.jpg")
 
 ```
 
@@ -341,7 +341,7 @@ Standardised variable importance, the relative amount the inclusion of a variabl
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure7.jpg")
+knitr::include_graphics("Figs/Figure7_Bede.jpg")
  
 ```
 
@@ -357,7 +357,7 @@ When the variable importance of the ASD was overlaid on the response functions f
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure8.jpg")
+knitr::include_graphics("Figs/Figure8_Bede.jpg")
 
 
 ```
@@ -377,7 +377,7 @@ Models accurately classed bare sediments consistently, regardless of spectral re
 #| warning: false
 #| echo: false
 
-knitr::include_graphics("Figs/Figure9.jpg")
+knitr::include_graphics("Figs/Figure9_Bede.jpg")
 
 ```
 
@@ -402,6 +402,7 @@ Two wavelength regions, respectively in the green (~517–556 nm) and NIR (~722�
 #| warning: false
 #| out-width: "95%"
 
+library()
 
 PigTable<-tibble::tribble(
   ~Class,	~`Chl b`, ~`Chl c`,	~Fuco,	~Zea,	~Diato,	~Diadino, ~Neo,	~Lutein,	~Source,
@@ -434,13 +435,17 @@ PigTable<-tibble::tribble(
 474",	"Méléder et al., 2013")
 
 flxtable <- PigTable %>% 
-flextable::flextable()%>% 
-  flextable::fontsize(size = 10,part = "body") %>% 
-  flextable::autofit() %>% 
-  flextable::set_table_properties(layout="autofit")
+  flextable::flextable()%>% 
+  flextable::fontsize(size = 16, part = "header") %>%
+  flextable::fontsize(size = 13) %>%
+  flextable::align(align = "center", part = "body") %>%   # Center body text
+  flextable::align(align = "center", part = "header") %>% # Center header text
+  # flextable::width(width = 0.5) %>% # Set narrower columns
+  # flextable::autofit() 
+  flextable::set_table_properties(layout = "autofit")
 
-# save_as_image(flxtable, path = "Manuscript/Chapter1/Figs/pigmentTable.png")
-
+# flextable::save_as_image(flxtable, path = "Manuscript/Chapter2/Figs/pigmentTable.png")
+# flxtable
 knitr::include_graphics("Figs/pigmentTable.png")
 
 
