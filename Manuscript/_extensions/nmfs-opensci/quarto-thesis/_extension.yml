@@ -26,9 +26,9 @@ contributes:
         - top=1.5cm
         - bottom=1.5cm
       colorlinks: true
-      citecolor: magenta
-      linkcolor: blue
-      urlcolor: red
+      citecolor: black
+      linkcolor: black
+      urlcolor: black
       toclinkcolor: black
     html:
       documentclass: MastersDoctoralThesis_html
@@ -55,6 +55,6 @@ contributes:
         - bottom=1.5cm
       colorlinks: true
       citecolor: magenta
-      linkcolor: blue
-      urlcolor: red
+      linkcolor: black
+      urlcolor: black
       toclinkcolor: black

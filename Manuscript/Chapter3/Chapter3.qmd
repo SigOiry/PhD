@@ -4,9 +4,6 @@ number-sections: true
 ---
 
 ```{=latex}
-\pagestyle{plain}
-\thispagestyle{empty}
-
 \begin{center} 
 \includegraphics[width=5cm]{LogoRS.jpg}
 \end{center}
