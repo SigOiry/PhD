@@ -3,6 +3,24 @@ chaptertopimage: "{Chapter1/img/seagrasses.png}"
 chapterbottomimage: "{Chapter1/img/seagrasses.png}"
 ---
 
+::: {.content-visible when-format="html"}
+
+```{=html}
+<div style="text-align: center; margin-top: 2em;">
+  <a href="https://sigoiry.github.io/PhD_Slides" 
+     style="display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;">
+    Go to the Presentation
+  </a>
+</div>
+```
+:::
+
 # Preface {.unnumbered}
 
 This PhD work was carried out at Nantes University between 2022 and 2024, within the "Remote Sensing, Benthic Ecology and Ecotoxicology" (RSBE²) team of the Institute of Marine Substances and Organisms (ISOMer). This thesis was funded by the Ministry of Research and Higher Education and supervised by the doctoral school "Plant, Animal, Food, Sea, Environment" (VAAME).
