@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,10 +57,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -417,7 +417,7 @@ Figure&nbsp;2.5: nMDS ordination showing similarities between vegetation classes
 </section>
 <section id="accuracy-across-sensors-and-importance-of-wavelengths" class="level3" data-number="2.3.3">
 <h3 data-number="2.3.3" class="anchored" data-anchor-id="accuracy-across-sensors-and-importance-of-wavelengths"><span class="header-section-number">2.3.3</span> Accuracy Across Sensors and Importance of Wavelengths</h3>
-<p>When assessed by Random Forest modelling, accuracy metrics of different spectral resolutions showed that Sentinel-2 20 m and Drone spectra gave high mean accuracy regardless of accuracy metric (Accuracy: 0.95 ± 0.004 for Sentinel-2 20 m &amp; 0.948 ± 0.004 for Drone. Cohen’s Kappa Accuracy: 0.935 ± 0.006 for Sentinel-2 20 m &amp; 0.934 ± 0.005 for Drone: <a href="#fig-MetricsFIG" class="quarto-xref">Figure&nbsp;<span>2.6</span></a> &amp; <a href="#tbl-metricsTable" class="quarto-xref">Table&nbsp;<span>2.2</span></a>). Above a spectral resolution of 10 bands, there was no gain in mean accuracy even with large increases in spectral resolution (Accuracy: 0.95 ± 0.005 for ASD &amp; 0.951 ± 0.006 for PRISMA. Cohen’s Kappa Accuracy: 0.936 ± 0.006 for ASD &amp; 0.938 ± 0.008 for PRISMA). The sensors with the lowest spectral resolution (Pleiades and Sentinel-2 10 m) showed the lowest accuracy, yet still were accurate around 80 to 90% of the time (Accuracy: 0.861 ± 0.006 for Pleiades &amp; 0.835 ± 0.008 for Sentinel-2 10 m. Cohen’s Kappa Accuracy: 0.821 ± 0.008 for Pleiades &amp; 0.792 ± 0.005 for Sentinel-2 10 m). Likewise, model specificity and sensitivity showed the greatest values from 8 spectral bands and above, but no increase was shown from 10 to 300 bands (Sensitivity: 0.948 ± 0.006 for Sentinel-2 20 m, 0.941 ± 0.006 for Drone, ± 0.006 for PRISMA &amp; 0.938 ± 0.008 for ASD; Specificity: 0.989 ± 0.001 for Sentinel-2 20 m, 0.989 ± 0.001 for Drone, ± 0.001 for PRISMA &amp; 0.989 ± 0.001 for ASD). Below 8 spectral bands, mean sensitivity and specificity were lowest, yet still around 85% (Sensitivity: 0.847 ± 0.008 for Pleiades &amp; 0.844 ± 0.008 for Sentinel-2 10 m; Specificity: 0.97 ± 0.001 for Pleiades &amp; 0.966 ± 0.002 for Sentinel-2 10 m). Standardised variable importance, the relative amount the inclusion of a variable in the model affected its’ performance, showed the wavelengths the model considered most important (Fig. 7). Consistently across all spectral resolutions, wavelengths 517–556 nm were shown to be highly important. When present, wavelengths around 722–754 nm were the most important. When the variable importance of the ASD was overlaid on the response functions for the different multispectral sensors, the ability of each sensor to effectively sample the wavelengths of interest become clearer (Fig. 8). The Drone and Pleiades sensors effectively sample the top of the peak in importance from 517 to 556 nm, while Sentinel-2 (10 m and 20 m) is only sampling the edges of the peak. Both Pleiades and Sentinel-2 at 10 m did not sample the highest peak of importance from 722 to 754 nm, while the Drone and Sentinel-2 at 20 m only sampled one side of this peak. Generally, the Drone is sampling all the major and minor peaks of importance apart from one minor peak around 780 nm.</p>
+<p>When assessed by Random Forest modelling, accuracy metrics of different spectral resolutions showed that Sentinel-2 20 m and Drone spectra gave high mean accuracy regardless of accuracy metric (Accuracy: 0.95 ± 0.004 for Sentinel-2 20 m &amp; 0.948 ± 0.004 for Drone. Cohen’s Kappa Accuracy: 0.935 ± 0.006 for Sentinel-2 20 m &amp; 0.934 ± 0.005 for Drone: <a href="#fig-MetricsFIG" class="quarto-xref">Figure&nbsp;<span>2.6</span></a> &amp; <a href="#tbl-metricsTable" class="quarto-xref">Table&nbsp;<span>2.2</span></a>). Above a spectral resolution of 10 bands, there was no gain in mean accuracy even with large increases in spectral resolution (Accuracy: 0.95 ± 0.005 for ASD &amp; 0.951 ± 0.006 for PRISMA. Cohen’s Kappa Accuracy: 0.936 ± 0.006 for ASD &amp; 0.938 ± 0.008 for PRISMA). The sensors with the lowest spectral resolution (Pleiades and Sentinel-2 10 m) showed the lowest accuracy, yet still were accurate around 80 to 90% of the time (Accuracy: 0.861 ± 0.006 for Pleiades &amp; 0.835 ± 0.008 for Sentinel-2 10 m. Cohen’s Kappa Accuracy: 0.821 ± 0.008 for Pleiades &amp; 0.792 ± 0.005 for Sentinel-2 10 m). Likewise, model specificity and sensitivity showed the greatest values from 8 spectral bands and above, but no increase was shown from 10 to 300 bands (Sensitivity: 0.948 ± 0.006 for Sentinel-2 20 m, 0.941 ± 0.006 for Drone, ± 0.006 for PRISMA &amp; 0.938 ± 0.008 for ASD; Specificity: 0.989 ± 0.001 for Sentinel-2 20 m, 0.989 ± 0.001 for Drone, ± 0.001 for PRISMA &amp; 0.989 ± 0.001 for ASD). Below 8 spectral bands, mean sensitivity and specificity were lowest, yet still around 85% (Sensitivity: 0.847 ± 0.008 for Pleiades &amp; 0.844 ± 0.008 for Sentinel-2 10 m; Specificity: 0.97 ± 0.001 for Pleiades &amp; 0.966 ± 0.002 for Sentinel-2 10 m). Standardised variable importance, the relative amount the inclusion of a variable in the model affected its’ performance, showed the wavelengths the model considered most important (<a href="#fig-VIPFIG" class="quarto-xref">Figure&nbsp;<span>2.7</span></a>). Consistently across all spectral resolutions, wavelengths 517–556 nm were shown to be highly important. When present, wavelengths around 722–754 nm were the most important. When the variable importance of the ASD was overlaid on the response functions for the different multispectral sensors, the ability of each sensor to effectively sample the wavelengths of interest become clearer (<a href="#fig-VIPFunction" class="quarto-xref">Figure&nbsp;<span>2.8</span></a>). The Drone and Pleiades sensors effectively sample the top of the peak in importance from 517 to 556 nm, while Sentinel-2 (10 m and 20 m) is only sampling the edges of the peak. Both Pleiades and Sentinel-2 at 10 m did not sample the highest peak of importance from 722 to 754 nm, while the Drone and Sentinel-2 at 20 m only sampled one side of this peak. Generally, the Drone is sampling all the major and minor peaks of importance apart from one minor peak around 780 nm.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-MetricsFIG" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -912,6 +912,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1022,6 +1024,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

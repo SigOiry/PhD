@@ -3,9 +3,6 @@ title: "The impact of Heatwave on Seagrasses using hyperspectral and multispectr
 ---
 
 ```{=latex}
-\pagestyle{plain}
-\thispagestyle{empty}
-
 This chapter has been submitted to a scientific journal for publication.
 
 \vspace{0.5cm}
@@ -340,7 +337,7 @@ Using the SHSI (@eq-SDI), we detected large darkened seagrass patches in the mea
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: "Sentinel-2 color composition of the seagrass meadow of Quiberon, South Brittany, France, Before (A ; 1st of September 2021), During (B ; 6th of September 2021) and After (C ; 8th of October 2021) the HW and SHSI applied to the same Sentinel-2 images Before (D), During (E) and After (F) the HW."
+#| fig-cap: "Sentinel-2 color composition of the seagrass meadow of Quiberon, South Brittany, France, Before (A ; 1st of September 2021), During (C ; 6th of September 2021) and After (D ; 8th of October 2021) the HW and SHSI applied to the same Sentinel-2 images Before (B), During (D) and After (F) the HW."
 #| label: fig-Map_darkening_Bathy
 #| fig-width: 10
 #| fig-height: 6.2
@@ -431,7 +428,7 @@ flextable_table <- readRDS("AnnexB.rds")
 flextable_table %>% 
   flextable::fontsize(size = 10, part = "header") %>%
   flextable::fontsize(size = 8) %>% 
-  flextable::width(j = c("Index"), width = 1) # Set narrower columns
+  flextable::width(j = c("Index"), width = 0.5) # Set narrower columns
 
 ```
 
