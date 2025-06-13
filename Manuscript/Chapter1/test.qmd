@@ -1,0 +1,23 @@
+---
+title: General conclusions and future perspectives
+---
+
+```{r Figs CoastalHabitat}
+#| echo: false
+#| warning: false
+#| fig-cap: "Examples of the diversity of habitat found in coastal environments. A: Upper shore and dunal vegetation of Pen Bron, France, on the 15th of May 2023. B: Rocky shore of the Galician coastline. Picture taken at Baiona, Spain on the 1st of September 2023. C: Tidal flat of the Guadalquivir River, Spain. Picture taken near of Trebujena, Spain on the 22nd of March 2023. D: Submerged seagrass meadows in Greece. Picture taken at Nauplie, Greece on the 29th of October 2023."
+#| label: fig-CoastalHabitat
+#| out-width: "120%"
+#| fig.align: "center"
+
+knitr::include_graphics("Figs/Picture_habitat/CoastalHabitats_Lowres.png")
+```
+
+This work underscores the potential of RS technologies in addressing ecological challenges in intertidal zones, including the impacts of climate change, anthropogenic pressures, and habitat fragmentation. By demonstrating improved accuracy in habitat classification, from seagrass discrimination to IAS mapping, this work highlights the critical role of multispectral and hyperspectral remote sensing in obtaining explicit spatial distribution maps of the main taxonomic units of intertidal vegetation. Integrating ground-based, drone, and satellite observations proved pivotal in bridging spatial and temporal gaps, enabling a more comprehensive understanding of ecosystem structure and dynamics.
+
+```{=latex}
+\begin{adjustwidth}{-2cm}{-2cm} % Modify margins (left, right)
+\includegraphics[width=\linewidth]{Figs/Picture_habitat/CoastalHabitats_Lowres.png}
+\caption{Example figure with adjusted margins}
+\end{adjustwidth}
+``` 
