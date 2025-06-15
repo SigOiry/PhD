@@ -581,29 +581,38 @@ The area that a drone can cover during a mission grows exponentially as the flig
 
 LiDAR mapping does not impose the stringent forward- and side-overlap requirements that constrain camera-based photogrammetry, because every laser pulse is directly georeferenced; only a modest side overlap—typically 30 % to 50 %—between adjacent flight lines is needed to prevent data gaps. For a flight altitude $H$ and scanner field-of-view half-angle $\theta$, the ground swath $S$ is
 
-$$
+```{=latex}
+\[
 S = 2H \tan\!\left(\frac{\theta}{2}\right)
-
-$$
+\]
+```
 
 While the mirror oscillates at $f_s$ lines s^-1^, the drone advances $\Delta x$ meters between lines, and the spacing between successive pulses within each line $\Delta y$
 
-$$
+```{=latex}
+\[
 \Delta x = \frac{v}{f_s}
   \quad\mathrm{and}\quad 
 \Delta y = \frac{S\,f_s}{\text{PRF}}
-$$
+\]
+``` 
 
 where $PRF$ is the pulse-repetition frequency and $v$ the ground speed. The average point density $D$ therefore becomes
 
-$$
+```{=latex}
+\[
 D = \frac{1}{\Delta x \, \Delta y} = \frac{\text{PRF}}{v\,S}
-$$
+\]
+```
+
 Side overlap for LiDAR ($SO_{L}$) follows the simple relation
 
-$$
+```{=latex}
+\[
 SO_{L} = \left(1 - \frac{d_{\text{flight line}}}{S}\right) \times 100\%
-$$
+\]
+```
+
 with $d_{\text{flight line}}$ the spacing between neighbouring tracks.
 
 Mission planning is a trade-off: increasing altitude broadens the swath and shortens total flight time but lowers point density quadratically; flying faster reduces density linearly; higher $PRF$ boosts density but consumes more power, and a higher mirror frequency $f_s$ mitigates motion blur at the cost of coarser across-track spacing. Under the European legislation of 120 m of maximum flight height, a multirotor carrying DJI Zenmuse L1 scanner with a $PRF$ of 240khz, a horizontal field-of-view $\theta$ of 70.4°, a flight speed $v$ of 8 m.s^-1^ can archive a point density of 180 pts.m^-2^. Choosing a 30 % side overlap ($d_{\text{flight line}}$ ≈ 118 m), the 40 km² intertidal meadow in the Bassin d’Arcachon could be mapped in roughly 12 hours of airtime—four times faster than the optical workflow outlined earlier. Such efficiency gains are realised only when laser boresight angles are carefully calibrated and GNSS–IMU data are tightly coupled, as an orientation bias of merely 0.05° still propagates into a 10 cm horizontal error at 120 m altitude, directly degrading the fidelity of the resulting point cloud.
@@ -615,7 +624,7 @@ Mission planning is a trade-off: increasing altitude broadens the swath and shor
 
 Satellite products produced by space agencies are often provided to users after extensive preprocessing steps, including orthorectification, precise georeferencing, radiometric calibration. Similarly, these preprocessing steps are crucial for utilizing drone-acquired data effectively. Nowadays, user-friendly software, such as Agisoft Metashape, Pix4D or WebODM, enables users to perform these essential steps efficiently, making advanced data processing accessible even to non-expert users. Steps to obtain an orthoimage from a bunch of single images will be described now in more details.
 
-###### Image pre-processing
+**Image pre-processing**
 
 The first step is to correct each individual image acquired by the drone from optical distortion that occurred during its acquisition (@fig-img_preprocessing). Photogrammetric software typically addresses lens distortion and vignetting through a combination of camera calibration and radiometric adjustments. 
 
@@ -631,19 +640,19 @@ knitr::include_graphics("Figs/distortion.png")
 
 During calibration, the software refines intrinsic parameters such as focal length, principal point offsets, and radial/tangential distortion coefficients (called k1, k2, k3, p1, p2) by matching features across overlapping images in a bundle adjustment process. Some camera manufacturers provide sensor-specific metadata, including correction factors, which can further enhance calibration accuracy. Vignetting, which manifests as reduced brightness near the image edges, is often corrected via additional vignetting coefficients or automated radiometric calibration routines that normalize illumination across photos. These corrections are essential for ensuring both geometric precision in the 3D reconstruction and radiometric consistency in the final orthomosaic.
 
-###### Initial Image Alignment / Aerial Triangulation
+**Initial Image Alignment / Aerial Triangulation**
 
 Once corrected, each image can be aligned. During the initial image alignment phase, the photogrammetry software relies on Structure from Motion (SfM) algorithms to identify unique tie points in overlapping images and triangulate their 3D positions. These tie points are then matched across the dataset, and a bundle adjustment is performed to optimize camera parameters (position, orientation, and intrinsic calibration). Often referred to as aerial triangulation, this step produces a sparse point cloud that underpins all subsequent stages. Its accuracy is critical, as it defines the precision of the final 2D and 3D outputs.
 
-###### Ground Control Point Integration
+**Ground Control Point Integration**
 
 Before generating a dense point cloud, the sparse reconstruction is brought into real‐world coordinates using ground control points (GCPs). Well‐distributed targets with precisely surveyed XYZ positions are manually or automatically identified in multiple images, and their image‐space measurements are tied to the corresponding object‐space coordinates. A secondary bundle adjustment then refines camera exterior and interior parameters to minimize residual errors at the GCPs, dramatically improving the absolute georeferencing and reducing systematic drift prior to dense reconstruction.
 
-###### Dense Point Cloud Generation {#sec-DPC}
+**Dense Point Cloud Generation**
 
 Building upon the camera geometry established by SfM, the software uses Multi-View Stereo (MVS) techniques to compute dense depth maps for each overlapping image pair. These depth maps are merged to create a dense point cloud containing millions---or even billions---of points, capturing high-resolution details of the scene's geometry. Although computationally intensive, this phase lays the groundwork for generating accurate surface models and textured 3D representations later in the workflow.
 
-###### Digital Surface Model (DSM) / Digital Terrain Model (DTM)
+**Digital Surface Model (DSM) / Digital Terrain Model (DTM)**
 
 From the dense point cloud, a DSM is derived by capturing the highest elevation values within each pixel or grid cell, thereby representing above-ground features like buildings and vegetation. Alternatively, a DTM can be produced by classifying and removing non-ground points to approximate the bare-earth surface. Both models are typically exported as raster files and used in various analytical applications, such as hydrological modeling, viewshed analysis, and volume calculations. Their accuracy depends on the quality of the dense cloud and effective point classification techniques. The difference between the DSM and the DTM is called a Digital Height Model (DHM, @fig-DSMDTM).
 
@@ -657,13 +666,13 @@ From the dense point cloud, a DSM is derived by capturing the highest elevation 
 knitr::include_graphics("Figs/DSM_DTM.png")
 ```
 
-###### Orthorectification and Orthomosaic Creation
+**Orthorectification and Orthomosaic Creation**
 
 During orthorectification, the software projects each image onto the DSM or DTM to correct for camera tilt and terrain distortions, ensuring consistent spatial alignment. Afterwards, overlapping images are seamlessly blended---often balancing color and brightness variations---to form a georeferenced orthomosaic. This final 2D product is dimensionally accurate and vital for cartographic and analytic tasks, offering a reliable visual representation of the surveyed area.
 
-###### Optional steps
+**Optional steps**
 
-Following the creation of a dense point cloud (@sec-DPC), photogrammetric software can convert millions of data points into a continuous 3D surface known as a mesh. This process involves triangulating the points to form a polygonal framework that captures the shape and features of the surveyed scene. Once the mesh is generated, the software projects the original imagery onto the surface to create a photorealistic texture. This textured 3D model provides an immersive visualization, enabling more detailed analysis of structures, terrain, and other elements than would be possible through a 2D map alone. During data acquisition, the drone's camera can be oriented at a 45° angle to capture detailed features of the target's vertical structure. This approach ensures that the texture of these features is detailed. 
+Following the creation of a dense point cloud, photogrammetric software can convert millions of data points into a continuous 3D surface known as a mesh. This process involves triangulating the points to form a polygonal framework that captures the shape and features of the surveyed scene. Once the mesh is generated, the software projects the original imagery onto the surface to create a photorealistic texture. This textured 3D model provides an immersive visualization, enabling more detailed analysis of structures, terrain, and other elements than would be possible through a 2D map alone. During data acquisition, the drone's camera can be oriented at a 45° angle to capture detailed features of the target's vertical structure. This approach ensures that the texture of these features is detailed. 
 
 Another optional step, depending on the dataset, is the radiometric calibration of the data. However, this step becomes mandatory for multispectral and hyperspectral datasets, as it ensures the accuracy and usability of radiometric information by compensating for sensor-specific biases and environmental conditions during data acquisition.
 
@@ -672,19 +681,19 @@ Another optional step, depending on the dataset, is the radiometric calibration 
 
 Although a drone-borne LiDAR system can already deliver georeferenced X-, Y- and Z-coordinates in flight, several post-processing steps are necessary to transform the raw pulses into analysis-ready elevation products. Modern tools—such as TerraScan, LAStools and DJI Terra—streamline this workflow. The following sections provide a basic introduction to the processing steps these tools perform.
 
-###### Trajectory & Boresight Calibration
+**Trajectory & Boresight Calibration**
 
 The flight trajectory recorded by the onboard GNSS / IMU is first refined in a POS-processing stage that applies carrier-phase differential corrections and tightly couples inertial data. Next, a boresight calibration solves for the tiny roll, pitch, and yaw offsets between the laser, IMU, and camera recorded metadata by minimising height differences where overlapping “strips” cross one another. Accurate boresight values prevent banding and “steps” in the final surface model.
 
-###### Strip Alignment / Block Adjustment
+**Strip Alignment / Block Adjustment**
 
 Even after calibration, residual offsets of a few centimetres can persist between flight lines. Strip alignment tools iteratively adjust each line’s position and orientation so that corresponding planar patches overlap seamlessly, producing a homogenous point cloud analogous to the bundle adjustment in photogrammetry.
 
-###### Point Classification
+**Point Classification**
 
 The unified cloud is then classified—often with a hierarchical algorithm such as progressive TIN densification—into ground, vegetation, buildings, and noise. Ground points form the basis of the bare-earth model, while non-ground points can be analysed separately for canopy height, building volumes, or infrastructure clearance.
 
-###### Digital Terrain Model (DTM) / Digital Surface Model (DSM)
+**Digital Terrain Model (DTM) / Digital Surface Model (DSM)**
 
 Ground points are rasterised—usually with a mean or minimum filter—into a DTM that represents the bare earth. Conversely, by selecting the highest return in each grid cell one derives a DSM that captures treetops and rooftops. Subtracting the DTM from the DSM yields a DHM.
 
@@ -744,7 +753,7 @@ The utility of machine learning lies in its adaptability and scalability across 
 
 Coastal environments represent highly dynamic and sensitive ecosystems shaped by complex interactions between natural processes and human activities. RS technologies are crucial for monitoring these regions, providing detailed data on shoreline erosion, habitat degradation, sediment dynamics, and water quality. High-resolution satellite imagery and drone-based platforms facilitate the detection of fine-scale changes in intertidal zones, mangroves, coral reefs, and other sensitive coastal habitats. These observations enable quantification of spatial and temporal variations, informing evidence-based conservation and sustainable management strategies.
 
-Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales [@pereira2013essential ; @Miloslavich2018 ; @bojinski2014concept]. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions [@Muller-Karger2018, @fig-MullerKarger].
+Essential Biodiversity Variables (EBVs) and Essential Ocean Variables (EOVs) constitute a framework for systematically monitoring and understanding ecological and oceanographic changes. Based on the model of Essential Climate Variables (ECVs), EBVs provide a standardized set of biodiversity metrics to detect and analyze changes across spatial and temporal scales [@pereira2013essential ; @Miloslavich2018 ; @bojinski2014concept]. These variables act as an interface between raw ecological data and the biodiversity indicators required for global reporting and policy-making. Similarly, EOVs focus on the biological and ecological characteristics of marine systems, emphasizing metrics such as plankton diversity and biomass, fish populations, and the spatial extent of habitats like coral reefs and seagrass meadows. By standardizing biodiversity and oceanic assessments, EBVs and EOVs enhance consistency and comparability across studies and regions (@fig-MullerKarger).
 
 These frameworks address the need for scalable and harmonized observations, aligning with international directives like the Water Framework Directive (WFD, 2000/60/EC) and the Marine Strategy Framework Directive (MSFD), which use habitat diversity as an indicator of aquatic ecosystem health [@borja2013good ; @zoffoli2021decadal ; @papathanasopoulou2019satellite]. Beyond enabling environmental monitoring, EBVs and EOVs provide a foundation for conservation strategies by addressing knowledge gaps and promoting coordinated action among stakeholders. However, evaluating the ecological status of a large number of water bodies using exclusively field observations turned out to be extremely challenging, and the status of many sites has still not been assessed [@papathanasopoulou2019satellite ; @oiry2021using]
 

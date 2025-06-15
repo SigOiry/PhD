@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.33">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -52,15 +52,16 @@ div.csl-indent {
 <meta name="quarto:offset" content="../">
 <link href="../Chapter5/Chapter5.html" rel="next">
 <link href="../Chapter3/Chapter3.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -88,10 +89,6 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<link href="../site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
-
-<script src="../site_libs/tabwid-1.1.3/tabwid.js"></script>
-
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -125,7 +122,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -238,7 +235,7 @@ window.Quarto = {
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#materials-methods" id="toc-materials-methods" class="nav-link" data-scroll-target="#materials-methods"><span class="header-section-number">4.2</span> Materials &amp; Methods</a>
+  <li><a href="#material-methods" id="toc-material-methods" class="nav-link" data-scroll-target="#material-methods"><span class="header-section-number">4.2</span> Material &amp; Methods</a>
   <ul class="collapse">
   <li><a href="#study-sites" id="toc-study-sites" class="nav-link" data-scroll-target="#study-sites"><span class="header-section-number">4.2.1</span> Study sites</a></li>
   <li><a href="#sec-DroneFlights" id="toc-sec-DroneFlights" class="nav-link" data-scroll-target="#sec-DroneFlights"><span class="header-section-number">4.2.2</span> Remote sensing data acquisition and pre-processing</a></li>
@@ -300,11 +297,11 @@ window.Quarto = {
 <p>The introduction of Non-Indigenous Species (NIS) in terrestrial, freshwater, and marine ecosystems is one of the major threats to biodiversity worldwide. In particular, the proliferation and rapid spread of Invasive Alien Species (IAS) can radically change the structure and functioning of marine ecosystems, requiring effective assessment and monitoring programs <span class="citation" data-cites="d15020161">(<a href="../References/references.html#ref-d15020161" role="doc-biblioref">Massé et al., 2023</a>)</span>. In Europe, 874 NIS have been introduced to the marine environment so far (i.e.&nbsp;until 2020) and it is expected that the rate of biological invasions will continue to increase in the coming years <span class="citation" data-cites="d14121077">(<a href="../References/references.html#ref-d14121077" role="doc-biblioref">Zenetos et al., 2022</a>)</span>. Macroalgae represent more than 40 % of the NIS introduced to Europe waters, with many species native to the Temperate Northern Pacific <span class="citation" data-cites="williams2007global">(<a href="../References/references.html#ref-williams2007global" role="doc-biblioref">Williams and Smith, 2007</a>)</span>.</p>
 <p>Amongst all invasive macroalgae, <em>Gracilaria vermiculophylla</em> <span class="citation" data-cites="WoRMS303450">(<a href="../References/references.html#ref-WoRMS303450" role="doc-biblioref">Papenfuss, 1967</a>)</span> (original name <em>Gracilariopsis vermiculophylla</em> <span class="citation" data-cites="ohmi1956contributions">(<a href="../References/references.html#ref-ohmi1956contributions" role="doc-biblioref">OHMI, 1956</a>)</span>; also known as <em>Agarophyton vermiculophyllum</em> <span class="citation" data-cites="gurgel2018systematics">(<a href="../References/references.html#ref-gurgel2018systematics" role="doc-biblioref">Gurgel et al., 2018</a>)</span>), has spread extensively from its native distribution range in Japan and Korea <span class="citation" data-cites="terada2002review">(<a href="../References/references.html#ref-terada2002review" role="doc-biblioref">Terada and Yamamoto, 2002</a>)</span>. This spread has occurred across temperate estuaries in North America, Europe, and other regions, facilitated by aquaculture and maritime activities <span class="citation" data-cites="rueness2005life weinberger2008invasive krueger2017genetic">(<a href="../References/references.html#ref-krueger2017genetic" role="doc-biblioref">Krueger-Hadfield et al., 2017</a>; <a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>; <a href="../References/references.html#ref-weinberger2008invasive" role="doc-biblioref">Weinberger et al., 2008</a>)</span>.</p>
 <p>In regions like the Baltic Sea and the eastern United States, it can affect native fucoid macroalgae and seagrasses negatively <span class="citation" data-cites="van2003reintroduction thomsen2013effects firth2024invasive">(<a href="../References/references.html#ref-firth2024invasive" role="doc-biblioref">Firth et al., 2024</a>; <a href="../References/references.html#ref-thomsen2013effects" role="doc-biblioref">Thomsen et al., 2013</a>; <a href="../References/references.html#ref-van2003reintroduction" role="doc-biblioref">Van Katwijk, 2003</a>)</span>. It can also alter sediment composition <span class="citation" data-cites="nyberg2009flora">(<a href="../References/references.html#ref-nyberg2009flora" role="doc-biblioref">Nyberg et al., 2009</a>)</span>, and disrupts trophic interactions <span class="citation" data-cites="van2018global">(<a href="../References/references.html#ref-van2018global" role="doc-biblioref">Ginneken et al., 2018</a>)</span>. However <em>G. vermiculophylla</em> create new habitats for invertebrates and juvenile fish in a soft-bottom environment <span class="citation" data-cites="davoult2017multiple">(<a href="../References/references.html#ref-davoult2017multiple" role="doc-biblioref">Davoult et al., 2017</a>)</span> and, more generally, can positively enhance ecosystem processes <span class="citation" data-cites="ramus2017invasive">(<a href="../References/references.html#ref-ramus2017invasive" role="doc-biblioref">Ramus et al., 2017</a>)</span>. The negative and positive effects of this species <span class="citation" data-cites="thomsen2009distribution">(<a href="../References/references.html#ref-thomsen2009distribution" role="doc-biblioref">Thomsen et al., 2009</a>)</span>, which now dominate some coastal ecosystems, underscore the importance of monitoring and managing its population, particularly as climate change and anthropogenic pressures continue to facilitate biological invasions. <em>G. vermiculophylla</em> success as an invader stems from its tolerance to a wide range of environmental conditions, including temperature <span class="citation" data-cites="sotka2018combining">(<a href="../References/references.html#ref-sotka2018combining" role="doc-biblioref">Sotka et al., 2018</a>)</span>, nutrient variability <span class="citation" data-cites="abreu2011nitrogen">(<a href="../References/references.html#ref-abreu2011nitrogen" role="doc-biblioref">Abreu et al., 2011</a>)</span>, and salinity <span class="citation" data-cites="weinberger2008invasive">(<a href="../References/references.html#ref-weinberger2008invasive" role="doc-biblioref">Weinberger et al., 2008</a>)</span>. Its growth capacity at low salinities <span class="citation" data-cites="rueness2005life nyberg2007introduced">(<a href="../References/references.html#ref-nyberg2007introduced" role="doc-biblioref">Nyberg, 2007</a>; <a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span> explains its presence in the brackish waters of the Baltic Sea <span class="citation" data-cites="weinberger2008invasive">(<a href="../References/references.html#ref-weinberger2008invasive" role="doc-biblioref">Weinberger et al., 2008</a>)</span> but also in the mesohaline sheltered part of estuaries of the Atlantic coast of Europe <span class="citation" data-cites="surget2017seasonal">(<a href="../References/references.html#ref-surget2017seasonal" role="doc-biblioref">Surget et al., 2017</a>)</span>. It is also present in confined areas of lagoons characterized by low hydrodynamism <span class="citation" data-cites="abreu2011nitrogen sfriso2012spreading">(<a href="../References/references.html#ref-abreu2011nitrogen" role="doc-biblioref">Abreu et al., 2011</a>; <a href="../References/references.html#ref-sfriso2012spreading" role="doc-biblioref">Sfriso et al., 2012</a>)</span>. In Europe, it was first observed in 1996 in the Belon estuary (France) and later in many other estuaries on the Brittany coast of France <span class="citation" data-cites="rueness2005life">(<a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span>. It can be found on hard substrates such as invertebrate’s tubes and shells providing a substratum <span class="citation" data-cites="thomsen2007gracilaria">(<a href="../References/references.html#ref-thomsen2007gracilaria" role="doc-biblioref">Thomsen et al., 2007</a>)</span> or attached to pebbles and rocks <span class="citation" data-cites="terada2002review">(<a href="../References/references.html#ref-terada2002review" role="doc-biblioref">Terada and Yamamoto, 2002</a>)</span> but the largest populations are colonizing soft-bottom sediment and particularly estuarine intertidal mudflats <span class="citation" data-cites="surget2017seasonal">(<a href="../References/references.html#ref-surget2017seasonal" role="doc-biblioref">Surget et al., 2017</a>)</span>. In this habitat, extensive dark red mats are observed at low tide, covering vast areas that have largely been unquantified in most studies. Therefore, <em>G. vermiculophylla</em> can establish populations in soft-bottom sediment habitats, previously devoid of macroalgae <span class="citation" data-cites="ramus2017invasive">(<a href="../References/references.html#ref-ramus2017invasive" role="doc-biblioref">Ramus et al., 2017</a>)</span>. These mats are usually monospecific, with the alga thalli partially buried in the mud <span class="citation" data-cites="rueness2005life surget2017processus">(<a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>; <a href="../References/references.html#ref-surget2017processus" role="doc-biblioref">Surget, 2017</a>)</span>. Intertidal mats can, however, be temporarily overgrown by ephemeral green macroalgae <span class="citation" data-cites="weinberger2008invasive">(<a href="../References/references.html#ref-weinberger2008invasive" role="doc-biblioref">Weinberger et al., 2008</a>)</span>. In the European estuaries where <em>G. vermiculophylla</em> was first documented, large monospecific mats were reported to be confined to the upper intertidal zones <span class="citation" data-cites="rueness2005life">(<a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span>; however, their spatial distribution relative to the mudflat topography and elevation had not been quantitatively assessed. In coastal lagoons of the East Atlantic coast, <span class="citation" data-cites="besterman2021predicting">Besterman et al. (<a href="../References/references.html#ref-besterman2021predicting" role="doc-biblioref">2021</a>)</span> have shown that the mudflat topography was a significant predictor of its abundance. In fact, <em>G. vermiculophylla</em> has never been mapped using remote sensing techniques, and existing descriptions of its distribution lack spatially explicit mapping <span class="citation" data-cites="thomsen2007gracilaria weinberger2008invasive abreu2011nitrogen sfriso2012spreading">(<a href="../References/references.html#ref-abreu2011nitrogen" role="doc-biblioref">Abreu et al., 2011</a>; <a href="../References/references.html#ref-sfriso2012spreading" role="doc-biblioref">Sfriso et al., 2012</a>; <a href="../References/references.html#ref-thomsen2007gracilaria" role="doc-biblioref">Thomsen et al., 2007</a>; <a href="../References/references.html#ref-weinberger2008invasive" role="doc-biblioref">Weinberger et al., 2008</a>)</span>.</p>
-<p>RS has revolutionized our ability to monitor and manage coastal ecosystems, offering efficient and scalable methods for detecting environmental changes in intertidal vegetation across a wide range of spatio-temporal scales <span class="citation" data-cites="davies2024intertidal calleja2017long davies2024sentinel zoffoli2021decadal valle2015mapping">(<a href="../References/references.html#ref-calleja2017long" role="doc-biblioref">Calleja et al., 2017</a>; <a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">Davies et al., 2024a</a>, <a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024b</a>; <a href="../References/references.html#ref-valle2015mapping" role="doc-biblioref">Valle et al., 2015</a>; <a href="../References/references.html#ref-zoffoli2021decadal" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>. Among remote-sensing technologies, drone-based imagery has recently emerged as a particularly promising tool for studying the spatial distribution of intertidal primary producers such as benthic microalgae <span class="citation" data-cites="roman2021using roman2024mapping">(<a href="../References/references.html#ref-roman2024mapping" role="doc-biblioref">Román et al., 2024</a>, <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">2021</a>)</span>, seagrass <span class="citation" data-cites="chand2021low duffy2018spatial roman2021using">(<a href="../References/references.html#ref-chand2021low" role="doc-biblioref">Chand and Bollard, 2021</a>; <a href="../References/references.html#ref-duffy2018spatial" role="doc-biblioref">Duffy et al., 2018</a>; <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">Román et al., 2021</a>)</span> and macroalgae <span class="citation" data-cites="rs14133124 peidro2024quantifying">(<a href="../References/references.html#ref-rs14133124" role="doc-biblioref">Diruit et al., 2022</a>; <a href="../References/references.html#ref-peidro2024quantifying" role="doc-biblioref">Peidro-Devesa et al., 2024</a>)</span>. While it lacks the temporal consistency of satellite missions, drone remote sensing makes it possible to acquire at extremely high spatial resolution (i.e.&nbsp;cm-scale), rapidly target specific areas of interest, and provide observations in overcast conditions. In particular, the potential of drone remote sensing for monitoring the surface area occupied by IAS has been demonstrated <span class="citation" data-cites="roca2022monitoring">(<a href="../References/references.html#ref-roca2022monitoring" role="doc-biblioref">Roca et al., 2022</a>)</span>. Drone-based photogrammetry also makes it possible to characterize the distribution of intertidal vegetation together with mudflat geomorphology, thus improving our understanding of primary producers patterning <span class="citation" data-cites="brunier2022evolution douglas2024linking">(<a href="../References/references.html#ref-brunier2022evolution" role="doc-biblioref">Brunier et al., 2022</a>; <a href="../References/references.html#ref-douglas2024linking" role="doc-biblioref">Douglas et al., 2024</a>)</span>.</p>
-<p>This study applied a drone-based remote sensing approach to map <em>G. vermiculophylla</em> spatial distribution at a very-high spatial resolution (centimeter) in intertidal estuaries of European Atlantic coast. We adapted a neural network classification model, Drone Intertidal Substrate Classification Of Vegetation (DISCOV, <span class="citation" data-cites="rs16234383">(<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>)</span>) by re-training the model with new pixels of <em>G. vermiculophylla</em>. An <em>in situ</em> data validation dataset was obtained from Franch and Spanish sites to estimate the classification accuracy. LIDAR data were concurrently acquired to map the intertidal elevation accurately. A Generalized Linear Mixed Effect Model (GLMM) was used to examine the relationship between the seaweed spatial distribution and spatial metrics quantifying the mudflat topography. We expected the presence of <em>G. vermiculophylla</em> in mudflats to be associated with a specific height range as well as being more closely related to flat areas of the intertidal zone. In the Belon estuary (South Brittany, France) where it was first observed in Europe, a time series, starting from 1952, of RGB images was analysed to describe the temporal changes of its distribution over the last seventy years.</p>
+<p>RS has revolutionized our ability to monitor and manage coastal ecosystems, offering efficient and scalable methods for detecting environmental changes in intertidal vegetation across a wide range of spatio-temporal scales <span class="citation" data-cites="davies2024intertidal calleja2017long davies2024sentinel zoffoli2021decadal valle2015mapping">(<a href="../References/references.html#ref-calleja2017long" role="doc-biblioref">Calleja et al., 2017</a>; <a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">Davies et al., 2024a</a>, <a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024b</a>; <a href="../References/references.html#ref-valle2015mapping" role="doc-biblioref">Valle et al., 2015</a>; <a href="../References/references.html#ref-zoffoli2021decadal" role="doc-biblioref">Zoffoli et al., 2021</a>)</span>. Among remote-sensing technologies, drone-based imagery has recently emerged as a particularly promising tool for studying the spatial distribution of intertidal primary producers such as benthic microalgae <span class="citation" data-cites="roman2021using roman2024mapping">(<a href="../References/references.html#ref-roman2024mapping" role="doc-biblioref">Román et al., 2024</a>, <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">2021</a>)</span>, seagrass <span class="citation" data-cites="chand2021low duffy2018spatial roman2021using">(<a href="../References/references.html#ref-chand2021low" role="doc-biblioref">Chand and Bollard, 2021</a>; <a href="../References/references.html#ref-duffy2018spatial" role="doc-biblioref">Duffy et al., 2018</a>; <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">Román et al., 2021</a>)</span> and macroalgae <span class="citation" data-cites="rs14133124 peidro2024quantifying">(<a href="../References/references.html#ref-rs14133124" role="doc-biblioref">Diruit et al., 2022</a>; <a href="../References/references.html#ref-peidro2024quantifying" role="doc-biblioref">Peidro-Devesa et al., 2024</a>)</span>. While it lacks the temporal consistency of satellite missions, drone remote sensing makes it possible to acquire at ultra-high spatial resolution (i.e.&nbsp;cm-scale), rapidly target specific areas of interest, and provide observations in overcast conditions. In particular, the potential of drone remote sensing for monitoring the surface area occupied by IAS has been demonstrated <span class="citation" data-cites="roca2022monitoring">(<a href="../References/references.html#ref-roca2022monitoring" role="doc-biblioref">Roca et al., 2022</a>)</span>. Drone-based photogrammetry also makes it possible to characterize the distribution of intertidal vegetation together with mudflat geomorphology, thus improving our understanding of primary producers patterning <span class="citation" data-cites="brunier2022evolution douglas2024linking">(<a href="../References/references.html#ref-brunier2022evolution" role="doc-biblioref">Brunier et al., 2022</a>; <a href="../References/references.html#ref-douglas2024linking" role="doc-biblioref">Douglas et al., 2024</a>)</span>.</p>
+<p>This study applied a drone-based remote sensing approach to map <em>G. vermiculophylla</em> spatial distribution at a ultra-high spatial resolution (centimeter) in intertidal estuaries of European Atlantic coast. We adapted a neural network classification model, Drone Intertidal Substrate Classification Of Vegetation <span class="citation" data-cites="rs16234383">(DISCOV, <a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>)</span> by re-training the model with new pixels of <em>G. vermiculophylla</em>. An <em>in situ</em> data validation dataset was obtained from French and Spanish sites to estimate the classification accuracy. LiDAR data were concurrently acquired to map the intertidal elevation accurately. A Generalized Linear Mixed Effect Model (GLMM) was used to examine the relationship between the seaweed spatial distribution and spatial metrics quantifying the mudflat topography. We expected the presence of <em>G. vermiculophylla</em> in mudflats to be associated with a specific height range as well as being more closely related to flat areas of the intertidal zone. In the Belon estuary (South Brittany, France) where it was first observed in Europe, a time series, starting from 1952, of RGB images was analysed to describe the temporal changes of its distribution over the last seventy years.</p>
 </section>
-<section id="materials-methods" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="materials-methods"><span class="header-section-number">4.2</span> Materials &amp; Methods</h2>
+<section id="material-methods" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="material-methods"><span class="header-section-number">4.2</span> Material &amp; Methods</h2>
 <section id="study-sites" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="study-sites"><span class="header-section-number">4.2.1</span> Study sites</h3>
 <p>Field campaigns were conducted at three study sites across France and Spain. At each site, two locations were investigated (<a href="#fig-location_sites_g" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>). The Aven &amp; Belon estuaries in South Brittany, France (<a href="#fig-location_sites_g" class="quarto-xref">Figure&nbsp;<span>4.1</span></a> A &amp; C) are dynamic ria-type systems hosting diverse habitats, including tidal flats and subtidal zones with coarse, marine-origin sediments <span class="citation" data-cites="Michel2021 Castaing1995">(<a href="../References/references.html#ref-Castaing1995" role="doc-biblioref">Castaing and Guilcher, 1995</a>; <a href="../References/references.html#ref-Michel2021" role="doc-biblioref">Michel et al., 2021</a>)</span>. These habitats support key benthic species such as <em>Scrobicularia plana</em>, <em>Cerastoderma edule</em>, and <em>Tellina tenuis</em>, which play essential roles in sediment bioturbation and nutrient cycling <span class="citation" data-cites="Tankoua2011 Blanchet2014">(<a href="../References/references.html#ref-Blanchet2014" role="doc-biblioref">Blanchet et al., 2014</a>; <a href="../References/references.html#ref-Tankoua2011" role="doc-biblioref">Tankoua et al., 2011</a>)</span>. These estuaries serve as a nursery for juvenile fish and a feeding ground for migratory birds, with their ecological productivity driven by a mix of euryhaline and marine species adapted to salinity gradients <span class="citation" data-cites="Blanchet2014">(<a href="../References/references.html#ref-Blanchet2014" role="doc-biblioref">Blanchet et al., 2014</a>)</span>. Oyster farming, particularly <em>Crassostrea gigas</em>, is a dominant activity, altering sediment dynamics and local biodiversity <span class="citation" data-cites="Michel2021">(<a href="../References/references.html#ref-Michel2021" role="doc-biblioref">Michel et al., 2021</a>)</span>. Despite its ecological richness, the estuary faces pressures from nutrient loading and physical alteration <span class="citation" data-cites="Tankoua2011">(<a href="../References/references.html#ref-Tankoua2011" role="doc-biblioref">Tankoua et al., 2011</a>)</span>.</p>
@@ -353,18 +350,18 @@ R''(\lambda_i) \approx \frac{R(\lambda_{i+1}) - 2R(\lambda_i) + R(\lambda_{i-1})
 <p>A total of four drone flights were conducted across the three study sites. All flights were performed at an altitude of 120 m and a speed of 10 m·s⁻¹. Two flights were carried out in the Saja Estuary on June 25, 2024, covering areas of 20.4 hectares (Marisma de Cortiguera) and 8.4 hectares (Marisma de Cudón), respectively (<a href="#fig-location_sites_g" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>). The other two flights took place in the Belon and Aven estuaries on April 11, 2024, covering areas of 21.3 hectares and 26.7 hectares, respectively.</p>
 <section id="sec-photo" class="level5" data-number="4.2.2.2.1">
 <h5 data-number="4.2.2.2.1" class="anchored" data-anchor-id="sec-photo"><span class="header-section-number">4.2.2.2.1</span> Multispectral data</h5>
-<p>At each location, reflectance images with of 1.2 million pixels were captured using a DJI Matrice 300 quadcopter drone equipped with a Micasense RedEdge Dual MX multispectral camera. The camera recorded data across ten spectral bands, spanning from blue to (NIR) wavelengths (444, 475, 531, 560, 650, 668, 705, 717, 740, and 840 nm). To ensure consistent lighting conditions, the drone’s flight trajectory was aligned to maintain a solar azimuth angle of 90 degrees. Image acquisition was carried out with an overlap of 70% between side-by-side images and 80% between successive images along the flight path. A downwelling light sensor (DLS2) was used to measure real-time irradiance, enabling the correction of reflectance values for variations in light intensity caused by changing cloud cover during the flight. The raw image data were subsequently calibrated to reflectance using a calibration panel with ~50% reflectivity, provided by the camera’s manufacturer. Images were processed using structure-from-motion photogrammetry software <span class="citation" data-cites="agisoft">(<a href="../References/references.html#ref-agisoft" role="doc-biblioref">Agisoft, 2019</a>)</span> to generate multispectral ortho-mosaics for each flight. The ortho-mosaicking workflow was consistent across all flights. Initially, key tie points were identified within each image and across overlapping images to create a sparse point cloud. This point cloud was refined by removing noisy points using a reprojection accuracy metric. Subsequently, a dense point cloud was generated using a structure-from-motion algorithm. A digital surface model (DSM) was then created through surface interpolation of the dense point cloud, which served as the basis for reconstructing the multispectral ortho-image <span class="citation" data-cites="nebel2020review">(<a href="../References/references.html#ref-nebel2020review" role="doc-biblioref">Nebel et al., 2020</a>)</span>. The resolution of the multispectral ortho-mosaic obtained was 8 cm per pixel.</p>
+<p>At each location, reflectance images with of 1.2 million pixels were captured using a DJI Matrice 300 quadcopter drone equipped with a Micasense RedEdge Dual MX multispectral camera. The camera recorded data across ten spectral bands, spanning from blue to (NIR) wavelengths (444, 475, 531, 560, 650, 668, 705, 717, 740, and 840 nm). To ensure consistent lighting conditions, the drone’s flight trajectory was aligned to maintain a solar azimuth angle of 90 degrees. Image acquisition was carried out with an overlap of 70% between side-by-side images and 80% between successive images along the flight path. A downwelling light sensor (DLS2) was used to measure real-time irradiance, enabling the correction of reflectance values for variations in light intensity caused by changing cloud cover during the flight. The raw image data were subsequently calibrated to reflectance using a calibration panel with ~50% reflectivity, provided by the camera’s manufacturer. Images were processed using structure-from-motion photogrammetry software <span class="citation" data-cites="agisoft">(<a href="../References/references.html#ref-agisoft" role="doc-biblioref">Agisoft, 2019</a>)</span> to generate multispectral ortho-mosaics for each flight. The ortho-mosaicking workflow was consistent across all flights. Initially, key tie points were identified within each image and across overlapping images to create a sparse point cloud. This point cloud was refined by removing noisy points using a reprojection accuracy metric. Ground Control Points (GCPs) were acquired in the field using georeferenced targets and were then manually identified in the corresponding images to improve the georeferencing accuracy of the model. Subsequently, a dense point cloud was generated using a structure-from-motion algorithm. A digital surface model (DSM) was then created through surface interpolation of the dense point cloud, which served as the basis for reconstructing the multispectral ortho-image <span class="citation" data-cites="nebel2020review">(<a href="../References/references.html#ref-nebel2020review" role="doc-biblioref">Nebel et al., 2020</a>)</span>. The resolution of the multispectral ortho-mosaic obtained was 8 cm per pixel.</p>
 </section>
 <section id="lidar-data" class="level5" data-number="4.2.2.2.2">
 <h5 data-number="4.2.2.2.2" class="anchored" data-anchor-id="lidar-data"><span class="header-section-number">4.2.2.2.2</span> LiDAR data</h5>
-<p>Using the Matrice 300 Series Dual Gimbal Connector, a DJI Zenmuse L1 LiDAR and RGB sensor was mounted on the drone alongside the multispectral camera. This setup enabled the simultaneous capture of LiDAR point clouds, high-resolution RGB images, and multispectral images collected by the MicaSense RedEdge Dual MX during the same flight. The same processing workflow as <a href="#sec-photo" class="quarto-xref"><span>Section 4.2.2.2.1</span></a> was applied to process LiDAR RGB images, resulting in ortho-mosaic with a resolution of 2.5 cm per pixel. Since the mapping focused solely on surfaces without dense vegetation, the LiDAR measured only a single return. Operating in repetitive scanning mode with a sampling rate of 240 kHz, the system achieved a point density of 350 points per square meter. The LiDAR point cloud was extracted and converted into LAS format using DJI Terra software. The LAS point cloud was then imported into Agisoft Metashape <span class="citation" data-cites="agisoft">(<a href="../References/references.html#ref-agisoft" role="doc-biblioref">Agisoft, 2019</a>)</span> to generate a DSM with a resolution of 2.5 cm. From the DSM, the inclination angle of each pixel based on a grid of 8 surrounding pixels was computed using the terrain function of the ‘terra’ package in R <span class="citation" data-cites="terrapck">(<a href="../References/references.html#ref-terrapck" role="doc-biblioref">Hijmans, 2024</a>)</span>. The angle of the mudflat was categorized into three classes: Flat (angle &lt; 10°), Angled (10° ≤ angle ≤ 40°), and Steep (angle &gt; 40°).</p>
+<p>Using the Matrice 300 Series Dual Gimbal Connector, a DJI Zenmuse L1 LiDAR and RGB sensor was mounted on the drone alongside the multispectral camera. The Zenmuse L1 integrates a Livox LiDAR module with a 70° field of view and a scanning rate of up to 240,000 points per second. This setup enabled the simultaneous capture of LiDAR point clouds, high-resolution RGB images, and multispectral images collected by the MicaSense RedEdge Dual MX during the same flight. The same processing workflow as <a href="#sec-photo" class="quarto-xref"><span>Section 4.2.2.2.1</span></a> was applied to process LiDAR RGB images, resulting in ortho-mosaic with a resolution of 2.5 cm per pixel. Since the mapping focused solely on surfaces without dense vegetation, the LiDAR measured only a single return. Operating in repetitive scanning mode with a sampling rate of 240 kHz, the system achieved a point density of 350 points per square meter. The LiDAR point cloud was extracted and converted into LAS format using DJI Terra software. The LAS point cloud was then imported into Agisoft Metashape <span class="citation" data-cites="agisoft">(<a href="../References/references.html#ref-agisoft" role="doc-biblioref">Agisoft, 2019</a>)</span> to generate a DSM with a resolution of 2.5 cm. From the DSM, the slope of each pixel based on a grid of 8 surrounding pixels was computed using the terrain function of the ‘terra’ package in R <span class="citation" data-cites="terrapck">(<a href="../References/references.html#ref-terrapck" role="doc-biblioref">Hijmans, 2024</a>)</span>. The angle of the mudflat was categorized into three classes: Flat (angle &lt; 10°), Angled (10° ≤ angle ≤ 40°), and Steep (angle &gt; 40°).</p>
 </section>
 </section>
 </section>
 <section id="scene-classification" class="level3" data-number="4.2.3">
 <h3 data-number="4.2.3" class="anchored" data-anchor-id="scene-classification"><span class="header-section-number">4.2.3</span> Scene classification</h3>
-<p>In a previous study we developed a neural network classification model (DISCOV; <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span>), previously applied with success to Micasense reflectance data for mapping intertidal vegetation along the Portuguese and French Atlantic coasts, has been used in this study. The training dataset of DISCOV v1.0 was updated (<a href="#fig-Workflow_g" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>). As shown by <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span> the DISCOV v1.0 model was trained using only 5771 Rhodophyceae pixel (3% of the training dataset). To fill this, gap the original training dataset of DISCOV v1.0 was updated using new training pixel coming from the 5 drone flights (<a href="#sec-DroneFlights" class="quarto-xref"><span>Section 4.2.2</span></a>). A total of 472.000 pixels were added to the DISCOV training dataset from version 1 (<a href="#sec-AnnexeA" class="quarto-xref"><span>Section 4.6.1</span></a>).</p>
-<p>To validate the DISCOV model, a user-friendly Shiny app was developed. This app enabled independent users to photo-interpret snapshots of the ortho-mosaic from each drone flight <span class="citation" data-cites="shinypck Simon2024ShinyApp">(<a href="../References/references.html#ref-shinypck" role="doc-biblioref">Chang et al., 2024</a>; <a href="../References/references.html#ref-Simon2024ShinyApp" role="doc-biblioref">Oiry, 2024</a>)</span>. Users could click on various parts of the snapshots to indicate the type of vegetation they believed was present. Using this method, three independent users contributed to creating a validation dataset of 6755 pixels across 79 snapshots distributed among the four drone flights (<a href="#sec-AnnexeB" class="quarto-xref"><span>Section 4.6.2</span></a>). The validation dataset was then simplified into two classes: The presence or absence of Red Algae (<a href="#fig-Workflow_g" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>).</p>
+<p><span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span> developed a neural network classification model (DISCOV), and applied it with success to Micasense reflectance data to map intertidal vegetation along the Portuguese and French Atlantic coasts. This same model has been used in this study. The training dataset of DISCOV v1.0 was updated (<a href="#fig-Workflow_g" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>). As shown by <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span> the DISCOV v1.0 model was trained using only 5 771 Rhodophyceae pixel (3% of the training dataset). To fill this gap, the original training dataset of DISCOV v1.0 was updated using new training pixels coming from the 5 drone flights (<a href="#sec-DroneFlights" class="quarto-xref"><span>Section 4.2.2</span></a>). A total of 472 000 pixels were added to the DISCOV training dataset from version 1 (<a href="#sec-AnnexeA" class="quarto-xref"><span>Section 4.6.1</span></a>).</p>
+<p>To validate the updated DISCOV model, a user-friendly Shiny app was developed. This app enabled independent users to photo-interpret snapshots of the ortho-mosaic from each drone flight <span class="citation" data-cites="shinypck Simon2024ShinyApp">(<a href="../References/references.html#ref-shinypck" role="doc-biblioref">Chang et al., 2024</a>; <a href="../References/references.html#ref-Simon2024ShinyApp" role="doc-biblioref">Oiry, 2024</a>)</span>. Users could click on various parts of the snapshots to indicate the type of vegetation they believed were present. Using this method, three independent users contributed to create a validation dataset of 6 755 pixels across 79 snapshots distributed among the four drone flights (<a href="#sec-AnnexeB" class="quarto-xref"><span>Section 4.6.2</span></a>). The validation dataset was then simplified into two classes: presence or absence of Red Algae (<a href="#fig-Workflow_g" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-Workflow_g" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -404,7 +401,7 @@ Figure&nbsp;4.3: Schematic representation of the workflow. Parallelograms repres
 <img src="Figs/Historical_maps.png" class="img-fluid figure-img" style="width:95.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-HistoricalMap_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4: RGB images of the Belon Estuary (Pont de Guilly) showing the colonization of the mudflat by Gracilaria vermiculophylla between 1952 and 2024.
+Figure&nbsp;4.4: Orthoimages of the Belon Estuary (Pont de Guilly) showing the colonization of the mudflat by Gracilaria vermiculophylla between 1952 and 2024.
 </figcaption>
 </figure>
 </div>
@@ -445,9 +442,9 @@ Figure&nbsp;4.6: Hyperspectral signature of <em>Gracilaria vermiculophylla</em> 
 </section>
 <section id="spatial-distribution" class="level3" data-number="4.3.3">
 <h3 data-number="4.3.3" class="anchored" data-anchor-id="spatial-distribution"><span class="header-section-number">4.3.3</span> Spatial distribution</h3>
-<p>The classification map obtained from the neural network algorithm is shown for the Belon estuary (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> A). Among the main classes of the intertidal vegetation, the class of Rhodophyceae (red macroalgae, in red) was the dominant algal cover, forming extensive, continous patches colonizing almost the entire mudflat. In contrast, Bacillariophyceae (diatoms biofilm, in orange) and Chlorophyceae (Green macroalgae, in green) exhibited more localized distributions, typically restricted to smaller, fragmented patches. A few Phaeophyceae (brown macroalgae, in brown) were confined to limited patches in the upper intertidal attached to rocks. In the Saja esturay, Rhodophyceae cover was more scarsed, due to a strong Chlorophyceae presence on this site (Annexe D: <a href="#sec-AnnexeD" class="quarto-xref"><span>Section 4.6.4</span></a>).</p>
+<p>The classification map obtained from the neural network algorithm is shown for the Belon estuary (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> A). Among the main classes of the intertidal vegetation, the class of Rhodophyceae (red macroalgae, in red) was the dominant algal cover, forming extensive, continuous patches colonizing almost the entire mudflat. In contrast, Bacillariophyceae (diatoms biofilm, in orange) and Chlorophyceae (Green macroalgae, in green) exhibited more localized distributions, typically restricted to smaller, fragmented patches. A few Phaeophyceae (brown macroalgae, in brown) were confined to limited patches in the upper intertidal attached to rocks. In the Saja Estuary, Rhodophyceae cover was more scarce, due to a strong presence of Chlorophyceae at this site (Annex D: <a href="#sec-AnnexeD" class="quarto-xref"><span>Section 4.6.4</span></a>).</p>
 <p>Across all study sites the presence/absence of <em>G. vermiculophylla</em> was classified with a global accuracy of 91.1 %, a sensitivity of 96.5 % and a specificity of 71.5 %.</p>
-<p>The elevation map showed that the main mats of G. vermiculophylla were between 1 and 2 m above mean sea level (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> C). Algal presence was markedly elevation-driven, with lower intertidal zones closer to the tidal channel consistently exibiting reduced macroalgal cover. Most of the intertidal flats exibited slope below 10° (Violet, (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> D). Angled surfaces (10° &lt; Slope &lt; 40°) often found next to tidal channels were exibiting almost no vegetation cover.</p>
+<p>The elevation map showed that the main mats of <em>G. vermiculophylla</em> were between 1 and 2 m above mean sea level (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> C). Algal presence was markedly elevation-driven, with lower intertidal zones closer to the tidal channel consistently exhibiting reduced macroalgal cover. Most of the intertidal flats exhibited slope below 10° (Violet, (<a href="#fig-Belon" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> D). Angled surfaces (10° &lt; Slope &lt; 40°) often found next to tidal channels were exhibiting almost no vegetation cover.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-Belon" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -456,7 +453,7 @@ Figure&nbsp;4.6: Hyperspectral signature of <em>Gracilaria vermiculophylla</em> 
 <img src="Figs/Belon_maps.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Belon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.7: Classification of the main classes of intertidal vegetation with a neural network algorithm (A), RGB composition (B), Elevation (C) and mudflat topography (D) of the Belon estuary site in Brittany, France. The total extent of this flight was 21 hectares with a resolution of 8 mm per pixel. Elevation corresponds to the height above mean sea level.
+Figure&nbsp;4.7: Classification of the main classes of intertidal vegetation with a neural network algorithm (A), RGB composition (B), Elevation (C) and mudflat topography (D) of the Belon estuary site in Brittany, France. The total extent of this flight was 21 hectares with a resolution of 80 mm per pixel. Elevation corresponds to the height above mean sea level.
 </figcaption>
 </figure>
 </div>
@@ -484,8 +481,8 @@ Figure&nbsp;4.8: Relation between the elevation (in meters) and the percentage c
 <h2 data-number="4.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">4.4</span> Discussion</h2>
 <section id="drone-mapping-g.-vermiculophylla-with-machine-learning" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="drone-mapping-g.-vermiculophylla-with-machine-learning"><span class="header-section-number">4.4.1</span> Drone mapping <em>G. vermiculophylla</em> with machine learning</h3>
-<p>In this study, we produced the first spatial distribution maps of the invasive red macroalgae <em>Gracilaria vermiculophylla</em> using a multispectral drone survey conducted at low tide in Atlantic estuaries representing varied environmental conditions. The species formed monospecific mats in southern Brittany, while in the Cantabrian region of Spain, it was mixed with other intertidal vegetation. Distinguishing among these vegetation types was a key prerequisite for the analysis. To achieve this, we developed a new version of the deep learning-based classification model DISCOV initially developed to discriminate seagrass from green macrophytes (DISCOV ; <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span>). DISCOV v2.0 was based on an improved training dataset, which included a larger number of pixels on red macroalgae covering approximately 26 % of one million pixels and allowed the model to achieve an accuracy of 91.1 % in predicting <em>G. vermiculophylla</em> presence.</p>
-<p>Rhodophytes possess unique phycobilin pigments, enabling their spectral distinction from other macroalgal groups <span class="citation" data-cites="rs14020346 olmedo2020far rs11060704">(<a href="../References/references.html#ref-rs14020346" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-rs11060704" role="doc-biblioref">Mcilwaine et al., 2019</a>; <a href="../References/references.html#ref-olmedo2020far" role="doc-biblioref">Olmedo-Masat et al., 2020</a>)</span>. Even with the ten-band multispectral sensor used in our study, it remained feasible to discriminate the major classes of intertidal macrophytes <span class="citation" data-cites="roman2021using oiry2024discriminating Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023</a>; <a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>; <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">Román et al., 2021</a>)</span>. Note that DISCOV V2.0 identifies <em>G. vermiculophylla</em> at the class level (Rhodophyceae) rather than at the species level. Although it is unlikely that Gracilaria can be precisely distinguished at the species level using standard multispectral, hyperspectral data may allow mapping on a finer taxonomic resolution <span class="citation" data-cites="rs14020346 olmedo2020far">(<a href="../References/references.html#ref-rs14020346" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-olmedo2020far" role="doc-biblioref">Olmedo-Masat et al., 2020</a>)</span>. Ecological factors also contribute to distinguishing <em>G. vermiculophylla</em>. Macroalgae require hard substrates for the spores to settle, but some Gracilariales species can establish on soft-bottom sediments. <em>G. vermiculophylla</em> is found on mudflats, anchoring its thalli in the top 10 cm of mud <span class="citation" data-cites="surget2017processus">(<a href="../References/references.html#ref-surget2017processus" role="doc-biblioref">Surget, 2017</a>)</span>, and inhabiting the upper intertidal zone of estuaries in Western Europe—an unusual trait for a Rhodophyte <span class="citation" data-cites="abreu2011nitrogen davoult2017multiple">(<a href="../References/references.html#ref-abreu2011nitrogen" role="doc-biblioref">Abreu et al., 2011</a>; <a href="../References/references.html#ref-davoult2017multiple" role="doc-biblioref">Davoult et al., 2017</a>)</span>. By effectively detecting <em>G. vermiculophylla</em> in these soft-sediment environments, the methodology developed in this study provides a framework for mapping this species in coastal areas. A multispectral sensor is necessary to obtain spatially explicit maps when this species is mixed with other classes of intertidal vegetation. However, when monospecific mats are the primary vegetation colonising tidal flats, RGB drone imagery can be exploited.</p>
+<p>In this study, we produced the first spatial distribution maps of the invasive red macroalgae <em>Gracilaria vermiculophylla</em> using a multispectral drone survey conducted at low tide in Atlantic estuaries representing varied environmental conditions. The species formed monospecific mats in southern Brittany, while in the Cantabrian region of Spain, it was mixed with other intertidal vegetation. Distinguishing among these vegetation types was a key prerequisite for the analysis. To achieve this, we developed a new version of the machine learning-based classification model DISCOV initially developed to discriminate seagrass from green macrophytes [DISCOV ; <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span>]. DISCOV v2.0 was based on an updated training dataset, which included a larger number of pixels on red macroalgae covering approximately 26 % of one million pixels and allowed the model to achieve an accuracy of 91.1 % in predicting <em>G. vermiculophylla</em> presence.</p>
+<p>Rhodophytes possess unique phycobilin pigments, enabling their spectral distinction from other macroalgal groups <span class="citation" data-cites="rs14020346 olmedo2020far rs11060704">(<a href="../References/references.html#ref-rs14020346" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-rs11060704" role="doc-biblioref">Mcilwaine et al., 2019</a>; <a href="../References/references.html#ref-olmedo2020far" role="doc-biblioref">Olmedo-Masat et al., 2020</a>)</span>. Even with the ten-band multispectral sensor used in our study, it remained feasible to discriminate the major classes of intertidal macrophytes <span class="citation" data-cites="roman2021using oiry2024discriminating Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023</a>; <a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>; <a href="../References/references.html#ref-roman2021using" role="doc-biblioref">Román et al., 2021</a>)</span>. Note that DISCOV V2.0 identifies <em>G. vermiculophylla</em> at the class level (Rhodophyceae) rather than at the species level. Although it is unlikely that Gracilaria can be precisely distinguished at the species level using standard multispectral, hyperspectral data may allow mapping on a finer taxonomic resolution <span class="citation" data-cites="rs14020346 olmedo2020far">(<a href="../References/references.html#ref-rs14020346" role="doc-biblioref">Douay et al., 2022</a>; <a href="../References/references.html#ref-olmedo2020far" role="doc-biblioref">Olmedo-Masat et al., 2020</a>)</span>. Ecological factors also contribute to distinguish <em>G. vermiculophylla</em>. Macroalgae require hard substrates for the spores to settle, but some Gracilariales species can establish on soft-bottom sediments. <em>G. vermiculophylla</em> is found on mudflats, anchoring its thalli in the top 10 cm of mud <span class="citation" data-cites="surget2017processus">(<a href="../References/references.html#ref-surget2017processus" role="doc-biblioref">Surget, 2017</a>)</span>, and inhabiting the upper intertidal zone of estuaries in Western Europe—an unusual trait for a Rhodophyte <span class="citation" data-cites="abreu2011nitrogen davoult2017multiple">(<a href="../References/references.html#ref-abreu2011nitrogen" role="doc-biblioref">Abreu et al., 2011</a>; <a href="../References/references.html#ref-davoult2017multiple" role="doc-biblioref">Davoult et al., 2017</a>)</span>. By effectively detecting <em>G. vermiculophylla</em> in these soft-sediment environments, the methodology developed in this study provides a framework for mapping this species in coastal areas. A multispectral sensor is necessary to obtain spatially explicit maps when this species is mixed with other classes of intertidal vegetation. However, when monospecific mats are the primary vegetation colonising tidal flats, RGB drone imagery can be exploited.</p>
 </section>
 <section id="g.-vermiculophylla-spatial-distribution-and-mudflat-topography" class="level3" data-number="4.4.2">
 <h3 data-number="4.4.2" class="anchored" data-anchor-id="g.-vermiculophylla-spatial-distribution-and-mudflat-topography"><span class="header-section-number">4.4.2</span> <em>G. vermiculophylla</em> spatial distribution and mudflat topography</h3>
@@ -495,13 +492,13 @@ Figure&nbsp;4.8: Relation between the elevation (in meters) and the percentage c
 <section id="monitoring-gracilaria-vermiculophylla-invasion-dynamics" class="level3" data-number="4.4.3">
 <h3 data-number="4.4.3" class="anchored" data-anchor-id="monitoring-gracilaria-vermiculophylla-invasion-dynamics"><span class="header-section-number">4.4.3</span> Monitoring <em>Gracilaria vermiculophylla</em> Invasion Dynamics</h3>
 <p>The invasive red macroalga <em>G. vermiculophylla</em> represents a significant example of delayed recognition and documentation in biological invasions. Historical aerial imagery and photo-interpretation analyses from the Belon Estuary suggest the initial presence of this species in 1976 <span class="math inline">\(Figure~\ref{fig-HistoricalMap_g}\)</span>, preceding its first formal description in European waters in 1996 by two decades <span class="citation" data-cites="rueness2005life">(<a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span>. This delay likely stems from insufficient early monitoring frameworks and limited awareness of its ecological impacts, which often characterize the early stages of invasive species colonization. It also arises from the fact that other red macroalgae species resembling <em>G. vermiculophylla</em> and native to this area (e.g.&nbsp;<em>Gracilaria gracilis</em>) were already present at sites where <em>G. vermiculophylla</em> was introduced, further complicating its detection. This lag highlights challenges associated with detecting, monitoring, and reporting invasive species and their ecological impacts during early colonization.</p>
-<p>The appearance of <em>G. vermiculophylla</em> corresponds with the introduction of the Pacific oyster (<em>Crassostrea gigas</em>) into the estuary a few years before, between 1971 and 1975, and a potential vector for algal dispersal through aquaculture activities <span class="citation" data-cites="grizel1991introduction rueness2005life">(<a href="../References/references.html#ref-grizel1991introduction" role="doc-biblioref">Grizel and Heral, 1991</a>; <a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span>. Aquaculture practices, such as the transfer of oyster spat and equipment between regions, facilitate the unintentional transport of invasive algal fragments. For instance, <em>G. vermiculophylla</em> may have attached to shells or nets used in oyster farming, enabling its spread to new estuarine habitats. After initial establishment, the alga progressively occupied suitable habitats, consistent with theoretical invasion dynamics involving a lag phase followed by rapid spread <span class="citation" data-cites="arim2006spread">(<a href="../References/references.html#ref-arim2006spread" role="doc-biblioref">Arim et al., 2006</a>)</span>. The establishment of <em>G. vermiculophylla</em> likely induced changes in sediment characteristics, trophic interactions, and habitat structure prior to formal recognition <span class="citation" data-cites="bendor2006spatial">(<a href="../References/references.html#ref-bendor2006spatial" role="doc-biblioref">BenDor and Metcalf, 2006</a>)</span>. Such shifts are comparable to documented impacts in similar systems <span class="citation" data-cites="crowl2008spread gallardo2016global">(<a href="../References/references.html#ref-crowl2008spread" role="doc-biblioref">Crowl et al., 2008</a>; <a href="../References/references.html#ref-gallardo2016global" role="doc-biblioref">Gallardo et al., 2016</a>)</span>, yet remain difficult to quantify without early monitoring data. Remote sensing using multispectral drone mapping can provide high-resolution, spatially explicit data, but it must be combined with repeated, <em>in situ</em> field measurements to maximize its potential <span class="citation" data-cites="chadwick2020integrating zoffoli2023remote">(<a href="../References/references.html#ref-chadwick2020integrating" role="doc-biblioref">Chadwick et al., 2020</a>; <a href="../References/references.html#ref-zoffoli2023remote" role="doc-biblioref">Zoffoli et al., 2023</a>)</span>. Temporal repetition makes it possible to assess dynamic processes, and integrating these mapping approaches with <em>in situ</em> analyses of local infauna, carbon cycling, riverine inputs, and sedimentology yields valuable data for local managers. Such an integrated approach can determine how the invasive algae affects the local ecosystem and, more broadly, forecast its potential impact on other estuarine environments facing similar invasion events.</p>
+<p>The appearance of <em>G. vermiculophylla</em> corresponds with the introduction of the Pacific oyster (<em>Crassostrea gigas</em>) into the estuary a few years before, between 1971 and 1975, and a potential vector for algal dispersal through aquaculture activities <span class="citation" data-cites="grizel1991introduction rueness2005life">(<a href="../References/references.html#ref-grizel1991introduction" role="doc-biblioref">Grizel and Heral, 1991</a>; <a href="../References/references.html#ref-rueness2005life" role="doc-biblioref">Rueness, 2005</a>)</span>. Aquaculture practices, such as the transfer of oyster spat and equipment between regions, facilitate the unintentional transport of invasive algal fragments. For instance, <em>G. vermiculophylla</em> may have attached to shells or nets used in oyster farming, enabling its spread to new estuarine habitats. After initial establishment, the alga progressively occupied suitable habitats, consistent with theoretical invasion dynamics involving a lag phase followed by rapid spread <span class="citation" data-cites="arim2006spread">(<a href="../References/references.html#ref-arim2006spread" role="doc-biblioref">Arim et al., 2006</a>)</span>. The establishment of <em>G. vermiculophylla</em> likely induced changes in sediment characteristics, trophic interactions, and habitat structure prior to formal recognition <span class="citation" data-cites="bendor2006spatial">(<a href="../References/references.html#ref-bendor2006spatial" role="doc-biblioref">BenDor and Metcalf, 2006</a>)</span>. Such shifts are comparable to documented impacts in similar systems <span class="citation" data-cites="crowl2008spread gallardo2016global">(<a href="../References/references.html#ref-crowl2008spread" role="doc-biblioref">Crowl et al., 2008</a>; <a href="../References/references.html#ref-gallardo2016global" role="doc-biblioref">Gallardo et al., 2016</a>)</span>, yet remain difficult to quantify without early monitoring data. Remote sensing using multispectral drone mapping can provide ultra-high resolution, spatially explicit data, but it must be combined with repeated, <em>in situ</em> field measurements to maximize its potential <span class="citation" data-cites="chadwick2020integrating zoffoli2023remote">(<a href="../References/references.html#ref-chadwick2020integrating" role="doc-biblioref">Chadwick et al., 2020</a>; <a href="../References/references.html#ref-zoffoli2023remote" role="doc-biblioref">Zoffoli et al., 2023</a>)</span>. Temporal repetition makes it possible to assess dynamic processes, and integrating these mapping approaches with <em>in situ</em> analyses of local infauna, carbon cycling, riverine inputs, and sedimentology yields valuable data for local managers. Such an integrated approach can determine how the invasive algae affects the local ecosystem and, more broadly, forecast its potential impact on other estuarine environments facing similar invasion events.</p>
 <p>The temporal gap between the first presence and documentation reflects limitations in early surveillance, potentially underestimating ecological and economic impacts during the initial colonization phase. Studies on invasion dynamics demonstrate that early detection is crucial for effective containment and management, particularly before an invasion reaches the exponential spread phase, which complicates control efforts <span class="citation" data-cites="bendor2006spatial arim2006spread elton2020ecology">(<a href="../References/references.html#ref-arim2006spread" role="doc-biblioref">Arim et al., 2006</a>; <a href="../References/references.html#ref-bendor2006spatial" role="doc-biblioref">BenDor and Metcalf, 2006</a>; <a href="../References/references.html#ref-elton2020ecology" role="doc-biblioref">Elton, 2020</a>)</span>. Specific practices, such as the removal of early-stage algal mats, implementation of physical barriers to prevent further spread, and public awareness campaigns, could mitigate the impacts during this critical phase <span class="citation" data-cites="jones2021use green2021functional simberloff2021maintenance">(<a href="../References/references.html#ref-green2021functional" role="doc-biblioref">Green and Grosholz, 2021</a>; <a href="../References/references.html#ref-jones2021use" role="doc-biblioref">Jones et al., 2021</a>; <a href="../References/references.html#ref-simberloff2021maintenance" role="doc-biblioref">Simberloff, 2021</a>)</span>. In the Belon Estuary, <em>G. vermiculophylla</em> appears to have thrived under ecological conditions favorable to its proliferation, enabling the formation of dense mats in about 6 years (between 1976 and 1982; <span class="math inline">\(Figure~\ref{fig-HistoricalMap_g}\)</span>) after its first detection in the estuary. This undocumented growth likely contributed to substantial changes in the estuarine ecosystem. Historical aerial imagery has provided valuable insights into long-term invasion patterns by enabling the retrospective identification of shifts in habitat characteristics. Modern drone-based systems enhance this capacity through high spatial and temporal resolution, enabling the rapid detection of invasive species at early stages of establishment. Remote sensing facilitates timely interventions by capturing detailed data on the spatial distribution and habitat preferences of species such as <em>G. vermiculophylla</em>, allowing stakeholders to take rapid measures to limit the invasion. Integrating these tools into routine monitoring programs offers a scalable and efficient means to track invasive species dynamics and inform targeted management strategies, such as habitat restoration, removal of invasive mats, and prevention of further spread through targeted interventions. Expanding these methodologies to lower-cost RGB-based detection would further democratize access to monitoring tools, enabling more widespread application for early detection and rapid response. These tools could also be integrated into community-driven management programs, empowering local stakeholders to monitor invasive species and implement timely control measures.</p>
 </section>
 </section>
 <section id="conclusion" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.5</span> Conclusion</h2>
-<p>This study demonstrated the potential of high-resolution drone-based multispectral remote sensing to map the spatial and temporal distribution of the invasive red macroalga <em>G. vermiculophylla</em> in European estuaries. By employing the DISCOV machine-learning model, updated to include an extensive dataset of Rhodophyceae pixels, we achieved a classification accuracy of 91.1%. Our analysis revealed a clear spatial relationship between <em>G. vermiculophylla</em> and intertidal topography retrieved from LiDAR, with its cover consistently higher in flat, elevated mudflats compared to lower and steeper areas. The temporal progression, derived from a historical dataset spanning over seven decades, highlights the progressive establishment and expansion of the algae. Notably, our remote sensing analysis confirmed the presence of <em>G. vermiculophylla</em> in the Belon Estuary approximately 20 years before its first scientific description, emphasizing the value of retrospective mapping. The historical aerial imagery analysis provided crucial insights into the dynamics of <em>G. vermiculophylla</em>’s invasion, revealing a lag phase followed by rapid colonization. This expansion coincided with the development of Pacific oyster aquaculture, suggesting a potential link with the proliferation of this invasive species. These findings underscore the crucial role of remote sensing in ecological research, particularly in studying invasive species <span class="citation" data-cites="roca2022monitoring">(<a href="../References/references.html#ref-roca2022monitoring" role="doc-biblioref">Roca et al., 2022</a>)</span>. Integrating hyperspectral sensors could enhance species-level discrimination while adopting low-cost RGB-based methods could extend monitoring capacities to a broader range of stakeholders. The larger mats could be detected at a coarser spatial resolution, and a perspective of this work is to use Sentinel 2 satellite images at a 10 m resolution <span class="citation" data-cites="davies2024sentinel">(<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">Davies et al., 2024b</a>)</span>. These advancements will be crucial for informing management strategies, fostering community engagement, and preserving estuarine biodiversity in the face of ongoing ecological changes.</p>
+<p>This study demonstrated the potential of historical records and of ultra-high resolution drone-based multispectral remote sensing to map the spatial and temporal distribution of the invasive red macroalga <em>G. vermiculophylla</em> in European estuaries. By employing the DISCOV machine-learning model, updated to include an extensive dataset of Rhodophyceae pixels, we achieved a classification accuracy of 91.1%. Our analysis revealed a clear spatial relationship between <em>G. vermiculophylla</em> and intertidal topography retrieved from LiDAR, with its cover consistently higher in flat, elevated mudflats compared to lower and steeper areas. The temporal progression, derived from a historical dataset spanning over seven decades, highlights the progressive establishment and expansion of the algae. Notably, our remote sensing analysis confirmed the presence of <em>G. vermiculophylla</em> in the Belon Estuary approximately 20 years before its first scientific description, emphasizing the value of retrospective mapping. The historical aerial imagery analysis provided crucial insights into the dynamics of <em>G. vermiculophylla</em>’s invasion, revealing a lag phase followed by rapid colonization. This expansion coincided with the development of Pacific oyster aquaculture, suggesting a potential link with the proliferation of this invasive species. These findings underscore the crucial role of remote sensing in ecological research, particularly in studying invasive species <span class="citation" data-cites="roca2022monitoring">(<a href="../References/references.html#ref-roca2022monitoring" role="doc-biblioref">Roca et al., 2022</a>)</span>. Integrating hyperspectral sensors could enhance species-level discrimination while adopting low-cost RGB-based methods could extend monitoring capacities to a broader range of stakeholders. The larger mats could be detected at a coarser spatial resolution, and a perspective of this work is to use Sentinel 2 satellite images at a 10 m resolution <span class="citation" data-cites="davies2024sentinel">(<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">Davies et al., 2024b</a>)</span>. These advancements will be crucial for informing management strategies, fostering community engagement, and preserving estuarine biodiversity in the face of ongoing ecological changes.</p>
 <div class="page-break">
 <div style="page-break-after: always;"></div>
 <div style="page-break-after: always;">
@@ -539,7 +536,11 @@ Table&nbsp;4.1: Annexe 4.3 - Images used to assess the historical presence of <e
 </figcaption>
 <div aria-describedby="tbl-IGNimg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="tabwid"><style>.cl-b077bdf4{table-layout:auto;}.cl-b06d4306{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b0728618{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b072a1c0{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b072a1d4{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b072a1d5{background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-b077bdf4"><thead><tr style="overflow-wrap:break-word;"><th class="cl-b072a1c0"><p class="cl-b0728618"><span class="cl-b06d4306">Date</span></p></th><th class="cl-b072a1c0"><p class="cl-b0728618"><span class="cl-b06d4306">Type</span></p></th><th class="cl-b072a1c0"><p class="cl-b0728618"><span class="cl-b06d4306">Data Source</span></p></th><th class="cl-b072a1c0"><p class="cl-b0728618"><span class="cl-b06d4306">Resolution (cm per Pixel)</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1952-04-26</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">10</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1958-04-22</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">90</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1976-07-? </span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1978-08-22</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">44</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1982-08-11</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">44</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1992-05-17</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">True Colour</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">70</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">1997-04-11</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">Black and White</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">64</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">2012-07-24</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">True Colour</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">IGN</span></p></td><td class="cl-b072a1d4"><p class="cl-b0728618"><span class="cl-b06d4306">18</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b072a1d5"><p class="cl-b0728618"><span class="cl-b06d4306">2024-04-11</span></p></td><td class="cl-b072a1d5"><p class="cl-b0728618"><span class="cl-b06d4306">True Colour</span></p></td><td class="cl-b072a1d5"><p class="cl-b0728618"><span class="cl-b06d4306">Drone Flight</span></p></td><td class="cl-b072a1d5"><p class="cl-b0728618"><span class="cl-b06d4306">3</span></p></td></tr></tbody></table></div>
+<div>
+<figure class="figure">
+<p><img src="Figs/table_images.png" class="img-fluid figure-img" style="width:70.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </figure>
@@ -802,239 +803,242 @@ Zoffoli, M.L., Gernez, P., Oiry, S., Godet, L., Dalloyau, S., Davies, B.F.R., Ba
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1042,185 +1046,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../Chapter3/Chapter3.html" class="pagination-link" aria-label="Discriminating Seagrasses from Green Macroalgae in European Intertidal Areas Using High-Resolution Multispectral Drone Imagery">

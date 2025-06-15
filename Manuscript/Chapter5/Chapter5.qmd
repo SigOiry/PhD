@@ -412,6 +412,8 @@ On average, *in situ* temperatures were 3 ± 3.2°C higher than those recorded b
 
 ### Annexes B - Outputs of GLMM {#sec-AnnexeB_h}
 
+This annex shows the results of gams modelling the change of Radiometric indices with duration of experiments.
+
 ```{r GLMM output table}
 #| label: tbl-GLMM
 #| tbl-cap: "Annex 5.2 - Outputs of the Generalised Linear mixed effects model assessing the relationship between time of heatwave (days) and the relative change to the control of different vegetation indices (@fig-Exp_Spectral_indices_h, Second Derivative, NDVI, GLI, and SHSI). Each index has two terms: Intercept and Slope. The Intercept represents the expected value of the index at the reference time point (e.g., day 0), while the Slope quantifies the effect of time of heatwave, indicating how the index changes per unit increase in days. The Estimate represents the posterior mean of the regression coefficient, while Std. Error indicates its standard deviation. The Lower 95% CI and Upper 95% CI define the 95% credible interval, showing the range within which the true parameter is expected to fall with 95% probability. The Rhat statistic assesses model convergence (values close to 1 indicate proper convergence). Bulk_ESS and Tail_ESS denote the effective sample sizes for bulk estimation and tail uncertainty, respectively, reflecting the reliability of the posterior estimates."
@@ -423,12 +425,16 @@ On average, *in situ* temperatures were 3 ± 3.2°C higher than those recorded b
 library(flextable)
 library(tidyverse)
 
+# 
+# flextable_table <- readRDS("AnnexB.rds")
+# table_gams <- flextable_table %>% 
+#   flextable::fontsize(size = 10, part = "header") %>%
+#   flextable::fontsize(size = 8) %>% 
+#   flextable::width(j = c("Index"), width = 0.2) # Set narrower columns
+# 
+# save_as_image(table_gams, path = "Figs/table_gams1.png")
 
-flextable_table <- readRDS("AnnexB.rds")
-flextable_table %>% 
-  flextable::fontsize(size = 10, part = "header") %>%
-  flextable::fontsize(size = 8) %>% 
-  flextable::width(j = c("Index"), width = 0.5) # Set narrower columns
+knitr::include_graphics("Figs/table_gams1.png")
 
 ```
 
@@ -439,6 +445,8 @@ flextable_table %>%
 
 ### Annexes C - Outputs of GAM {#sec-AnnexeC_h}
 
+This annex shows the results of gams modelling the change of SHSI with exposure times
+
 ```{r GAM output table}
 #| label: tbl-GAM
 #| tbl-cap: "Annex 5.3 - Outputs of the Generalized Additive Model (GAM) assessing the relationship between emersion time per day (hours) and the relative change in SHSI (@fig-GAM_Emersion). The Intercept represents the expected value of the relative change of SHSI at the reference time point, while the s(emersion_per_day) is a function of the effect of emersion time per day on the relative change of SHSI. The Estimate represents the posterior mean of the regression coefficient, while Std. Error indicates its standard deviation. The Lower 95% CI and Upper 95% CI define the 95% credible interval, showing the range within which the true parameter is expected to fall with 95% probability. The Rhat statistic assesses model convergence (values close to 1 indicate proper convergence). Bulk_ESS and Tail_ESS denote the effective sample sizes for bulk estimation and tail uncertainty, respectively, reflecting the reliability of the posterior estimates."
@@ -446,14 +454,18 @@ flextable_table %>%
 #| error: false
 #| message: false
 #| warning: false
+# 
+# library(flextable)
+# library(tidyverse)
+# table_gam_SHSI <- readRDS("AnnexC.rds")
+# tblSHSI <- table_gam_SHSI %>% 
+#   flextable::fontsize(size = 10, part = "header") %>%
+#   flextable::fontsize(size = 8) %>% 
+#    flextable::width(j = c("Term"), width = 1) # Set narrower columns
+# 
+# save_as_image(tblSHSI, path = "Figs/table_gams2.png")
 
-library(flextable)
-library(tidyverse)
-table_gam_SHSI <- readRDS("AnnexC.rds")
-table_gam_SHSI %>% 
-  flextable::fontsize(size = 10, part = "header") %>%
-  flextable::fontsize(size = 8) %>% 
-   flextable::width(j = c("Term"), width = 1) # Set narrower columns
+knitr::include_graphics("Figs/table_gams2.png")
 
 ```
 

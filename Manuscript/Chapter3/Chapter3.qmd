@@ -203,7 +203,7 @@ Each drone flight was used to produce a prediction map, as well as a probability
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: RGB orthomosaic (Left) and Prediction (Right) of the low altitude flight of Gafanha, Portugal. The total extent of this flight was 3000 m² with a resolution of 8 mm per pixel. The zoom covers an area equivalent to a 10 m Sentinel-2 pixel size. EPSG: 32629. 
+#| fig-cap: "RGB orthomosaic (Left) and Prediction (Right) of the low altitude flight of Gafanha, Portugal. The total extent of this flight was 3000 m² with a resolution of 8 mm per pixel. The zoom covers an area equivalent to a 10 m Sentinel-2 pixel size. EPSG: 32629."
 #| label: fig-GafLow
 #| fig-width: 10
 #| fig-height: 8
@@ -219,7 +219,7 @@ The high-altitude flight over Gafanha covered a total area of ~1 km² (@fig-GafH
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: RGB orthomosaic (Left) and Prediction (Right) of the high-altitude flight of Gafanha, Portugal. The total extent of this flight was about 1 km² with a resolution of 80 mm per pixel. The yellow outline shows the extent of the low-altitude flight of Gafanha presented in @fig-GafLow. The zoom covers an area equivalent to a 10 m Sentinel-2 pixel size. EPSG: 32629.
+#| fig-cap: "RGB orthomosaic (Left) and Prediction (Right) of the high-altitude flight of Gafanha, Portugal. The total extent of this flight was about 1 km² with a resolution of 80 mm per pixel. The yellow outline shows the extent of the low-altitude flight of Gafanha presented in @fig-GafLow. The zoom covers an area equivalent to a 10 m Sentinel-2 pixel size. EPSG: 32629."
 #| label: fig-GafHigh
 #| fig-width: 10
 #| fig-height: 8
@@ -235,7 +235,7 @@ Among the high altitude flights, the one acquired over the inner part of Ria de 
 #| cache: false
 #| echo: false
 #| warning: false
-#| fig-cap: RGB orthomosaic (Top) and Prediction (Bottom) of the flight made in the inner part of Ria de Aveiro Lagoon, Portugal. The total extent of this flight was about 1.5 km² with a resolution of 80 mm per pixel. The zoom inserts cover an area equivalent to the size of a 10 m Sentinel-2 pixel. EPSG: 32629.
+#| fig-cap: "RGB orthomosaic (Top) and Prediction (Bottom) of the flight made in the inner part of Ria de Aveiro Lagoon, Portugal. The total extent of this flight was about 1.5 km² with a resolution of 80 mm per pixel. The zoom inserts cover an area equivalent to the size of a 10 m Sentinel-2 pixel. EPSG: 32629."
 #| label: fig-Boat
 #| fig-width: 10
 #| fig-height: 4

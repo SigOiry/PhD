@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.33">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -52,15 +52,16 @@ div.csl-indent {
 <meta name="quarto:offset" content="../">
 <link href="../References/references.html" rel="next">
 <link href="../Chapter5/Chapter5.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-98f67bc07761c90b1382d524a234aef8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -92,7 +93,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -203,7 +204,7 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#macrophytes-discrimination-and-associated-challenges." id="toc-macrophytes-discrimination-and-associated-challenges." class="nav-link active" data-scroll-target="#macrophytes-discrimination-and-associated-challenges."><span class="header-section-number">6.1</span> Macrophytes discrimination and associated challenges.</a></li>
+  <li><a href="#macrophytes-discrimination-and-associated-challenges" id="toc-macrophytes-discrimination-and-associated-challenges" class="nav-link active" data-scroll-target="#macrophytes-discrimination-and-associated-challenges"><span class="header-section-number">6.1</span> Macrophytes discrimination and associated challenges</a></li>
   <li><a href="#drone-technologies-for-coastal-monitoring" id="toc-drone-technologies-for-coastal-monitoring" class="nav-link" data-scroll-target="#drone-technologies-for-coastal-monitoring"><span class="header-section-number">6.2</span> Drone technologies for coastal monitoring</a></li>
   <li><a href="#drone-and-satellite-interactions" id="toc-drone-and-satellite-interactions" class="nav-link" data-scroll-target="#drone-and-satellite-interactions"><span class="header-section-number">6.3</span> Drone and Satellite Interactions</a></li>
   <li><a href="#assessing-coastal-ecosystem-threats-through-remote-sensing" id="toc-assessing-coastal-ecosystem-threats-through-remote-sensing" class="nav-link" data-scroll-target="#assessing-coastal-ecosystem-threats-through-remote-sensing"><span class="header-section-number">6.4</span> Assessing Coastal Ecosystem Threats Through Remote Sensing</a></li>
@@ -234,15 +235,15 @@ div.csl-indent {
 
 
 <p>This doctoral research successfully addressed its principal objectives, which were to: (1) demonstrate the effectiveness of RS for mapping soft-bottom intertidal vegetation at multispectral resolution, (2) develop machine learning algorithms for accurate vegetation classification and ecosystem monitoring, and (3) apply the methodology to map invasive species and analyse the effect of heatwaves on seagrass. This work underscores the potential of RS technologies in addressing ecological challenges in intertidal zones, including the impacts of climate change, anthropogenic pressures, and habitat fragmentation. By demonstrating improved accuracy in habitat classification, from seagrass discrimination to IAS mapping, this work highlights the critical role of multispectral and hyperspectral remote sensing in obtaining explicit spatial distribution maps of the main taxonomic units of intertidal vegetation. Integrating ground-based, drone, and satellite observations proved pivotal in bridging spatial and temporal gaps, enabling a more comprehensive understanding of ecosystem structure and dynamics. This concluding section reviews the key scientific advancements made through the application of RS to intertidal ecosystems, the challenges encountered, and future research directions.</p>
-<section id="macrophytes-discrimination-and-associated-challenges." class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="macrophytes-discrimination-and-associated-challenges."><span class="header-section-number">6.1</span> Macrophytes discrimination and associated challenges.</h2>
-<p>This work has demonstrated the capability of multispectral RS when combined with sophisticated machine-learning techniques to differentiate between various types of intertidal vegetation, even among plants with similar pigment compositions. This capability was initially validated theoretically using a hyperspectral library degraded to the spectral resolution of several sensors. It was subsequently confirmed using a multispectral camera mounted on a drone. The distinction was particularly challenging between green macrophytes, such as seagrass and green macroalgae, which share similar pigment compositions and, consequently, spectral signatures. However, slight variations in the spectral signatures of intertidal green macrophytes enable this discrimination to arise from differences in the proportions in which these pigments are present in each vegetation type. Pigment concentrations and ratios are not static over time following phenological cycles, and are impacted by stress conditions or may not be uniform within a species due to phenotypic variability. The classification method was developed across a wide geographical range, covering spring, summer and early fall conditions, with the initial objective of discriminating among green macrophytes. The Drone Intertidal Substrate Classification of Vegetation (DISCOV) machine-learning algorithm was designed to be dynamic and adaptable, allowing continuous evolution over time. The algorithm is open-source, with its complete code and training/validation dataset openly shared on GitHub (https://github.com/SigOiry/ ; <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span>). The Shiny application used to create an independent validation dataset for assessing model performance in Chapter 4 is also openly available (https://oirysimon.shinyapps.io/shiny_validate/). This flexibility proved invaluable when adapting the algorithm to specifically target a species from a different class of intertidal vegetation: the invasive rhodophyte <em>Gracilaria vermiculophylla</em>.</p>
+<section id="macrophytes-discrimination-and-associated-challenges" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="macrophytes-discrimination-and-associated-challenges"><span class="header-section-number">6.1</span> Macrophytes discrimination and associated challenges</h2>
+<p>This work has demonstrated the capability of multispectral RS when combined with sophisticated machine-learning techniques to differentiate between various types of intertidal vegetation, even among plants with similar pigment compositions. This capability was initially validated theoretically using a hyperspectral library degraded to the spectral resolution of several sensors. It was subsequently confirmed using a multispectral camera mounted on a drone. The distinction was particularly challenging between green macrophytes, such as seagrass and green macroalgae, which share similar pigment compositions and, consequently, spectral signatures. However, slight variations in the spectral signatures of intertidal green macrophytes enable this discrimination to arise from differences in the proportions in which these pigments are present in each vegetation type. Pigment concentrations and ratios are not static over time following phenological cycles, and are impacted by stress conditions or may not be uniform within a species due to phenotypic variability. The classification method was developed across a wide geographical range, covering spring, summer and early fall conditions, with the initial objective of discriminating among green macrophytes. The Drone Intertidal Substrate Classification of Vegetation (DISCOV) machine-learning algorithm was designed to be dynamic and adaptable, allowing continuous evolution over time. The algorithm is open-source, with its complete code and training/validation dataset openly shared on GitHub (https://github.com/SigOiry/ ; <span class="citation" data-cites="oiry2024discriminating">Oiry et al. (<a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">2024</a>)</span>). The Shiny application used to create an independent validation dataset for assessing model performance in Chapter 4 is also openly available (https://oirysimon.shinyapps.io/shiny_validate/). This flexibility proved valuable when adapting the algorithm to specifically target a species from a different class of intertidal vegetation: the invasive rhodophyte <em>Gracilaria vermiculophylla</em>.</p>
 <p>Interestingly, DISCOV v1.0 exhibited poor performance in identifying this red macroalgae, despite its distinct and unique spectral signature attributed to the presence of phycocyanin and phycoerythrin. The algorithm’s underperformance was traced to the lack of enough samples of the rhodophyta phylum in the original training dataset, confusing with other taxonomic units when encountering this specific spectral signature during prediction. This issue was resolved by updating the model’s training dataset to include more red algae samples. The updated model outperformed the original version on the new dataset while maintaining nearly the same accuracy on the original dataset. Including a more diverse training dataset improved DISCOV’s performance across broader ecological contexts. Expanding the geographic and temporal range of data collection has been shown to enhance algorithm robustness and adaptability. By incorporating spectral data from multiple seasons and regions, the algorithm could better account for temporal variations in pigment concentrations and environmental factors, ensuring more reliable predictions across diverse conditions.</p>
 </section>
 <section id="drone-technologies-for-coastal-monitoring" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="drone-technologies-for-coastal-monitoring"><span class="header-section-number">6.2</span> Drone technologies for coastal monitoring</h2>
 <p>Unmanned Aerial Vehicles (UAVs) have become valuable tools in coastal monitoring, offering high-resolution spatial data and flexible deployment across diverse environments. Their capacity to capture fine-scale habitat heterogeneity and track rapid environmental changes has significantly improved our ability to monitor intertidal and nearshore ecosystems. UAVs now complement traditional remote sensing approaches by addressing observational gaps, particularly in areas where satellite data are limited by cloud cover, tidal constraints, or coarse spatial resolution. Their applications range from shoreline erosion assessment to habitat mapping and water quality monitoring, and they are increasingly integrated into coastal management.</p>
-<p>For example the potential of UAVs for monitoring aquaculture systems has been recently demonstrated. I contributed to the work of <span class="citation" data-cites="nurdin2023precision">Nurdin et al. (<a href="../References/references.html#ref-nurdin2023precision" role="doc-biblioref">2023</a>)</span> where UAV-based multispectral imaging was combined with machine learning to estimate biomass and carrageenan content in <em>Kappaphycus alvarezii</em> seaweed farms in Indonesia. Using a Random Forest classifier, they identified culture lines on drone images acquired on culture plots, and then assessed the fresh weight and Carrageenan content (<a href="#fig-Mapping_kappa" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>) of cultivated algae. This automated approach provided accurate stock assessments, reducing reliance on labor-intensive field surveys.</p>
+<p>For example the potential of UAVs for monitoring aquaculture systems has been recently demonstrated. I contributed to the work of <span class="citation" data-cites="nurdin2023precision">Nurdin et al. (<a href="../References/references.html#ref-nurdin2023precision" role="doc-biblioref">2023</a>)</span> where UAV-based multispectral imaging was combined with machine learning to estimate biomass and carrageenan content in <em>Kappaphycus alvarezii</em> seaweed farms in Indonesia. Using a Random Forest classifier, they identified culture lines on drone images acquired on culture plots, and then assessed the fresh weight and carrageenan content (<a href="#fig-Mapping_kappa" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>) of cultivated algae. This automated approach provided accurate stock assessments, reducing reliance on labor-intensive field surveys.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-Mapping_kappa" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -274,7 +275,7 @@ Figure&nbsp;6.2: Oyster-bag mesh sizes detection at a 12 m UAV flight altitude. 
 </div>
 <p>Future developments in UAV technology are expected to enhance automation, scalability, and integration with other remote sensing platforms. One emerging direction is the use of autonomous UAV networks capable of conducting large-scale environmental surveys with minimal human intervention. Such networks could function as coordinated swarms, collecting and analyzing data in near real-time, enabling continuous monitoring of sediment transport, habitat changes, and pollution dispersion. Advances in AI-driven image processing will further refine habitat classification and ecological monitoring, reducing manual interpretation requirements and increasing the efficiency of large-scale assessments.</p>
 <p>Integrating UAV and satellite remote sensing wil also likely improve coastal monitoring. By combining UAV-derived high-resolution imagery with the broad spatial coverage of satellite data, researchers can optimize local-scale accuracy while extending monitoring efforts across regional and global scales. UAV data are already used to validate and improve satellite-based habitat classifications, and ongoing research will likely see UAVs playing a greater role in training machine learning models to enhance the accuracy and consistency of satellite-derived environmental datasets <span class="citation" data-cites="oiry2024discriminating davies2024sentinel">(<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">Davies et al., 2024a</a>; <a href="../References/references.html#ref-oiry2024discriminating" role="doc-biblioref">Oiry et al., 2024</a>)</span>.</p>
-<p>Advancements in UAV sensor technology will further expand their capabilities. The miniaturization of hyperspectral and LiDAR sensors will allow UAVs to capture finer spectral and structural details, improving habitat discrimination and substrate characterization (i.e.&nbsp;the future generation of DJI Mavic will likely incorporate LiDAR technologies in a drone of less than 2 kg, fitting in a backpack). The generalization of hyperspectral UAV remote sensing is particularly relevant for mapping seagrass and macroalgae, where subtle spectral variations are critical for species differentiation <span class="citation" data-cites="Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023</a>)</span>. Additionally, UAV-mounted thermal and fluorescence sensors could improve real-time water quality assessments, detecting variations in chlorophyll concentration, suspended sediments, and temperature anomalies linked to environmental stressors <span class="citation" data-cites="bendig2025comparing roman2022water pillay2024assessing choi2019mapping">(<a href="../References/references.html#ref-bendig2025comparing" role="doc-biblioref">Bendig et al., 2025</a>; <a href="../References/references.html#ref-choi2019mapping" role="doc-biblioref">Choi et al., 2019</a>; <a href="../References/references.html#ref-pillay2024assessing" role="doc-biblioref">Pillay et al., 2024</a>; <a href="../References/references.html#ref-roman2022water" role="doc-biblioref">Román et al., 2022</a>)</span>. Beyond passive observation, UAVs may increasingly be used in active intervention strategies for coastal management. Research explores UAV deployment of environmental monitoring instruments, such as floating sensors and water samplers, to gather in situ data from remote or inaccessible locations <span class="citation" data-cites="liu2025field lariosa2024drone">(<a href="../References/references.html#ref-lariosa2024drone" role="doc-biblioref">Lariosa et al., 2024</a>; <a href="../References/references.html#ref-liu2025field" role="doc-biblioref">Liu et al., 2025</a>)</span>. UAVs have also been proposed for coastal restoration efforts, with systems capable of dispersing biodegradable seeds to support the regeneration of mangroves, salt marshes, seagrass meadows, and dune vegetation <span class="citation" data-cites="marzuki2021mechanism">(<a href="../References/references.html#ref-marzuki2021mechanism" role="doc-biblioref">Marzuki et al., 2021</a>)</span>. These applications align with broader conservation goals, integrating real-time monitoring with adaptive management strategies that enable rapid response to environmental changes.</p>
+<p>Advancements in UAV sensor technology will further expand their capabilities. The miniaturization of hyperspectral and LiDAR sensors will allow UAVs to capture finer spectral and structural details, improving habitat discrimination and substrate characterization. The generalization of hyperspectral UAV remote sensing is particularly relevant for mapping seagrass and macroalgae, where subtle spectral variations are critical for species differentiation <span class="citation" data-cites="Davies2023">(<a href="../References/references.html#ref-Davies2023" role="doc-biblioref">Davies et al., 2023</a>)</span>. Additionally, UAV-mounted thermal and fluorescence sensors could improve real-time water quality assessments, detecting variations in chlorophyll concentration, suspended sediments, and temperature anomalies linked to environmental stressors <span class="citation" data-cites="bendig2025comparing roman2022water pillay2024assessing choi2019mapping">(<a href="../References/references.html#ref-bendig2025comparing" role="doc-biblioref">Bendig et al., 2025</a>; <a href="../References/references.html#ref-choi2019mapping" role="doc-biblioref">Choi et al., 2019</a>; <a href="../References/references.html#ref-pillay2024assessing" role="doc-biblioref">Pillay et al., 2024</a>; <a href="../References/references.html#ref-roman2022water" role="doc-biblioref">Román et al., 2022</a>)</span>. Beyond passive observation, UAVs may increasingly be used in active intervention strategies for coastal management. Research explores UAV deployment of environmental monitoring instruments, such as floating sensors and water samplers, to gather in situ data from remote or inaccessible locations <span class="citation" data-cites="liu2025field lariosa2024drone">(<a href="../References/references.html#ref-lariosa2024drone" role="doc-biblioref">Lariosa et al., 2024</a>; <a href="../References/references.html#ref-liu2025field" role="doc-biblioref">Liu et al., 2025</a>)</span>. UAVs have also been proposed for coastal restoration efforts, with systems capable of dispersing biodegradable seeds to support the regeneration of mangroves, salt marshes, seagrass meadows, and dune vegetation <span class="citation" data-cites="marzuki2021mechanism">(<a href="../References/references.html#ref-marzuki2021mechanism" role="doc-biblioref">Marzuki et al., 2021</a>)</span>. These applications align with broader conservation goals, integrating real-time monitoring with adaptive management strategies that enable rapid response to environmental changes.</p>
 <p>Despite their advantages, several challenges remain for large-scale UAV implementation in coastal research and management. Regulatory restrictions, limited flight endurance, and data processing constraints continue to hinder widespread adoption. Future research should prioritize improving UAV battery life, streamlining real-time data transmission, and developing standardized protocols to ensure consistency across monitoring programs. Addressing these limitations will be essential to harness the potential of UAV technology in coastal ecosystems fully.</p>
 <p>As UAV technology continues to evolve, its role in coastal monitoring will likely expand further. Combining AI-driven automation, advanced sensors, and real-time data processing will enable more efficient and adaptive monitoring approaches, providing critical insights into coastal dynamics. By integrating these technological advancements, UAVs will improve our ability to monitor intertidal environments and support proactive conservation and management strategies. UAVs are expected to play an increasingly central role in coastal resilience efforts, offering innovative solutions to address the growing challenges of climate change and anthropogenic pressures on coastal ecosystems.</p>
 </section>
@@ -306,13 +307,13 @@ Figure&nbsp;6.3: Workflow showing the processes of model training, building and 
 <img src="Figs/PhenologyBede.jpg" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PhenologyBede-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.4: Seasonal timings in maxima and minima of cumulative seagrass cover (a) and the population-level effect to seagrass extent (km²) from a 1 unit change in Air Temperature and Direct Normal Radiation (b) across 12 seagrass meadows spanning 23° of latitude. Points and error bars show median and 89% confidence intervals for the occurrence of the maxima or minima and b the modelled population-level effect. Temperatures ranged from 0 to 25 (°C), and Direct Normal Radiation ranged from 0.0001 to 0.0003 (KW/m2). From <span class="citation" data-cites="davies2024sentinel">Davies et al. (<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024a</a>)</span>.
+Figure&nbsp;6.4: Seasonal timings in maxima and minima of cumulative seagrass cover (a) and the population-level effect to seagrass extent (km²) from a 1 unit change in Air Temperature and Direct Normal Radiation (b) across 12 seagrass meadows spanning 23° of latitude. Points and error bars show median and 89% confidence intervals for the occurrence of the maxima or minima and b the modelled population-level effect. Temperatures ranged from 0 to 25 (°C), and Direct Normal Radiation ranged from 0.0001 to 0.0003 (KW/m<sup>2</sup>). From <span class="citation" data-cites="davies2024sentinel">Davies et al. (<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024a</a>)</span>.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The Intertidal Classification of Europe: Categorising Reflectance of Emerged Areas of Marine vegetation with Sentinel-2 (ICE CREAMS, <span class="citation" data-cites="davies2024intertidal">Davies et al. (<a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">2024b</a>)</span> ; <span class="citation" data-cites="davies2024sentinel">Davies et al. (<a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024a</a>)</span>) model has been developed in parallel to DISCOV, using its outputs as categorical input for the training on Sentinel-2 reflectance data. Its usage is comparable to DISCOV but it uses satellite reflectance instead of drones.</p>
+<p>The Intertidal Classification of Europe: Categorising Reflectance of Emerged Areas of Marine vegetation with Sentinel-2 <span class="citation" data-cites="davies2024intertidal davies2024sentinel">(ICE CREAMS, <a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">Davies et al., 2024b</a>, <a href="../References/references.html#ref-davies2024sentinel" role="doc-biblioref">2024a</a>)</span> model has been developed in parallel to DISCOV, using its outputs as categorical input for the training on Sentinel-2 reflectance data. Its usage is comparable to DISCOV but it uses satellite reflectance instead of drones.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-TrendsBede" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -321,7 +322,7 @@ Figure&nbsp;6.4: Seasonal timings in maxima and minima of cumulative seagrass co
 <img src="Figs/TrendsBede.jpg" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-TrendsBede-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.5: Rate of change in cumulative seagrass extent in km2 y −1 derived from a General Additive Model. Lines show the median first derivative, while shaded areas show the 89% confidence intervals across 2000 posterior predictive samples from a General Additive Model. Plot labels show the site and its latitude and longitude (in degrees) for a Strangford Lough, b Beltringharder Koog, c Bourgneuf Bay, d Santander Bay, e Ria de Aveiro Lagoon and f Cádiz Bay. From <span class="citation" data-cites="davies2024intertidal">Davies et al. (<a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">2024b</a>)</span>.
+Figure&nbsp;6.5: Rate of change in cumulative seagrass extent in km<sup>2</sup> y<sup>−1</sup> derived from a General Additive Model. Lines show the median first derivative, while shaded areas show the 89% confidence intervals across 2000 posterior predictive samples from a General Additive Model. Plot labels show the site and its latitude and longitude (in degrees) for a Strangford Lough, b Beltringharder Koog, c Bourgneuf Bay, d Santander Bay, e Ria de Aveiro Lagoon and f Cádiz Bay. From <span class="citation" data-cites="davies2024intertidal">Davies et al. (<a href="../References/references.html#ref-davies2024intertidal" role="doc-biblioref">2024b</a>)</span>.
 </figcaption>
 </figure>
 </div>
@@ -340,7 +341,7 @@ Figure&nbsp;6.5: Rate of change in cumulative seagrass extent in km2 y −1 deri
 <section id="assessing-coastal-ecosystem-threats-through-remote-sensing" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="assessing-coastal-ecosystem-threats-through-remote-sensing"><span class="header-section-number">6.4</span> Assessing Coastal Ecosystem Threats Through Remote Sensing</h2>
 <p>Chapters 4 and 5 illustrate how remote sensing can be used to assess threats to coastal ecosystems. They both address human-induced pressures, such as the mapping of the alien invasive <em>Gracilaria vermiculophylla</em> (Chapter 4), and the impact of heatwaves on seagrass meadows (Chapter 5).</p>
-<p>Coastal ecosystems, including seagrass meadows and intertidal habitats, face diverse threats such as climate-induced stress, eutrophication, and habitat fragmentation. While traditional field surveys provide valuable insights, they are often time-consuming and limited in scope. Remote sensing complements these methods by enabling consistent, high-resolution monitoring over large areas, with a long-term perspective. Multispectral and hyperspectral imaging, in particular, allow for detailed analysis of vegetation health, species composition, and stress indicators (see Chapter 4 &amp; 5, Muller-Karger et al.&nbsp;2018; Murray et al.&nbsp;2015). Furthermore, technologies such as LiDAR and Synthetic Aperture Radar (SAR) enhance the precision of topographic and hydrological assessments, which are crucial for understanding elevation changes and storm surge dynamics.</p>
+<p>Coastal ecosystems, including seagrass meadows and intertidal habitats, face diverse threats such as climate-induced stress, eutrophication, and habitat fragmentation. While traditional field surveys provide valuable insights, they are often time-consuming and limited in scope. Remote sensing complements these methods by enabling consistent, high-resolution monitoring over large areas, with a long-term perspective. Multispectral and hyperspectral imaging, in particular, allow for detailed analysis of vegetation health, species composition, and stress indicators (see Chapter 4 &amp; 5, Muller-Karger et al.&nbsp;2018; Murray et al.&nbsp;2015). Furthermore, technologies such as LiDAR and Synthetic Aperture Radar (SAR) enhance the precision of topographic, bathymetric and hydrological assessments, which are crucial for understanding elevation changes and storm surge dynamics.</p>
 <p>Monitoring coastal threats through remote sensing relies on satellite-based platforms such as Sentinel-2, Landsat, and MODIS. These platforms provide data to evaluate changes in vegetation indices (e.g., NDVI, SHSI) and other parameters critical to ecological health. These indices play a key role in detecting early signs of ecosystem degradation, such as seagrass browning or the proliferation of invasive species (Chapter 4 &amp; 5). Additionally, airborne sensors and UAVs enhance spatial resolution, enabling the mapping of fine-scale features to study algal blooms, sediment displacement caused by coastal erosion, or invasive species <span class="citation" data-cites="novais2023use">(<a href="../References/references.html#ref-novais2023use" role="doc-biblioref">Novais et al., 2023</a>)</span>. Advanced machine learning models applied to remote sensing data are increasingly used to detect and predict these phenomena, leveraging large datasets to improve the accuracy of coastal hazard forecasts.</p>
 <p>Remote sensing also plays a significant role in structured ecosystem risk assessments by integrating spatial and temporal data into predictive models. For instance, remote sensing data could be integrated into a DAPSI(W)R(M) framework (standing for Drivers, Activities, Pressures, State changes, Impact on Welfare, Responses as Measures) to analyze drivers, pressures, and state changes, supporting holistic management of marine and coastal environments <span class="citation" data-cites="Mahrad2020 murray2018role">(<a href="../References/references.html#ref-Mahrad2020" role="doc-biblioref">Mahrad et al., 2020</a>; <a href="../References/references.html#ref-murray2018role" role="doc-biblioref">Murray et al., 2018</a>)</span>. Using long-term datasets, remote sensing technologies help identify habitat loss or recovery trends, providing essential tools for researchers and policymakers to address environmental challenges and implement sustainable management strategies <span class="citation" data-cites="Muller-Karger2018 murray2018role zoffoli2023remote">(<a href="../References/references.html#ref-Muller-Karger2018" role="doc-biblioref">Muller-Karger et al., 2018</a>; <a href="../References/references.html#ref-murray2018role" role="doc-biblioref">Murray et al., 2018</a>; <a href="../References/references.html#ref-zoffoli2023remote" role="doc-biblioref">Zoffoli et al., 2023</a>)</span>.</p>
 <p>Through environmental monitoring and modeling applications, remote sensing provides a comprehensive understanding of coastal ecosystem dynamics. Its dual ability to offer large-scale overviews and detailed local assessments makes it an indispensable resource for managing and mitigating the impacts of anthropogenic and natural stressors on fragile coastal zones. As cloud-computing platforms and integrated GIS technologies evolve, they further expand the remote sensing capabilities for real-time and collaborative environmental monitoring.</p>
@@ -348,9 +349,9 @@ Figure&nbsp;6.5: Rate of change in cumulative seagrass extent in km2 y −1 deri
 <section id="perspectives" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="perspectives"><span class="header-section-number">6.5</span> Perspectives</h2>
 <p>Seagrass meadows are experiencing widespread global declines. They are increasingly threatened by human activities such as coastal development and declining water quality. While some areas show signs of stabilisation or recovery, losses continue to outpace gains globally. The variability in seagrass trends highlights the urgent need to focus on restoration efforts alongside understanding the drivers of change, as improved restoration strategies are essential for reversing declines and supporting long-term conservation. Seagrass restoration refers to the active and strategic process of reestablishing seagrass meadows in areas where they have been degraded or lost, aiming to reverse habitat loss and enhance ecosystem resilience. These efforts involve transplanting seagrass shoots, planting seeds, enhancing natural recovery processes, and improving environmental conditions to support seagrass growth. RS offers precise tools for monitoring and enhancing seagrass restoration by providing high-resolution spatial data to assess transplanted meadows and detect changes in coverage and health <span class="citation" data-cites="ventura2022seagrass">(<a href="../References/references.html#ref-ventura2022seagrass" role="doc-biblioref">Ventura et al., 2022</a>)</span>.</p>
-<p>For instance, in Arcachon Bay, France, the seagrass meadows, historically covered approximately 40 km² of the bay, making it one of the largest seagrass habitats in Europe <span class="citation" data-cites="cognat2018environmental">(<a href="../References/references.html#ref-cognat2018environmental" role="doc-biblioref">Cognat et al., 2018</a>)</span>. This meadow experienced a drastic decline, losing over 40% of its coverage between 1989 and 2019 <span class="citation" data-cites="muller2024site">(<a href="../References/references.html#ref-muller2024site" role="doc-biblioref">Muller et al., 2024</a>)</span>. Recognising this loss, the Natural Marine Park of Arcachon Bay launched active restoration efforts, including the transplantation of Zostera noltei sods and participatory seed collection initiatives. <span class="citation" data-cites="laurent2024intertidal">Laurent (<a href="../References/references.html#ref-laurent2024intertidal" role="doc-biblioref">2024</a>)</span> has shown that after the first monitoring, 85% of the transplanted sods (405 out of 476) had survived, with all nine sods surviving in 68% of the sites (36 stations), showing a promising start. However, on the two flats monitored twice, a high mortality rate of around 60% was recorded during the second monitoring. Additionally, 82% of transplants expanded at the first monitoring, but only 10% maintained this expansion in the second monitoring, reflecting the complexity of long-term restoration success. This case study highlights the challenges faced by seagrass restoration efforts.</p>
+<p>For instance, in Arcachon Bay, France, the seagrass meadows, historically covered approximately 40 km² of the bay, making it one of the largest seagrass habitats in Europe <span class="citation" data-cites="cognat2018environmental">(<a href="../References/references.html#ref-cognat2018environmental" role="doc-biblioref">Cognat et al., 2018</a>)</span>. This meadow experienced a drastic decline, losing over 40% of its coverage between 1989 and 2019 <span class="citation" data-cites="muller2024site">(<a href="../References/references.html#ref-muller2024site" role="doc-biblioref">Muller et al., 2024</a>)</span>. Recognising this loss, the Natural Marine Park of Arcachon Bay launched active restoration efforts, including the transplantation of <em>Zostera noltei</em> sods and participatory seed collection initiatives. <span class="citation" data-cites="laurent2024intertidal">Laurent (<a href="../References/references.html#ref-laurent2024intertidal" role="doc-biblioref">2024</a>)</span> has shown that after the first monitoring, 85% of the transplanted sods (405 out of 476) had survived, with all nine sods surviving in 68% of the sites (36 stations), showing a promising start. However, on the two flats monitored twice, a high mortality rate of around 60% was recorded during the second monitoring. Additionally, 82% of transplants expanded at the first monitoring, but only 10% maintained this expansion in the second monitoring, reflecting the complexity of long-term restoration success. This case study highlights the challenges faced by seagrass restoration efforts.</p>
 <p>RS can play a critical role in identifying suitable areas for seagrass restoration by mapping habitat suitability and assessing anthropogenic pressures <span class="citation" data-cites="hu2021mapping">(<a href="../References/references.html#ref-hu2021mapping" role="doc-biblioref">Hu et al., 2021</a>)</span>. Integrating spatial data with environmental predictors such as water quality, depth, and substrate type makes it possible to pinpoint locations with the greatest potential for successful restoration while minimising risks from human activities. This technology supports the evaluation of restoration success and facilitates adaptive management by identifying environmental conditions that favour seagrass recovery. By integrating remote sensing with ecological studies, restoration efforts can be more targeted, efficient, and adaptive to ongoing environmental changes <span class="citation" data-cites="valle2014projecting">(<a href="../References/references.html#ref-valle2014projecting" role="doc-biblioref">Valle et al., 2014</a>)</span>.</p>
-<p>The DISCOV model could support seagrass restoration efforts with its ability to classify vegetation at very high spatial resolutions and distinguish seagrass from other green macrophytes. By offering precise habitat classification and mapping, DISCOV can aid at identifying optimal restoration sites (e.g.&nbsp;finding sites that limit competition with other species) and monitoring restored meadows. Its application could enhance our capacity to adapt restoration strategies based on real-time, fine-scale data, ultimately supporting the resilience and recovery of seagrass ecosystems. DISCOV and ICE CREAMS are smart data tools that are planned to be applied in the EU restoration project REBORN (Unlocking seagRass rEstoration at scale in NWE as a BGI and natural capital OppoRtuNity) submitted to the Interreg program. Satellite and drone imagery will be used to track changes in seagrass distribution in the North-West regions of Europe, identify at-risk areas, and prioritise interventions. As transboundary tools, they will facilitate data sharing and joint management between countries. Satellites and drone images are powerful communication tools for engaging the public and authorities by providing visual, data-rich, and easily interpretable information. They can foster greater public support for restoration initiatives.</p>
+<p>The DISCOV model could support seagrass restoration efforts with its ability to classify vegetation at very high spatial resolutions and distinguish seagrass from other green macrophytes. By offering precise habitat classification and mapping, DISCOV can aid at identifying optimal restoration sites (e.g.&nbsp;finding sites that limit competition with other species) and monitoring restored meadows. Its application could enhance our capacity to adapt restoration strategies based on real-time, fine-scale data, ultimately supporting the resilience and recovery of seagrass ecosystems. DISCOV and ICE CREAMS are smart data tools that are planned to be applied in the EU restoration project REBORN (Unlocking seagRass rEstoration at scale in NWE as a BGI and natural capital OppoRtuNity) submitted to the Interreg program. Satellite and drone imagery will be used to track changes in seagrass distribution in the North-West regions of Europe, identify at-risk areas, and prioritise interventions. As transboundary tools, they will facilitate data sharing and joint management between countries. Satellites and manned/unmanned airborne images are powerful communication tools for engaging the public and authorities by providing visual, data-rich, and easily interpretable information. They can foster greater public support for restoration initiatives.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -431,239 +432,242 @@ Zoffoli, M.L., Gernez, P., Oiry, S., Godet, L., Dalloyau, S., Davies, B.F.R., Ba
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -671,185 +675,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../Chapter5/Chapter5.html" class="pagination-link" aria-label="The impact of Heatwave on Seagrasses using hyperspectral and multispectral remote sensing">

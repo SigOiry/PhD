@@ -1,5 +1,7 @@
 ---
 title: "Spatial and Temporal distributions of the alien invasive *Gracilaria vermiculophylla*"
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{=latex}
@@ -336,57 +338,65 @@ This study demonstrated the potential of historical records and of ultra-high re
 #| message: false
 #| warning: false
 #| out-width: "70%"
+# 
+# library(flextable)
+# library(tidyverse)
+#  
+# table <- data.frame(
+#   Date = c(
+#     "1952-04-26",
+#     "1958-04-22",
+#     "1976-07-? ",
+#     "1978-08-22",
+#     "1982-08-11",
+#     "1992-05-17",
+#     "1997-04-11",
+#     "2012-07-24",
+#     "2024-04-11"),
+#   Type = c(
+#     "Black and White",
+#     "Black and White",
+#     "Black and White",
+#     "Black and White",
+#     "Black and White",
+#     "True Colour",
+#     "Black and White",
+#     "True Colour",
+#     "True Colour"),
+#   DataSource = c(    
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "IGN",
+#     "Drone Flight"),
+#   Res = c(
+#      "10",
+#      "90",
+#      "4",
+#      "44",
+#      "44",
+#      "70",
+#      "64",
+#      "18",
+#      "3"
+#   )) %>% 
+#  dplyr::rename(`Resolution (cm per Pixel)` = "Res",
+#                `Data Source` = "DataSource") %>% 
+#   flextable()%>%
+#   align(align = "center", part = "all")%>%
+#   width(j = ~ Date, width = 1.2) %>%
+#   width(j = ~ Type, width = 1.8) %>%
+#   width(j = ~ `Data Source`, width = 1.5) %>%
+#   width(j = ~ `Resolution (cm per Pixel)`, width = 2.2) %>%
+#   set_table_properties(layout = "autofit")
+# 
+# save_as_image(table, path = "Manuscript/Chapter4/Figs/table_images.png")
 
-library(flextable)
-library(tidyverse)
- 
-data.frame(
-  Date = c(
-    "1952-04-26",
-    "1958-04-22",
-    "1976-07-? ",
-    "1978-08-22",
-    "1982-08-11",
-    "1992-05-17",
-    "1997-04-11",
-    "2012-07-24",
-    "2024-04-11"),
-  Type = c(
-    "Black and White",
-    "Black and White",
-    "Black and White",
-    "Black and White",
-    "Black and White",
-    "True Colour",
-    "Black and White",
-    "True Colour",
-    "True Colour"),
-  DataSource = c(    
-    "IGN",
-    "IGN",
-    "IGN",
-    "IGN",
-    "IGN",
-    "IGN",
-    "IGN",
-    "IGN",
-    "Drone Flight"),
-  Res = c(
-     "10",
-     "90",
-     "4",
-     "44",
-     "44",
-     "70",
-     "64",
-     "18",
-     "3"
-  )) %>% 
- dplyr::rename(`Resolution (cm per Pixel)` = "Res",
-               `Data Source` = "DataSource") %>% 
-  flextable()%>%
-  align(align = "center", part = "all") %>% # Align text to center
-  set_table_properties(layout = "autofit")
+knitr::include_graphics("Figs/table_images.png")
 
 ```
 
